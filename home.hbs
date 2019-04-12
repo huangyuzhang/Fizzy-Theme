@@ -1,0 +1,29 @@
+{{!--  home.hbs --}}
+
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- carousel --}}
+{{> carousel}}
+
+{{!-- main --}}
+<main class="section">
+    <div class="columns">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
+            {{#foreach posts}}
+                {{> post_item}}
+            {{/foreach}}
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+</main>
+
+{{!-- pagination --}}
+<section class="section">
+    <div class="container">
+        {{pagination}}
+    </div>
+</section>
+

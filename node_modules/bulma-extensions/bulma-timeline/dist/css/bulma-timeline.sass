@@ -1,0 +1,209 @@
+$timeline-marker-size: .8em !default
+$timeline-marker-color: $grey-lighter !default
+$timeline-marker-icon-size: 1.5em !default
+$timeline-marker-border-size: .1em !default
+$timeline-marker-border: $timeline-marker-border-size solid $timeline-marker-color !default
+$timeline-line-color: $grey-lighter !default
+$timeline-line-width: .1em !default
+$timeline-line-style: solid !default
+$timeline-line: $timeline-line-width $timeline-line-style $timeline-line-color !default
+$timeline-content-padding: 1em 0 0 2em !default
+$timeline-rtl-content-padding: 1em 2em 0 0 !default
+$timeline-icon-size: $size-small !default
+$timeline-header-width: 4em !default
+$timeline-item-padding-left: $timeline-header-width / 2 !default
+$timeline-item-padding-bottom: 2em !default
+$dimensions: 16 24 32 48 64 96 128 !default
+
+.timeline
+  display: flex
+  flex-direction: column
+  .timeline-header
+    width: $timeline-header-width
+    min-width: $timeline-header-width
+    max-width: $timeline-header-width * 2
+    word-wrap: normal
+    text-align: center
+    display: flex
+    justify-content: center
+  .timeline-item
+    display: flex
+    display: -ms-flexbox
+    display: -webkit-flex
+    position: relative
+    margin-left: $timeline-item-padding-left
+    padding-bottom: $timeline-item-padding-bottom
+    &::before
+      content: ""
+      background-color: $timeline-line-color
+      display: block
+      width: $timeline-line-width
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+
+    .timeline-marker
+      position: absolute
+      background: $timeline-marker-color
+      border: $timeline-marker-border
+      border-radius: 100%
+      content: ""
+      display: block
+      height: $timeline-marker-size
+      left: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2)
+      top: 1.2rem
+      width: $timeline-marker-size
+      &.is-image
+        @each $dimension in $dimensions
+          &.is-#{$dimension}x#{$dimension}
+            height: $dimension * 1px
+            width: $dimension * 1px
+            left: ( $dimension / 2 ) * -1px
+        background: $timeline-marker-color
+        border: $timeline-marker-border
+        border-radius: 100%
+        display: block
+        overflow: hidden
+      &.is-icon
+        display: flex
+        align-items: center
+        justify-content: center
+        height: $timeline-marker-icon-size
+        width: $timeline-marker-icon-size
+        left: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2)
+        line-height: .75rem
+        // padding: $timeline-icon-size / 3
+        background: $timeline-marker-color
+        border: $timeline-marker-border
+        border-radius: 100%
+        > i
+          color: $white
+          font-size: $timeline-icon-size !important
+      &.is-outlined
+        .image
+          background: $white
+        &.is-icon
+          background: $white
+          > i
+            color: $timeline-marker-color
+      @each $name, $pair in $colors
+        $color: nth($pair, 1)
+        $color-invert: nth($pair, 2)
+        &.is-#{$name}
+          background-color: $color !important
+          border-color: $color !important
+          .image
+            border-color: $color !important
+
+          &.is-icon
+            background-color: $color !important
+            border-color: $color !important
+            > i
+              color: $color-invert !important
+          &.is-outlined
+            background-color: $white !important
+            border-color: $color !important
+            .image
+              background-color: $white !important
+            &.is-icon
+              background-color: $white !important
+              > i
+                color: $color !important
+    .timeline-content
+      padding: 1em 0 0 .5em
+      padding: $timeline-content-padding
+      .heading
+        font-weight: $weight-semibold
+
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &.is-#{$name}
+        &::before
+          background-color: $color
+
+  &.is-centered
+    .timeline-header
+      display: flex
+      width: 100%
+      align-self: center
+    .timeline-item
+      width: 50%
+      align-self: flex-end
+      &:nth-of-type(2n)
+        align-self: flex-start
+        margin-left: 0
+        margin-right: $timeline-header-width / 2
+        &::before
+          right: -$timeline-line-width
+          left: auto
+        .timeline-marker
+          left: auto
+          right: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2) - $timeline-line-width
+          &.is-image
+            @each $dimension in $dimensions
+              &.is-#{$dimension}x#{$dimension}
+                left: auto
+                right: ( $dimension / 2 ) * -1px
+          &.is-icon
+            left: auto
+            right: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2) - $timeline-line-width
+        .timeline-content
+          padding: $timeline-rtl-content-padding
+          text-align: right
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          flex-basis: 100%
+      &:nth-of-type(2n+1)
+        &::before
+          content: ""
+          background-color: $timeline-line-color
+          display: block
+          width: $timeline-line-width
+          height: 100%
+          position: absolute
+          top: 0
+      @each $name, $pair in $colors
+        $color: nth($pair, 1)
+        $color-invert: nth($pair, 2)
+        &.is-#{$name}
+          &::before
+            background-color: $color
+
+  &.is-rtl
+    justify-content: flex-end
+    align-items: flex-end
+    .timeline-item
+      justify-content: flex-end
+      border-left: none
+      &::before
+        right: 0
+        left: auto
+      margin-left: 0
+      margin-right: $timeline-header-width / 2
+      .timeline-marker
+        left: auto
+        right: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2)
+        &.is-image
+          @each $dimension in $dimensions
+            &.is-#{$dimension}x#{$dimension}
+              left: auto
+              right: ( $dimension / 2 ) * -1px
+        &.is-icon
+          left: auto
+          right: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2)
+      .timeline-content
+        padding: $timeline-rtl-content-padding
+        text-align: right
+
+  &.no-headers
+    .timeline-item
+      &.is-first
+        &::before
+          height: calc(100% - 1.2rem)
+          top: 1.2rem
+      &.is-last
+        &::before
+          height: 1.2rem

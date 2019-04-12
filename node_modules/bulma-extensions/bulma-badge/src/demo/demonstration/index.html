@@ -1,0 +1,293 @@
+---
+layout: default
+route: demonstration
+title: Demonstration
+---
+{% capture badge_example %}
+<button class="button " data-badge="8">Button</button>
+{% endcapture %}
+{% capture badge_rounded_example %}
+<button class="button has-badge-rounded" data-badge="8">Button</button>
+{% endcapture %}
+{% capture badge_inline_example %}
+<button class="button has-badge-inline" data-badge="8">Button</button>
+<button class="button has-badge-inline has-badge-rounded" data-badge="8">Button</button>
+{% endcapture %}
+
+{% capture badge_colors_example %}
+<div class="columns">
+  <div class="column">
+    <span class="badge" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-warning" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-danger" data-badge="">
+      Notifications
+    </span>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <span class="badge" data-badge="8">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success" data-badge="88">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-danger" data-badge="888">
+      Notifications
+    </span>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="block">
+      <button class="button " data-badge="">Button</button>
+      <button class="button " data-badge="8">Button</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="block">
+      <button class="button is-primary badge" data-badge="">Button</button>
+      <button class="button is-info badge" data-badge="8">Button</button>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture badge_sizes_example %}
+<div class="columns">
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success has-badge-small" data-badge="10">
+      Small badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success" data-badge="10">
+      Normal badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-warning has-badge-medium" data-badge="10">
+      Medium badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-danger has-badge-large" data-badge="10">
+      Large badge
+    </span>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture badge_positions_example %}
+<div class="columns">
+  <div class="column">
+    <span class="button has-badge-rounded has-badge-success has-badge-left" data-badge="10">
+      Top left badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="button has-badge-rounded has-badge-success" data-badge="10">
+      Top right (default)
+    </span>
+  </div>
+  <div class="column">
+    <span class="button has-badge-rounded has-badge-warning has-badge-bottom-left" data-badge="10">
+      Bottom left badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="button has-badge-rounded has-badge-danger has-badge-bottom" data-badge="10">
+      Bottom right badge
+    </span>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture badge_outlined_example %}
+<div class="columns">
+  <div class="column">
+    <span class="has-badge-rounded has-badge-outlined" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success has-badge-outlined" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-warning has-badge-outlined" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-danger has-badge-outlined" data-badge="">
+      Notifications
+    </span>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <span class="has-badge-rounded has-badge-outlined" data-badge="8">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-success has-badge-outlined" data-badge="88">
+      Notifications
+    </span>
+  </div>
+  <div class="column">
+    <span class="has-badge-rounded has-badge-danger has-badge-outlined" data-badge="888">
+      Notifications
+    </span>
+  </div>
+</div>
+
+<div class="block">
+  <button class="button has-badge-outlined" data-badge="">Button</button>
+  <button class="button has-badge-outlined" data-badge="8">Button</button>
+</div>
+
+<div class="block">
+  <button class="button is-primary has-badge-outlined" data-badge="">Button</button>
+  <button class="button is-info has-badge-outlined" data-badge="8">Button</button>
+</div>
+{% endcapture %}
+
+{% capture badge_navbar_example %}
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
+        height="28">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="https://bulma.io/">
+        <span class="has-badge-inline" data-badge="10">Home</span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+          <span class="has-badge-success has-badge-inline" data-badge="2">Docs</span>
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+            <span class="has-badge-warning has-badge-inline" data-badge="1">Overview</span>
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+            Form
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+            <span class="has-badge-inline" data-badge="2">Elements</span>
+          </a>
+          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+            Components
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+              target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>
+                Tweet
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" data-badge="2" href="https://github.com/jgthms/bulma/releases/download/0.7.4/bulma-0.7.4.zip">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endcapture %}
+
+{% capture badge_tabs_example %}
+<div class="tabs is-centered">
+  <ul>
+    <li class="is-active"><a>Pictures</a></li>
+    <li><a class="has-badge-success has-badge-inline" data-badge="1">Music</a></li>
+    <li><a class="has-badge-warning has-badge-inline" data-badge="2">Videos</a></li>
+    <li><a class="has-badge-danger has-badge-inline" data-badge="10">Documents</a></li>
+  </ul>
+</div>
+{% endcapture %}
+
+
+{% include snippet.html content=badge_example size="one-half" %}
+
+{% include anchor.html name="Rounded Style" %}
+{% include snippet.html content=badge_rounded_example size="one-half" %}
+
+{% include anchor.html name="Colors" %}
+{% include snippet.html is-horizontal="true" content=badge_colors_example horizontal=true more=true %}
+
+{% include anchor.html name="Sized" %}
+{% include snippet.html content=badge_sizes_example horizontal=true more=true %}
+
+{% include anchor.html name="Outlined" %}
+<h4 class="subtitle">You can display an outlined has-badge-rounded by using the <code>.has-badge-outlined</code> modifier.</h4>
+{% include snippet.html content=badge_outlined_example horizontal=true more=true %}
+
+{% include anchor.html name="Styles" %}
+<h4 class="subtitle">You can change the has-badge-rounded position using one of the following modifiers: <code>.has-badge-left</code> <code>.has-badge-bottom</code> <code>.has-badge-bottom-left</code> .</h4>
+{% include snippet.html content=badge_positions_example horizontal=true more=true %}
+<br /><br />
+<h4 class="subtitle">You can display badge inline using <code>has-badge-inline</code> modifier.</h4>
+{% include snippet.html content=badge_inline_example horizontal=true more=true %}
+
+{% include anchor.html name="More examples" %}
+{% include snippet.html content=badge_navbar_example horizontal=true more=true %}
+{% include snippet.html content=badge_tabs_example horizontal=true more=true %}

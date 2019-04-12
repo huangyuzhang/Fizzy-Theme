@@ -1,0 +1,28 @@
+@each $direction in top, right, bottom, left
+  +mobile
+    .is-tooltip-#{$direction}-mobile
+      @include direction(#{$direction})
+  +tablet
+    .is-tooltip-#{$direction}-tablet
+      @include direction(#{$direction})
+  +tablet-only
+    .is-tooltip-#{$direction}-tablet-only
+      @include direction(#{$direction})
+  +touch
+    .is-tooltip-#{$direction}-touch
+      @include direction(#{$direction})
+  +desktop
+    .is-tooltip-#{$direction}-desktop
+      @include direction(#{$direction})
+  +desktop-only
+    .is-tooltip-#{$direction}-desktop-only
+      @include direction(#{$direction})
+  +widescreen
+    .is-tooltip-#{$direction}-widescreen
+      @include direction(#{$direction})
+  +widescreen-only
+    .is-tooltip-#{$direction}-widescreen-only
+      @include direction(#{$direction})
+  +fullhd
+    .is-tooltip-#{$direction}-fullhd
+      @include direction(#{$direction})

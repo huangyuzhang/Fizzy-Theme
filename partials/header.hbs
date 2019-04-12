@@ -1,0 +1,56 @@
+<header>
+    <nav class="navbar is-white is-fixed-top has-shadow is-spaced is-montserrat" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            {{#if @site.logo}}
+            <div class="navbar-item logo">
+                <a href="{{@site.url}}">
+                    <img src="{{@site.logo}}" alt="{{@blog.title}}" title="{{@blog.title}}" width="auto" height="28">
+                </a>
+            </div>
+            {{else}}
+                <div class="navbar-item text-logo">
+                    <a href="{{@site.url}}" alt="{{@blog.title}}" title="{{@blog.title}}">
+                        {{@blog.title}}<span>.</span>
+                    </a>
+                </div>
+            {{/if}}
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarPrimary">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarPrimary" class="navbar-menu">
+            <div class="navbar-start">
+                {{#if @site.navigation}}
+                {{navigation}}                    
+                {{/if}}
+            </div>
+
+            <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                    Log in
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    {{!-- header main --}}
+    {{!-- <div class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">{{@blog.title}}</h1>
+                <h2 class="subtitle">{{@blog.description}}</h2>
+            </div> 
+        </div>
+    </div> --}}
+</header>

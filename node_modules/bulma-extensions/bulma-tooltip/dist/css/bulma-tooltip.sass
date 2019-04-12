@@ -1,0 +1,93 @@
+@import 'position'
+
+$tooltip-background-color: $grey-dark !default
+$tooltip-background-opacity: 0.9 !default
+$tooltip-max-width: 24rem !default
+
+.tooltip
+  position: relative
+  &:hover,
+  &.is-tooltip-active
+    &:not(.is-loading)
+      &::after
+        z-index: 99999
+        position: absolute
+        display: inline-block
+        pointer-events: none
+    &::before
+      z-index: 99999
+      position: absolute
+      display: inline-block
+      pointer-events: none
+    &:not(.is-loading)
+      &::after
+        content: ""
+        border-style: solid
+        border-width: .5rem
+    &::before
+      opacity: 0
+      content: attr(data-tooltip)
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      font-size: $size-7
+      padding: .4rem .8rem
+      background: rgba($tooltip-background-color, $tooltip-background-opacity)
+      border-radius: $radius
+      color: $white
+      max-width: $tooltip-max-width
+
+  &:focus,
+  &:hover,
+  &.is-tooltip-active
+    &:not(.is-loading)
+      &::after
+        opacity: 1
+        margin-left: -.5rem
+        margin-top: -.5rem
+
+    &::before
+      opacity: 1
+
+  +top
+
+  &.is-tooltip-right
+    +right
+
+  &.is-tooltip-bottom
+    +bottom
+
+  &.is-tooltip-left
+    +left
+
+  &.is-tooltip-multiline
+    &::before
+      min-width: $tooltip-max-width
+      text-overflow: clip
+      white-space: normal
+      word-break: keep-all
+
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-tooltip-#{$name}
+      &:not(.is-loading)
+        &::after
+          border-color: rgba($color, $tooltip-background-opacity) transparent transparent transparent
+      &.is-tooltip-right
+        &:not(.is-loading)
+          &::after
+            border-color: transparent rgba($color, $tooltip-background-opacity) transparent transparent
+      &.is-tooltip-bottom
+        &:not(.is-loading)
+          &::after
+            border-color: transparent transparent rgba($color, $tooltip-background-opacity) transparent
+      &.is-tooltip-left
+        &:not(.is-loading)
+          &::after
+            border-color: transparent transparent transparent rgba($color, $tooltip-background-opacity)
+      &::before
+        background: rgba($color, $tooltip-background-opacity)
+        color: $color-invert
+
+@import 'dispatcher'

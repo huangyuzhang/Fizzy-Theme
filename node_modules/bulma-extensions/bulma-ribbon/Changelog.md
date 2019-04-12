@@ -1,0 +1,3 @@
+## Bug fixes
+
+* Default color

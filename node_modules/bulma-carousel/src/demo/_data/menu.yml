@@ -1,0 +1,26 @@
+- name: Demonstrations
+  link: 'demonstration'
+- name: Quick Start
+  submenus:
+    - name: Features
+      link: '#features'
+    - name: Installation
+      link: '#installation'
+    - name: Starter Template
+      link: '#starter-template'
+    - name: Integration
+      link: '#integration'
+    - name: Options
+      link: '#options'
+    - name: Methods
+      link: '#methods'
+    - name: Getters
+      link: '#getters'
+    - name: Setters
+      link: '#setters'
+    - name: Events
+      link: '#events'
+- name: Customization
+  link: 'customization'
+- name: Changelog
+  link: 'changelog'

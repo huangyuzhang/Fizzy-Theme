@@ -1,0 +1,54 @@
+{
+    "name": "fizzy",
+    "description": "A tasty ghost theme.",
+    "version": "0.0.1",
+    "author": {
+        "name": "Simon Huang",
+        "email": "huangyuzhang@live.cn"
+    },
+    "engines": {
+        "ghost": ">=2.0.0",
+        "ghost-api": "v2"
+    },
+    "config": {
+        "posts_per_page": 6
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "image_sizes": {
+        "xxs": {
+            "width": 60
+        },
+        "xs": {
+            "width": 150
+        },
+        "s": {
+            "width": 400
+        },
+        "m": {
+            "width": 800
+        },
+        "l": {
+            "width": 1200
+        },
+        "xl": {
+            "width": 2000
+        },
+        "carousel": {
+            "width": 470,
+            "height": 600
+        }
+    },
+    "dependencies": {
+        "bulma-carousel": "^4.0.4",
+        "bulma-extensions": "^6.2.4",
+        "highlight.js": "^9.15.6"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-watch": "^5.0.1"
+    }
+}

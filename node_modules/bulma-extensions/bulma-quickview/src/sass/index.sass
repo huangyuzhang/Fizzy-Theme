@@ -1,0 +1,90 @@
+$quickview-z: 35 !default
+$quickview-header-height: 3.25em !default
+$quickview-footer-height: 4rem !default
+$quickview-shadow: 5px 0px 13px 3px rgba( 0, 0, 0, 0.1 ) !default
+$quickview-divider: 1px solid $grey-lighter !default
+
+.quickview
+  display: flex
+  flex-direction: column
+  background-color: $white
+  max-width: calc( 100% - 50px )
+  &.is-marginless
+    max-width: 100%
+  position: fixed
+  top: 0
+  bottom: 0
+  z-index: $quickview-z
+  transform: translateZ( 0 )
+  transition: .3s ease
+  backface-visibility: hidden
+  perspective: 1000
+  will-change: transform
+  +mobile
+    width: 100%
+    right: -100%
+  +tablet
+    width: 50%
+    right: -50%
+  +desktop
+    width: 35%
+    right: -35%
+  +widescreen
+    width: 30%
+    right: -30%
+  +fullhd
+    width: 25%
+    right: -25%
+  &.is-left
+    +mobile
+      left: -100%
+    +tablet
+      left: -50%
+    +desktop
+      left: -35%
+    +widescreen
+      left: -30%
+    +fullhd
+      left: -25%
+  &.is-active
+    right: 0
+    box-shadow: $quickview-shadow
+    &.is-left
+      left: 0
+
+.quickview-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 1rem
+  min-height: $quickview-header-height !important
+  border-bottom: $quickview-divider
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      .title
+        color: $color-invert
+  .title
+    font-size: $size-6
+    font-weight: $weight-light
+    margin-bottom: 0
+    img
+      max-height: 2em
+
+.quickview-body
+  -webkit-box-flex: 1
+  flex: 1 1 0%
+  overflow-y: auto
+
+.quickview-footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 1rem
+  min-height: $quickview-footer-height
+  background-color: $white-ter
+  border-top: $quickview-divider
+  > *
+    margin: 0 .4rem

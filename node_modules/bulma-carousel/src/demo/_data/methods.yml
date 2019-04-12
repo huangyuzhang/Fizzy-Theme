@@ -1,0 +1,57 @@
+- name: 'next()'
+  description: 'Slide to next item'
+  parameters:
+  - name: 'none'
+    type: ''
+    description: ''
+  returns:
+  - type: 'none'
+    description: ''
+- name: 'previous()'
+  description: 'Slide to previous item'
+  parameters:
+  - name: 'none'
+    type: ''
+    description: ''
+  returns:
+  - type: 'none'
+    description: ''
+- name: 'start()'
+  description: 'Start autoplay'
+  parameters:
+  - name: 'none'
+    type: ''
+    description: ''
+  returns:
+  - type: 'none'
+    description: ''
+- name: 'stop()'
+  description: 'Stop autoplay'
+  parameters:
+  - name: 'none'
+    type: ''
+    description: ''
+  returns:
+  - type: 'none'
+    description: ''
+- name: 'show(index, force)'
+  description: 'Show item at "index" a'
+  parameters:
+  - name: 'index'
+    type: 'Integer|null'
+    description: 'Index of item to show'
+  - name: 'force'
+    type: 'Boolean'
+    description: 'Animate transition if true (default) or not if false'
+  returns:
+  - type: 'none'
+    description: ''
+- name: 'reset()'
+  description: 'Reset Carousel to initial values'
+  parameters:
+  - name: 'none'
+    type: ''
+    description: ''
+  returns:
+  - type: 'none'
+    description: ''

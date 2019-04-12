@@ -1,0 +1,72 @@
+<article class="box is-paddingless is-clipped has-shadow-mo">
+    <div class="post-card">
+        {{!-- featured_image --}}
+        {{#if feature_image}}
+            <a class="is-paddingless-top" href="{{url}}" alt="{{title}}" title="{{title}}">
+                <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>    
+            </a>
+        {{/if}}
+
+        {{!-- post info --}}
+        <div class="content">
+            <div class="post-info">
+                {{#if featured}}
+                <span class="featured-label is-montserrat"><i class="fas fa-star"></i> Featured</span>
+                {{/if}}
+                <div class="level is-mobile is-montserrat is-uppercase is-margin-bottom-1">
+                    <div class="level-left">
+                        {{#primary_tag}}
+                        <div class="level-item">
+                            {{!-- display one tag --}}
+                            <div class="buttons are-small">
+                                <a href="{{url}}" class="button is-light has-text-weight-semibold">{{name}}</a>
+                            </div>
+                        </div>
+                        {{/primary_tag}}
+                        <div class="level-item is-size-7 ">
+                            {{date}}
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- heading & content --}}
+                <div class="meta">
+                    <h1 class="title is-5 is-size-6-touch" style="margin-top:0;">
+                        <a href="{{url}}" class="is-montserrat has-text-black">{{title}}</a>
+                    </h1>
+                    <p class="is-hidden is-hidden-mobile">
+                        {{#if meta_description}}
+                            {{excerpt words="20"}}
+                        {{else}}
+                            {{excerpt words="20"}}
+                        {{/if}}
+                    </p>
+                </div>
+
+                {{!-- author--}}
+                <div class="media is-hidden-mobile">
+                    <div class="media-left">
+                        <div class="columns is-vcentered is-1">
+                            <div class="column is-narrow">
+                                {{#primary_author}}
+                                    {{#if profile_image}} 
+                                    <a href="{{url}}">
+                                        <figure class="image is-32x32 is-marginless">
+                                        <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+                                        </figure>
+                                    </a>
+                                    {{/if}}
+                                {{/primary_author}}
+                            </div>
+                            <div class="column is-narrow is-size-7-touch has-text-weight-bold" style="padding-left:0px;">
+                                {{#primary_author}}  
+                                    <a href="{{url}}" class="has-text-grey-dark">{{name}}</a>
+                                {{/primary_author}}
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</article>

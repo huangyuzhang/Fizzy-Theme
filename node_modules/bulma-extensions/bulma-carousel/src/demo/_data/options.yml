@@ -1,0 +1,79 @@
+- name: 'initialSlide'
+  type: Integer
+  description: 'Initial item index'
+  value: '0'
+- name: 'slidesToScroll'
+  type: Integer
+  description: 'Slide to scroll on each step'
+  value: '1'
+- name: 'slidesToShow'
+  type: Integer
+  description: 'Slides to show at a time'
+  value: '1'
+- name: 'navigation'
+  type: Boolean
+  description: 'Display navigation buttons'
+  value: 'true'
+- name: 'navigationKeys'
+  type: Boolean
+  description: 'Enable navigation with arrow keys'
+  value: 'true'
+- name: 'navigationSwipe'
+  type: Boolean
+  description: 'Enable swipe navigation'
+  value: 'MM/DD/YYYY'
+- name: 'pagination'
+  type: Boolean
+  description: 'Display pagination bullets'
+  value: 'HH:mm'
+- name: 'loop'
+  type: Boolean
+  description: 'Activate loop display mode'
+  value: 'false'
+- name: 'infinite'
+  type: Boolean
+  description: 'Activate infinite display mode'
+  value: 'false'
+- name: 'effect'
+  type: String
+  description: 'Animation effect for item transition (translate|fade)'
+  value: 'translate'
+- name: 'duration'
+  type: Integer
+  description: 'Transition animation duration (in ms)'
+  value: '300'
+- name: 'timing'
+  type: String
+  description: 'Transiation animation type'
+  value: 'ease'
+- name: 'autoplay'
+  type: Boolean
+  description: 'Autoplay carousel'
+  value: 'false'
+- name: 'autoplaySpeed'
+  type: Integer
+  description: 'Time between each transition when autoplay is active (ms)'
+  value: '3000'
+- name: 'pauseOnHover'
+  type: Boolean
+  description: 'Stop autoplay when cursor hover carousel'
+  value: 'true'
+- name: 'breakpoints'
+  type: Array
+  description: 'List all breakpoints for responsiveness'
+  value: '[{
+      changePoint: 480,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    },
+    {
+      changePoint: 640,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    },
+    {
+      changePoint: 768,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    }
+  ]'

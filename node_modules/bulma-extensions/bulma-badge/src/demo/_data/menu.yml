@@ -1,0 +1,16 @@
+- name: Demonstration
+  link: 'demonstration'
+- name: Quick Start
+  submenus:
+    - name: Features
+      link: '#features'
+    - name: Installation
+      link: '#installation'
+    - name: Content
+      link: '#content'
+    - name: Integration
+      link: '#integration'
+- name: Customization
+  link: 'customization'
+- name: Changelog
+  link: 'changelog'

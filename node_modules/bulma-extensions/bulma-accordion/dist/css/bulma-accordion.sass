@@ -1,0 +1,139 @@
+$accordion-background-color: $background !default
+$accordion-radius: $radius !default
+
+$accordion-header-background-color: $text !default
+$accordion-header-color: $text-invert !default
+$accordion-header-padding: 0.5em 0.75em !default
+$accordion-header-radius: $radius !default
+
+$accordion-content-border: 1px solid $border !default
+$accordion-content-color: $text !default
+$accordion-content-padding-top: 1em !default
+$accordion-content-padding-left: 1.25em !default
+$accordion-content-radius: $radius !default
+
+$accordion-content-pre-background-color: $white !default
+$accordion-content-pre-code-background-color: transparent !default
+
+.accordions
+  .accordion
+    +block
+    display: flex
+    flex-direction: column
+    background-color: $accordion-background-color
+    border-radius: $accordion-radius
+    font-size: $size-normal
+    strong
+      color: currentColor
+    a:not(.button):not(.tag)
+      color: currentColor
+      text-decoration: underline
+    // Sizes
+    &.is-small
+      font-size: $size-small
+    &.is-medium
+      font-size: $size-medium
+    &.is-large
+      font-size: $size-large
+
+    &:not(:first-child)
+      .accordion-header
+        border-radius: 0
+    &:not(:last-child)
+      margin-bottom: 0
+      .accordion-content
+        border-radius: 0
+
+    .toggle,
+    [data-action="toggle"]
+      cursor: pointer
+
+    .accordion-header
+      align-items: center
+      background-color: $accordion-header-background-color
+      border-radius: $accordion-header-radius $accordion-header-radius 0 0
+      color: $accordion-header-color
+      display: flex
+      justify-content: space-between
+      line-height: 1.25
+      padding: $accordion-header-padding
+      position: relative
+      .toggle
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        -moz-appearance: none
+        -webkit-appearance: none
+        background-color: rgba(10,10,10,0.2)
+        border: none
+        border-radius: 290486px
+        display: inline-block
+        flex-grow: 0
+        flex-shrink: 0
+        margin-left: 0.75em
+        height: 20px
+        width: 20px
+        max-height: 20px
+        max-width: 20px
+        min-height: 20px
+        min-width: 20px
+        outline: none
+        position: relative
+        vertical-align: top
+        &::before
+          color: $white
+          display: block
+          left: 0
+          position: absolute
+          top: -.1em
+          right: 0
+          bottom: 0
+          content: '\002B'
+        &::after
+          display: none
+      & + .accordion-body
+        overflow-y: hidden
+        max-height: 0
+        color: $accordion-content-color
+        border: $accordion-content-border
+        border-radius: $accordion-content-radius
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        border-top: none
+        -webkit-transition: max-height .2s ease
+        -moz-transition: max-height .2s ease
+        -o-transition: max-height .2s ease
+        transition: max-height .2s ease
+        .accordion-content
+          padding: $accordion-content-padding-top $accordion-content-padding-left
+          code,
+          pre
+            background-color: $accordion-content-pre-background-color
+          pre code
+            background-color: $accordion-content-pre-code-background-color
+    &.is-active
+      .accordion-header
+        .toggle
+          &::before
+            content: '\002D'
+      .accordion-body
+        max-height: 100em
+
+    // Colors
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      $color-lightning: max((100% - lightness($color)) - 2%, 0%)
+      $color-luminance: colorLuminance($color)
+      $darken-percentage: $color-luminance * 70%
+      $desaturate-percentage: $color-luminance * 30%
+      &.is-#{$name}
+        background-color: lighten($color, $color-lightning)
+        .accordion-header
+          background-color: $color
+          color: $color-invert
+        .accordion-content
+          border-color: $color
+          color: desaturate(darken($color, $darken-percentage), $desaturate-percentage)

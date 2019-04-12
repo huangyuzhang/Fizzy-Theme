@@ -1,0 +1,402 @@
+---
+layout: default
+route: demonstration
+title: Demonstration
+---
+
+{% capture hero_example %}
+<section class="hero is-medium has-carousel">
+  <div class="hero-carousel">
+    <div class='has-background is-active'>
+      <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
+    </div>
+    <div class='has-background'>
+      <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" />
+    </div>
+    <div class='has-background'>
+      <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" />
+    </div>
+    <div class='has-background'>
+      <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+    </div>
+  </div>
+  <div class="hero-head">
+    <nav class="navbar is-transparent">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-white is-active">
+              Home
+            </a>
+            <a class="navbar-item has-text-white">
+              Examples
+            </a>
+            <a class="navbar-item has-text-white">
+              Documentation
+            </a>
+            <span class="navbar-item has-text-white">
+              <a class="button is-primary is-inverted">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="hero-body has-text-centered">
+    <h1 class="title has-text-white">My Beautiful Carousel</h1>
+  </div>
+</section>
+{% endcapture %}
+
+{% capture slider_example %}
+<section class="section">
+  <div id="slider">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 1
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 2
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550971264-3f7e4a7bb349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 3
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550931937-2dfd45a40da0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 4
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9 is-covered">
+          <img src="https://images.unsplash.com/photo-1550930516-af8b8cc4f871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 5
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image video-container is-16by9">
+          <iframe type="text/html" src="https://www.youtube.com/embed/H0v773vKS_U" frameborder="0"></iframe>
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 6
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endcapture %}
+
+{% capture slider_example_infinite %}
+<section class="section">
+  <div id="slider1">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 1
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 2
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550971264-3f7e4a7bb349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 3
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550931937-2dfd45a40da0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 4
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9 is-covered">
+          <img src="https://images.unsplash.com/photo-1550930516-af8b8cc4f871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 5
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image video-container is-16by9">
+          <iframe type="text/html" src="https://www.youtube.com/embed/H0v773vKS_U" frameborder="0"></iframe>
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 6
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endcapture %}
+
+{% capture slider_example_loop %}
+<section class="section">
+  <div id="slider2">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 1
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 2
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550971264-3f7e4a7bb349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 3
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9  is-covered">
+          <img src="https://images.unsplash.com/photo-1550931937-2dfd45a40da0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 4
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-16by9 is-covered">
+          <img src="https://images.unsplash.com/photo-1550930516-af8b8cc4f871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 5
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image video-container is-16by9">
+          <iframe type="text/html" src="https://www.youtube.com/embed/H0v773vKS_U" frameborder="0"></iframe>
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 6
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endcapture %}
+
+
+
+{% include anchor.html name="Default" %}
+{{ slider_example }}
+
+{% include anchor.html name="Infinite" %}
+{{ slider_example_infinite }}
+
+{% include anchor.html name="Loop" %}
+{{ slider_example_loop }}
+
+{% include anchor.html name="Hero carousel" %}
+{{ hero_example }}

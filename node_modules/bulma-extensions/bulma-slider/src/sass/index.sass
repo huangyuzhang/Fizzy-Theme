@@ -1,0 +1,234 @@
+$slider-radius: $radius !default
+$slider-track-background: $grey-lighter !default
+$slider-track-radius: $radius !default
+$slider-track-border: 0px solid $grey !default
+$slider-track-shadow: 0px 0px 0px $grey !default
+$slider-thumb-background: $white !default
+$slider-thumb-radius: $radius !default
+$slider-thumb-border: 1px solid $grey-light !default
+$slider-thumb-shadow: none !default
+$slider-output-width: 3rem !default
+$slider-output-background: $grey-dark !default
+$slider-output-radius: $radius !default
+
+=slider-size($size)
+  $track-height: $size / 2
+  $thumb-size: $size
+
+  &:not([orient="vertical"])
+    min-height: calc(( #{$size} + 2px ) * 1.25)
+    &::-webkit-slider-runnable-track
+      height: $track-height
+    &::-moz-range-track
+      height: $track-height
+    &::-ms-track
+      height: $track-height
+
+  &[orient="vertical"]
+    &::-webkit-slider-runnable-track
+      width: $track-height
+    &::-moz-range-track
+      width: $track-height
+    &::-ms-track
+      width: $track-height
+
+  &::-webkit-slider-thumb
+    height: $thumb-size
+    width: $thumb-size
+    margin-top: -( $thumb-size / 4 )
+  &::-moz-range-thumb
+    height: $thumb-size
+    width: $thumb-size
+  &::-ms-thumb
+    height: $thumb-size
+    width: $thumb-size
+    margin-top: 0
+
+  &[orient="vertical"]
+    &::-webkit-slider-thumb
+      margin-top: auto
+      margin-left: -( $thumb-size / 4 )
+
+input[type=range]
+  &.slider
+    -webkit-appearance: none
+    appearance: none
+    margin: 1rem 0
+    background: transparent
+
+    &.is-fullwidth
+      display: block
+      width: 100%
+
+    &:focus
+      outline: none
+
+    &:not([orient="vertical"])
+      &::-webkit-slider-runnable-track
+        width: 100%
+      &::-moz-range-track
+        width: 100%
+      &::-ms-track
+        width: 100%
+
+      &.has-output,
+      &.has-output-tooltip
+        + output
+          width: $slider-output-width
+          background: $slider-output-background
+          border-radius: $slider-output-radius
+          padding: .4rem .8rem
+          font-size: $size-7
+          line-height: $size-7
+          text-align: center
+          text-overflow: ellipsis
+          white-space: nowrap
+          color: $white
+          overflow: hidden
+          pointer-events: none
+          z-index: 200
+
+      &.has-output
+        display: inline-block
+        width: calc(100% - ( #{$slider-output-width + 1.2rem } ))
+        + output
+          display: inline-block
+          position: relative
+          margin-left: .75rem
+          top: -.75rem
+
+      &.has-output-tooltip
+        display: block
+        + output
+          position: absolute
+          left: 0
+          top: -.1rem
+
+    &[orient="vertical"]
+      -webkit-appearance: slider-vertical
+      writing-mode: bt-lr
+      &::-webkit-slider-runnable-track
+        height: 100%
+      &::-moz-range-track
+        height: 100%
+      &::-ms-track
+        height: 100%
+
+    &::-webkit-slider-runnable-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-moz-range-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-ms-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-ms-fill-lower,
+    &::-ms-fill-upper
+      background: $grey-lighter
+      border-radius: $slider-radius
+
+    &::-webkit-slider-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      border-radius: $slider-thumb-radius
+      background: $slider-thumb-background
+      cursor: pointer
+      -webkit-appearance: none
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+    &::-moz-range-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      background: $slider-thumb-background
+      border-radius: $slider-thumb-radius
+      cursor: pointer
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+    &::-ms-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      background: $slider-thumb-background
+      border-radius: $slider-thumb-radius
+      cursor: pointer
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+
+    &::-webkit-slider-thumb
+      -webkit-appearance: none
+
+    &.is-circle
+      &::-webkit-slider-thumb
+        border-radius: 50%
+      &::-moz-range-thumb
+        border-radius: 50%
+      &::-ms-thumb
+        border-radius: 50%
+
+    &:active
+      &::-webkit-slider-thumb
+        -webkit-transform: scale(1.25)
+        transform: scale(1.25)
+      &::-moz-range-thumb
+        transform: scale(1.25)
+      &::-ms-thumb
+        -ms-transform: scale(1.25)
+        transform: scale(1.25)
+
+    &:disabled
+      opacity: 0.5
+      cursor: not-allowed
+      &::-webkit-slider-thumb
+        cursor: not-allowed
+        -webkit-transform: scale(1)
+        transform: scale(1)
+      &::-moz-range-thumb
+        cursor: not-allowed
+        transform: scale(1)
+      &::-ms-thumb
+        cursor: not-allowed
+        -ms-transform: scale(1)
+        transform: scale(1)
+
+    +slider-size($size-normal)
+    &.is-small
+      +slider-size($size-small)
+    &.is-medium
+      +slider-size($size-medium)
+    &.is-large
+      +slider-size($size-large)
+
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &.is-#{$name}
+        &::-moz-range-track
+          background: $color
+        &::-webkit-slider-runnable-track
+          background: $color
+        &::-ms-track
+          background: $color !important
+        &::-ms-fill-lower,
+        &::-ms-fill-upper
+          background: $color
+
+        &.has-output,
+        .has-output-tooltip
+          + output
+            background-color: $color
+            color: $color-invert
