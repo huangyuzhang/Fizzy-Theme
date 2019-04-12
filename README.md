@@ -12,7 +12,7 @@ One to two paragraph statement about your product and what it does.
 
 ## Installation
 
-Download release and upload the zip file at your Ghost admin > Setting > Design.
+Download [release](https://github.com/huangyuzhang/fizzy-theme/releases/) and upload the zip file at your Ghost admin > Setting > Design.
 
 ## Demo
 
