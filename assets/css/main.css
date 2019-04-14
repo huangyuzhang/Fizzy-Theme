@@ -10,7 +10,7 @@
     }
 }
 .content h3:not(:first-child){
-	margin-top: 0.4rem!important;
+	margin-top: 0.4em!important;
 }
 /* for code block background */
 pre{background-color:#282a36!important;}
@@ -211,12 +211,12 @@ h3{ margin-bottom: 20px; }
 }
 
 /* post fonts */
-.post-wrap h1 {font-size:calc(1.75vw + 1.2rem)!important}
-.post-wrap h2 {font-size:calc(1.5vw + 1.1rem)!important}
-.post-wrap h3 {font-size:calc(1.25vw + 1rem)!important}
-.post-wrap h4 {font-size:calc(1vw + 0.9rem)!important}
-.post-wrap h5 {font-size:calc(0.75vw + 0.8rem)!important}
-.post-wrap h6 {font-size:calc(0.5vw + 0.7rem)!important}
+.post-wrap h1 {font-size:calc(1.4vw + 1.1rem)!important}
+.post-wrap h2 {font-size:calc(1vw + 1rem)!important}
+.post-wrap h3 {font-size:calc(0.8vw + 0.85rem)!important}
+.post-wrap h4 {font-size:calc(0.7vw + 0.8rem)!important}
+.post-wrap h5 {font-size:calc(0.65vw + 0.7rem)!important}
+.post-wrap h6 {font-size:calc(0.55vw + 0.6rem)!important}
 .post-wrap h2,.post-wrap h3, .post-wrap h4, .post-wrap h5, .post-wrap h6 {font-weight: 600 !important;}
 .post-wrap h3, .post-wrap h4, .post-wrap h5, .post-wrap h6 {margin-top: 0.4rem!important;margin-bottom: 0.4em!important;}
 
