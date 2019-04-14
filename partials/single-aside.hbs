@@ -1,60 +1,60 @@
-{{#primary_tag}}
-    <div class="column is-3">
-        <div class="box">
-        #primary_tag
-        {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
-        #get
-            {{#if related_posts}}
-            <article class="read-next-card"
-                {{#if ../primary_tag.feature_image}}
-                    style="background-image: url({{img_url ../primary_tag.feature_image size="m"}})"
-                {{else}}
-                    {{#if @site.cover_image}}
-                        style="background-image: url({{img_url @site.cover_image size="m"}})"{{/if}}
-                {{/if}}
-            >
-                <header class="read-next-card-header">
-                    <small class="read-next-card-header-sitetitle">&mdash; {{@site.title}} &mdash;</small>
-                    {{#../primary_tag}}
-                    <h3 class="read-next-card-header-title"><a href="{{url}}">{{name}}</a></h3>
-                    {{/../primary_tag}}
-                </header>
-                <div class="read-next-divider">{{> "icons/infinity"}}</div>
-                <div class="read-next-card-content">
-                    <ul>
-                        {{#foreach related_posts}}
-                        <li><a href="{{url}}">{{title}}</a></li>
-                        {{/foreach}}
-                    </ul>
+<section class="section aside is-vpadding-15">
+    <div class="columns">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
+            <div class="columns is-multiline">
+
+                {{!-- next post: start --}}
+                {{#next_post}}
+                <div class="column is-6-tablet is-4-desktop">
+                    {{> "post_card"}}
                 </div>
-                <footer class="read-next-card-footer">
-                    <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}} →</a>
-                </footer>
-            </article>
-            {{/if}}
-        {{/get}}
-        </div>
-    </div>
-    {{/primary_tag}}
+                {{/next_post}}
+                {{!-- next post: end --}}
 
-    {{!-- If there's a next post, display it using the 
-    same markup included from - partials/post-card.hbs --}}
-    {{#next_post}}
-    <div class="column is-3">
-        <div class="box">
-            {{> "post-card"}}
-        </div>
-    </div>
-    {{/next_post}}
+                {{!-- previous post: start --}}
+                {{#prev_post}}
+                <div class="column is-6-tablet is-4-desktop">
+                    {{> "post_card"}}
+                </div>
+                {{/prev_post}}
+                {{!-- previous post: end --}}
 
-    <div class="column is-3">
-        <div class="box">
-        333
-        {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}}
-        {{#prev_post}}
-            {{> "post-card"}}
-        {{/prev_post}}
+                {{!-- related posts: start --}}
+                {{#if primary_tag}}
+                {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
+                {{#if related_posts}}
+                <div class="column is-full-tablet is-4-desktop">
+                    <article class="box tag-list is-vpadding-2 has-text-centered has-text-light" style="background-image: url({{asset 'images/dark-cover.jpg'}})">
+                        <header class="tag-list-header">
+                            <small class="tag-list-header-topic">&mdash; TOPIC &mdash;</small>
+                            {{#../primary_tag}}
+                                <a href="{{url}}" title="See all posts from {{name}}"><h3 class="title is-4 has-text-light">{{name}}</h3></a>
+                            {{/../primary_tag}}
+                        </header>
+                        <div class="is-divider only-margin-top-1" {{!-- data-content="TOPIC" --}}></div>
+                        <div class="tag-list-content">
+                            <ul>
+                                {{#foreach related_posts}}
+                                <a href="{{url}}"><li class="has-text-light">{{title}}</li></a>
+                                {{/foreach}}
+                            </ul>
+                        </div>
+                        <footer class="tag-list-footer">
+                            <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">
+                            <span>{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}} →</span>
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+                {{!-- <div class="is-divider-vertical is-paddingless"></div> --}}
+                {{/if}}
+                {{/get}}
+                {{/if}}
+                {{!-- related posts: end --}}
+
+            </div>
         </div>
+        <div class="column is-hidden-touch"></div>
     </div>
-    <div class="column"></div>
-</div>
+</section>

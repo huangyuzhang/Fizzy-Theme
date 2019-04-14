@@ -6,7 +6,7 @@
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             <article class="single-article">
-                <div class="box is-paddingless is-shadowless is-full-mobile is-centered is-clipped">
+                <div class="box is-paddingless is-shadowless is-full-mobile is-centered">
 
                     {{!-- featured_image --}}
                     {{#if feature_image}}
@@ -24,19 +24,20 @@
                         </div>
 
                         {{!-- title --}}
-                        <h1 class="title is-2 is-size-4-mobile is-montserrat">{{title}}</h1>
+                        <h1 class="title is-montserrat">{{title}}</h1>
 
                         {{!-- tags --}}
-                        {{#tag}}
+                        {{#has tag="count:>0"}}
                         <div class="buttons tags has-text-weight-semibold">
                             <span class="button is-static is-size-7-mobile">
                                 {{#has tag="count:1"}}<i class="fas fa-tag"></i>{{/has}}
-                                {{#has tag="count:>1"}}<i class="fas fa-tags"></i>{{/has}}</span>
+                                {{#has tag="count:>1"}}<i class="fas fa-tags"></i>{{/has}}
+                            </span>
                             {{#foreach tags}}
                             <a href="{{url}}" class="button is-light is-size-7-mobile has-text-weight-semibold">{{name}}</a>
                             {{/foreach}}
                         </div>
-                        {{/tag}}
+                        {{/has}}
 
                         {{!-- content --}}
                         <div class="content post-content is-size-6-mobile is-georgia">{{content}}</div>
@@ -44,26 +45,33 @@
                         {{!-- author: start --}}
                         <div class="authors">
                             <div class="columns is-multiline">
-                                {{#foreach authors}}
+                            {{#foreach authors}}
                             <div class="column">
-                             <div class="about-author box is-montserrat has-text-centered">
-                                {{#if profile_image}} 
+                                <div class="about-author box is-montserrat has-text-centered">
                                     <a href="{{url}}" class="has-text-grey-darker">
                                         <figure class="image is-96x96 is-margin-auto">
+                                        {{#if profile_image}} 
                                         <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
-                                        </figure>
+                                        {{else}}
+                                        <img class="is-rounded" src="{{asset 'images/user-avatar-default.png'}}" alt="{{name}}" title="{{name}}">
+                                        {{/if}}
+                                        </figure>                                
                                         <strong>{{name}}</strong>
                                     </a>
+
                                     <ul class="meta-info is-size-6 has-text-grey-light">
                                         {{#if twitter}}<li><a href="{{twitter_url}}" class=" has-text-grey"><i class="fab fa-twitter"></i></a></li>{{/if}}
                                         {{#if facebook}}<li><a href="{{facebook_url}}" class=" has-text-grey"><i class="fab fa-facebook"></i></a></li>{{/if}}
                                         {{#if website}}<li><a href="{{website}}" class=" has-text-grey"><i class="fas fa-link"></i></a></li>{{/if}}
                                         {{#if location}}<li><i class="fas fa-map-marker-alt"></i> {{location}}</li>{{/if}}
                                     </ul>
+
                                     <div class="bio is-vcentered">{{bio}}</div>
-                                    <div class="is-size-6"><a href="{{url}}"><strong class="has-text-grey-darker">See all post by {{name}}</strong></a></div>
-                                {{/if}}
-                            </div>
+
+                                    <div class="is-size-6">
+                                        <a href="{{url}}"><strong class="has-text-grey-darker">See all posts by {{name}}</strong></a>
+                                    </div>
+                                </div>
                             </div>
                             {{/foreach}}
                             </div>
@@ -77,67 +85,8 @@
     </div>
 </section>
 
-{{!-- aside section: related post, prev & next --}}
-<section class="section aside is-vpadding-15">
-    <div class="columns">
-        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
-        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
-            <div class="columns is-multiline">
-
-                {{!-- next post: start --}}
-                {{#next_post}}
-                <div class="column is-6-tablet is-4-desktop">
-                    {{> "post_card"}}
-                </div>
-                {{/next_post}}
-                {{!-- next post: end --}}
-
-                {{!-- previous post: start --}}
-                {{#prev_post}}
-                <div class="column is-6-tablet is-4-desktop">
-                    {{> "post_card"}}
-                </div>
-                {{/prev_post}}
-                {{!-- previous post: end --}}
-
-                {{!-- related posts: start --}}
-                {{#if primary_tag}}
-                {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
-                {{#if related_posts}}
-                <div class="column is-full-tablet is-4-desktop">
-                    <article class="box tag-card is-vpadding-2 has-text-centered has-text-light" style="background-image: url({{asset 'images/dark-cover.jpg'}})">
-                        <header class="tag-card-header">
-                            <small class="tag-card-header-topic">&mdash; TOPIC &mdash;</small>
-                            {{#../primary_tag}}
-                                <a href="{{url}}" title="See all posts from {{name}}"><h3 class="title is-4 has-text-light">{{name}}</h3></a>
-                            {{/../primary_tag}}
-                        </header>
-                        <div class="is-divider only-margin-top-1" {{!-- data-content="TOPIC" --}}></div>
-                        <div class="tag-card-content">
-                            <ul>
-                                {{#foreach related_posts}}
-                                <a href="{{url}}"><li class="has-text-light">{{title}}</li></a>
-                                {{/foreach}}
-                            </ul>
-                        </div>
-                        <footer class="tag-card-footer">
-                            <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">
-                            <span>{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}} →</span>
-                            </a>
-                        </footer>
-                    </article>
-                </div>
-                {{!-- <div class="is-divider-vertical is-paddingless"></div> --}}
-                {{/if}}
-                {{/get}}
-                {{/if}}
-                {{!-- related posts: end --}}
-
-            </div>
-        </div>
-        <div class="column is-hidden-touch"></div>
-    </div>
-</section>
+{{!-- aside section: start (related post, prev & next) --}}
+{{> single-aside}}
+{{!-- aside section: end --}}
 {{/post}}
-
 

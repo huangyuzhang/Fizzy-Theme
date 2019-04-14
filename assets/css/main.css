@@ -21,6 +21,9 @@ pre{background-color:#282a36!important;}
 }
 
 /* ====================== fonts ====================== */
+h1,h2,h3,h4,h5,h6{
+	font-family:'Montserrat', sans-serif !important;
+}
 .is-montserrat {
 	font-family:'Montserrat', sans-serif !important;
 }
@@ -174,7 +177,7 @@ h3{ margin-bottom: 20px; }
 	}
 }
 
-/* ====================== post ====================== 2019.04.11 */
+/* ====================== post ====================== 2019.04.13 */
 
 /* remove box border-radius in mobile device 2019.04.11 */
 @media screen and (max-width: 768px){
@@ -184,7 +187,7 @@ h3{ margin-bottom: 20px; }
     height: 400px;
     background-size: cover;
     background-position: center center;
-    /* border-radius: 6px 6px 0 0; */
+    border-radius: 6px 6px 0 0;
 }
 @media screen and (max-width: 768px){
 	.single-article .featured-image {
@@ -203,13 +206,93 @@ h3{ margin-bottom: 20px; }
 .single-article .post-wrap .post-content h1,h2,h3{
 	font-family:'Montserrat', sans-serif !important;
 }
+
+/* post fonts */
+.post-wrap h1 {font-size:calc(1.75vw + 1.2rem)!important}
+.post-wrap h2 {font-size:calc(1.5vw + 1.1rem)!important}
+.post-wrap h3 {font-size:calc(1.25vw + 1rem)!important}
+.post-wrap h4 {font-size:calc(1vw + 0.9rem)!important}
+.post-wrap h5 {font-size:calc(0.75vw + 0.8rem)!important}
+.post-wrap h6 {font-size:calc(0.5vw + 0.7rem)!important}
+.post-wrap h2,.post-wrap h3, .post-wrap h4, .post-wrap h5, .post-wrap h6 {font-weight: 600 !important;}
+.post-wrap h3, .post-wrap h4, .post-wrap h5, .post-wrap h6 {margin-bottom: 0.4em!important;}
+
+/* post-content 2019.04.13 */
 .post-wrap .post-content a {
 	color:#000;
 	word-break: break-word;
-    box-shadow: #fb3c3b 0 -1px 0 inset;
+	box-shadow: #fb3c3b 0 -1px 0 inset;
+	transition: all .25s;
 }
 .post-wrap .post-content a:hover {
 	color:#fb3c3b;
+}
+
+/* image layout (temporary solution, may have some bugs 2019.04.14) */
+.single-article .post-content figure{
+	margin-left: 0rem; /* overwrite deault 2rem */
+	margin-right: 0rem; /* overwrite deault 2rem */
+}
+.single-article .post-content .kg-embed-card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+/* wide image */
+.single-article .post-content .kg-width-wide {
+	max-width: 100vw;
+	margin: 0 calc(-50vw + 50%);
+}
+.single-article .post-content .kg-width-wide img {
+	max-width: 100vw;
+	width: auto;
+	height: auto;
+}
+/* full width image */
+.single-article .post-content .kg-width-full{
+    max-width: 100vw;
+	width: 100vw;
+	margin: 0 calc(-50vw + 50%);
+}
+.single-article .post-content .kg-width-full img{
+	max-height: 70vh;
+	object-fit: cover;
+	width:100%;
+}
+/* gallery */
+.kg-gallery-card{width:53rem;margin:1.5rem -4.5rem!important;}
+@media screen and (max-width:768px){
+	.kg-gallery-card{width:100%;margin:0!important;}
+}
+.single-article .post-content .kg-gallery-container {
+	max-width:100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.single-article .post-content .kg-gallery-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.single-article .post-content .kg-gallery-image img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%}
+.single-article .post-content .kg-gallery-row:not(:first-of-type) {
+    margin: .25em 0 0 0;
+}
+.single-article .post-content .kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 .25em;
 }
 
 .about-author .meta-info {
@@ -228,6 +311,15 @@ h3{ margin-bottom: 20px; }
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 8px;
+}
+
+/* Blockquotes */
+.single-article .post-wrap .post-content blockquote {
+	border-radius: 0 6px 6px 0;
+	font-style: italic;
+	background-color: #fff3f3;
+	border-left: 5px solid #fec1c1;
+	margin-left: -15px;
 }
 
 /* ====================== post: aside ====================== 2019.04.11 */
@@ -273,7 +365,8 @@ h3{ margin-bottom: 20px; }
 .aside .featured-label {
     top: -38px;
 }
-.tag-card {
+/* aside: tag list card */
+.aside .tag-list {
 	display: flex !important;
 	flex-direction: column;
 	justify-content: space-around;
@@ -281,17 +374,17 @@ h3{ margin-bottom: 20px; }
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tag-card-header {
+.aside .tag-list-header {
 	display: flex;
   	flex-direction: column;
     position: relative;
     z-index: 50;
     text-align: center;
 }
-.tag-card-header-topic {
+.aside .tag-list-header-topic {
 	padding: 0.5rem;
 }
-.tag-card-content { 
+.aside .tag-list-content { 
 	height:100%;
 	position: relative;
     z-index: 50;
@@ -300,7 +393,7 @@ h3{ margin-bottom: 20px; }
     flex-grow: 1;
     font-size: 1.7rem;
 }
-.tag-card-content li {
+.aside .tag-list-content li {
     margin: 0;
     padding: 0;
     font-size: 1rem;
@@ -309,7 +402,7 @@ h3{ margin-bottom: 20px; }
 	letter-spacing: -.5px;
 	/* box-shadow: #aaa 0 -1px 0 inset; */
 }
-.tag-card-content a {
+.aside .tag-list-content a {
     display: block;
     padding: 20px 0;
     border-bottom: 1px solid hsla(0,0%,100%,.3);
@@ -319,23 +412,23 @@ h3{ margin-bottom: 20px; }
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
 }
-.tag-card-content a:hover {
+.aside .tag-list-content a:hover {
 	border-bottom: 1px solid #fff;
 }
-.tag-card-content a:hover > li {
+.aside .tag-list-content a:hover > li {
 	font-weight:600;
 }
-.tag-card-footer {
+.aside .tag-list-footer {
 	display: flex;
   	flex-direction: column;
     position: relative;
     margin: 15px 0 3px;
     text-align: center;
 }
-.tag-card-footer a {
+.aside .tag-list-footer a {
 	color: #fff;
 }
-.tag-card-footer a:hover > span {
+.aside .tag-list-footer a:hover > span {
 	font-weight:600;
 	color: #fff;
 	border-bottom: 1px solid #fff;
@@ -344,10 +437,58 @@ h3{ margin-bottom: 20px; }
 	height:100%;
 }
 
+
+/* ====================== Tag Archive ====================== 2019.04.14 */
+.card-wrap {
+    margin-bottom: 30px;
+}
+.tag-card {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(12, 12, 94, .1);
+}
+.tag-card.no-image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.tag-card.no-image .tag-info {
+    width: 100%}
+.tag-card .tag-image {
+	/* height: 144px; */
+	height: calc(90px + 3vw);
+    border-radius: 8px 8px 0 0;
+    background-size: cover;
+    background-position: center center;
+}
+.tag-card .tag-info {
+	padding: 16px;
+	vertical-align: middle;
+}
+.tag-card .tag-info .tag-name {
+	margin-bottom: .5rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.tag-card .tag-info .tag-name {
+    text-transform: capitalize;
+	color: #222;
+	transition: all .25s;
+}
+.tag-card:hover .tag-info .tag-name {
+    color: #fb3c3b;
+}
+.tag-card .tag-info .post-count {
+	color: #222;
+}
+
 /* ====================== footer ====================== 2019.04.12 */
 .declare a {
 	color:#000;
 	word-break: break-word;
+	transition: all .25s;
     
 }
 .declare a:hover {

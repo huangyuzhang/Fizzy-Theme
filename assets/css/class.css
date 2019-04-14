@@ -34,7 +34,6 @@
 .is-vmargin-05 {
     margin-top:0.5rem !important; margin-bottom:0.5rem !important;
 }
-}
 .is-vmargin-1 {
     margin-top:1rem !important; margin-bottom:1rem !important;
 }
@@ -53,6 +52,9 @@
 }
 .is-margin-auto{
     margin:auto;
+}
+.is-marginless-bottom {
+    margin-bottom: 0!important;
 }
 
 /* shadow */
