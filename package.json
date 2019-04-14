@@ -1,9 +1,9 @@
 {
     "name": "fizzy",
-    "description": "A tasty ghost theme.",
+    "description": "A tasty blogging theme for Ghost.",
     "version": "0.1.0",
     "author": {
-        "name": "Simon Huang",
+        "name": "Yuzhang Huang",
         "email": "huangyuzhang@live.cn"
     },
     "engines": {
@@ -46,9 +46,5 @@
         "bulma-carousel": "^4.0.4",
         "bulma-extensions": "^6.2.4",
         "highlight.js": "^9.15.6"
-    },
-    "devDependencies": {
-        "gulp": "^4.0.0",
-        "gulp-watch": "^5.0.1"
     }
 }

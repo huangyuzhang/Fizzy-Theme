@@ -246,6 +246,11 @@ h3{ margin-bottom: 20px; }
 	line-height: 1.4em;
 }
 
+/* code block */
+.post-wrap .post-content code {
+	line-height: 1.5em;
+}
+
 /* image layout (temporary solution, may have some bugs 2019.04.14) */
 .single-article .post-content figure{
 	margin-left: 0rem; /* overwrite deault 2rem */
