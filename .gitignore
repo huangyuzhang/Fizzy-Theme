@@ -1,4 +1,5 @@
 # Don't track content of these folders
-node_modules/
 .vscode
+.DS_Store
+node_modules/
 assets/css/vanu.css
