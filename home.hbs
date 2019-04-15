@@ -13,11 +13,19 @@ into the {body} of the default.hbs template --}}
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             {{#foreach posts}}
+            
+                {{!-- exclude #noindex --}}
                 {{#has tag="#noindex"}}
                     {{!-- nothing --}}
                 {{else}}
                     {{> post_item}}
                 {{/has}}
+
+                {{!-- inject ads for every 3 items --}}
+                {{#has number="nth:3"}} 
+                    {{!-- {{> "ads"}} --}}
+                {{/has}}
+
             {{else}}
                 There is no post yet.
             {{/foreach}}

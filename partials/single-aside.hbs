@@ -6,9 +6,11 @@
 
                 {{!-- next post: start --}}
                 {{#next_post}}
-                <div class="column is-6-tablet is-4-desktop">
-                    {{> "post_card"}}
-                </div>
+                    {{!-- {{#unless tag="#noindex"}} --}} {{!-- exclude #noindex--}}
+                        <div class="column is-6-tablet is-4-desktop">
+                            {{> "post_card"}}
+                        </div>
+                    {{!-- {{/unless}} --}}
                 {{/next_post}}
                 {{!-- next post: end --}}
 
