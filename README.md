@@ -25,9 +25,10 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
   - limitation: hiding posts with `#noindex` tag, but the number of posts each page will change accordingly.
 
 - **Templates**:
-    - **tag-archive**: You can use the tag archive template if you need one page to display all tags.
-    - **featured-post**: unique layout for featured posts (todo)
-    - **report**: special layout for academic report (todo)
+  - **tag-archive**: You can use the tag archive template if you need one page to display all tags.
+  - **featured-post**: unique layout for featured posts (todo)
+  - **report**: special layout for academic report (todo)
+- **DISQUS**: change `https://YOUR_URL.disqus.com/embed.js` with your own link in `post.hbs`.
 
 ## Changelog
 
