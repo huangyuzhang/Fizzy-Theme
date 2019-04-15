@@ -1,11 +1,23 @@
 <nav class="pagination" role="navigation" aria-label="pagination">
-    {{#if prev}}
+    <div class="columns">
+
+        {{#if prev}}
+        <div class="column">
         <a href="{{page_url prev}}" class="pagination-next">Newer Posts</a>
-    {{/if}}
+        </div>
+        {{/if}}
 
-    <span class="pagination-link is-current">Page {{page}} of {{pages}}</span>
+        <div class="column">
+            <span class="pagination-link is-current">Page {{page}} of {{pages}}</span>
+        </div>
 
-    {{#if next}}
-        <a href="{{page_url next}}" class="pagination-previous">Older Posts</a>
-    {{/if}}
+        {{#if next}}
+        <div class="column">
+            <a href="{{page_url next}}" class="pagination-previous">Older Posts</a>
+        </div>
+        {{/if}}
+    </div>
+
+
+    
 </nav>

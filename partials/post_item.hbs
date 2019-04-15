@@ -53,22 +53,26 @@
                 <div class="media is-hidden-mobile">
                     <div class="media-left">
                         <div class="columns is-vcentered is-1" style="margin-top:1rem;">
-                            <div class="column is-narrow" style="padding-right:0px;">
-                                {{#primary_author}}
-                                    {{#if profile_image}} 
-                                    <a href="{{url}}">
-                                        <figure class="image is-48x48">
-                                        <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
-                                        </figure>
-                                    </a>
-                                    {{/if}}
-                                {{/primary_author}}
+                            
+                            {{#primary_author}}
+                            <div class="column is-narrow">
+                                <a href="{{url}}">
+                                    <figure class="image is-32x32">
+                                    <img class="round-border-6" src="
+                                        {{#if profile_image}}
+                                            {{profile_image}}
+                                        {{else}}
+                                            {{asset 'images/user-avatar-default.png'}}
+                                        {{/if}}
+                                    " alt="{{name}}" title="{{name}}">
+                                    </figure>
+                                </a>
                             </div>
-                            <div class="column is-narrow has-text-weight-bold" style="padding-right:0px;">
-                                {{#primary_author}}  
-                                    <a href="{{url}}" class="has-text-grey-dark">{{name}}</a>
-                                {{/primary_author}}
+
+                            <div class="column is-narrow has-text-weight-bold is-hpaddingless">
+                                <a href="{{url}}" class="has-text-grey-dark">{{name}}</a>
                             </div>
+                            {{/primary_author}}
                             {{#has author="count:>1"}}
                             <div class="column">
                                 and others

@@ -1,7 +1,8 @@
 {{!-- Homepage Carousel --}}
 <div class="hero">
     <div id="carousel-home" class="carousel">
-        {{#get "posts" limit="10" include="tags" filter="tags:carousel" as |carousel|}}
+        {{!-- get 10 posts with tag #carousel as --}}
+        {{#get "posts" limit="10" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
         {{#foreach carousel}}
             <div class="hero-body">
                 <article class="item">

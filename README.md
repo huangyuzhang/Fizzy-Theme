@@ -20,13 +20,14 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 
 ## Usage
 
-### Carousel
+- **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page.
+- **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
+  - limitation: hiding posts with `#noindex` tag, but the number of posts each page will change accordingly.
 
-Use internal tag `#carousel` to add posts into carousel in home page.
-
-### Templates
-
-**tag-archive**: You can use the tag archive template if you need one page to display all tags.
+- **Templates**:
+    - **tag-archive**: You can use the tag archive template if you need one page to display all tags.
+    - **featured-post**: unique layout for featured posts (todo)
+    - **report**: special layout for academic report (todo)
 
 ## Changelog
 
@@ -34,9 +35,7 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 
 ## Author
 
-- Yuzhang Huang - Initial work 
-
-No contributor so far.
+- Yuzhang Huang (Simon)
 
 ## License
 
@@ -44,7 +43,7 @@ This project is licensed under the MIT License.
 
 ## Contributing
 
-1. Fork it (<https://github.com/huangyuzhang/fizzy-theme/fork>)
+1. Fork it (maybe star this too?)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)

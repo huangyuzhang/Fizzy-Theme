@@ -7,6 +7,7 @@
 .is-paddingless-bottom{
     padding-bottom:0 !important;
 }
+.is-hpaddingless {padding-left:0 !important; padding-right:0 !important;}
 .is-vpaddingless {
     padding-top:0 !important; padding-bottom:0 !important;
 }
@@ -60,6 +61,11 @@
 /* shadow */
 .has-shadow-mo {
     box-shadow: 0 20px 40px rgba(12,12,94,.1) !important;
+}
+
+/* border */
+.round-border-6 {
+    border-radius: 6px;
 }
 
 /* layout */
