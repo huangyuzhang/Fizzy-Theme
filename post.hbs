@@ -89,12 +89,11 @@
 {{> single-aside}}
 {{!-- aside section: end --}}
 
-
+{{!-- disqus block --}}
 <section class="section">
     <div class="columns is-mobile">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop">
-            {{!-- disqus block --}}
             <div id="disqus_thread"></div>
         </div>
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
@@ -106,7 +105,8 @@
 <script>
 var disqus_config = function () {
 	this.page.url = "{{url absolute="true"}}";  
-	this.page.identifier = "ghost-{{comment_id}}"
+	this.page.identifier = "ghost-{{comment_id}}";
+
 };
 (function() {
 var d = document, s = d.createElement('script');
