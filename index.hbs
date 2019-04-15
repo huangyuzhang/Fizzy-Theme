@@ -11,7 +11,7 @@ into the {body} of the default.hbs template --}}
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             {{#foreach posts}}
                 {{#has tag="#noindex"}}
-                    #noindex
+                    {{!-- nothing --}}
                 {{else}}
                     {{> post_item}}
                 {{/has}}
