@@ -1,12 +1,12 @@
 # CHANGELOG
 
-## [v0.1.1]((https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1)) (2019.04.15)
+## [v0.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1) (2019.04.15)
 ### NEW
 - **home**: exclude posts with `#noindex` tag
 ### MOD 
 - **post**: paragraph style; code block style; list style
 
-## [v0.1.0]((https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.0)) (2019.04.14)
+## [v0.1.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.0) (2019.04.14)
 ### NEW
 - **template**: tag archive template ([demo](https://fizzy.cc/tag/)) (close: [#2](https://github.com/huangyuzhang/Fizzy-Theme/issues/2))
 - **post**: image support (size: regular, wide, full-width)
