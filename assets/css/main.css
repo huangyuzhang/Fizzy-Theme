@@ -252,10 +252,12 @@ h3{ margin-bottom: 20px; }
 }
 
 /* code block */
-.post-wrap .post-content code {
+.post-wrap .post-content pre code {
+	display: block;
 	line-height: 1.5em;
     font-size: calc(0.5vw + 0.5rem);
-    font-weight: 400;
+	font-weight: 400;
+	padding-bottom: 1.2em;
 }
 
 /* image layout (temporary solution, may have some bugs 2019.04.14) */
