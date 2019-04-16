@@ -4,13 +4,13 @@
             {{#if @site.logo}}
             <div class="navbar-item logo">
                 <a href="{{@site.url}}">
-                    <img src="{{@site.logo}}" alt="{{@blog.title}}" title="{{@blog.title}}" width="auto" height="28">
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}}" width="auto" height="28">
                 </a>
             </div>
             {{else}}
                 <div class="navbar-item text-logo">
-                    <a href="{{@site.url}}" alt="{{@blog.title}}" title="{{@blog.title}}">
-                        {{@blog.title}}<span>.</span>
+                    <a href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}}">
+                        {{@site.title}}<span>.</span>
                     </a>
                 </div>
             {{/if}}
@@ -45,8 +45,8 @@
     {{!-- <div class="hero">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">{{@blog.title}}</h1>
-                <h2 class="subtitle">{{@blog.description}}</h2>
+                <h1 class="title">{{@site.title}}</h1>
+                <h2 class="subtitle">{{@site.description}}</h2>
             </div> 
         </div>
     </div> --}}
