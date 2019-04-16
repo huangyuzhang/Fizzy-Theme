@@ -9,7 +9,10 @@
             </div>
             {{else}}
                 <div class="navbar-item text-logo">
-                    <a href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}}">
+                    <a class="align-vcentered" href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}}">
+                        {{#if @site.icon}}
+                            <img src="{{@site.icon}}">
+                        {{/if}}
                         {{@site.title}}<span>.</span>
                     </a>
                 </div>

@@ -76,6 +76,7 @@
 	flex-wrap: wrap; /* wrap if no space */
 }
 .align-vcentered {
+    display:flex;
     align-items: center !important;
 }
 .has-2-ends .end {
