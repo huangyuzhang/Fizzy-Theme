@@ -9,7 +9,7 @@
     {{!-- Base Meta --}}
     <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <link rel="stylesheet" type="text/css" href="{{asset 'css/main.css'}}" />
@@ -21,14 +21,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 
-    <script type="text/javascript" src="{{asset 'js/main.js'}}"></script>
+    <script src="{{asset 'js/main.js'}}"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{asset 'js/popup.js'}}"></script>
+    <script src="{{asset 'js/popup.js'}}"></script>
 
     {{!-- Highlight.js --}}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    {{!-- MathJax --}}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+            }
+        });
+    </script>
 
     {{ghost_head}}
 </head>
