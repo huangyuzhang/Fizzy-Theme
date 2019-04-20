@@ -20,6 +20,7 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 
 ## Usage
 
+- **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page.
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
   - limitation: hiding posts with `#noindex` tag, but the number of posts each page will change accordingly.

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v0.1.2] (TBA)
+### NEW
+- **global**: Math equation support by MathJax
+- **comment**: integrated with Disqus
+
+### MOD
+- **logo**: show icon if it is uploaded but logo is not
+- **post**: style additions annd modifications
+- **pagination**: style modified (TBD)
+
 ## [v0.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1) (2019.04.15)
 ### NEW
 - **home**: exclude posts with `#noindex` tag
