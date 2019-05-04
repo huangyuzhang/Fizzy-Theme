@@ -1,9 +1,15 @@
 <div class="buttons has-addons is-centered" aria-label="pagination">
     {{#if prev}}
-    <a href="{{page_url prev}}" class="button" title="Newer Posts">«</a>
+    <a href="{{page_url 1}}" class="button" title="First Page">«</a>
     {{/if}}
-    <span class="button is-danger is-static">{{page}} / {{pages}}</span>
+    {{#if prev}}
+    <a href="{{page_url prev}}" class="button" title="Previous Page">‹</a>
+    {{/if}}
+    <span class="button is-hovered is-static">{{page}} / {{pages}}</span>
     {{#if next}}
-    <a href="{{page_url next}}" class="button" title="Older Posts">»</a>
+    <a href="{{page_url next}}" class="button" title="Next Page">›</a>
+    {{/if}}
+    {{#if next}}
+    <a href="{{page_url pages}}" class="button" title="Last Page">»</a>
     {{/if}}
 </div>
