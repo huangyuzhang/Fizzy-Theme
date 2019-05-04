@@ -8,7 +8,7 @@
 ### MOD
 - **logo**: show icon if it is uploaded but logo is not
 - **post**: style additions annd modifications
-- **pagination**: style modified (TBD)
+- **pagination**: style improved
 
 ## [v0.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1) (2019.04.15)
 ### NEW
