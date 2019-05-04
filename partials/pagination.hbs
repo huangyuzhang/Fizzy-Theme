@@ -1,23 +1,15 @@
-<nav class="pagination" role="navigation" aria-label="pagination">
-    <div class="columns">
-
-        {{#if prev}}
-        <div class="column">
-        <a href="{{page_url prev}}" class="pagination-next">Newer Posts</a>
-        </div>
-        {{/if}}
-
-        <div class="column">
-            <span class="pagination-link is-current">Page {{page}} of {{pages}}</span>
-        </div>
-
-        {{#if next}}
-        <div class="column">
-            <a href="{{page_url next}}" class="pagination-previous">Older Posts</a>
-        </div>
-        {{/if}}
-    </div>
-
-
-    
-</nav>
+<div class="buttons has-addons is-centered" aria-label="pagination">
+    {{#if prev}}
+    <a href="{{page_url 1}}" class="button" title="First Page">«</a>
+    {{/if}}
+    {{#if prev}}
+    <a href="{{page_url prev}}" class="button" title="Previous Page">‹</a>
+    {{/if}}
+    <span class="button is-hovered is-static">{{page}} / {{pages}}</span>
+    {{#if next}}
+    <a href="{{page_url next}}" class="button" title="Next Page">›</a>
+    {{/if}}
+    {{#if next}}
+    <a href="{{page_url pages}}" class="button" title="Last Page">»</a>
+    {{/if}}
+</div>
