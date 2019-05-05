@@ -8,6 +8,7 @@
 ### MOD
 - **logo**: show icon if it is uploaded but logo is not
 - **post**: style additions annd modifications
+- **author box**: fixed spacing issue
 - **pagination**: style improved
 
 ## [v0.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1) (2019.04.15)
