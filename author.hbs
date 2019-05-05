@@ -1,0 +1,78 @@
+{{!-- single author page --}}
+
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- author meta --}}
+{{#author}}
+{{#if cover_image}}
+<section class="hero tag-list-header is-bold bg-cover-center" style="background-image:url({{cover_image}});">
+{{else}}
+<section class="hero tag-list-header is-bold bg-cover-center" style="background-image: linear-gradient(to bottom right, #3f0fff, #fc3b3b);">
+{{/if}}
+  <div class="hero-body has-dark-modal is-montserrat">
+    <div class="about-author container has-text-centered">
+        {{#if profile_image}}
+        <figure class="image is-96x96 is-margin-auto">
+            <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+        </figure>
+        {{/if}}
+        <h1 class="title has-padding-05 has-text-white">
+            {{name}}
+        </h1>
+        <h2 class="subtitle has-text-white">
+            {{!-- {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} --}}
+        <ul class="meta-info is-size-6">
+            <li class="has-text-weight-bold">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</li>
+            <li>|</li>
+            {{#if twitter}}<li><a href="{{twitter_url}}" class="has-text-white" target="_blank"><i class="fab fa-twitter"></i></a></li>{{/if}}
+            {{#if facebook}}<li><a href="{{facebook_url}}" class="has-text-white" target="_blank"><i class="fab fa-facebook"></i></a></li>{{/if}}
+            {{#if website}}<li><a href="{{website}}" class="has-text-white" target="_blank"><i class="fas fa-link"></i></a></li>{{/if}}
+            {{#if location}}<li><i class="fas fa-map-marker-alt"></i> {{location}}</li>{{/if}}
+        </ul>
+        </h2>
+        <div class="has-text-white is-centered is-margin-auto" style="max-width:760px;">
+            {{#if bio}}
+                {{bio}}
+            {{/if}}
+        </div>
+    </div>
+  </div>
+</section>
+{{/author}}
+
+{{!-- main --}}
+<main class="section">
+    <div class="columns">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
+            {{#foreach posts}}
+            
+                {{!-- exclude #noindex --}}
+                {{#has tag="#noindex"}}
+                    {{!-- nothing --}}
+                {{else}}
+                    {{> post_item}}
+                {{/has}}
+
+                {{!-- inject ads for every 3 items --}}
+                {{#has number="nth:3"}} 
+                    {{!-- {{> "something"}} --}}
+                {{/has}}
+
+            {{else}}
+                There is no post yet.
+            {{/foreach}}
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+</main>
+
+{{!-- pagination --}}
+<section class="section is-padding-top-05">
+    <div class="container">
+        {{pagination}}
+    </div>
+</section>
+
