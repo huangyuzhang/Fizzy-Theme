@@ -1,6 +1,12 @@
 # CHANGELOG
 
-## [v0.1.2] (TBA)
+## [v0.2.0](TBA)
+### NEW
+- **template**: template for featured-post
+- **template**: template for 
+- **template**: template for 
+
+## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)
 ### NEW
 - **global**: Math equation support by MathJax
 - **comment**: integrated with Disqus
