@@ -524,6 +524,9 @@ h3{ margin-bottom: 20px; }
 .tag-card .tag-info .post-count {
 	color: #222;
 }
+.tag-list-header .title span{
+	padding:0.5rem 1.5rem;
+}
 
 /* ====================== footer ====================== 2019.04.12 */
 .declare a {

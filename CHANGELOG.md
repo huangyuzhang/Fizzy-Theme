@@ -1,10 +1,13 @@
 # CHANGELOG
 
-## [v0.2.0] (TBA)
+## [v0.2.0](#) (TBA)
 ### NEW
 - **template**: template for featured-post
-- **template**: template for single tag
-- **template**: template for author page
+- **template**: template for single tag (close: [#5](https://github.com/huangyuzhang/Fizzy-Theme/issues/5))
+- **template**: template for single author page (close: [#6](https://github.com/huangyuzhang/Fizzy-Theme/issues/6))
+
+### MOD
+- **tag list**: smaller featured image size (close: [#11](/issues/11))
 
 ## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)
 ### NEW
@@ -14,9 +17,9 @@
 ### MOD
 - **logo**: show icon if it is uploaded but logo is not
 - **post**: style additions and modifications
-- **author box**: fixed spacing issue ([#10](https://github.com/huangyuzhang/Fizzy-Theme/issues/10))
-- **pagination**: style improved ([#7](https://github.com/huangyuzhang/Fizzy-Theme/issues/7))
-- **post**: list spacing ([#8](https://github.com/huangyuzhang/Fizzy-Theme/issues/8))
+- **author box**: fixed spacing issue (close: [#10](https://github.com/huangyuzhang/Fizzy-Theme/issues/10))
+- **pagination**: style improved (close: [#7](https://github.com/huangyuzhang/Fizzy-Theme/issues/7))
+- **post**: list spacing (close: [#8](https://github.com/huangyuzhang/Fizzy-Theme/issues/8))
 
 ## [v0.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.1) (2019.04.15)
 ### NEW

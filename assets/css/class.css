@@ -1,6 +1,15 @@
 /* Customize classes */
 
 /* padding */
+.has-padding-05{
+    padding:0.5rem;
+}
+.has-padding-1{
+    padding:1rem;
+}
+.has-padding-15{
+    padding:1.5rem;
+}
 .is-paddingless-top{
     padding-top:0 !important;
 }
@@ -96,4 +105,16 @@
 }
 .has-2-ends .end {
     display: flex;
+}
+
+/* background */
+.bg-cover-center{
+    background-size: cover;
+    background-position: center center;
+}
+.has-dark-modal{
+    background-color: rgba(0,0,0,.4);
+}
+.has-darker-modal{
+    background-color: rgba(0,0,0,.6);
 }
