@@ -38,5 +38,5 @@
 ### DEL
 - unused templates and images
 
-## [v0.0.1] (https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.0.1) (2019.04.12)
+## [v0.0.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.0.1) (2019.04.12)
 - First release
