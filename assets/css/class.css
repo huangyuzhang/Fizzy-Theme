@@ -44,6 +44,9 @@
         padding-bottom:0px !important;
     }
 }
+.is-padding-05-15{
+    padding:.5rem 1.5rem;
+}
 
 
 /* margin */
@@ -52,6 +55,9 @@
 }
 .is-vmargin-1 {
     margin-top:1rem !important; margin-bottom:1rem !important;
+}
+.is-vmargin-2 {
+    margin-top:2rem !important; margin-bottom:2rem !important;
 }
 .only-margin-top-1{
     margin: 1rem 0 0 0 !important;
@@ -90,6 +96,9 @@
 /* border */
 .round-border-6 {
     border-radius: 6px;
+}
+.round-border-2rem {
+    border-radius: 2rem;
 }
 
 /* layout */

@@ -11,20 +11,24 @@ into the {body} of the default.hbs template --}}
 {{else}}
 <section class="hero tag-list-header is-bold bg-cover-center" style="background-image: linear-gradient(to bottom right, #acffc5, #078ddb);">
 {{/if}}
-  <div class="hero-body has-dark-modal is-montserrat">
+  <div class="hero-body has-darker-modal is-montserrat">
     <div class="container has-text-centered">
-        <h1 class="title is-spaced is-uppercase has-text-white has-padding-1">
-            <span class="round-border-6 has-darker-modal">
+        <h1 class="title is-capitalized has-text-white is-marginless-bottom">
+            <span class="is-padding-05-15 round-border-6">
                 {{name}}
             </span>
         </h1>
-        <h2 class="subtitle has-text-white">
-            {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
-        </h2>
-        <div class="has-text-white is-centered is-margin-auto" style="max-width:760px;">
+        <h2 class="subtitle is-vmargin-2 has-text-white is-centered is-margin-auto" style="max-width:760px;">
             {{#if description}}
                 {{description}}
             {{/if}}
+        </h2>
+        <div id="post-count" class="has-text-white">
+            <a class="has-text-white" href="#post-count">
+                <span class="has-dark-modal is-padding-05-15 round-border-2rem">
+                    {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+                </span>
+            </a>
         </div>
     </div>
   </div>
