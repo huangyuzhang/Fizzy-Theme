@@ -10,7 +10,7 @@
     }
 }
 
-p code,blockquote code, ul code{
+p code, blockquote code, li code{
 	color:inherit!important;
 	margin: 0 1px!important;
     padding: .1em .4em!important;
