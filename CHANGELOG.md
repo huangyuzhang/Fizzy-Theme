@@ -8,6 +8,7 @@
 - **404**: new 404 page (todo)
 - **css**: smooth scrolling for id anchors
 - **font**: support Chinese (need Windows test)
+- **component**: badge support (HTML block only)
 
 ### MOD
 - **tag list**: smaller featured image size (close: [#11](../../issues/11))
