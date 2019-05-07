@@ -10,6 +10,7 @@
     }
 }
 
+/* inline code */
 p code, blockquote code, li code{
 	color:inherit!important;
 	margin: 0 1px!important;
@@ -19,6 +20,7 @@ p code, blockquote code, li code{
     border: 1px solid #ddd!important;
 	border-radius: 3px!important;
 	font-style:normal;
+	white-space: nowrap;
 }
 
 /* for code block background */
