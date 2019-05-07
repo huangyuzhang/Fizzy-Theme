@@ -14,10 +14,11 @@ p code,blockquote code, ul code{
 	color:inherit!important;
 	margin: 0 1px!important;
     padding: .1em .4em!important;
-    font-size: .9em!important;
-    background: #f5f2f2!important;
-    border: 1px solid #eee!important;
-    border-radius: 3px!important;
+    font-size: .85em!important;
+    background: #f6f6f6!important;
+    border: 1px solid #ddd!important;
+	border-radius: 3px!important;
+	font-style:normal;
 }
 
 /* for code block background */
@@ -33,13 +34,21 @@ pre{background-color:#282a36!important;}
 
 /* ====================== fonts ====================== */
 h1,h2,h3,h4,h5,h6{
-	font-family:'Montserrat', sans-serif !important;
+	font-family:
+	'Montserrat',
+	-apple-system,
+	BlinkMacSystemFont,
+	"Microsoft YaHei",
+	sans-serif;
 }
+
+
+
 .is-montserrat {
-	font-family:'Montserrat', sans-serif !important;
+	font-family:'Montserrat', sans-serif;
 }
 .is-georgia {
-	font-family:Georgia, serif !important;
+	font-family: Georgia, sans-serif !important;
 }
 
 /* ====================== body ====================== 2019.04.11 */
