@@ -25,11 +25,11 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
   - limitation: hiding posts with `#noindex` tag, but the number of posts each page will change accordingly.
 - **Templates**:
-  - **tag-archive**: You can use the tag archive template if you need one page to display all tags.
+  - **tag-archive**: You can use the tag archive template if you need one page to list all tags.([demo](https://fizzy.cc/tag/))
   - **featured-post**: unique layout for featured posts (todo)
   - **report**: special layout for academic report (todo)
 - **DISQUS**: change `https://fizzycc.disqus.com/embed.js` with your own link in `post.hbs`.
-- **Badge**: inclue `class="badge <color>"` to use badge (HTML only).
+- **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 
 ## Changelog
 
