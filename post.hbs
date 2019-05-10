@@ -11,7 +11,11 @@
                     {{!-- featured_image --}}
                     {{#if feature_image}}
                     <section class="featured-image">
-                        <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>
+                        <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
+                            {{#if featured}}
+                            <span class="featured-label is-montserrat"><i class="fas fa-star"></i> Featured</span>
+                            {{/if}}
+                        </div>
                     </section>
                     {{/if}}
 
