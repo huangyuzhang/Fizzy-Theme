@@ -2,9 +2,10 @@
 
 ## [v0.2.0](#) (TBA)
 ### NEW
-- **template**: template for featured-post (todo)
+- **post**: featured label for featured-post (close: [#4](../../issues/4))
 - **template**: template for single tag (close: [#5](../../issues/5))
 - **template**: template for single author page (close: [#6](../../issues/6))
+- **custom template**: full-width (todo)
 - **error pages**: 404 and others (close: [#12](../../issues/12))
 - **css**: smooth scrolling for id anchors
 - **font**: support Chinese (need Windows test)

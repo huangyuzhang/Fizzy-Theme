@@ -12,6 +12,7 @@
                     {{#if feature_image}}
                     <section class="featured-image">
                         <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
+                            {{!-- featured post label --}}
                             {{#if featured}}
                             <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> Featured</span>
                             {{/if}}
@@ -19,7 +20,6 @@
                     </section>
                     {{/if}}
 
-                    
                     <section class="post-wrap is-vpadding-15">
                         {{!-- meta --}}
                         <div class="has-2-ends is-montserrat is-uppercase is-size-7">
