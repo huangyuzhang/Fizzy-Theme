@@ -5,7 +5,7 @@
 - **template**: template for featured-post (todo)
 - **template**: template for single tag (close: [#5](../../issues/5))
 - **template**: template for single author page (close: [#6](../../issues/6))
-- **404**: new 404 page (todo)
+- **error pages**: 404 and others (close: [#12](../../issues/12))
 - **css**: smooth scrolling for id anchors
 - **font**: support Chinese (need Windows test)
 - **component**: badge support (HTML block only).([demo](https://fizzy.cc/fizzy-theme/#badge))

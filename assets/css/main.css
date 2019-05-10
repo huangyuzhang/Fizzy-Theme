@@ -598,3 +598,29 @@ h3{ margin-bottom: 20px; }
 	/* color:#fb3c3b; */
 	box-shadow: #fb3c3b 0 -1px 0 inset;
 }
+
+/* ====================== error page ====================== 2019.05.10 */
+.error-wrap {
+    margin: 0 auto;
+    padding: 80px 30px;
+    max-width: 760px;
+}
+.error-wrap .error-code {
+	font-size: 5rem;
+	line-height: 1.2;
+	font-weight: 700;
+	background-color: #222831;
+	color: #fff;
+	padding: 0 24px;
+	border-radius: 8px;
+	margin-bottom: 32px;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+.error-wrap .error-message {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.error-wrap .message-manual {
+    margin-bottom: 32px;
+}

@@ -1,0 +1,19 @@
+{{!-- all other errors except 404 --}}
+
+{{!< default}}
+
+<main class="section">
+    <div class="columns">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
+            <div class="box has-text-centered">
+                <div class="error-wrap">
+                    <h1 class="error-code">{{code}}</h1>
+                    <h2 class="title error-message">{{message}}</h2>
+                    <a class="button subtitle has-text-weight-semibold is-danger is-rounded is-montserrat" href="{{@site.url}}">Go to home page</a>
+                </div>
+            </div>
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+</main>
