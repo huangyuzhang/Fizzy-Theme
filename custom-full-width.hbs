@@ -1,0 +1,121 @@
+{{!-- template: full-width | 2019.05.10--}}
+
+{{!< default}}
+
+{{#post}}
+<section class="hero">
+    <article class="single-article">
+        <div class="box is-paddingless is-shadowless is-full-mobile is-centered">
+
+            {{!-- featured_image --}}
+            {{#if feature_image}}
+            <div class="featured-image">
+                <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
+                    {{!-- featured post label --}}
+                    {{#if featured}}
+                    <div class="post-wrap full-width is-vpadding-15" style="position:relative;height:inherit;">
+                        <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> Featured</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/if}}
+
+            <div class="post-wrap full-width is-vpadding-15">
+                {{!-- meta --}}
+                <div class="has-2-ends is-montserrat is-uppercase is-size-7">
+                    <div class="end date">{{date format="DD MMMM YYYY"}}</div>
+                    <div class="end reading_time">{{reading_time}}</div>
+                </div>
+
+                {{!-- title --}}
+                <h1 class="title is-montserrat">{{title}}</h1>
+
+                {{!-- tags --}}
+                {{#has tag="count:>0"}}
+                <div class="buttons tags has-text-weight-semibold">
+                    <span class="button is-static is-size-7-mobile">
+                        {{#has tag="count:1"}}<i class="fas fa-tag"></i>{{/has}}
+                        {{#has tag="count:>1"}}<i class="fas fa-tags"></i>{{/has}}
+                    </span>
+                    {{#foreach tags}}
+                    <a href="{{url}}" class="button is-light is-size-7-mobile has-text-weight-semibold">{{name}}</a>
+                    {{/foreach}}
+                </div>
+                {{/has}}
+
+                {{!-- content --}}
+                <div class="content post-content is-size-6-mobile is-georgia">{{content}}</div>
+
+                {{!-- author: start --}}
+                <div class="authors">
+                    <div class="columns is-multiline">
+                    {{#foreach authors}}
+                    <div class="column">
+                        <div class="about-author box is-montserrat has-text-centered">
+                            <a href="{{url}}" class="has-text-grey-darker">
+                                <figure class="image is-96x96 is-margin-auto">
+                                {{#if profile_image}} 
+                                <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+                                {{else}}
+                                <img class="is-rounded" src="{{asset 'images/user-avatar-default.png'}}" alt="{{name}}" title="{{name}}">
+                                {{/if}}
+                                </figure>                                
+                                <strong>{{name}}</strong>
+                            </a>
+
+                            <ul class="meta-info is-size-6 has-text-grey-light">
+                                {{#if twitter}}<li><a href="{{twitter_url}}" class=" has-text-grey"><i class="fab fa-twitter"></i></a></li>{{/if}}
+                                {{#if facebook}}<li><a href="{{facebook_url}}" class=" has-text-grey"><i class="fab fa-facebook"></i></a></li>{{/if}}
+                                {{#if website}}<li><a href="{{website}}" class=" has-text-grey"><i class="fas fa-link"></i></a></li>{{/if}}
+                                {{#if location}}<li><i class="fas fa-map-marker-alt"></i> {{location}}</li>{{/if}}
+                            </ul>
+
+                            <div class="bio is-vcentered">{{bio}}</div>
+
+                            <div class="is-size-6">
+                                <a href="{{url}}"><strong class="has-text-grey-darker">See all posts by {{name}}</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/foreach}}
+                    </div>
+                </div>
+                {{!-- author: end --}}
+            </div>
+        </div>
+    </article>
+</section>
+
+{{!-- aside section: start (related post, prev & next) --}}
+{{> single-aside}}
+{{!-- aside section: end --}}
+
+{{!-- disqus block --}}
+<section class="section">
+    <div class="columns is-mobile">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop">
+            <div id="disqus_thread"></div>
+        </div>
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        </div>
+    </div>
+</section>
+
+{{!-- disqus script: start --}}
+<script>
+var disqus_config = function () {
+	this.page.url = "{{url absolute="true"}}";  
+	this.page.identifier = "ghost-{{comment_id}}";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://fizzycc.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+{{!-- disqus script: end --}}
+
+{{/post}}
