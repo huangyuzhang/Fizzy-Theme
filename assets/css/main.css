@@ -10,6 +10,13 @@
     }
 }
 
+/* section on mobile*/
+@media screen and (max-width: 768px){
+    .section {
+        padding: 1.5rem !important;
+    }
+}
+
 /* inline code */
 p code, blockquote code, li code{
 	color:inherit!important;
