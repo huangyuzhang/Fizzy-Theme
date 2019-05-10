@@ -13,7 +13,7 @@
                     <section class="featured-image">
                         <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
                             {{#if featured}}
-                            <span class="featured-label is-montserrat"><i class="fas fa-star"></i> Featured</span>
+                            <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> Featured</span>
                             {{/if}}
                         </div>
                     </section>
@@ -23,7 +23,7 @@
                     <section class="post-wrap is-vpadding-15">
                         {{!-- meta --}}
                         <div class="has-2-ends is-montserrat is-uppercase is-size-7">
-                            <div class="end date">{{date}}</div>
+                            <div class="end date">{{date format="DD MMMM YYYY"}}</div>
                             <div class="end reading_time">{{reading_time}}</div>
                         </div>
 
