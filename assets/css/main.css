@@ -409,7 +409,7 @@ h3{ margin-bottom: 20px; }
 .single-article .post-content .kg-gallery-image:not(:first-of-type) {
     margin: 0 0 0 .25em;
 }
-
+.about-author{max-width: 600px; margin: 0 auto;}
 .about-author .meta-info {
     padding: 0;
     margin: 0 0 8px 0;
