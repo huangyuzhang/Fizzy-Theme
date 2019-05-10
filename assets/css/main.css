@@ -199,7 +199,7 @@ h3{ margin-bottom: 20px; }
 }
 @media screen and (max-width: 768px){
 	.featured-image {
-	min-height:180px;
+	min-height:140px;
 	/* border-radius: 6px 6px 0 0; */
 	}
 }
@@ -210,7 +210,10 @@ h3{ margin-bottom: 20px; }
 }
 @media screen and (max-width: 768px){
 	.post-info {
-		padding:18px;
+		padding: 0 1.2rem;
+	}
+	.post-card .column{
+		padding: .6rem;
 	}
 }
 @media screen and (min-width: 769px) and (max-width: 1215px){
