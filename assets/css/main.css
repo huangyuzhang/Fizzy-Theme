@@ -365,7 +365,9 @@ h3{ margin-bottom: 20px; }
 	width:100%;
 }
 /* gallery */
-.kg-gallery-card{width:53rem;margin:1.5rem -4.5rem!important;}
+.kg-gallery-card{
+	margin: 1rem auto !important;
+}
 @media screen and (max-width:768px){
 	.kg-gallery-card{width:100%;margin:0!important;}
 }
@@ -550,7 +552,7 @@ h3{ margin-bottom: 20px; }
 	height:100%;
 }
 
-/* ====================== Tag Archive ====================== 2019.04.14 */
+/* ====================== template: Tag Archive ====================== 2019.04.14 */
 .card-wrap {
     margin-bottom: 30px;
 }
@@ -598,6 +600,16 @@ h3{ margin-bottom: 20px; }
 .tag-list-header .title span{
 	padding:0.5rem 1.5rem;
 }
+
+/* ====================== template: Full Width ====================== 2019.05.10 */
+.single-article .post-wrap.full-width {
+    max-width: 960px;
+    padding: 48px 15px;
+    font-size: 1.25rem;
+	line-height: 2;
+	margin: auto!important;
+}
+
 
 /* ====================== footer ====================== 2019.04.12 */
 .declare a {
