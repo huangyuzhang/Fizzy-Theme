@@ -31,7 +31,7 @@ p code, blockquote code, li code, table code{
 }
 
 /* for code block background */
-pre{background-color:#282a36!important;}
+pre{background-color:#282a36}
 
 /* navbar */
 .navbar-item {
@@ -336,9 +336,8 @@ h3{ margin-bottom: 20px; }
 	display: block;
 	line-height: 1.5em;
 	font-size: calc(0.4vw + 0.5rem);
-	/* font-size:0.7em; */
 	font-weight: 400;
-	padding-bottom: 1.2em;
+	/* padding-bottom: 1.2em; */
 }
 
 /* image layout (temporary solution, may have some bugs 2019.04.14) */

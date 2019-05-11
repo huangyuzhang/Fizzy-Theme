@@ -15,34 +15,18 @@
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
+    {{!-- main css --}}
     <link rel="stylesheet" type="text/css" href="{{asset 'css/main.css'}}" />
+    {{!-- Bulma --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    {{!-- Google Fonts --}}
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    
     {{!-- carousel --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-
-    <script src="{{asset 'js/main.js'}}"></script>
+    {{!-- Fontawesome icons --}}
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    <script src="{{asset 'js/popup.js'}}"></script>
-
-    {{!-- Highlight.js --}}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
-    {{!-- MathJax --}}
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            processEscapes: true
-            }
-        });
-    </script>
-
+    {{!-- Prismjs --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 </head>
 
 <body class="has-background-light">
@@ -56,7 +40,5 @@
     {{> footer}}
 
     {{ghost_foot}}
-
-
 </body>
 </html>

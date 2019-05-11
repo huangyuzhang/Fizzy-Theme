@@ -9,3 +9,25 @@
         
     </div>
 </footer>
+
+{{!-- JavaScript --}}
+<script src="{{asset 'js/main.js'}}"></script>
+
+{{!-- bulma carousel --}}
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+
+{{!-- MathJax --}}
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+            }
+        });
+    </script>
+
+{{!-- Prism.js --}}
+<script src="{{asset "js/prism.js"}}"></script> 
+{{!-- Prismjs: add other languages: https://cdnjs.com/libraries/prism--}}
+{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-lua.min.js"></script> --}}

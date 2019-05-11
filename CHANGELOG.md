@@ -14,6 +14,7 @@
 ### MOD
 - **tag list**: smaller featured image size (close: [#11](../../issues/11))
 - **post typography**: inline code style, code block font-size
+- **code highlight**: changed to Prism.js highlighter.
 
 ## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)
 ### NEW
