@@ -30,6 +30,11 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
   - **report**: special layout for academic report (todo)
 - **DISQUS**: change `https://fizzycc.disqus.com/embed.js` with your own link in `post.hbs`.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
+- **code highlight**: I have embedded Prism.js.
+  - **Languages**: Markup (e.g. HTML), CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
+  - **Plugins**: line-numbers, toolbar, show-language.
+  - For other languages, uncomment the sample code in `/partials/footer.hbs` and change it accordingly.
+  - Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
 
 ## Changelog
 
