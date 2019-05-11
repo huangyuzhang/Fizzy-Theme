@@ -6,10 +6,9 @@
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             <article class="single-article">
+                {{!-- featured_image --}}
+                {{#if feature_image}}
                 <div class="box is-paddingless is-shadowless is-full-mobile is-centered">
-
-                    {{!-- featured_image --}}
-                    {{#if feature_image}}
                     <section class="featured-image">
                         <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
                             {{!-- featured post label --}}
@@ -18,7 +17,9 @@
                             {{/if}}
                         </div>
                     </section>
-                    {{/if}}
+                {{else}}
+                <div class="box is-shadowless is-full-mobile is-centered">
+                {{/if}}
 
                     <section class="post-wrap is-vpadding-15">
                         {{!-- meta --}}
