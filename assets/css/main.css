@@ -40,6 +40,10 @@ pre{background-color:#282a36}
 .nav-current {
 	background-color: #eee;
 }
+/* button */
+.button{
+	transition: all .3s ease;
+}
 /* ====================== components ====================== */
 .featured-label {
     position: absolute;
@@ -90,6 +94,13 @@ pre{background-color:#282a36}
     border-color: #721fae;
     color: #fff;
     background: linear-gradient(#c042e3,#721fae);
+}
+.can-scale{
+	transition: all .3s;
+}
+.can-scale:hover{
+	transform: scale(1.02);
+	transition: all .5s ease;
 }
 /* ====================== fonts ====================== */
 h1,h2,h3,h4,h5,h6{

@@ -1,12 +1,12 @@
 # CHANGELOG
 
-## [v0.2.0]((https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.0)) (2019.05.11)
+## [v0.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.0) (2019.05.11)
 ### NEW
 - **post**: featured label for featured-post (close: [#4](../../issues/4))
 - **template**: template for single tag (close: [#5](../../issues/5))
 - **template**: template for single author page (close: [#6](../../issues/6))
 - **custom template**: full-width (close: [#15](../../issues/15))
-- **error pages**: 404 and others (close: [#12](../../issues/12))
+- **error pages**: 404 and others (close: [#12](../../issues/12), [demo](https://fizzy.cc/404/))
 - **css**: smooth scrolling for id anchors
 - **font**: support Chinese (need Windows test)
 - **component**: badge support (HTML block only).([demo](https://fizzy.cc/fizzy-theme/#badge))

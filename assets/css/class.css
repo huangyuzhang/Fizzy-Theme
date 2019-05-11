@@ -93,6 +93,13 @@
     box-shadow: 0 20px 40px rgba(12,12,94,.1) !important;
 }
 
+.has-shadow-lift {
+    box-shadow: 0 3px 6px rgba(12,12,94,.1) !important;
+}
+.has-shadow-lift:hover {
+    box-shadow: 0 20px 40px rgba(12,12,94,.1) !important;
+}
+
 /* border */
 .round-border-6 {
     border-radius: 6px;
