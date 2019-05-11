@@ -1,7 +1,7 @@
 {
     "name": "fizzy",
     "description": "A tasty blogging theme for Ghost.",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "author": {
         "name": "Yuzhang Huang",
         "email": "huangyuzhang@live.cn"
@@ -11,7 +11,7 @@
         "ghost-api": "v2"
     },
     "config": {
-        "posts_per_page": 6
+        "posts_per_page": 8
     },
     "keywords": [
         "ghost",
@@ -44,7 +44,6 @@
     },
     "dependencies": {
         "bulma-carousel": "^4.0.4",
-        "bulma-extensions": "^6.2.4",
-        "highlight.js": "^9.15.6"
+        "bulma-extensions": "^6.2.4"
     }
 }

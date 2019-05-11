@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [v0.2.0](#) (TBA)
+## [v0.2.0]((https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.0)) (2019.05.11)
 ### NEW
 - **post**: featured label for featured-post (close: [#4](../../issues/4))
 - **template**: template for single tag (close: [#5](../../issues/5))
@@ -15,6 +15,8 @@
 - **tag list**: smaller featured image size (close: [#11](../../issues/11))
 - **post typography**: inline code style, code block font-size
 - **code highlight**: changed to Prism.js highlighter.
+- **responsive**: fix wide table responsvie display in mobile devices (temorary fix: [#16](../../issues/16))
+- **default**: default.hbs simplified, loading speed increased.
 
 ## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)
 ### NEW
