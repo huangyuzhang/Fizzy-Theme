@@ -17,8 +17,6 @@
     }
 }
 
-hr{background: linear-gradient(90deg, #a256e8 0%, #e85668 100%)}
-
 /* inline code */
 p code, blockquote code, li code, table code{
 	color:inherit!important;
@@ -314,6 +312,8 @@ h3{ margin-bottom: 20px; }
 .post-wrap .post-content p {
 	line-height: 1.5em;
 }
+/* hr */
+.post-wrap .post-content hr{background: linear-gradient(90deg, #a256e8 0%, #e85668 100%)}
 /* list */
 .post-wrap .post-content ul,.post-content ol{
 	margin-left: 1.5em;
