@@ -448,6 +448,84 @@ h3{ margin-bottom: 20px; }
 		padding: .5em .75em;
 	}
 }
+/* table responsive 2019.05.11 */
+/* https://codepen.io/brunodplima/pen/rzpaLO */
+@media screen and (max-width: 768px) {
+	table {
+	  width: 100%;
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  display: block;
+	  position: relative;
+	}
+	table td:empty:before {
+	  content: " ";
+	}
+	table th,
+	table td {
+	  margin: 0;
+	  vertical-align: top;
+	}
+	table th {
+	  text-align: left;
+	}
+	table thead {
+	  border-right: solid 2px #dbdbdb;
+	  display: block;
+	  float: left;
+	}
+	table thead tr {
+	  display: block;
+	  padding: 0 10px 0 0;
+	}
+	table thead tr th::before {
+	  content: " ";
+	}
+	table thead td,
+	table thead th {
+	  border-width: 0 0 1px;
+	}
+	table tbody {
+	  display: block;
+	  width: auto;
+	  position: relative;
+	  overflow-x: auto;
+	  white-space: nowrap;
+	}
+	table tbody tr {
+	  display: inline-block;
+	  vertical-align: top;
+	}
+	table th {
+	  display: block;
+	  text-align: right;
+	}
+	table td {
+	  display: block;
+	  min-height: 1.25em;
+	  text-align: left;
+	}
+	table th:last-child,
+	table td:last-child {
+	  border-bottom-width: 0;
+	}
+	table tr:last-child td:not(:last-child) {
+	  border: 1px solid #dbdbdb;
+	  border-width: 0 0 1px;
+	}
+	table.is-bordered td,
+	table.is-bordered th {
+	  border-width: 1px;
+	}
+	table.is-bordered tr td:last-child,
+	table.is-bordered tr th:last-child {
+	  border-bottom-width: 1px;
+	}
+	table.is-bordered tr:last-child td,
+	table.is-bordered tr:last-child th {
+	  border-width: 1px;
+	}
+  }
 
 /* ====================== post: aside ====================== 2019.04.11 */
 @media screen and (min-width: 769px){
