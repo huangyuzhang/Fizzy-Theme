@@ -10,9 +10,9 @@
     }
 }
 
-/* section on mobile*/
+/* listing padding on mobile*/
 @media screen and (max-width: 768px){
-    .section {
+    main.section {
         padding: 1.5rem !important;
     }
 }
