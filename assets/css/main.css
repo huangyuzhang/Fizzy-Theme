@@ -20,7 +20,7 @@
 hr{background: linear-gradient(90deg, #a256e8 0%, #e85668 100%)}
 
 /* inline code */
-p code, blockquote code, li code{
+p code, blockquote code, li code, table code{
 	color:inherit!important;
 	margin: 0 1px!important;
     padding: .1em .4em!important;
