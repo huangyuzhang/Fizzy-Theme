@@ -70,7 +70,7 @@
   }
 @media screen and (max-width: 768px){
     .is-margin-bottom-1{
-        margin-bottom:0.5rem !important;
+        margin-bottom:1rem !important;
     }
 }
 @media screen and (min-width: 769px){
