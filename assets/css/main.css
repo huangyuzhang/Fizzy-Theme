@@ -18,7 +18,7 @@
 }
 
 /* inline code */
-p code, blockquote code, li code, table code{
+p code, blockquote code, li > code, table code{
 	color:inherit!important;
 	margin: 0 1px!important;
     padding: .1em .4em!important;
