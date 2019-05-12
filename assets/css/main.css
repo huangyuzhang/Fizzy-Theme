@@ -44,6 +44,21 @@ pre{background-color:#282a36}
 .button{
 	transition: all .3s ease;
 }
+
+/* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
+.content .tag, .content .number {
+	display: inline;
+	padding: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: inherit;
+	vertical-align: inherit;
+	border-radius: inherit;
+	font-weight: inherit;
+	white-space: inherit;
+	background: inherit;
+	margin: inherit;
+  }
 /* ====================== components ====================== */
 .featured-label {
     position: absolute;
@@ -265,8 +280,7 @@ h3{ margin-bottom: 20px; }
     	right: 20px;
 		height: 24px;
     	line-height: 24px;
-	}
-	
+	}	
 }
 
 /* ====================== post ====================== 2019.04.13 */
@@ -587,6 +601,20 @@ h3{ margin-bottom: 20px; }
 }
 .aside .featured-label {
     top: -38px;
+}
+@media screen and (max-width: 768px){
+	.aside .post-info .featured-label.has-img {
+		top: -31px;
+		right: 10px;
+		height: 24px;
+    	line-height: 24px;
+	}
+	.aside .post-info .featured-label.no-img {
+		top: 10px;
+    	right: 10px;
+		height: 24px;
+    	line-height: 24px;
+	}	
 }
 /* aside: tag list card */
 .aside .tag-list {
