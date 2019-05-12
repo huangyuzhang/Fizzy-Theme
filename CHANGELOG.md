@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.2.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.1) (2019.05.12)
+This release fixed some minor bugs caused from v0.2.0
+- **listing**: [card] styling for posts without a featured image
+- **post**: [code block]fixed the conflict caused by bulma and Prismjs
+- **post**: [previous & next post card] styling for posts without a featured image
+
 ## [v0.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.0) (2019.05.11)
 ### NEW
 - **post**: featured label for featured-post (close: [#4](../../issues/4))
