@@ -24,9 +24,10 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page.
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
   - limitation: hiding posts with `#noindex` tag, but the number of posts each page will change accordingly.
-- **Templates**:
+- **Custom Templates**:
   - **tag-archive**: You can use the tag archive template if you need one page to list all tags.([demo](https://fizzy.cc/tag/))
-  - **featured-post**: unique layout for featured posts (todo)
+  - **full-width**: full width post (default: TOC enabled)
+  - **post-with-Toc**: TOC-enabled post ([demo](https://fizzy.cc/fizzy-theme))
   - **report**: special layout for academic report (todo)
 - **DISQUS**: change `https://fizzycc.disqus.com/embed.js` with your own link in `post.hbs`.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
@@ -35,7 +36,7 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
   - **Plugins**: line-numbers, toolbar, show-language.
   - For other languages, uncomment the sample code in `/partials/footer.hbs` and change it accordingly.
   - Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
-
+- **TOC**: to enable TOC for all posts, uncomment 2 lines in `post.hbs`
 ## Changelog
 
 See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)

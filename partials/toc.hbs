@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+{{!-- chinese cdn --}}
+{{!-- <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script> --}}
+{{!-- <script src="https://cdn.bootcss.com/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script> --}}
+
+<script>
+    var toc = $("#toc").tocify({
+        selectors: "h2,h3",
+        extendPage: false,
+        highlightDefault: false
+    });
+    var toc = $("#toc-img").tocify({
+        selectors: "h2,h3",
+        extendPage: false,
+        highlightDefault: false
+    });
+</script>
