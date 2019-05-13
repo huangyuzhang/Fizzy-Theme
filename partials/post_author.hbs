@@ -1,0 +1,34 @@
+{{!-- post: author box --}}
+<div class="authors">
+    <div class="columns is-multiline">
+    {{#foreach authors}}
+    <div class="column">
+        <div class="about-author box is-montserrat has-text-centered">
+            <a href="{{url}}" class="has-text-grey-darker">
+                <figure class="image is-96x96 is-margin-auto">
+                {{#if profile_image}} 
+                <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+                {{else}}
+                <img class="is-rounded" src="{{asset 'images/user-avatar-default.png'}}" alt="{{name}}" title="{{name}}">
+                {{/if}}
+                </figure>                                
+                <strong>{{name}}</strong>
+            </a>
+            {{!-- author: meta --}}
+            <ul class="meta-info is-size-6 has-text-grey-light">
+                {{#if twitter}}<li><a href="{{twitter_url}}" class=" has-text-grey"><i class="fab fa-twitter"></i></a></li>{{/if}}
+                {{#if facebook}}<li><a href="{{facebook_url}}" class=" has-text-grey"><i class="fab fa-facebook"></i></a></li>{{/if}}
+                {{#if website}}<li><a href="{{website}}" class=" has-text-grey"><i class="fas fa-link"></i></a></li>{{/if}}
+                {{#if location}}<li><i class="fas fa-map-marker-alt"></i> {{location}}</li>{{/if}}
+            </ul>
+            {{!-- author: bio --}}
+            <div class="bio is-vcentered">{{bio}}</div>
+            {{!-- author: cta --}}
+            <div class="is-size-6">
+                <a href="{{url}}"><strong class="has-text-grey-darker">See all posts by {{name}}</strong></a>
+            </div>
+        </div>
+    </div>
+    {{/foreach}}
+    </div>
+</div>
