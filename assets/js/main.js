@@ -1,4 +1,4 @@
-// navbar 2019.04.08
+// navbar Burgers 2019.04.08
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -22,20 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
-  
+
   });
-/*----------------------------------------------------*/
-/*  Sticky TOC Scroll effect + 2019.05.12 -> 2019.05.13
-/*----------------------------------------------------*/
-$(window).scroll(function(){
-  var pxTocImg = 390;
-  // for post with featured image
-  if($(window).scrollTop() < pxTocImg){
-    $("#toc-img").addClass('is-absolute');
-    $("#toc-img").removeClass('is-fixed');
-  }
-  if($(window).scrollTop() >= pxTocImg){
-    $("#toc-img").removeClass('is-absolute');
-    $("#toc-img").addClass('is-fixed');
-  }
-});

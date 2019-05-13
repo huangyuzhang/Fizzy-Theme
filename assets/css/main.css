@@ -590,7 +590,7 @@ h3{ margin-bottom: 20px; }
 }
 
  #toc:before, #toc-img:before {
-    content: "Table of Content";
+    /* content: "Table of Content"; */
     margin-left: 1em;
     border-bottom: 1px solid #333;
     margin-bottom: 0.6em;

@@ -38,15 +38,18 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
   - Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
 - **TOC**: to enable TOC for all posts, uncomment 2 lines in `post.hbs`
 
-### Global Configuration
-Go to Ghost Admin -> Code injection, insert the following code into Site Header and configure:
+### TOC Configuration
+There are two ways to control the TOC of a post:
+1. insert the following code into `Post Header` for a single post or `Site Header` for gloablly;
+    ```javascript
+    <script>
+        var show_toc = true; // enable TOC (default: false)
+    </script>
+    ```
+2. Use post template to enable TOC (e.g. Post with TOC)
 
-```javascript
-<script>
-    var show_toc = true; // enable TOC (default: true)
-    var footer_text = ''; //Custom footer text
-</script>
-```
+> Notice: enable TOC will disable the sticky navbar of that page due to the position of anchor scrolling (might be solved later)
+> Prioty: `template` > `Post Header` > `Site Header`
 
 ## Changelog
 
@@ -62,6 +65,7 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 - [Prismjs][prismjs] - A lightweight, extensible syntax highlighter
 - [JQuery][jquery] - The well-known JavasSript library
 - [jQuery.tocify.js][tocify] - Table of Content generator
+- [MathJax][mathjax] - A JavaScript display engine for mathematics
 
 ## License
 
@@ -79,3 +83,4 @@ This project is licensed under the MIT License.
 [prismjs]: https://prismjs.com/
 [jquery]: https://jquery.com/
 [tocify]: http://gregfranko.com/jquery.tocify.js/
+[mathjax]: https://www.mathjax.org/

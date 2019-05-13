@@ -2,8 +2,8 @@
 
 ## [v0.2.2](#) (TBA)
 ## NEW
-- **template**: post with TOC
-- **post**: [TOC] option for all post to have TOC (modify `post.hbs`)
+- **template**: added a template `post-with-toc`
+- **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
 
 ## MOD
 - **partialization**: made comment a partial
