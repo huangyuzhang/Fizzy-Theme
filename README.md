@@ -38,6 +38,16 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
   - Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
 - **TOC**: to enable TOC for all posts, uncomment 2 lines in `post.hbs`
 
+### Global Configuration
+Go to Ghost Admin -> Code injection, insert the following code into Site Header and configure:
+
+```javascript
+<script>
+    var show_toc = true; // enable TOC (default: true)
+    var footer_text = ''; //Custom footer text
+</script>
+```
+
 ## Changelog
 
 See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
