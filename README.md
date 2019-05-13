@@ -8,9 +8,9 @@
 
 A tasty blogging theme for Ghost.
 
-![](./fizzy-theme-screenshot.png)
-
 [中文文档](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README-zh.md)
+
+![](./fizzy-theme-screenshot.png)
 
 ## Installation
 

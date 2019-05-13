@@ -8,9 +8,10 @@
 
 做一个有味道的Ghost博客主题
 
+[English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
+
 ![](./fizzy-theme-screenshot.png)
 
-[English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
 
 ## 安装
 
@@ -67,11 +68,11 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 ### 其他内容
 - **导航**: 修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
 - **徽章**: 使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))
-- **每页文章数e**: 在 `package.json` 中修改 `"posts_per_page": 8` 的数字来修改每页展示的文章数量。
+- **每页文章数**: 在 `package.json` 中修改 `"posts_per_page": 8` 的数字来修改每页展示的文章数量。
 
-## 更新日志
+## 版本更新日志
 
-查看完整更新日志： [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
+查看完整版本更新日志： [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
 
 ## 作者
 
