@@ -53,10 +53,10 @@ into the {body} of the default.hbs template --}}
                 {{#has tag="#noindex"}}
                     {{!-- nothing --}}
                 {{else}}
-                    {{> post_item}}
+                    {{> list_card}}
                 {{/has}}
 
-                {{!-- inject ads for every 3 items --}}
+                {{!-- inject something for every 3 items --}}
                 {{#has number="nth:3"}} 
                     {{!-- {{> "something"}} --}}
                 {{/has}}

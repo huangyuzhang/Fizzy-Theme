@@ -6,8 +6,8 @@
 - **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
 
 ## MOD
-- **partialization**: made comment a partial
-- **custom template**: `custom-full-width.hbs` responsive improved with TOC (TODO)
+- **partialization**: post_comment, post_author, post_toc, post_aside, list_card
+- **custom template**: `custom-full-width.hbs` responsiveness
 
 ## [v0.2.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.1) (2019.05.12)
 This release fixed some minor bugs caused from v0.2.0

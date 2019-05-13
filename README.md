@@ -48,8 +48,9 @@ There are two ways to control the TOC of a post:
     ```
 2. Use post template to enable TOC (e.g. Post with TOC)
 
-> Notice: enable TOC will disable the sticky navbar of that page due to the position of anchor scrolling (might be solved later)
-> Prioty: `template` > `Post Header` > `Site Header`
+> **Notice**: enable TOC will disable the sticky navbar of that page due to the position of anchor scrolling (might be solved later)
+>
+> **Prioty**: `template` > `Post Header` > `Site Header`
 
 ## Changelog
 
@@ -63,13 +64,9 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 
 - [Bulma][bulma] - CSS Framework
 - [Prismjs][prismjs] - A lightweight, extensible syntax highlighter
-- [JQuery][jquery] - The well-known JavasSript library
+- [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator
 - [MathJax][mathjax] - A JavaScript display engine for mathematics
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contributing
 
@@ -78,6 +75,11 @@ This project is licensed under the MIT License.
 3. Commit your changes (`git commit -am 'Add something'`)
 4. Push to the branch (`git push origin feature-fooBar`)
 5. Create a new Pull Request
+
+
+## License
+
+This project is licensed under the MIT License.
 
 [bulma]: https://bulma.io/
 [prismjs]: https://prismjs.com/
