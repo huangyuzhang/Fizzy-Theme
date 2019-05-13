@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [v0.2.2](#) (TBA)
+## NEW
+- **template**: post with TOC
+- **post**: [TOC] option for all post to have TOC (modify `post.hbs`)
+
+## MOD
+- **partialization**: made comment a partial
+- **custom template**: `custom-full-width.hbs` responsive improved with TOC (TODO)
+
 ## [v0.2.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.1) (2019.05.12)
 This release fixed some minor bugs caused from v0.2.0
 - **listing**: [card] styling for posts without a featured image
