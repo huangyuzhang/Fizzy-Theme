@@ -570,8 +570,8 @@ h3{ margin-bottom: 20px; }
 /* ====================== post: TOC ====================== 2019.05.12 */
 #toc, #toc-img {
 	font-family:'Montserrat', sans-serif;
-    /* position: fixed; */
 	border-left: 1px solid #ddd;
+	padding-right: 5px;
 }
 /* not displaying below 1280px */
 @media screen and (max-width: 1279px){
