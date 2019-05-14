@@ -84,6 +84,11 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
 - [MathJax][mathjax] - A JavaScript display engine for mathematics (consider switching to KaTeX)
 
+## Bug Report & Features Request
+If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label appropriately. 
+
+Alternatively if you are familiar with them development, you could start to contribute to this project.
+
 ## Contributing
 
 1. Fork it (maybe star this too?)
@@ -91,7 +96,6 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 3. Commit your changes (`git commit -am 'Add something'`)
 4. Push to the branch (`git push origin feature-fooBar`)
 5. Create a new Pull Request
-
 
 ## License
 
