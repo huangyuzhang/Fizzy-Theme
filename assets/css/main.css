@@ -128,14 +128,17 @@ h1,h2,h3,h4,h5,h6{
 	'Montserrat',
 	-apple-system,
 	BlinkMacSystemFont,
+	"Heiti SC", 
+	"STXihei", 
+	"PingFang SC",
 	"Microsoft YaHei",
 	sans-serif;
 }
 .is-montserrat {
-	font-family:'Montserrat', -apple-system, "Microsoft YaHei", sans-serif;
+	font-family:'Montserrat', -apple-system, "Heiti SC", "STXihei", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .is-georgia {
-	font-family: Georgia, -apple-system, "Microsoft YaHei", sans-serif !important;
+	font-family: Georgia, -apple-system, "Heiti SC", "STXihei", "PingFang SC", "Microsoft YaHei", sans-serif !important;
 }
 
 /* ====================== body ====================== 2019.04.11 */
