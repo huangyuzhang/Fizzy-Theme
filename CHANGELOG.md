@@ -4,6 +4,8 @@
 ## NEW
 - **template**: added a template `post-with-toc`
 - **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
+- **font**: heading font improved; tested Chinese display
+- **Global configuration**: enable global variable configuration in Ghost Admin -> Code injection -> Site Header (**important update**, please read the README.md file for instructions)
 
 ## MOD
 - **partialization**: post_comment, post_author, post_toc, post_aside, list_card
@@ -23,7 +25,7 @@ This release fixed some minor bugs caused from v0.2.0
 - **custom template**: full-width (close: [#15](../../issues/15))
 - **error pages**: 404 and others (close: [#12](../../issues/12), [demo](https://fizzy.cc/404/))
 - **css**: smooth scrolling for id anchors
-- **font**: support Chinese (need Windows test)
+- **font**: support Chinese (tested in v0.2.2)
 - **component**: badge support (HTML block only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 
 ### MOD

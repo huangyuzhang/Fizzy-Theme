@@ -228,10 +228,9 @@ h3{ margin-bottom: 20px; }
 /* index: post-card 2019.04.09 */
 @media screen and (min-width: 769px){
 	.post-card {
-		min-height:320px;
+		min-height:280px;
 	}
 }
-
 /* index: featured-image 2019.04.10 */
 .featured-image {
 	height:100%;
@@ -663,6 +662,9 @@ h3{ margin-bottom: 20px; }
 .aside .featured-label {
     top: -38px;
 }
+/* .aside .featured-label.no-img{
+    top: 10px;
+} */
 @media screen and (max-width: 768px){
 	.aside .post-info .featured-label.has-img {
 		top: -34px;
