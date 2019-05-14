@@ -37,8 +37,14 @@ The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 
 ### Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk] and [Valine][valine]. By default, Fizzy has DISQUS integrated.
-- **DISQUS**: change `https://fizzycc.disqus.com/embed.js` with your own link in `/partial/post_comment.hbs`.
 
+#### DISQUS
+Insert the following code into Ghost Admin -> Code injection: `Site Header`, and modify the link with yours.
+```javascript
+<script>
+    var disqus_link = 'https://YOURLINK.disqus.com/embed.js'; // change it with your DISQUS js link
+</script>
+```
 If you want to change the comment system, you need to modify the code in `partial/post_comment.hbs`.
 
 ### Code Highlight

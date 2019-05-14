@@ -40,7 +40,14 @@
 因为 Ghost 目前不包含评论系统，我们需要通过第三方工具或库来实现评论系统。
 
 推荐的解决方案有：[DISQUS][disqus]（海外友好）, [Gitalk][gitalk]（基于GitHub Issues）以及 [Valine][valine]（基于LeanCloud）。目前Fizzy 内置了 DISQUS 的支持。
-- **DISQUS**: 在 `/partial/post_comment.hbs` 中修改 `https://fizzycc.disqus.com/embed.js` 为你的路径（需要去 DISQUS 注册）。
+
+#### DISQUS 设置
+在Ghost后台 -> Code injection: `Site Header` 中插入一下代码，并修改为你的js路径。
+```javascript
+<script>
+    var disqus_link = 'https://YOURLINK.disqus.com/embed.js';
+</script>
+```
 
 如果你想要更换到其他的评论系统，则需要修改 `partial/post_comment.hbs` 中的代码。
 
