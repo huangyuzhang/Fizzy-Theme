@@ -228,7 +228,7 @@ h3{ margin-bottom: 20px; }
 /* index: post-card 2019.04.09 */
 @media screen and (min-width: 769px){
 	.post-card {
-		min-height:320px;
+		min-height:280px;
 	}
 }
 
