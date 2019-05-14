@@ -20,6 +20,8 @@ Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releas
 
 The [fizzy.cc](https://fizzy.cc) is currently using this theme.
 
+(Use Pull Request to add your site with Fizzy Theme)
+
 ## Features and Usage
 
 ### Internal tags

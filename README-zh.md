@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-做一个有味道的Ghost博客主题
+一个有品味的Ghost博客主题
 
 [English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
 
@@ -17,9 +17,11 @@
 
 下载[最新版本](https://github.com/huangyuzhang/fizzy-theme/releases/)后在 Ghost 后台 Setting > Design 处上传 zip 文件。
 
-## 演示
+## 演示站点
 
 我的博客 [fizzy.cc](https://fizzy.cc) 正在使用本主题哦.
+
+（欢迎通过PR来添加你的站点）
 
 ## 特性及使用介绍
 
