@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-一个有品味的Ghost博客主题
+一个有味道的Ghost博客主题
 
 [English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
 
@@ -40,7 +40,14 @@
 因为 Ghost 目前不包含评论系统，我们需要通过第三方工具或库来实现评论系统。
 
 推荐的解决方案有：[DISQUS][disqus]（海外友好）, [Gitalk][gitalk]（基于GitHub Issues）以及 [Valine][valine]（基于LeanCloud）。目前Fizzy 内置了 DISQUS 的支持。
-- **DISQUS**: 在 `/partial/post_comment.hbs` 中修改 `https://fizzycc.disqus.com/embed.js` 为你的路径（需要去 DISQUS 注册）。
+
+#### DISQUS 设置
+在Ghost后台 -> Code injection: `Site Header` 中插入一下代码，并修改为你的js路径。
+```javascript
+<script>
+    var disqus_link = 'https://YOURLINK.disqus.com/embed.js';
+</script>
+```
 
 如果你想要更换到其他的评论系统，则需要修改 `partial/post_comment.hbs` 中的代码。
 
@@ -87,6 +94,11 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 - [JQuery][jquery] - 一个知名的 JavaSript 库 (因为使用 tocify 引入)
 - [jQuery.tocify.js][tocify] - 一个根据文章内标题生成目录的工具 (引入 JQuery-UI)
 - [MathJax][mathjax] - 一个 LaTeX 数学公式显示引擎（考虑替换成 KaTeX）
+
+## 报告问题 & 改进建议
+如果各位在使用过程中发现BUG，有功能或节目的修改建议或者想要主题支持一些新的功能，请前往issue页面提交并正确选择label。
+
+或者，你也可以直接对此项目贡献代码。 
 
 ## 如何贡献代码
 
