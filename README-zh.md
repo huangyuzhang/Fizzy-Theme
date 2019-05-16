@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-一个有品味的Ghost博客主题
+一个有味道的Ghost博客主题
 
 [English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
 
