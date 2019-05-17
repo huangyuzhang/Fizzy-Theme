@@ -73,8 +73,6 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 2. 使用自定义模板 `Post With Toc` 来启用章节目录。
 > **优先级**: 自定义模板 > 文章 `Post Header` > 站点 `Site Header`
 
-**注意**: 启用章节目录后会自动关闭顶部的吸附导航栏，因为点击目录进行标题锚滚动的时候导航栏会挡住标题。（正在想办法解决）
-
 ### 其他内容
 - **导航**: 修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
 - **徽章**: 使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))

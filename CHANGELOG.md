@@ -8,10 +8,11 @@
 - [ ] **search**: search system (todo)
 
 ## MOD
-- [ ] **carousel**: better carousel (todo)
 - [x] **LaTeX**: switch to KaTeX. (testing)
+- [x] **Navbar**: anchor scrolling with offset navbar (testing)
+- [ ] **carousel**: better carousel (todo)
 
-## [v0.2.2](ttps://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
+## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ## NEW
 - **template**: added a template `post-with-toc`
 - **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
