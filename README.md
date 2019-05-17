@@ -68,8 +68,6 @@ There are two ways to control the TOC of a post:
 2. Use custom post template `Post With Toc` to enable TOC. 
 > **Prioty**: `template` > `Post Header` > `Site Header`
 
-**Notice**: enable TOC will disable the sticky navbar of that post due to the position of anchor scrolling (might be improved later)
-
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
