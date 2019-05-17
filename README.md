@@ -18,14 +18,15 @@ Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releas
 
 ## Demo
 
-The [fizzy.cc](https://fizzy.cc) is currently using this theme.
+My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 
-(Use Pull Request to add your site with Fizzy Theme)
+Use Pull Request to add your site with Fizzy Theme, format:
+`- [站点名称](yourwebsitelink)`
 
 ## Features and Usage
 
 ### Internal tags
-- **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (in development)
+- **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
 > limitation: hiding posts with `#noindex` tag, but the number of posts displayed for that page will change as well.
 

@@ -1,11 +1,21 @@
 # CHANGELOG
 
-## [v0.2.2](#) (TBA)
+## [v0.3.0](#) (TBA)
+## NEW
+- **comment**: support gitalk (todo)
+- **i18n**: translation support (todo)
+- **global variable**: main-color, etc. (todo)
+- **search**: search system (todo)
+
+## MOD
+- **carousel**: better carousel (todo)
+
+## [v0.2.2](ttps://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ## NEW
 - **template**: added a template `post-with-toc`
 - **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
 - **font**: heading font improved; tested Chinese display
-- **Global configuration**: enable global variable configuration in Ghost Admin -> Code injection -> Site Header (**important update**, please read the README.md file for instructions)
+- **Global configuration**: enable global variable (TOC, Comment) configuration in Ghost Admin -> Code injection -> Site Header (**important update**, please read the README.md file for instructions)
 
 ## MOD
 - **partialization**: post_comment, post_author, post_toc, post_aside, list_card
