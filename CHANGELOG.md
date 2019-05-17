@@ -2,13 +2,14 @@
 
 ## [v0.3.0](#) (TBA)
 ## NEW
-- **comment**: support gitalk (todo)
-- **i18n**: translation support (todo)
-- **global variable**: main-color, etc. (todo)
-- **search**: search system (todo)
+- [ ] **comment**: support gitalk (todo)
+- [ ] **i18n**: translation support (todo)
+- [ ] **global variable**: main-color, etc. (todo)
+- [ ] **search**: search system (todo)
 
 ## MOD
-- **carousel**: better carousel (todo)
+- [ ] **carousel**: better carousel (todo)
+- [x] **LaTeX**: switch to KaTeX. (testing)
 
 ## [v0.2.2](ttps://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ## NEW

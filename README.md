@@ -77,7 +77,7 @@ There are two ways to control the TOC of a post:
 
 ## Changelog
 
-See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
 
 ## Author
 
@@ -89,7 +89,7 @@ See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANG
 - [Prismjs][prismjs] - A lightweight syntax highlighter
 - [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
-- [MathJax][mathjax] - A JavaScript display engine for mathematics (consider switching to KaTeX)
+- [KaTeX][katex] - A faster LaTeX equation rendering library. (since v0.3.0)
 
 ## Bug Report & Features Request
 If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label appropriately. 
@@ -113,6 +113,7 @@ This project is licensed under the MIT License.
 [jquery]: https://jquery.com/
 [tocify]: http://gregfranko.com/jquery.tocify.js/
 [mathjax]: https://www.mathjax.org/
+[katex]: https://katex.org/
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
