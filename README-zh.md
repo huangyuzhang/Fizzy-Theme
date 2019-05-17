@@ -94,7 +94,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 - [Prismjs][prismjs] - 一个轻量的代码高亮工具
 - [JQuery][jquery] - 一个知名的 JavaSript 库 (因为使用 tocify 引入)
 - [jQuery.tocify.js][tocify] - 一个根据文章内标题生成目录的工具 (引入 JQuery-UI)
-- [MathJax][mathjax] - 一个 LaTeX 数学公式显示引擎（考虑替换成 KaTeX）
+- [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 
 ## 报告问题 & 改进建议
 如果各位在使用过程中发现BUG，有功能或节目的修改建议或者想要主题支持一些新的功能，请前往issue页面提交并正确选择label。
@@ -119,6 +119,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 [jquery]: https://jquery.com/
 [tocify]: http://gregfranko.com/jquery.tocify.js/
 [mathjax]: https://www.mathjax.org/
+[katex]: https://katex.org/
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine

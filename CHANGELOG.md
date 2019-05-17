@@ -9,6 +9,7 @@
 
 ## MOD
 - [ ] **carousel**: better carousel (todo)
+- [x] **LaTeX**: switch to KaTeX. (testing)
 
 ## [v0.2.2](ttps://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ## NEW
