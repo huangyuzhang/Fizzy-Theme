@@ -1,7 +1,7 @@
 {
     "name": "fizzy",
     "description": "A tasty blogging theme for Ghost.",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "author": {
         "name": "Yuzhang Huang",
         "email": "huangyuzhang@live.cn"

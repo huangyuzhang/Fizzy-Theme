@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-一个有味道的Ghost博客主题
+做一个有味道的Ghost博客主题
 
 [English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
 
@@ -21,13 +21,14 @@
 
 我的博客 [fizzy.cc](https://fizzy.cc) 正在使用本主题哦.
 
-（欢迎通过PR来添加你的站点）
+如果你也在使用Fizzy主题，欢迎通过PR来添加你的站点，格式如下：
+`- [站点名称](yourwebsitelink)`
 
 ## 特性及使用介绍
 
 ### 内部标签
-- **幻灯片展示**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（开发中）。
-- **不展示**: 包含 `#noindex`(slug:`hash-noindex`) 标签的文章将不在首页的文章列表中展示。 
+- **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（改进中）。
+- **不在列表展示**: 包含 `#noindex`(slug:`hash-noindex`) 标签的文章将不在首页的文章列表中展示。 
 > 限制: 使用 `#noindex` 隐藏一篇文章后，首页的文章展示数量也会因此减少一个。
 
 ### 自定义模板
