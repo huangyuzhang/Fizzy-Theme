@@ -13,7 +13,7 @@
                     {{!-- featured post label --}}
                     {{#if featured}}
                     <div class="post-wrap full-width is-vpadding-15" style="position:relative;height:inherit;">
-                        <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> Featured</span>
+                        <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> {{t "Featured"}}</span>
                     </div>
                     {{/if}}
                 </div>
@@ -27,8 +27,8 @@
                 <div class="post-wrap full-width is-vpadding-15">
                     {{!-- meta --}}
                     <div class="has-2-ends is-montserrat is-uppercase is-size-7">
-                        <div class="end date">{{date format="DD MMMM YYYY"}}</div>
-                        <div class="end reading_time">{{reading_time}}</div>
+                        <div class="end date">{{date format=(t "DD MMMM YYYY")}}</div>
+                        <div class="end reading_time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</div>
                     </div>
                     {{!-- title --}}
                     <h1 class="title is-montserrat">{{title}}</h1>

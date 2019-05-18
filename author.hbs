@@ -24,7 +24,7 @@ into the {body} of the default.hbs template --}}
         <h2 class="subtitle has-text-white">
             {{!-- {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} --}}
         <ul class="meta-info is-size-6">
-            <li class="has-text-weight-bold">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</li>
+            <li class="has-text-weight-bold">{{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</li>
             <li>|</li>
             {{#if twitter}}<li><a href="{{twitter_url}}" class="has-text-white" target="_blank"><i class="fab fa-twitter"></i></a></li>{{/if}}
             {{#if facebook}}<li><a href="{{facebook_url}}" class="has-text-white" target="_blank"><i class="fab fa-facebook"></i></a></li>{{/if}}
@@ -62,7 +62,7 @@ into the {body} of the default.hbs template --}}
                 {{/has}}
 
             {{else}}
-                There is no post yet.
+                {{t "There is no post yet."}}
             {{/foreach}}
         </div>
         <div class="column is-hidden-touch"></div>

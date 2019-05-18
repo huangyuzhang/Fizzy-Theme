@@ -6,24 +6,27 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-A tasty blogging theme for Ghost.
+A tasty blogging theme for Ghost :ghost:.
 
 [中文文档](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README-zh.md)
 
 ![](./fizzy-theme-screenshot.png)
 
-## Installation
+## :wrench: Installation
 
 Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releases/) and upload the zip file at your Ghost admin > Setting > Design.
 
-## Demo
+## :movie_camera: Demo
 
 My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 
-Use Pull Request to add your site with Fizzy Theme, format:
-`- [站点名称](yourwebsitelink)`
+Use Pull Request or [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme, format:
+`- [Site Name](yourwebsitelink)`
 
-## Features and Usage
+## :tropical_drink: Features and Usage
+
+### i18n
+You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, if you changed the json file after you upload or update the Fizzy theme, you need to restart the ghost to refresh the `json` file.
 
 ### Internal tags
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
@@ -36,7 +39,7 @@ Use Pull Request to add your site with Fizzy Theme, format:
 - **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
 - **report**: special layout for academic report (todo)
 
-### Comment System
+### :speech_balloon: Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk] and [Valine][valine]. By default, Fizzy has DISQUS integrated.
 
 #### DISQUS
@@ -48,7 +51,7 @@ Insert the following code into Ghost Admin -> Code injection: `Site Header`, and
 ```
 If you want to change the comment system, you need to modify the code in `partial/post_comment.hbs`.
 
-### Code Highlight
+###  Code Highlight
 Prism.js is used for syntax highlighting.
   - **Languages**: Markup (e.g. HTML), CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
   - **Plugins**: line-numbers, toolbar, show-language.
@@ -68,35 +71,33 @@ There are two ways to control the TOC of a post:
 2. Use custom post template `Post With Toc` to enable TOC. 
 > **Prioty**: `template` > `Post Header` > `Site Header`
 
-**Notice**: enable TOC will disable the sticky navbar of that post due to the position of anchor scrolling (might be improved later)
-
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **Posts per page**: change the number of `"posts_per_page": 8` in `package.json`
 
-## Changelog
+## :memo: Changelog
 
-See [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
 
-## Author
+## :sunglasses: Author
 
 - Yuzhang Huang (Simon)
 
-## Dependencies
+## :battery: Dependencies
 
 - [Bulma][bulma] - CSS Framework
 - [Prismjs][prismjs] - A lightweight syntax highlighter
 - [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
-- [MathJax][mathjax] - A JavaScript display engine for mathematics (consider switching to KaTeX)
+- [KaTeX][katex] - A faster LaTeX equation rendering library. (since v0.3.0)
 
-## Bug Report & Features Request
+## :bug: Bug Report & :dart: Features Request
 If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label appropriately. 
 
 Alternatively if you are familiar with them development, you could start to contribute to this project.
 
-## Contributing
+## :bulb: Contributing
 
 1. Fork it (maybe star this too?)
 2. Create your feature branch (`git checkout -b feature-fooBar`)
@@ -104,7 +105,7 @@ Alternatively if you are familiar with them development, you could start to cont
 4. Push to the branch (`git push origin feature-fooBar`)
 5. Create a new Pull Request
 
-## License
+## :lock_with_ink_pen: License 
 
 This project is licensed under the MIT License.
 
@@ -113,6 +114,7 @@ This project is licensed under the MIT License.
 [jquery]: https://jquery.com/
 [tocify]: http://gregfranko.com/jquery.tocify.js/
 [mathjax]: https://www.mathjax.org/
+[katex]: https://katex.org/
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine

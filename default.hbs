@@ -23,8 +23,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     {{!-- carousel --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    {{!-- Fontawesome icons --}}
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    {{!-- KaTeX --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
     {{!-- Prismjs --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 </head>
@@ -49,20 +49,26 @@
     {{!-- bulma carousel --}}
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 
-    {{!-- MathJax --}}
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            processEscapes: true
-            }
+    {{!-- Fontawesome icons --}}
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    {{!-- KaTeX --}}
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+    				{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+                ]
+            });
         });
     </script>
-
-    {{!-- Prism.js --}}
+        
+    {{!-- Code Highlighter: Prism.js --}}
     <script src="{{asset "js/prism.js"}}"></script> 
-    {{!-- Prismjs: add other languages: https://cdnjs.com/libraries/prism--}}
+    {{!-- add other languages: https://cdnjs.com/libraries/prism, sample: --}}
     {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-lua.min.js"></script> --}}
 </body>
 </html>

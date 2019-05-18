@@ -3,14 +3,16 @@
 ## [v0.3.0](#) (TBA)
 ## NEW
 - [ ] **comment**: support gitalk (todo)
-- [ ] **i18n**: translation support (todo)
+- [x] **i18n**: translation support (testing)
 - [ ] **global variable**: main-color, etc. (todo)
 - [ ] **search**: search system (todo)
 
 ## MOD
+- [x] **LaTeX**: switch to KaTeX. (testing, close: [#13](../../issues/13))
+- [x] **Navbar**: anchor scrolling with offset navbar (testing)
 - [ ] **carousel**: better carousel (todo)
 
-## [v0.2.2](ttps://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
+## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ## NEW
 - **template**: added a template `post-with-toc`
 - **TOC**: use code injection to enable/disable TOC (maybe there are more elegant ways to do this)
