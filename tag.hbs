@@ -26,7 +26,7 @@ into the {body} of the default.hbs template --}}
         <div id="post-count" class="has-text-white">
             <a class="has-text-white" href="#post-count">
                 <span class="has-dark-modal is-padding-05-15 round-border-2rem">
-                    {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+                    {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
                 </span>
             </a>
         </div>
@@ -55,7 +55,7 @@ into the {body} of the default.hbs template --}}
                 {{/has}}
 
             {{else}}
-                There is no post yet.
+                {{t "There is no post yet."}}
             {{/foreach}}
         </div>
         <div class="column is-hidden-touch"></div>

@@ -13,7 +13,7 @@
                         <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
                             {{!-- featured post label --}}
                             {{#if featured}}
-                            <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> Featured</span>
+                            <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-star"></i> {{t "Featured"}}</span>
                             {{/if}}
                         </div>
                     </section>
@@ -24,8 +24,8 @@
                     <section class="post-wrap is-vpadding-15">
                         {{!-- meta --}}
                         <div class="has-2-ends is-montserrat is-uppercase is-size-7">
-                            <div class="end date">{{date format="DD MMMM YYYY"}}</div>
-                            <div class="end reading_time">{{reading_time}}</div>
+                            <div class="end date">{{date format=(t "DD MMMM YYYY")}}</div>
+                            <div class="end reading_time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</div>
                         </div>
 
                         {{!-- title --}}

@@ -3,12 +3,12 @@
 ## [v0.3.0](#) (TBA)
 ## NEW
 - [ ] **comment**: support gitalk (todo)
-- [ ] **i18n**: translation support (todo)
+- [x] **i18n**: translation support (testing)
 - [ ] **global variable**: main-color, etc. (todo)
 - [ ] **search**: search system (todo)
 
 ## MOD
-- [x] **LaTeX**: switch to KaTeX. (testing)
+- [x] **LaTeX**: switch to KaTeX. (testing, close: [#13](../../issues/13))
 - [x] **Navbar**: anchor scrolling with offset navbar (testing)
 - [ ] **carousel**: better carousel (todo)
 

@@ -20,10 +20,13 @@ Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releas
 
 My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 
-Use Pull Request to add your site with Fizzy Theme, format:
-`- [站点名称](yourwebsitelink)`
+Use Pull Request or [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme, format:
+`- [Site Name](yourwebsitelink)`
 
 ## Features and Usage
+
+### i18n
+You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, you need to restart the ghost.
 
 ### Internal tags
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
