@@ -27,7 +27,7 @@
 ## 特性及使用介绍
 
 ### 多语言支持
-你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。最后重启Ghost使json生效。
+你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。如果在上传或更新Fizzy主题后你修改过了`json`文件，那么需要通过重启Ghost使`json`生效。
 
 ### 内部标签
 - **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（改进中）。

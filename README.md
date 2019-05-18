@@ -25,15 +25,17 @@ Use Pull Request or [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/2
 
 ## Features and Usage
 
-### i18n
+### 🌐 i18n
 You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, you need to restart the ghost.
 
-### Internal tags
+If you just updating Fizzy Theme from your Ghost Admin -> design, you do not need to restart the Ghost.
+
+### ⛔️ Internal tags
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
 > limitation: hiding posts with `#noindex` tag, but the number of posts displayed for that page will change as well.
 
-### Custom Templates
+### 📠 Custom Templates
 - **tag-archive**: You can use the tag archive template if you need one page to list all tags.([demo](https://fizzy.cc/tag/))
 - **full-width**: full width post.([demo](https://fizzy.cc/fizzy-theme/))
 - **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
@@ -60,7 +62,7 @@ To add languages, uncomment the sample code in `default.hbs` and change it accor
 
 Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
 
-### TOC
+### 🔖 TOC
 There are two ways to control the TOC of a post:
 1. insert the following code into `Post Header` for a single post or `Site Header` for the whole site;
     ```javascript
