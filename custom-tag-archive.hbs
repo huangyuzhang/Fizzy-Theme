@@ -29,7 +29,7 @@
                     <div class="tag-info">
                         <h2 class="tag-name">{{name}}</h2>
                         {{#get "posts" filter="tags:{{slug}}"}}
-                        <div class="post-count">{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</div>
+                        <div class="post-count">{{plural pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</div>
                         {{/get}}
                     </div>
                 </div>
