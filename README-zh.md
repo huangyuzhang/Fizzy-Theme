@@ -13,18 +13,18 @@
 ![](./fizzy-theme-screenshot.png)
 
 
-## 安装
+## :wrench: 安装
 
 下载[最新版本](https://github.com/huangyuzhang/fizzy-theme/releases/)后在 Ghost 后台 Setting > Design 处上传 zip 文件。
 
-## 演示站点
+## :movie_camera: 演示站点
 
 我的博客 [fizzy.cc](https://fizzy.cc) 正在使用本主题哦.
 
 如果你也在使用Fizzy主题，欢迎通过PR或[issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20)来添加你的站点，格式如下：
 `- [站点名称](yourwebsitelink)`
 
-## 特性及使用介绍
+## :tropical_drink: 特性及使用介绍
 
 ### 多语言支持
 你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。如果在上传或更新Fizzy主题后你修改过了`json`文件，那么需要通过重启Ghost使`json`生效。
@@ -81,15 +81,15 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 - **徽章**: 使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **每页文章数**: 在 `package.json` 中修改 `"posts_per_page": 8` 的数字来修改每页展示的文章数量。
 
-## 版本更新日志
+## :memo: 版本更新日志
 
 查看完整版本更新日志： [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
 
-## 作者
+## :sunglasses: 作者
 
 - 黄玉章 (Simon)
 
-## 依赖
+## :battery: 依赖
 
 - [Bulma][bulma] - CSS 框架
 - [Prismjs][prismjs] - 一个轻量的代码高亮工具
@@ -97,12 +97,12 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 - [jQuery.tocify.js][tocify] - 一个根据文章内标题生成目录的工具 (引入 JQuery-UI)
 - [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 
-## 报告问题 & 改进建议
+## :bug: 报告问题 & :dart: 改进建议
 如果各位在使用过程中发现BUG，有功能或节目的修改建议或者想要主题支持一些新的功能，请前往issue页面提交并正确选择label。
 
 或者，你也可以直接对此项目贡献代码。 
 
-## 如何贡献代码
+## :bulb: 贡献代码
 
 1. Fork 本项目（请大佬点个赞支持作者）
 2. 创建新的功能分支，如 `git checkout -b feature-fooBar`
@@ -111,7 +111,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 5. 创建一个 Pull Request
 
 
-## 开源协议
+## :lock_with_ink_pen: 开源协议
 
 本项目使用 MIT 开源协议。
 
