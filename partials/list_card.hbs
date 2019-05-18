@@ -18,9 +18,9 @@
             <div class="post-info">
                 {{#if featured}}
                     {{#if feature_image}}
-                    <span class="featured-label has-img is-montserrat"><i class="fas fa-star"></i> Featured</span>
+                    <span class="featured-label has-img is-montserrat"><i class="fas fa-star"></i> {{t "Featured"}}</span>
                     {{else}}
-                    <span class="featured-label no-img is-montserrat"><i class="fas fa-star"></i> Featured</span>
+                    <span class="featured-label no-img is-montserrat"><i class="fas fa-star"></i> {{t "Featured"}}</span>
                     {{/if}}
                 {{/if}}
 
@@ -36,7 +36,7 @@
                         </div>
                         {{/primary_tag}}
                         <div class="level-item is-size-7 ">
-                            {{date format="DD MMMM YYYY"}}
+                            {{date format=(t "DD MMMM YYYY")}}
                         </div>
                     </div>
                 </div>

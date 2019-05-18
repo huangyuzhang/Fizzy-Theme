@@ -29,7 +29,7 @@
                 <div class="column is-full-tablet is-4-desktop">
                     <article class="box tag-list is-vpadding-2 has-text-centered has-text-light" style="background-image: url({{asset 'images/dark-cover.jpg'}})">
                         <header class="tag-list-header">
-                            <small class="tag-list-header-topic">&mdash; TOPIC &mdash;</small>
+                            <small class="tag-list-header-topic">&mdash; {{t "TOPIC"}} &mdash;</small>
                             {{#../primary_tag}}
                                 <a href="{{url}}" title="See all posts from {{name}}"><h3 class="title is-4 has-text-light">{{name}}</h3></a>
                             {{/../primary_tag}}
@@ -44,7 +44,7 @@
                         </div>
                         <footer class="tag-list-footer">
                             <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">
-                            <span>{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}} →</span>
+                            <span>{{plural meta.pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "See all % posts")}} →</span>
                             </a>
                         </footer>
                     </article>
