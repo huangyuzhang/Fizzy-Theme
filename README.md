@@ -40,7 +40,7 @@ You can change the theme's language by configure in Ghost Admin -> General -> "P
 - **report**: special layout for academic report (todo)
 
 ### :speech_balloon: Comment System
-Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk] and [Valine][valine]. By default, Fizzy has DISQUS integrated.
+Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk] and [Valine][valine]. By default, Fizzy has DISQUS integrated. Skip the following if you do not need the comment system.
 
 #### DISQUS
 Insert the following code into Ghost Admin -> Code injection: `Site Header`, and modify the link with yours.
