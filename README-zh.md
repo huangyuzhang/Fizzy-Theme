@@ -57,13 +57,11 @@
 
 
 ### 代码高亮
-Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
+Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默认使用的语言和插件有：
   - **支持的语言**: 标记语言（如 HTML）, CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
   - **使用的插件**: line-numbers, toolbar, show-language.
 
-如果要添加其他语言，根据提示修改 `default.hbs` 底部的代码来添加其他语言。
-
-或者你也可以在 Prism 官网根据你的需要定制你的 `prism.js` 和 `prism.css` 来替换 `assets` 目录中的对应文件。
+访问 [自定义Prismjs][custom-prism] 来勾选你需要的语言。然后下载 js 和 css 文件以替换 `assets` 目录中的对应文件： `prism.js` 和 `prism.css`。
 
 ### 目录
 目前 Fizzy 主题支持两种控制文章内章节目录的方法：
@@ -124,3 +122,4 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案。
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
+[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
