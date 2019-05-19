@@ -52,13 +52,11 @@ Insert the following code into Ghost Admin -> Code injection: `Site Header`, and
 If you want to change the comment system, you need to modify the code in `partial/post_comment.hbs`.
 
 ###  Code Highlight
-Prism.js is used for syntax highlighting.
+Prism.js is used for syntax highlighting, the default languages and plugins used by Fizzy theme are:
   - **Languages**: Markup (e.g. HTML), CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
   - **Plugins**: line-numbers, toolbar, show-language.
 
-To add languages, uncomment the sample code in `default.hbs` and change it accordingly.
-
-Alternatively, you can download your own Prism js and css and overwrite the `prism.js` and `prism.css` files in `assets` folder.
+To customize this yourself, open [customize Prismjs][custom-prism] and choose the languages you need. Then download the js and css files to overwrite the `prism.js` and `prism.css` files in `assets` folder.
 
 ### TOC
 There are two ways to control the TOC of a post:
@@ -118,3 +116,4 @@ This project is licensed under the MIT License.
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
+[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
