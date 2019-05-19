@@ -466,16 +466,15 @@ h3{ margin-bottom: 20px; }
 /* Blockquotes */
 .single-article .post-wrap .post-content blockquote {
 	font-style: italic;
-	line-height:1.5em;
-	border-radius: 0 6px 6px 0;
-	background-color: #f6f6f6;
-	border-left: 5px solid;
-	border-color:#fb3b3b;
-	margin-left: -1.5em;
-	padding: .5em .5em .5em calc(1.5em - 5px);
-}
-.single-article .post-wrap .post-content blockquote:hover {
-	background-image: linear-gradient(to bottom right, #fef8f8, #e4f4fe);
+    color: #0e487e;
+	border-radius: 6px;
+	border:1px solid;
+	border-left:6px solid;
+    background-color: #d9edf7;
+    border-color: #a3d3ff;
+    margin-left: -1em;
+    padding: .75em .5em .75em calc(1.5em - 5px);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media screen and (max-width: 880px){
 	.single-article .post-wrap .post-content blockquote {
