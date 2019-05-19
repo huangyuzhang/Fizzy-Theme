@@ -470,13 +470,15 @@ h3{ margin-bottom: 20px; }
 	border-radius: 12px;
     background-color: #fff3f3;
     border-color: #fb3b3b;
-    margin-left: -1em;
-    padding: .75em .5em .75em calc(1.5em - 5px);
+    margin-left: -1.5em;
+    padding: .75em .5em .75em 1.2em;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media screen and (max-width: 880px){
 	.single-article .post-wrap .post-content blockquote {
 		margin-left: 0;
+		border-radius: 8px;
+		border-left: 3px solid #fb3b3b;
 		padding: .5em .75em;
 	}
 }
