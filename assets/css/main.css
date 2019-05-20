@@ -44,6 +44,10 @@ pre{border-radius:6px;}
 .button{
 	transition: all .3s ease;
 }
+/* strong */
+strong{
+	color: inherit !important;
+}
 
 /* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
 .content .tag, .content .number {
