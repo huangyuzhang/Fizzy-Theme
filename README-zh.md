@@ -21,13 +21,14 @@
 
 我的博客 [fizzy.cc](https://fizzy.cc) 正在使用本主题哦.
 
-如果你也在使用Fizzy主题，欢迎通过PR或[issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20)来添加你的站点，格式如下：
-`- [站点名称](yourwebsitelink)`
+如果你也在使用Fizzy主题，欢迎通过此[issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20)来添加你的站点。
 
 ## :tropical_drink: 特性及使用介绍
 
 ### 多语言支持
 你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。如果在上传或更新Fizzy主题后你修改过了`json`文件，那么需要通过重启Ghost使`json`生效。
+
+请帮助我们翻译Fizzy主题到其他语言，并通过Pull Request来提交。
 
 ### 内部标签
 - **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（改进中）。
@@ -73,6 +74,9 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
     ```
 2. 使用自定义模板 `Post With Toc` 来启用章节目录。
 > **优先级**: 自定义模板 > 文章 `Post Header` > 站点 `Site Header`
+
+### LaTeX公式
+使用 `$`（行内公式）或 `$$` 来包裹LaTeX公式以便主题渲染成公式。 ([示例](https://fizzy.cc/latex/#2.code))
 
 ### 其他内容
 - **导航**: 修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。

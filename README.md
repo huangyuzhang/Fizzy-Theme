@@ -20,13 +20,14 @@ Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releas
 
 My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 
-Use Pull Request or [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme, format:
-`- [Site Name](yourwebsitelink)`
+Use this [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme.
 
 ## :tropical_drink: Features and Usage
 
 ### i18n
 You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, if you changed the json file after you upload or update the Fizzy theme, you need to restart the ghost to refresh the `json` file.
+
+Please help us to translate Fizzy into your language by Pull Request.
 
 ### Internal tags
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
@@ -68,6 +69,9 @@ There are two ways to control the TOC of a post:
     ```
 2. Use custom post template `Post With Toc` to enable TOC. 
 > **Prioty**: `template` > `Post Header` > `Site Header`
+
+### LaTeX support
+Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([examples](https://fizzy.cc/latex/#2.code))
 
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
