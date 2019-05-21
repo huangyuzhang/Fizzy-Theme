@@ -8,7 +8,7 @@
 
 A tasty blogging theme for Ghost :ghost:.
 
-[中文文档](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README-zh.md)
+[中文文档](./README-zh.md)
 
 ![](./fizzy-theme-screenshot.png)
 
@@ -71,7 +71,7 @@ There are two ways to control the TOC of a post:
 > **Prioty**: `template` > `Post Header` > `Site Header`
 
 ### LaTeX support
-Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([examples](https://fizzy.cc/latex/#2.code))
+Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([examples](https://fizzy.cc/latex/))
 
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
@@ -80,7 +80,7 @@ Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([exampl
 
 ## :memo: Changelog
 
-See [CHANGELOG.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
+See [CHANGELOG.md](./CHANGELOG.md)
 
 ## :sunglasses: Author
 

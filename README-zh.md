@@ -8,7 +8,7 @@
 
 做一个有味道的Ghost博客主题
 
-[English Doc](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/README.md)
+[English Doc](./README.md)
 
 ![](./fizzy-theme-screenshot.png)
 
@@ -76,7 +76,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 > **优先级**: 自定义模板 > 文章 `Post Header` > 站点 `Site Header`
 
 ### LaTeX公式
-使用 `$`（行内公式）或 `$$` 来包裹LaTeX公式以便主题渲染成公式。 ([示例](https://fizzy.cc/latex/#2.code))
+使用 `$`（行内公式）或 `$$` 来包裹LaTeX公式以便主题渲染成公式。 ([示例](https://fizzy.cc/latex/))
 
 ### 其他内容
 - **导航**: 修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
@@ -85,7 +85,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 ## :memo: 版本更新日志
 
-查看完整版本更新日志： [CHANGELOD.md](https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md)
+查看完整版本更新日志： [CHANGELOD.md](./CHANGELOG.md)
 
 ## :sunglasses: 作者
 

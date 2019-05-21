@@ -10,6 +10,7 @@
 ### MOD
 - [x] **LaTeX**: switch to KaTeX. (testing, close: [#13](../../issues/13))
 - [x] **Navbar**: anchor scrolling with offset navbar (testing)
+- [x] **post**: style modifications
 - [ ] **carousel**: better carousel (todo)
 
 ## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
