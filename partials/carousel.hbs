@@ -1,6 +1,6 @@
 {{!-- Homepage Carousel --}}
 <div class="hero">
-    <div id="carousel-home" class="carousel">
+    <div id="carousel-home" class="carousel is-hidden-mobile">
         {{!-- get 10 posts with tag #carousel as --}}
         {{#get "posts" limit="10" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
         {{#foreach carousel}}
@@ -41,11 +41,3 @@
 		{{/get}}
     </div>
 </div>
-
-{{!-- carousel properties --}}
-<script>
-    bulmaCarousel.attach('#carousel-home', {
-        slidesToScroll: 1,
-        slidesToShow: 4
-    });
-</script>
