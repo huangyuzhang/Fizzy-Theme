@@ -8,6 +8,7 @@
 - [ ] **search**: search system (todo)
 
 ### MOD
+- [x] **optimization**: boost loading speed for pages and posts (move js position).
 - [x] **LaTeX**: switch to KaTeX. (testing, close: [#13](../../issues/13))
 - [x] **Navbar**: anchor scrolling with offset navbar (testing)
 - [x] **post**: style modifications

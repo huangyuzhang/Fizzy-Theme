@@ -123,7 +123,7 @@ strong{
 	transition: all .3s;
 }
 .can-scale:hover{
-	transform: scale(1.02);
+	transform: scale(1.01);
 	transition: all .5s ease;
 }
 /* ====================== fonts ====================== */
@@ -170,10 +170,7 @@ html,body{
 
 /* ====================== component: carousel ====================== 2019.04.09 */
 
-.carousel{
-	margin:auto 3rem;
-}
-
+h3{ margin-bottom: 20px; }
 .carousel .slick-item{ display: none; margin-right: 5px; outline: 0; }
 .carousel article{ height: 300px; position: relative; overflow: hidden; }
 .carousel article a{ display: block; height: 100%; position: relative; z-index: 2; }

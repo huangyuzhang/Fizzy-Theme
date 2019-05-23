@@ -49,7 +49,7 @@
                     <div class="content post-content is-size-6-mobile is-georgia">{{content}}</div>
                     
                     {{!-- author box --}}
-                    {{> post_author}}
+                    {{> "post/post_author"}}
                     
                 </div>
             </div>
@@ -65,12 +65,15 @@
 </section>
 
 {{!-- toc --}}
-{{> post_toc}}
+{{> "post/post_toc"}}
 
 {{!-- aside section (related post, prev & next) --}}
-{{> post_aside}}
+{{> "post/post_aside"}}
+
+{{!-- post footer for js --}}
+{{> "post/post_footer"}}
 
 {{!-- comment --}}
-{{> post_comment}}
+{{> "post/post_comment"}}
 
 {{/post}}
