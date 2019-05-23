@@ -42,8 +42,5 @@
             "height": 600
         }
     },
-    "dependencies": {
-        "bulma-carousel": "^4.0.4",
-        "bulma-extensions": "^6.2.4"
-    }
+    "dependencies": {}
 }
