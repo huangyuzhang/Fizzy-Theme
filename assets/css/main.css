@@ -226,9 +226,8 @@ h3{ margin-bottom: 20px; }
 .carousel article a div.meta div.tags{ float: left; }
 .carousel article a div.meta time{ float: right; color: #fff;  }
 
-/* @end */
-
 /* ====================== index ====================== 2019.04.09 */
+
 /* index: post-card 2019.04.09 */
 @media screen and (min-width: 769px){
 	.post-card {

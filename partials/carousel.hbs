@@ -5,7 +5,7 @@
         {{#get "posts" limit="10" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
         {{#foreach carousel}}
             <div class="hero-body">
-                <article class="item">
+                <article class="item round-border-6">
                     <a href="{{url}}" class="hover-effect">
                         <span class="overlay"></span>		
                         <span class="cover" style="background: url({{img_url feature_image size="carousel"}});
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="level-right">
                                     <time class="level-item" datetime="{{date format=(t "DD MMMM YYYY")}}">
-                                        <i class="far fa-clock"> </i>&nbsp;{{date format='MMM, Do'}}
+                                        <i class="far fa-clock"> </i>&nbsp;{{date format=(t "DD MMMM YYYY")}}
                                     </time> 
                                 </div>
                             </div>
