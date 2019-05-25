@@ -44,10 +44,31 @@
 ### 评论系统
 因为 Ghost 目前不包含评论系统，我们需要通过第三方工具或库来实现评论系统。
 
-推荐的解决方案有：[DISQUS][disqus]（海外友好）, [Gitalk][gitalk]（基于GitHub Issues）以及 [Valine][valine]（基于LeanCloud）。目前Fizzy 内置了 DISQUS 的支持。
+推荐的解决方案有：[DISQUS][disqus]（海外友好）, [Gitalk][gitalk]（基于GitHub Issues）以及 [Valine][valine]（基于LeanCloud）。目前Fizzy 内置了 Gitalk 和 DISQUS 的支持。
+
+#### Gitalk 设置 (推荐)
+Gitalk 是一个基于 Github issue 来管理评论的工具。默认根据用户浏览器的语言来展示界面语言。
+1. 注册一个新的 **GitHub Application**
+2. 为你的网站创建一个新的 **Github Repository**
+3. 在Ghost后台 -> Code injection: `Site Footer` 中插入以下代码，并修改为你的信息（来自上面两步）：
+
+```javascript
+const gitalk = new Gitalk({
+  clientID: 'GitHub Application Client ID',
+  clientSecret: 'GitHub Application Client Secret',
+  repo: 'GitHub repo',
+  owner: 'GitHub repo owner',
+  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+});
+gitalk.render('gitalk-container');
+```
+> 更多配置请参考[这里](https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E4%BD%BF%E7%94%A8).
+
 
 #### DISQUS 设置
-在Ghost后台 -> Code injection: `Site Header` 中插入一下代码，并修改为你的js路径。
+在Ghost后台 -> Code injection: `Site Header` 中插入以下代码，并修改为你的js路径。
 ```javascript
 <script>
     var disqus_link = 'https://YOURLINK.disqus.com/embed.js';

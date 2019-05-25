@@ -43,7 +43,25 @@ Please help us to translate Fizzy into your language by Pull Request.
 ### :speech_balloon: Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk], [Valine][valine] and [Vssue][vssue]. By default, Fizzy has Gitalk and DISQUS integrated. Skip the following if you do not need the comment system.
 
-#### Gitalk
+#### Gitalk (Recommended)
+Gitalk is a Github issue based comment system. Automatically support `en`, `zh_CN`, `zh_TW`, `es` by detecting the language of user's navigator.
+1. Register a new **GitHub Application**
+2. Create a new **Github Repository** for your website
+3. Insert the following code into Ghost Admin -> Code injection: `Site Footer`, and modify the configuration with your **Github App** & **Repository** from previous steps.
+
+```javascript
+const gitalk = new Gitalk({
+  clientID: 'GitHub Application Client ID',
+  clientSecret: 'GitHub Application Client Secret',
+  repo: 'GitHub repo',
+  owner: 'GitHub repo owner',
+  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+});
+gitalk.render('gitalk-container');
+```
+> more usage guide and options please check [here](https://github.com/gitalk/gitalk#usage).
 
 
 #### DISQUS
