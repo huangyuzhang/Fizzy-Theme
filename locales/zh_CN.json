@@ -6,6 +6,8 @@
     "See all % posts": "查看全部 % 篇文章",
     "Newer Posts": "更新的文章",
     "Older Posts": "更早的文章",
+    "Previous Post":"上一篇",
+    "Next Post":"下一篇",
     "Page {page} of {pages}": "第 {page} 页，共有 {pages} 页",
     "Subscribe": "订阅",
     "Subscribe to {blogtitle}": "订阅 {blogtitle}",

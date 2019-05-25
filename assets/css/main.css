@@ -620,6 +620,33 @@ h3{ margin-bottom: 20px; }
 		padding-bottom: 3rem;
 	}
 }
+.aside .card-frame{
+	position:relative;
+}
+.aside .card-frame .nav-label{
+	display:none;
+	position: absolute;
+	top:0px;
+    z-index: 90;
+    padding: 5px 10px;
+	background-color: #fff;
+	border-radius:4px;
+	font-weight:600;
+	transition: all 0.5s ease 1s;
+}
+.aside .card-frame:hover{
+	transition: all 0.5s ease 1s;
+}
+.aside .card-frame:hover .nav-label{
+	display: block;
+    transition: all 0.5s ease 1s;
+}
+.aside .nav-label.left{
+	left: 0px;
+}
+.aside .nav-label.right{
+	right: 0px;
+}
 .aside .post-card{
 	height:100%;
 	display: flex;
