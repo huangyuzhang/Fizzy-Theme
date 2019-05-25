@@ -41,7 +41,10 @@ Please help us to translate Fizzy into your language by Pull Request.
 - **report**: special layout for academic report (todo)
 
 ### :speech_balloon: Comment System
-Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk] and [Valine][valine]. By default, Fizzy has DISQUS integrated. Skip the following if you do not need the comment system.
+Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk], [Valine][valine] and [Vssue][vssue]. By default, Fizzy has Gitalk and DISQUS integrated. Skip the following if you do not need the comment system.
+
+#### Gitalk
+
 
 #### DISQUS
 Insert the following code into Ghost Admin -> Code injection: `Site Header`, and modify the link with yours.
@@ -120,4 +123,5 @@ This project is licensed under the MIT License.
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
+[vssue]: https://github.com/meteorlxy/vssue
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
