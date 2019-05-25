@@ -1,8 +1,14 @@
+{{!-- gitalk --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
 {{!-- Comment Block --}}
 <section class="section">
     <div class="columns is-mobile">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop">
+            {{!-- gitalk anchor --}}
+            <div id="gitalk-container"></div>
             {{!-- DISQUS anchor--}}
             <div id="disqus_thread"></div>
         </div>
