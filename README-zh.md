@@ -46,6 +46,14 @@
 
 推荐的解决方案有：[DISQUS][disqus]（海外友好）, [Gitalk][gitalk]（基于GitHub Issues）以及 [Valine][valine]（基于LeanCloud）。目前Fizzy 内置了 Gitalk 和 DISQUS 的支持。
 
+**评论功能默认是被禁用的**。如果你想要启用评论功能，首先在 Ghost后台的 Code injection -> `Site Header` 处添加以下代码来启用评论功能。另外，你可以在特定的文章页面 Code injection -> `Post Header` 处添加以下代码来单独控制该文章的评论功能。完成后在下方提供的评论系统中选择一种按照教程进行配置。
+
+```javascript
+<script>
+  var show_comment = true; //default: false
+</script>
+```
+
 #### Gitalk 设置 (推荐)
 Gitalk 是一个基于 Github issue 来管理评论的工具。默认根据用户浏览器的语言来展示界面语言。
 1. 注册一个新的 **GitHub Application**
@@ -53,6 +61,7 @@ Gitalk 是一个基于 Github issue 来管理评论的工具。默认根据用�
 3. 在Ghost后台 -> Code injection: `Site Footer` 中插入以下代码，并修改为你的信息（来自上面两步）：
 
 ```javascript
+<script>
 const gitalk = new Gitalk({
   clientID: 'GitHub Application Client ID',
   clientSecret: 'GitHub Application Client Secret',
@@ -63,6 +72,7 @@ const gitalk = new Gitalk({
   distractionFreeMode: false  // Facebook-like distraction free mode
 });
 gitalk.render('gitalk-container');
+</script>
 ```
 > 更多配置请参考[这里](https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E4%BD%BF%E7%94%A8).
 

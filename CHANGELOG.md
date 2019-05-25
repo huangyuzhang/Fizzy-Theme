@@ -2,7 +2,7 @@
 
 ## [v0.3.0](#) (TBA)
 ### NEW
-- [x] **comment**: support gitalk (testing)
+- [x] **comment**: support gitalk; global configuration `show_comment` (see README)
 - [x] **i18n**: translation support (testing)
 - [ ] **global variable**: main-color, etc. (todo)
 - [ ] **search**: search system (todo)

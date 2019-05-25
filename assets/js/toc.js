@@ -1,21 +1,11 @@
 /*----------------------------------------------------*/
-/*  TOC Settings 2019.05.18
+/*  TOC Settings | Updated: 2019.05.25
 /*----------------------------------------------------*/
 
-// sticky navbar
-$(window).scroll(function(){ // need to be fixed
-    // get var show_toc
-    if (typeof show_toc == 'undefined') {
-        var toc = false; //default: false
-    }else{
-        var toc = show_toc;
-    };
-    // remove sticky navbar for TOC-enabled post (Deprecated since v0.3.0)
-    // if(toc){
-    //     $("html").removeClass('has-spaced-navbar-fixed-top'); // remove top space
-    //     $("#navbar").removeClass('is-fixed-top'); // disable sticky top
-    // };
-});
+// get var show_toc
+if (typeof show_toc == 'undefined') {
+    var show_toc = false; //default: false
+};
 
 // Sticky TOC Scroll effect + 2019.05.12 -> 2019.05.13
 $(window).scroll(function(){
