@@ -66,8 +66,8 @@ strong{
 /* ====================== components ====================== */
 .featured-label {
     position: absolute;
-    background-color: #f7b413;
-    color: #000;
+	background: linear-gradient(181deg, #fb3b3b,#e12828);
+    color: #fff;
     font-size: .875rem;
     font-weight: 600;
     letter-spacing: .5px;
