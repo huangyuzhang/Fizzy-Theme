@@ -101,12 +101,9 @@
 }
 
 /* border */
-.round-border-6 {
-    border-radius: 6px;
-}
-.round-border-2rem {
-    border-radius: 2rem;
-}
+.round-border-6 {border-radius: 6px;}
+.round-border-1rem {border-radius: 1rem;}
+.round-border-2rem {border-radius: 2rem;}
 
 /* layout */
 .has-2-ends {
@@ -134,3 +131,9 @@
 .has-darker-modal{
     background-color: rgba(0,0,0,.6);
 }
+
+/* spacing */
+.spacing-1{padding:1rem;}
+.spacing-15{padding:1.5rem;}
+.spacing-2{padding:2rem;}
+.spacing-25{padding:2.5rem;}

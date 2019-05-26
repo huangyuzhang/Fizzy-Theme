@@ -124,6 +124,7 @@ See [CHANGELOG.md](./CHANGELOG.md)
 - [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
 - [KaTeX][katex] - A faster LaTeX equation rendering library. (since v0.3.0)
+- [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
 
 ## :bug: Bug Report & :dart: Features Request
 If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label appropriately. 
