@@ -36,7 +36,15 @@
 > 限制: 使用 `#noindex` 隐藏一篇文章后，首页的文章展示数量也会因此减少一个。
 
 ### 展示橱窗
-展示橱窗可以用作文章的展示。橱窗仅在首页显示。橱窗左侧的幻灯片自动抓取内部标签 `#carousel`。右侧自动抓取两篇推荐文章（featured post）。
+展示橱窗可以用作文章的展示。橱窗仅在首页显示。在Ghost后台 Code injection -> `Site Header` 中加入以下代码来启用展示橱窗：
+
+```javascript
+<script>
+  var show_showcase = true; //default: false
+</script>
+```
+
+橱窗左侧的幻灯片自动抓取内部标签 `#carousel`。右侧自动抓取两篇推荐文章（featured post）。
 
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 

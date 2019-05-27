@@ -35,7 +35,15 @@ Please help us to translate Fizzy into your language by Pull Request.
 > limitation: hiding posts with `#noindex` tag, but the number of posts displayed for that page will change as well.
 
 ### Showcase
-The showcase section is built to highlight posts. It is available only on the homepage. The left slider carousel part detects the internal tag `#carousel`. The right part will display 2 featured posts.
+The showcase section is built to highlight posts. It is available only on the homepage. Insert the following code into Ghost Admin -> Code injection -> `Site Header` to enable the showcase:
+
+```javascript
+<script>
+  var show_showcase = true; //default: false
+</script>
+```
+
+The left slider carousel part detects the internal tag `#carousel`. The right part will display 2 featured posts.
 
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
