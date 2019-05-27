@@ -2,9 +2,9 @@
 
 ## [v0.3.0](#) (TBA)
 ### NEW
-- [x] **comment**: support gitalk; global configuration `show_comment` (see README)
+- [x] **comment**: support gitalk (close: [#19](../../issues/19)); site switch `show_comment` (see README)
 - [x] **i18n**: translation support
-- [x] **showcase**: showcase section for homepage (testing)
+- [x] **showcase**: showcase section for homepage use site switch `show_showcase` (see README)
 - [ ] **global variable**: main-color, etc. (todo)
 - [ ] **search**: search system (todo)
 
