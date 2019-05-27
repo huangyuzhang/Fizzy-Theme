@@ -3,7 +3,8 @@
 ## [v0.3.0](#) (TBA)
 ### NEW
 - [x] **comment**: support gitalk; global configuration `show_comment` (see README)
-- [x] **i18n**: translation support (testing)
+- [x] **i18n**: translation support
+- [x] **showcase**: showcase section for homepage (testing)
 - [ ] **global variable**: main-color, etc. (todo)
 - [ ] **search**: search system (todo)
 
@@ -12,7 +13,9 @@
 - [x] **LaTeX**: switch to KaTeX. (close: [#13](../../issues/13))
 - [x] **Navbar**: TOC scrolling with offset the top navbar
 - [x] **post**: style modifications
-- [ ] **carousel**: better carousel (todo)
+
+### DEL
+- [x] **carousel**: replaced by **showcase**
 
 ## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ### NEW

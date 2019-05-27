@@ -31,9 +31,14 @@
 请帮助我们翻译Fizzy主题到其他语言，并通过Pull Request来提交。
 
 ### 内部标签
-- **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（改进中）。
+- **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（见：[展示橱窗](#展示橱窗)）。
 - **不在列表展示**: 包含 `#noindex`(slug:`hash-noindex`) 标签的文章将不在首页的文章列表中展示。 
 > 限制: 使用 `#noindex` 隐藏一篇文章后，首页的文章展示数量也会因此减少一个。
+
+### 展示橱窗
+展示橱窗可以用作文章的展示。橱窗仅在首页显示。橱窗左侧的幻灯片自动抓取内部标签 `#carousel`。右侧自动抓取两篇推荐文章（featured post）。
+
+![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
 ### 自定义模板
 - **标签目录**: 使用模板 `Tag Archive` 来为标签添加一个目录页。([demo](https://fizzy.cc/tag/))。

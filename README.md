@@ -30,9 +30,14 @@ You can change the theme's language by configure in Ghost Admin -> General -> "P
 Please help us to translate Fizzy into your language by Pull Request.
 
 ### Internal tags
-- **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in home page. (improving)
+- **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in homepage (see [Showcase](#showcase)). 
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
 > limitation: hiding posts with `#noindex` tag, but the number of posts displayed for that page will change as well.
+
+### Showcase
+The showcase section is built to highlight posts. It is available only on the homepage. The left slider carousel part detects the internal tag `#carousel`. The right part will display 2 featured posts.
+
+![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
 ### Custom Templates
 - **tag-archive**: You can use the tag archive template if you need one page to list all tags.([demo](https://fizzy.cc/tag/))

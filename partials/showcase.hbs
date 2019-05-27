@@ -1,0 +1,66 @@
+{{!-- Homepage Showcase 2019.05.27--}}
+
+{{!-- slick: css --}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+<section class="section is-paddingless-bottom">
+    <div class="columns">
+        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
+        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
+            <div class="columns">
+
+                {{!-- carousel start--}}
+                <div class="column is-6">
+                    <div class="carousel" id="carousel-home">
+                        {{!-- get 10 posts with tag #carousel as --}}
+                        {{#get "posts" limit="5" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
+                        {{#foreach carousel}}
+                            <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});">
+                                <a href="{{url}}" rel="bookmark" class="link-block"></a>
+                                <div class="carousel-meta bg-grad-b">
+                                    {{#primary_tag}}
+                                        <div class="carousel-tag">
+                                            <a href="{{url}}" class="has-text-weight-semibold is-montserrat">{{name}}</a>
+                                        </div>
+                                    {{/primary_tag}}
+                                    <a href="{{url}}"><h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
+                                </div>
+                            </div>
+                        {{/foreach}}
+                        {{/get}}
+                    </div>
+                </div>
+                {{!-- carousel start--}}
+
+                {{!-- top-featured start--}}
+                <div class="column is-6">
+                    {{#get "posts" limit="2" filter="featured:true" as |top-featured|}}
+                    <div class="top-featured">
+                        {{#top-featured}}
+                        <a href="{{url}}">
+                            <div class="tf-item img-bg box has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});">
+                                <span class="featured-label is-montserrat" style="right:5px;top:5px;padding:0 5px;" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i></span>
+                                <div href="{{url}}" rel="bookmark" class="link-block"></div>
+                                <div class="tf-meta bg-grad-b">
+                                     {{!-- {{#if tags}} --}}
+                                        {{#foreach tags limit="2"}}
+                                            <div class="tf-tag">
+                                                <a href="{{url}}" class="has-text-weight-semibold is-montserrat">{{name}}</a>
+                                            </div>
+                                        {{/foreach}}
+                                    {{!-- {{/if}} --}}
+                                    <a href="{{url}}"><h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
+                                </div>
+                            </div>
+                        </a>
+                        {{/top-featured}}
+                    </div>
+                    {{/get}}
+                </div>
+                {{!-- top-featured start--}}
+            </div>
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+</section>
