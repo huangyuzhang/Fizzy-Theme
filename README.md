@@ -57,6 +57,15 @@ The left slider carousel part detects the internal tag `#carousel`. The right pa
 ### Custom CSS
 Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.
 
+### Custom Footer Text
+Define a variable `footer_text` in the `Site Header` as below to replaced the default: "Made with ❤️ in London" text at the bottom.
+
+```javascript
+<script>
+  var footer_text = "YOUR FOOTER TEXT HERE";
+</script>
+```
+
 ### :speech_balloon: Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk], [Valine][valine] and [Vssue][vssue]. By default, Fizzy has Gitalk and DISQUS integrated. Skip the following if you do not need the comment system.
 
@@ -144,7 +153,7 @@ See [CHANGELOG.md](./CHANGELOG.md)
 - [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
 
 ## :bug: Bug Report & :dart: Features Request
-If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label appropriately. 
+If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label accordingly. 
 
 Alternatively if you are familiar with them development, you could start to contribute to this project.
 

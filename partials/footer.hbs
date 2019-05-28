@@ -1,8 +1,17 @@
 <footer class="footer is-centered" style="padding-bottom:3rem;">
     <div class="content has-text-centered">
         <p class="copyright">&copy; {{date format="YYYY"}} <a href="{{@site.url}}"><strong class="has-text-grey-darker">{{@site.title}}</strong></a></p>
-        <p class="declare has-text-grey">Made with <span style="color:#fb3c3b;"><i class="fas fa-heart is-danger"></i></span> in <strong>London</strong>.
-            Using <a href="https://fizzy.cc/fizzy-theme/" target="_blank" rel="noopener noreferrer"><strong>The Fizzy theme</strong></a> & published with <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer nofollow"><strong>Ghost</strong></a>
+        <p class="declare has-text-grey">
+            <script>
+                if (typeof footer_text == 'undefined') {
+                    var footer_text = "Made with <span style='color:#fb3c3b;'><i class='fas fa-heart is-danger'></i></span> in <strong>London</strong>.";
+                };
+            </script>
+            <script>
+                document.write(footer_text);
+            </script>
+            <br>Using <a href="https://fizzy.cc/fizzy-theme/" target="_blank" rel="noopener noreferrer"><strong>The Fizzy theme</strong></a> | Published with <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer nofollow"><strong>Ghost</strong></a>
         </p>
     </div>
 </footer>
+    
