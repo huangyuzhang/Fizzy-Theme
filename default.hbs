@@ -5,16 +5,13 @@
     {{!-- Document Settings --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     {{!-- Base Meta --}}
     <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{!-- This tag outputs SEO meta + structured data and Code injections in Site Header--}}
     {{ghost_head}}
-
     {{!-- main css --}}
     <link rel="stylesheet" type="text/css" href="{{asset 'css/main.css'}}" />
     {{!-- Bulma --}}
@@ -37,15 +34,17 @@
     {{!-- foot --}}
     {{> footer}}
 
+    {{!-- This tag outputs Code injections in Site Footer--}}
     {{ghost_foot}}
 
-    {{!-- import js --}}
-    <script src="{{asset 'js/main.js'}}"></script>
     {{!-- gallery popup --}}
     <script src="{{asset 'js/popup.min.js'}}"></script>
 
     {{!-- jquery: for carousel + prismjs --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    {{!-- import js --}}
+    <script src="{{asset 'js/main.js'}}"></script>
     
     {{!-- carousel: js --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -69,8 +68,6 @@
         if (typeof show_showcase == 'undefined') {var show_showcase = false;};
         if (show_showcase){$('#showcase').removeClass("is-hidden");};
     </script>
-
-    
 
     {{!-- Fontawesome icons --}}
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>

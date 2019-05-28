@@ -50,10 +50,20 @@
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
 ### 自定义模板
+在编辑文章或页面时，点击右上角齿轮图标⚙，在底部找到 `Template` 来更换模板。
 - **标签目录**: 使用模板 `Tag Archive` 来为标签添加一个目录页。([demo](https://fizzy.cc/tag/))。
+- **文章归档**: 使用模板 `Post Archive` 来为所有文章按照时间添加一个归档目录。([demo](https://fizzy.cc/archive/))
 - **全宽**: 使用模板 `Full Width` 来使用全宽的文章模板。([demo](https://fizzy.cc/fizzy-theme/))。
 - **启用目录**: 使用模板 `Post With Toc` 来启用文章的目录抓取功能，详见[#内页目录](#内页目录)。 ([demo](https://fizzy.cc/fizzy-theme/))
 - **报告**: 为学术报告定制的页面 (计划中)
+
+### Custom Templates
+Open the gear icon while editing a post or page, scroll to the bottom and change `Template` option.
+- **tag-archive**: used for listing all tags/topics in one page. ([demo](https://fizzy.cc/tag/))
+- **post-archive**: used for listing all posts in one page. ([demo](https://fizzy.cc/archive/))
+- **full-width**: full width post. ([demo](https://fizzy.cc/fizzy-theme/))
+- **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
+- **report**: special layout for academic report (todo)
 
 ### 自定义CSS
 修改 `assets/css/custom.css` 文件中的css变量来修改主题的颜色。

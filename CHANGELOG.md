@@ -1,13 +1,20 @@
 # CHANGELOG
 
 ## [v1.0.0](#) (TBA)
+The v1.0.0 version will be the last development version of the Fizzy Theme. After this, no regular update will be provided. I will only fix bugs and do minor modifications to cope with the Ghost upgrade. Meaningful new features will still be added under a slower pace.
+
 ### NEW
-- [ ] **post list**: create a page to list all posts.
+- [x] **post archive**: create a page to list all posts. (testing)
 - [ ] **collection**: support collections.
 - [ ] **search**: support search system
 - [ ] **README TOC**: better documentation
 - [ ] **custom dropdown menu**: support custom dropdown menu
 - [ ] **support Fizzy option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
+- [ ] **Report Template**: support academic report template
+
+### MOD
+- [ ] **js**: concentrate js files and minify them
+- [ ] **css**: concentrate css files and minify them
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW

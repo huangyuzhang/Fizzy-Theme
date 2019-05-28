@@ -12,7 +12,6 @@
     "Subscribe": "Subscribe",
     "Subscribe to {blogtitle}": "Subscribe to {blogtitle}",
     "Subscribed!": "Subscribed!",
-    "A collection of posts": "A collection of posts",
     "A collection of 1 post": "A collection of 1 post",
     "A collection of % posts": "A collection of % posts",
     "Latest Posts": "Latest Posts",
@@ -29,5 +28,8 @@
     "Previous Page": "Previous Page",
     "Next Page": "Next Page",
     "Last Page": "Last Page",
-    "There is no post yet.": "There is no post yet."
+    "There is no post yet.": "There is no post yet.",
+    "There are {total} posts in total": "There are {total} posts in total",
+    "YYYY": "YYYY",
+    "MMMM": "MMMM"
 }

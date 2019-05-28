@@ -49,10 +49,12 @@ The left slider carousel part detects the internal tag `#carousel`. The right pa
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
 ### Custom Templates
-- **tag-archive**: You can use the tag archive template if you need one page to list all tags.([demo](https://fizzy.cc/tag/))
-- **full-width**: full width post.([demo](https://fizzy.cc/fizzy-theme/))
-- **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
-- **report**: special layout for academic report (todo)
+Open the gear icon ⚙ while editing a post or page, scroll to the bottom and change `Template` option.
+- **Tag Archive**: used for listing all tags/topics in one page. ([demo](https://fizzy.cc/tag/))
+- **Post Archive**: used for listing all posts in one page. ([demo](https://fizzy.cc/archive/))
+- **Full Width**: full width post. ([demo](https://fizzy.cc/fizzy-theme/))
+- **Post With TOC**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
+- **Report**: special layout for academic report (todo)
 
 ### Custom CSS
 Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.

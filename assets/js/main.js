@@ -1,4 +1,4 @@
-// navbar Burgers 2019.04.08
+// header: navbar Burgers 2019.04.08
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -24,3 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
   });
+
+// =================================================
+// post archive: add year and month break 2019.05.28
+// =================================================
+// Year Break
+var yearArray = new Array();
+$(".post-archive-item").each(function() {
+    var archivesYear = $(this).attr("year");
+    yearArray.push(archivesYear);
+});
+var uniqueYear = $.unique(yearArray);
+for (var i = 0; i < uniqueYear.length; i++) {
+    var html = "<hr><h2>" + uniqueYear[i] + "</h2>";
+    $("[year='" + uniqueYear[i] + "']:first").before(html);
+}
+// Month Break
+var monthArray = new Array();
+$(".post-archive-item").each(function() {
+    var archivesMonth = $(this).attr("month");
+    monthArray.push(archivesMonth);
+});
+var uniqueMonth = $.unique(monthArray);
+for (var i = 0; i < uniqueMonth.length; i++) {
+    var html = "<h4>" + uniqueMonth[i] + "</h4>";
+    $("[month='" + uniqueMonth[i] + "']:first").before(html);
+}
