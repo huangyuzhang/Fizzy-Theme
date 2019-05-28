@@ -16,6 +16,7 @@
 
 ### DEL
 - [x] **carousel**: replaced by **showcase**
+- [x] **deprecated CSS**: deleted unused CSS stylesheets to minify theme's file size.
 
 ## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ### NEW
