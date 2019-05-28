@@ -4,12 +4,12 @@
             {{#if @site.logo}}
             <div class="navbar-item logo">
                 <a href="{{@site.url}}">
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}}" width="auto" height="28">
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}" width="auto" height="28">
                 </a>
             </div>
             {{else}}
                 <div class="navbar-item text-logo">
-                    <a class="align-vcentered" href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}}">
+                    <a class="align-vcentered" href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}">
                         {{#if @site.icon}}
                             <img src="{{@site.icon}}">
                         {{/if}}
