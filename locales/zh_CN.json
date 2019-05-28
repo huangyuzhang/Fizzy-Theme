@@ -12,9 +12,8 @@
     "Subscribe": "订阅",
     "Subscribe to {blogtitle}": "订阅 {blogtitle}",
     "Subscribed!": "已订阅",
-    "A collection of posts": "A collection of posts",
-    "A collection of 1 post": "A collection of 1 post",
-    "A collection of % posts": "A collection of % posts",
+    "A collection of 1 post": "共有 1 篇文章",
+    "A collection of % posts": "共有 % 篇文章",
     "Latest Posts": "最新文章",
     " (Page %)": " (第 % 页)",
     "Read More": "阅读全文",
@@ -29,5 +28,8 @@
     "Previous Page": "上一页",
     "Next Page": "下一页",
     "Last Page": "最后一页",
-    "There is no post yet.": "这里空空如也"
+    "There is no post yet.": "这里空空如也",
+    "There are {total} posts in total": "共有 {total} 篇文章",
+    "YYYY": "YYYY年",
+    "MMMM": "M月"
 }

@@ -361,7 +361,7 @@ html,body{
 	line-height: 1.5em;
 }
 /* hr */
-.post-wrap .post-content hr{background: linear-gradient(90deg, #a256e8 0%, #e85668 100%)}
+.post-wrap .post-content hr{background: linear-gradient(90deg, var(--main-color) 0%, var(--secondary-color) 100%)}
 /* list */
 .post-wrap .post-content ul,.post-content ol{
 	margin-left: 1.5em;
@@ -795,63 +795,65 @@ html,body{
 
 /* ====================== template: Tag Archive ====================== 2019.04.14 */
 .card-wrap {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .tag-card {
-    height: 100%;
+	height: 100%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 20px 40px rgba(12, 12, 94, .1);
 }
 .tag-card.no-image {
-    display: -ms-flexbox;
+	display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
 }
 .tag-card.no-image .tag-info {
-    width: 100%}
-.tag-card .tag-image {
-	/* height: 144px; */
-	height: calc(90px + 3vw);
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center center;
+	width: 100%}
+	.tag-card .tag-image {
+		/* height: 144px; */
+		height: calc(90px + 3vw);
+		border-radius: 8px 8px 0 0;
+		background-size: cover;
+		background-position: center center;
+	}
+	.tag-card .tag-info {
+		padding: 16px;
+		vertical-align: middle;
+	}
+	.tag-card .tag-info .tag-name {
+		margin-bottom: .5rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	.tag-card .tag-info .tag-name {
+		text-transform: capitalize;
+		color: #222;
+		transition: all .25s;
+	}
+	.tag-card:hover .tag-info .tag-name {
+		color: #fb3c3b;
+	}
+	.tag-card .tag-info .post-count {
+		color: #222;
+	}
+	.tag-list-header .title span{
+		padding:0.5rem 1.5rem;
+	}
+/* ====================== template: Post Archive ====================== 2019.05.28 */
+ul.post-archive{margin-left:0!important;}
+.post-archive .post-archive-item time{
+	margin-right:1rem;
 }
-.tag-card .tag-info {
-	padding: 16px;
-	vertical-align: middle;
-}
-.tag-card .tag-info .tag-name {
-	margin-bottom: .5rem;
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-.tag-card .tag-info .tag-name {
-    text-transform: capitalize;
-	color: #222;
-	transition: all .25s;
-}
-.tag-card:hover .tag-info .tag-name {
-    color: #fb3c3b;
-}
-.tag-card .tag-info .post-count {
-	color: #222;
-}
-.tag-list-header .title span{
-	padding:0.5rem 1.5rem;
-}
-
 /* ====================== template: Full Width ====================== 2019.05.10 */
 .single-article .post-wrap.full-width {
-    max-width: 960px;
-    padding: 48px 15px;
-    font-size: 1.25rem;
+	max-width: 960px;
+	padding: 48px 15px;
+	font-size: 1.25rem;
 	line-height: 2;
 	margin: auto!important;
 }
-
-
 /* ====================== footer ====================== 2019.04.12 */
 .declare a {
 	color:#000;
