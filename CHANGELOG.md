@@ -5,7 +5,7 @@
 - [x] **comment**: support gitalk (close: [#19](../../issues/19)); site switch `show_comment` (see README)
 - [x] **i18n**: translation support
 - [x] **showcase**: showcase section for homepage use site switch `show_showcase` (see README)
-- [ ] **global variable**: main-color, etc. (todo)
+- [x] **css variable**: main-color, etc. (testing)
 - [ ] **search**: search system (todo)
 
 ### MOD

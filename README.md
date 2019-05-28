@@ -53,6 +53,9 @@ The left slider carousel part detects the internal tag `#carousel`. The right pa
 - **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
 - **report**: special layout for academic report (todo)
 
+### Custom CSS
+Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.
+
 ### :speech_balloon: Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk], [Valine][valine] and [Vssue][vssue]. By default, Fizzy has Gitalk and DISQUS integrated. Skip the following if you do not need the comment system.
 
