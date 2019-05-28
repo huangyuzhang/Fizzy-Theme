@@ -1,7 +1,6 @@
 /* ====================== import ====================== */
 @import "custom.css"; /* ADD 2019.05.28*/
 @import "class.css"; 
-@import "divider.min.css";
 
 /* ====================== over-write bulma default ====================== */
 /* fix "has-spaced-navbar-fixed-top" cut off the top on modile devices 2019.04.09 */
