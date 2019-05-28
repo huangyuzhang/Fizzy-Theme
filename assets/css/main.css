@@ -854,13 +854,13 @@ html,body{
 
 /* ====================== footer ====================== 2019.04.12 */
 .declare a {
-	color:#000;
+	color:#666;
 	word-break: break-word;
 	transition: all .25s;
     
 }
 .declare a:hover {
-	box-shadow: var(--main-color) 0 -1px 0 inset;
+	color: var(--link-color-hover);
 }
 
 /* ====================== error page ====================== 2019.05.10 */

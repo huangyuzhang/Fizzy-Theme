@@ -1,22 +1,29 @@
 # CHANGELOG
 
-## [v0.3.0](#) (TBA)
+## [v1.0.0](#) (TBA)
 ### NEW
-- [x] **comment**: support gitalk (close: [#19](../../issues/19)); site switch `show_comment` (see README)
-- [x] **i18n**: translation support
-- [x] **showcase**: showcase section for homepage use site switch `show_showcase` (see README)
-- [x] **css variable**: main-color, etc. (testing)
-- [ ] **search**: search system (todo)
+- [ ] **post list**: create a page to list all posts.
+- [ ] **collection**: support collections.
+- [ ] **search**: support search system
+- [ ] **README TOC**: better documentation
+
+## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
+### NEW
+- **comment**: support gitalk (close: [#19](../../issues/19)); site switch `show_comment` (see README)
+- **i18n**: translation support
+- **showcase**: showcase section for homepage use site switch `show_showcase` (see README)
+- **css variable**: main-color, etc. (testing)
+- **custom footer text**: custom footer text by define a `var footer_text` (see README).
 
 ### MOD
-- [x] **optimization**: boost loading speed for pages and posts (move js position).
-- [x] **LaTeX**: switch to KaTeX. (close: [#13](../../issues/13))
-- [x] **Navbar**: TOC scrolling with offset the top navbar
-- [x] **post**: style modifications
+- **optimization**: boost loading speed for pages and posts (move js position).
+- **LaTeX**: switch to KaTeX. (close: [#13](../../issues/13))
+- **Navbar**: TOC scrolling with offset the top navbar
+- **post**: style modifications
 
 ### DEL
-- [x] **carousel**: replaced by **showcase**
-- [x] **deprecated CSS**: deleted unused CSS stylesheets to minify theme's file size.
+- **carousel**: replaced by **showcase**
+- **deprecated CSS**: deleted unused CSS stylesheets to minify theme's file size.
 
 ## [v0.2.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.2.2) (2019.05.17)
 ### NEW

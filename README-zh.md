@@ -52,11 +52,20 @@
 ### 自定义模板
 - **标签目录**: 使用模板 `Tag Archive` 来为标签添加一个目录页。([demo](https://fizzy.cc/tag/))。
 - **全宽**: 使用模板 `Full Width` 来使用全宽的文章模板。([demo](https://fizzy.cc/fizzy-theme/))。
-- **启用目录**: 使用模板 `Post With Toc` 来启用文章的目录抓取功能，详见[#目录](#目录)。 ([demo](https://fizzy.cc/fizzy-theme/))
+- **启用目录**: 使用模板 `Post With Toc` 来启用文章的目录抓取功能，详见[#内页目录](#内页目录)。 ([demo](https://fizzy.cc/fizzy-theme/))
 - **报告**: 为学术报告定制的页面 (计划中)
 
 ### 自定义CSS
 修改 `assets/css/custom.css` 文件中的css变量来修改主题的颜色。
+
+### 自定义底部文字
+在 Ghost后台 -> Code injection -> `Site Header` 中添加以下代码并自定义来替换网站底部默认的 “Made with ❤️ in London”。
+
+```javascript
+<script>
+  var footer_text = "修改成你的自定义底部文字，可以包含HTML代码，但需要注意引号的使用";
+</script>
+```
 
 ### 评论系统
 因为 Ghost 目前不包含评论系统，我们需要通过第三方工具或库来实现评论系统。
@@ -112,7 +121,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 访问 [自定义Prismjs][custom-prism] 来勾选你需要的语言。然后下载 js 和 css 文件以替换 `assets` 目录中的对应文件： `prism.js` 和 `prism.css`。
 
-### 目录
+### 内页目录
 目前 Fizzy 主题支持两种控制文章内章节目录的方法：
 1. 在  `Post Header`（单篇文章） 或者 `Site Header`（全站） 中插入如下代码（Code injection）：
     ```javascript
