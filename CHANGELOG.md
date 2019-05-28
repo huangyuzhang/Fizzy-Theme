@@ -1,12 +1,17 @@
 # CHANGELOG
 
+## [v1.0.0](#) (TBA)
+### NEW
+- [ ] **post list**: create a page to list all posts.
+- [ ] **collection**: support collections.
+- [ ] **search**: search system
+
 ## [v0.3.0](#) (TBA)
 ### NEW
 - [x] **comment**: support gitalk (close: [#19](../../issues/19)); site switch `show_comment` (see README)
 - [x] **i18n**: translation support
 - [x] **showcase**: showcase section for homepage use site switch `show_showcase` (see README)
 - [x] **css variable**: main-color, etc. (testing)
-- [ ] **search**: search system (todo)
 
 ### MOD
 - [x] **optimization**: boost loading speed for pages and posts (move js position).
