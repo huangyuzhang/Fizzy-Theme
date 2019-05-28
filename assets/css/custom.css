@@ -1,0 +1,9 @@
+/* ===== Customize Styles ===== */
+
+/* global */
+:root {
+    --main-color: #fb3b3b;
+    --link-color-hover: #ff7a7a;
+    --bg-color-light: #fff3f3;
+    --shadow: rgba(238,95,91,0.25);
+  }

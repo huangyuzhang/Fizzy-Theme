@@ -1,4 +1,5 @@
 /* ====================== import ====================== */
+@import "custom.css"; /* ADD 2019.05.28*/
 @import "class.css"; 
 @import "divider.min.css";
 
@@ -34,7 +35,7 @@ p code, blockquote code, li > code, table code, h2 code, h3 code{
 pre{border-radius:6px;}
 
 /* navbar */
-.navbar-item {
+.navbar-item,.navbar-item img {
 	margin-right: 0.25rem;
 }
 .nav-current {
@@ -170,7 +171,7 @@ html,body{
 	color:#000;
 }
 .navbar-brand .navbar-item span {
-	color:#fb3c3b;
+	color:var(--main-color);
 }
 
 /* ====================== component: carousel ====================== 2019.04.09 */
@@ -353,7 +354,7 @@ html,body{
 	transition: all .25s;
 }
 .post-wrap .post-content a:hover {
-	color:#ff7a7a;
+	color:var(--link-color-hover);
 	border-bottom:1px solid;
 }
 /* paragraph */
@@ -494,9 +495,9 @@ html,body{
     color: #7a0404;
 	border-left: 4px solid;
 	border-radius: 6px;
-    background-color: #fff3f3;
-	border-color: #fb3b3b;
-	box-shadow: 0 1px 1px rgba(238,95,91,0.25);
+    background-color: var(--bg-color-light);
+	border-color: var(--main-color);
+	box-shadow: 0 1px 1px var(--shadow);
     margin-left: -.5em;
     padding: .75em 1.25em;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;

@@ -4,8 +4,8 @@
 ### NEW
 - [x] **comment**: support gitalk; global configuration `show_comment` (see README)
 - [x] **i18n**: translation support
-- [x] **showcase**: showcase section for homepage (testing)
-- [ ] **global variable**: main-color, etc. (todo)
+- [x] **showcase**: showcase section for homepage
+- [x] **css variable**: main-color, etc. (testing)
 - [ ] **search**: search system (todo)
 
 ### MOD
