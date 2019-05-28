@@ -1,4 +1,4 @@
-# Fizzy Theme
+# The Fizzy Theme
 
 [![demo](https://img.shields.io/badge/Demo-online-yellow.svg)](https://fizzy.cc/)
 [![Ghost version](https://img.shields.io/badge/Ghost->=2.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
@@ -30,6 +30,7 @@ You can change the theme's language by configure in Ghost Admin -> General -> "P
 Please help us to translate Fizzy into your language by Pull Request.
 
 ### Internal tags
+Internal tags start with `#`, after creating it will displayed as internal tag automatically. Internal tags will not be displayed in front-end. So far the Fizzy Theme support the following internal tags:
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in homepage (see [Showcase](#showcase)). 
 - **No Index**: Use internal tag `#noindex`(slug:`hash-noindex`) to exclude posts from listing in home page. 
 > limitation: hiding posts with `#noindex` tag, but the number of posts displayed for that page will change as well.

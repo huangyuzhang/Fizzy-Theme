@@ -4,6 +4,8 @@
 :root {
     --main-color: #fb3b3b;
     --link-color-hover: #ff7a7a;
+    --text-black: #333;
+    --text-dark: #7a0404;
     --bg-color-light: #fff3f3;
     --shadow: rgba(238,95,91,0.25);
   }

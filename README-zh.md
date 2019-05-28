@@ -1,4 +1,4 @@
-# Fizzy Theme
+# The Fizzy Theme 汽水主题
 
 [![demo](https://img.shields.io/badge/Demo-online-yellow.svg)](https://fizzy.cc/)
 [![Ghost version](https://img.shields.io/badge/Ghost->=2.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
@@ -31,6 +31,7 @@
 请帮助我们翻译Fizzy主题到其他语言，并通过Pull Request来提交。
 
 ### 内部标签
+内部标签以`#`开头，添加后将自动显示为内部标签。内部标签不会在前台显示，目前本主题支持的内部标签有：
 - **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（见：[展示橱窗](#展示橱窗)）。
 - **不在列表展示**: 包含 `#noindex`(slug:`hash-noindex`) 标签的文章将不在首页的文章列表中展示。 
 > 限制: 使用 `#noindex` 隐藏一篇文章后，首页的文章展示数量也会因此减少一个。
