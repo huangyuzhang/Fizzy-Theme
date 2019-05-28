@@ -168,7 +168,7 @@ html,body{
 	font-size:1.5rem;
 }
 .navbar-brand .navbar-item a {
-	color:#000;
+	color: var(--text-black);
 }
 .navbar-brand .navbar-item span {
 	color:var(--main-color);
@@ -492,7 +492,7 @@ html,body{
 
 /* Blockquotes */
 .single-article .post-wrap .post-content blockquote {
-    color: #7a0404;
+    color: var(--text-dark);
 	border-left: 4px solid;
 	border-radius: 6px;
     background-color: var(--bg-color-light);
@@ -861,8 +861,7 @@ html,body{
     
 }
 .declare a:hover {
-	/* color:#fb3c3b; */
-	box-shadow: #fb3c3b 0 -1px 0 inset;
+	box-shadow: var(--main-color) 0 -1px 0 inset;
 }
 
 /* ====================== error page ====================== 2019.05.10 */
