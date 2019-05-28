@@ -2,5 +2,4 @@
 .vscode
 .DS_Store
 node_modules/
-assets/css/vanu.css
 assets/js/popup.js
