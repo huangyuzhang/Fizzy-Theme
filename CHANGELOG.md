@@ -6,6 +6,8 @@
 - [ ] **collection**: support collections.
 - [ ] **search**: support search system
 - [ ] **README TOC**: better documentation
+- [ ] **custom dropdown menu**: support custom dropdown menu
+- [ ] **support Fizzy option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW
