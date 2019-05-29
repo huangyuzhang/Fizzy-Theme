@@ -57,14 +57,6 @@
 - **启用目录**: 使用模板 `Post With Toc` 来启用文章的目录抓取功能，详见[#内页目录](#内页目录)。 ([demo](https://fizzy.cc/fizzy-theme/))
 - **报告**: 为学术报告定制的页面 (计划中)
 
-### Custom Templates
-Open the gear icon while editing a post or page, scroll to the bottom and change `Template` option.
-- **tag-archive**: used for listing all tags/topics in one page. ([demo](https://fizzy.cc/tag/))
-- **post-archive**: used for listing all posts in one page. ([demo](https://fizzy.cc/archive/))
-- **full-width**: full width post. ([demo](https://fizzy.cc/fizzy-theme/))
-- **post-with-Toc**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
-- **report**: special layout for academic report (todo)
-
 ### 自定义CSS
 修改 `assets/css/custom.css` 文件中的css变量来修改主题的颜色。
 
