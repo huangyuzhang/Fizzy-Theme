@@ -15,6 +15,7 @@ The v1.0.0 version will be the last development version of the Fizzy Theme. Afte
 ### MOD
 - [ ] **js**: concentrate js files and minify them
 - [ ] **css**: concentrate css files and minify them
+- [ ] **custom css variable**: customize CSS variables in `Site Header`
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW

@@ -3,12 +3,12 @@
 {{!< default}}
 
 {{#post}}
-<section class="section is-paddingless-bottom">
+<section class="section">
     <div class="container">
         <h1 class="title has-text-centered is-montserrat"><i class="fas fa-history"></i> {{title}}</h1>     
     </div>
 </section>
-<section class="section is-mobile-paddingless">
+<section class="section is-paddingless">
     <div class="columns">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
@@ -24,8 +24,21 @@
                                 {{#get "posts" limit="all" order="published_at desc"}}
                                     {{#foreach posts}}
                                     <li class='post-archive-item' year="{{date format=(t 'YYYY')}}" month="{{date format=(t 'MMMM')}}">
-                                        <time class="is-size-7">[{{date published_at format=(t "DD MMMM YYYY")}}]</time>
-                                        <a href='{{url}}'>{{title}}</a>
+                                        <div class="columns is-mobile">
+                                            <div class="column is-2-tablet is-3-mobile">
+                                                <time class="is-size-7">[{{date published_at format=(t "DD MMMM YYYY")}}]</time>
+                                            </div>
+                                            <div class="column">
+                                                {{#if featured}}
+                                                    <span style="color:var(--main-color)" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i></span>
+                                                {{/if}}
+                                                <a href='{{url}}'>
+                                                    {{title}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                        
                                     </li>
                                     {{/foreach}}
                                 {{/get}}

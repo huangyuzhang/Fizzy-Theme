@@ -844,7 +844,7 @@ html,body{
 /* ====================== template: Post Archive ====================== 2019.05.28 */
 ul.post-archive{margin-left:0!important;}
 .post-archive .post-archive-item time{
-	margin-right:1rem;
+	white-space: nowrap;
 }
 /* ====================== template: Full Width ====================== 2019.05.10 */
 .single-article .post-wrap.full-width {
