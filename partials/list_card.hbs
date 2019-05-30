@@ -1,26 +1,26 @@
 {{!-- post_item: for index & home cards --}}
 <article class="box is-paddingless is-clipped has-shadow-lift margin-bottom-25 can-scale">
-    <div class="columns post-card">
+    <div class="columns post-card is-marginless">
         {{!-- featured_image --}}
         {{#if feature_image}}
-            <a class="column is-5 is-hidden-mobile is-vpaddingless" href="{{url}}" alt="{{title}}" title="{{title}}">
+            <a class="column is-hidden-mobile is-paddingless" href="{{url}}" alt="{{title}}" title="{{title}}">
                 <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>    
             </a>
-            <a class="column is-5 is-hidden-tablet is-paddingless-top" href="{{url}}" alt="{{title}}" title="{{title}}">
+            <a class="column is-hidden-tablet" href="{{url}}" alt="{{title}}" title="{{title}}">
                 <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>    
             </a>
         
         {{!-- post info --}}
-        <div class="column is-7">
+        <div class="column is-8 is-paddingless">
         {{else}}
-        <div class="column is-12">
+        <div class="column is-12 is-paddingless">
         {{/if}}
             <div class="post-info">
                 {{#if featured}}
                     {{#if feature_image}}
-                    <span class="featured-label has-img is-montserrat" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i></span>
+                    <span class="featured-label has-img is-montserrat" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i> <span>{{t "Featured"}}</span></span>
                     {{else}}
-                    <span class="featured-label no-img is-montserrat" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i></span>
+                    <span class="featured-label no-img is-montserrat" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i> <span>{{t "Featured"}}</span></span>
                     {{/if}}
                 {{/if}}
 

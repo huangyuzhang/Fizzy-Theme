@@ -227,8 +227,10 @@ html,body{
 	position: relative; 
 	overflow: hidden;
 	height:10.5rem;
+	margin-bottom:1.5rem;
 	padding:0!important;
 }
+.tf-item:last-child {margin-bottom:0}
 .tf-meta {
 	position: absolute;
 	bottom: 0;
@@ -240,7 +242,7 @@ html,body{
 /* index: post-card 2019.04.09 */
 @media screen and (min-width: 769px){
 	.post-card {
-		min-height:280px;
+		min-height:250px;
 	}
 }
 /* index: featured-image 2019.04.10 */
@@ -264,7 +266,7 @@ html,body{
 }
 @media screen and (max-width: 768px){
 	.post-info {
-		padding: .9rem 1.8rem;
+		padding: 1rem;
 	}
 	.post-card.columns{margin-top:0;}
 	.post-card .column{
@@ -273,12 +275,12 @@ html,body{
 }
 @media screen and (min-width: 769px) and (max-width: 1215px){
 	.post-info {
-		padding:24px;
+		padding:2rem;
 	}
 }
 @media screen and (min-width: 1216px){
 	.post-info {
-		padding:32px;
+		padding:2.5rem;
 	}
 }
 
@@ -289,12 +291,18 @@ html,body{
 	height: 28px;
     line-height: 28px;
 }
+.featured-label span{
+	display:none;
+}
+.featured-label:hover span {
+	display:inline-block;
+}
 @media screen and (max-width: 768px){
 	.post-info .featured-label.has-img {
-		top: -31px;
-		right: 20px;
-		height: 24px;
-    	line-height: 24px;
+		top: -33px;
+		right: 10px;
+		height: 26px;
+    	line-height: 26px;
 	}
 	.post-info .featured-label.no-img {
 		top: 10px;

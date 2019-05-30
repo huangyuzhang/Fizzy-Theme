@@ -81,6 +81,9 @@
 .is-margin-auto{
     margin:auto;
 }
+.is-marginless{
+    margin:0!important;
+}
 .is-marginless-top {
     margin-top: 0!important;
 }
