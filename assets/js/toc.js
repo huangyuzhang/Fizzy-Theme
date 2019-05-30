@@ -9,7 +9,7 @@ if (typeof show_toc == 'undefined') {
 
 // Sticky TOC Scroll effect + 2019.05.12 -> 2019.05.13
 $(window).scroll(function(){
-    var pxTocImg = 400; //offset, maybe use more elegant way later
+    var pxTocImg = 400; //offset, maybe use a more elegant way later
     // for post with featured image
     if($(window).scrollTop() < pxTocImg){
         $("#toc-img").addClass('is-absolute');

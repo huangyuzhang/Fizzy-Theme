@@ -173,6 +173,41 @@ html,body{
 	color:var(--main-color);
 }
 
+/* search form 2019.05.30*/
+.fizzy-search{
+	/* position:relative; */
+}
+#search-btn:hover,#close-btn:hover button{color:var(--main-color)}
+#seach-form{
+	position: relative;
+	margin-left:2px;
+}
+@media screen and (min-width:1089px){
+	#seach-form{margin-bottom:0!important;}
+}
+#search-input:focus{
+	border-color:var(--main-color);
+    box-shadow: 0 0 0 0.125em var(--shadow);
+}
+#search-results{
+	z-index:3;
+	position: absolute;
+	border-radius: 6px;
+	overflow:hidden;
+    box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    background-color: #fff;
+}
+#search-results a {
+    background: #fff;
+	border-radius:3px;
+	color:#333;
+	margin:.5rem!important;
+}
+#search-results a:hover {
+	font-weight:600;
+    background: #f7f7f7;
+	color:#333;
+}
 /* ====================== component: carousel ====================== 2019.04.09 */
 .carousel{
 	overflow: hidden;

@@ -134,6 +134,17 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 2. 使用自定义模板 `Post With Toc` 来启用章节目录。
 > **优先级**: 自定义模板 > 文章 `Post Header` > 站点 `Site Header`
 
+### 即时搜索
+如果需要开启即时搜索，首先在Ghost后台添加一个自定义 Integration，并记录下 **Content API Key** 和 **API URL**。
+然后在 Code injection -> `Site Header`中加入以下代码并自定义：
+```javascript
+<script>
+  var show_search = true; // 默认:false
+  var search_key = '这里填写刚才获得的 Content API Key';
+  var search_url = '这里填写刚才获得的 API URL'; // 一般情况下这个就是你的站点url
+</script>
+```
+
 ### LaTeX公式
 使用 `$`（行内公式）或 `$$` 来包裹LaTeX公式以便主题渲染成公式。 ([示例](https://fizzy.cc/latex/))
 
@@ -158,6 +169,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 - [jQuery.tocify.js][tocify] - 一个根据文章内标题生成目录的工具 (引入 JQuery-UI)
 - [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 - [Gitalk][gitalk] - 一个基于 Github issued 的评论系统 (since v0.3.0)
+- [ghost-search][ghost-search] - 一个基于 Ghost Content API 的搜索引擎 (since v1.0.0)
 
 ## :bug: 报告问题 & :dart: 改进建议
 如果各位在使用过程中发现BUG，有功能或节目的修改建议或者想要主题支持一些新的功能，请前往issue页面提交并正确选择label。
@@ -187,3 +199,4 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
+[ghost-search]: https://github.com/HauntedThemes/ghost-search

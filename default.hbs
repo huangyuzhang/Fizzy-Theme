@@ -34,6 +34,35 @@
     {{!-- foot --}}
     {{> footer}}
 
+    {{!-- ghost-search --}}
+    <script src="https://unpkg.com/@tryghost/content-api@1.2.3/umd/content-api.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/ghost-search.min.js"}}"></script>
+    <script type="text/javascript">
+        let ghostSearch = new GhostSearch({
+            key: search_key, // set var search_key in Site Header
+            host: search_url, // set var search_url in Site Header
+            input:   '#search-input',
+            results: '#search-results',
+            options: {
+                limit: 10
+            },
+            template: function(result) {
+                let url = [location.protocol, '//', location.host].join('');
+                return '<a class="navbar-item" href="' + url + '/' + result.slug + '/">' + result.title + '</a>';  
+            },
+            on: {
+                afterDisplay: function(results){
+                    if (results.total == 0 && document.getElementById('search-input').value != '') {
+                        let resultsElement = document.getElementById('search-results');
+                        let e = document.createElement('p');
+                        e.innerHTML = "<a class='navbar-item'>No results</a>";
+                        resultsElement.appendChild(e.firstChild);
+                    };
+                }
+            }
+        })
+    </script>
+
     {{!-- This tag outputs Code injections in Site Footer--}}
     {{ghost_foot}}
 

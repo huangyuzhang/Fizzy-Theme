@@ -2,3 +2,20 @@
 {{#foreach navigation}}
 <a class="navbar-item {{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
 {{/foreach}}
+<div class="navbar-item" id="search-btn">
+      <i class="fas fa-search"></i>
+</div>
+<div class="fizzy-search">
+    <div class="field has-addons" style="display:none" id="seach-form">
+        <div class="control has-icons-left">
+            <input id="search-input" class="input" placeholder="{{t "Search"}}">
+            <span class="icon is-left">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="control"  id="close-btn">
+            <button type="submit" class="button"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+    <div id="search-results"></div>
+</div>

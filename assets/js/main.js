@@ -50,3 +50,25 @@ for (var i = 0; i < uniqueMonth.length; i++) {
     var html = "<h4>" + uniqueMonth[i] + "</h4>";
     $("[month='" + uniqueMonth[i] + "']:first").before(html);
 }
+// =================================================
+// search 2019.05.30
+// =================================================
+if (typeof show_search == 'undefined') {
+  var show_search = false;
+}
+if (!show_search) {
+  $("#search-btn").hide();
+}
+$("#search-btn").click(function() {
+    // $("#search-input").val("");
+    $("#seach-form").fadeIn();
+    $("#search-btn").hide()
+    $('#search-input').focus();
+    $("#search-results").show();
+});
+$("#close-btn").click(function() {
+  $("#seach-form").hide(); //hide search form
+  $("#search-results").hide(); //hide all results
+  $("#search-btn").fadeIn(); // show search button
+  // $("#search-input").val(""); //clear search field text  
+});

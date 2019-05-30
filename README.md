@@ -129,6 +129,17 @@ There are two ways to control the TOC of a post:
 2. Use custom post template `Post With Toc` to enable TOC. 
 > **Prioty**: `template` > `Post Header` > `Site Header`
 
+### Instant Search
+To enable the Instant Search (added to top menu), first add a custom integration in Ghost Admin. Then copy the **Content API Key** and **API URL**.
+Go to the Code injection, add the following code to the `Site Header`:
+```javascript
+<script>
+  var show_search = true; // default:false
+  var search_key = 'PASTE THE CODE YOU COPIED AS Content API Key';
+  var search_url = 'PASTE THE CODE YOU COPIED AS API URL'; // it is usually your site url
+</script>
+```
+
 ### LaTeX support
 Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([examples](https://fizzy.cc/latex/))
 
@@ -151,8 +162,9 @@ See [CHANGELOG.md](./CHANGELOG.md)
 - [Prismjs][prismjs] - A lightweight syntax highlighter
 - [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
-- [KaTeX][katex] - A faster LaTeX equation rendering library. (since v0.3.0)
+- [KaTeX][katex] - A faster LaTeX equation rendering library (since v0.3.0)
 - [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
+- [ghost-search][ghost-search] - An instant search library using Ghost Content API (since v1.0.0)
 
 ## :bug: Bug Report & :dart: Features Request
 If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label accordingly. 
@@ -181,4 +193,5 @@ This project is licensed under the MIT License.
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
 [vssue]: https://github.com/meteorlxy/vssue
-[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
+[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+b
+[ghost-search]: https://github.com/HauntedThemes/ghost-search
