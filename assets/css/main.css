@@ -180,6 +180,7 @@ html,body{
 	border-radius: 6px;
 }
 .carousel .carousel-item {
+	overflow: hidden;
 	position: relative; 
 	height:22.5rem;
 	padding:0!important;
@@ -312,6 +313,16 @@ html,body{
 	}	
 }
 
+/* showcase 2019.05.30 */
+.showcase{
+	padding-bottom:0rem!important;
+}
+@media screen and (max-width: 768px){
+	.showcase{
+		padding-top:1.5rem!important;
+		padding-bottom:1rem!important;
+	}
+}
 /* ====================== post ====================== 2019.04.13 */
 
 /* remove box border-radius in mobile device 2019.04.11 */
