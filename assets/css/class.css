@@ -92,6 +92,9 @@
 }
 
 /* shadow */
+.has-shadow-thin{
+    box-shadow: 0 0px 2px 0 #bbb;
+}
 .has-shadow-mo {
     box-shadow: 0 20px 40px rgba(12,12,94,.1) !important;
 }
