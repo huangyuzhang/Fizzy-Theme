@@ -177,7 +177,14 @@ html,body{
 .fizzy-search{
 	/* position:relative; */
 }
-#search-btn:hover,#close-btn:hover button{color:var(--main-color)}
+#search-btn{
+	padding: .75rem;
+	border-radius:4px;
+}
+#search-btn:hover{
+	background-color: #f2f2f2;
+	/* color:var(--main-color); */
+}
 #seach-form{
 	position: relative;
 	margin-left:2px;
@@ -194,6 +201,7 @@ html,body{
 	position: absolute;
 	border-radius: 6px;
 	overflow:hidden;
+    margin-left: 2px;
     box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     background-color: #fff;
 }

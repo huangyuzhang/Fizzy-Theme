@@ -4,7 +4,7 @@
 The v1.0.0 version will be the last development version of the Fizzy Theme. After this, no regular update will be provided. I will only fix bugs and do minor modifications to cope with the Ghost upgrade. Meaningful new features will still be added under a slower pace.
 
 ### NEW
-- [x] **Instant Search**: support search system (testing)
+- [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
 - [x] **post archive**: create a page to list all posts. (testing)
 - [ ] **collection**: support collections.
 - [ ] **README TOC**: better documentation
