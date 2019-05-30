@@ -13,6 +13,7 @@ The v1.0.0 version will be the last development version of the Fizzy Theme. Afte
 - [ ] **Report Template**: support academic report template
 
 ### MOD
+- [x] **custom footer text**: set the default value to @site.description.
 - [ ] **js**: concentrate js files and minify them
 - [ ] **css**: concentrate css files and minify them
 - [ ] **custom css variable**: customize CSS variables in `Site Header`

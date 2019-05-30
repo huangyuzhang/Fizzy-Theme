@@ -60,11 +60,11 @@ Open the gear icon ⚙ while editing a post or page, scroll to the bottom and ch
 Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.
 
 ### Custom Footer Text
-Define a variable `footer_text` in the `Site Header` as below to replaced the default: "Made with ❤️ in London" text at the bottom.
+By default, your **site description** (Ghost Admin -> General) will be displayed in the footer text. If you need to change it, define a variable `footer_text` in the `Site Header` as below:
 
 ```javascript
 <script>
-  var footer_text = "YOUR FOOTER TEXT HERE";
+  var footer_text = "REPLACE WITH YOUR FOOTER TEXT HERE";
 </script>
 ```
 

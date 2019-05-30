@@ -61,7 +61,7 @@
 修改 `assets/css/custom.css` 文件中的css变量来修改主题的颜色。
 
 ### 自定义底部文字
-在 Ghost后台 -> Code injection -> `Site Header` 中添加以下代码并自定义来替换网站底部默认的 “Made with ❤️ in London”。
+默认情况下网站底部会显示**站点描述**（Ghost后台 -> General）。如果你想要自定义底部文字，在 Ghost后台 -> Code injection -> `Site Header` 中添加以下代码并自定义：
 
 ```javascript
 <script>
