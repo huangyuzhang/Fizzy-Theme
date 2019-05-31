@@ -6,7 +6,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-A tasty blogging theme for Ghost :ghost:.
+A tasty blogging theme for Ghost :ghost:. 
+If you want to take advantage of all the features of this theme, please read this page.
 
 [中文文档](./README-zh.md)
 
@@ -23,6 +24,14 @@ My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 Use this [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme.
 
 ## :tropical_drink: Features and Usage
+
+### Logo
+If only **site icon** is uploaded, the Logo area will display the **icon** and followed by the **Site name** then a dot colored as the **main color**, e.g.:
+<img src="https://user-images.githubusercontent.com/40261916/58709309-cd666280-83b1-11e9-8253-1a2ceeca56d1.png" height="36px"> <img src="https://user-images.githubusercontent.com/40261916/58709326-d6573400-83b1-11e9-9c69-71274926322b.png" height="36px"/>
+
+If **site logo** is uploaded, then the Logo area will only display the **site logo**. 
+
+> Note: Since the top navbar is colored with white background, it would be better to use a dark/colorful logo.
 
 ### i18n
 You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, if you changed the json file after you upload or update the Fizzy theme, you need to restart the ghost to refresh the `json` file.

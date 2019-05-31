@@ -6,12 +6,12 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-做一个有味道的Ghost博客主题
+做一个有味道的 Ghost :ghost:博客主题
+要充分使用本主题支持的功能，请仔细阅读本文档的教程。
 
 [English Doc](./README.md)
 
 ![](./fizzy-theme-screenshot.png)
-
 
 ## :wrench: 安装
 
@@ -24,6 +24,14 @@
 如果你也在使用Fizzy主题，欢迎通过此[issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20)来添加你的站点。
 
 ## :tropical_drink: 特性及使用介绍
+
+### Logo
+如果你只上传了 **site icon**，网站的导航栏会展示：**site icon** + 网站名称 + 一个**main color** 为颜色的点，比如：
+<img src="https://user-images.githubusercontent.com/40261916/58709309-cd666280-83b1-11e9-8253-1a2ceeca56d1.png" height="36px"> <img src="https://user-images.githubusercontent.com/40261916/58709326-d6573400-83b1-11e9-9c69-71274926322b.png" height="36px"/>
+
+如果上传了**网站logo**，那么导航栏只会展示**网站logo**。
+
+> 注意：由于导航栏是浅色背景，因此建议使用深色或彩色的logo。
 
 ### 多语言支持
 你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。如果在上传或更新Fizzy主题后你修改过了`json`文件，那么需要通过重启Ghost使`json`生效。
