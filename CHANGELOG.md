@@ -16,9 +16,9 @@ I will then focus on bug fixing and improvements to current code. Also I will do
 
 ### MOD
 - [x] **custom footer text**: set the default value to @site.description.
+- [ ] **custom css variable**: customize CSS variables in `Site Header`
 - [ ] **js**: concentrate js files and minify them
 - [ ] **css**: concentrate css files and minify them
-- [ ] **custom css variable**: customize CSS variables in `Site Header`
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW
