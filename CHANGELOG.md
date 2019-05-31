@@ -1,16 +1,18 @@
 # CHANGELOG
 
 ## [v1.0.0](#) (TBA)
-The v1.0.0 version will be the last development version of the Fizzy Theme. After this, no regular update will be provided. I will only fix bugs and do minor modifications to cope with the Ghost upgrade. Meaningful new features will still be added under a slower pace.
+The v1.0.0 will be the last development version and the first stable version of the Fizzy Theme. 
+
+I will then focus on bug fixing and improvements to current code. Also I will do modifications to cope with the Ghost upgrade. Meaningful new features will still be added by not only me but also other contributors (hope so).
 
 ### NEW
 - [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
 - [x] **post archive**: create a page to list all posts. (testing)
-- [ ] **collection**: support collections.
 - [ ] **README TOC**: better documentation
 - [ ] **custom dropdown menu**: support custom dropdown menu
 - [ ] **support Fizzy option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
 - [ ] **Report Template**: support academic report template
+- [ ] **collection**: support collections.
 
 ### MOD
 - [x] **custom footer text**: set the default value to @site.description.
