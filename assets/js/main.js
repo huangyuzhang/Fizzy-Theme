@@ -52,6 +52,7 @@ for (var i = 0; i < uniqueMonth.length; i++) {
 }
 // =================================================
 // search 2019.05.30
+// function: open and close search form
 // =================================================
 if (typeof show_search == 'undefined') {
   var show_search = false;
@@ -59,16 +60,28 @@ if (typeof show_search == 'undefined') {
 if (!show_search) {
   $("#search-btn").hide();
 }
-$("#search-btn").click(function() {
+$("#search-btn").click(function(event) {
     // $("#search-input").val("");
     $("#seach-form").fadeIn();
     $("#search-btn").hide()
     $('#search-input').focus();
     $("#search-results").show();
+    event.stopPropagation();
 });
-$("#close-btn").click(function() {
-  $("#seach-form").hide(); //hide search form
-  $("#search-results").hide(); //hide all results
-  $("#search-btn").fadeIn(); // show search button
+$("#close-btn").click(function(event) {
+  $("#seach-form").hide();
+  $("#search-results").hide(); 
+  $("#search-btn").fadeIn(); 
   // $("#search-input").val(""); //clear search field text  
+  event.stopPropagation();
+});
+$(document).click(function(){
+  $("#seach-form").hide(); 
+  $("#search-results").hide(); 
+  $("#search-btn").fadeIn();
+});
+$(window).scroll(function(){
+  $("#seach-form").hide(); 
+  $("#search-results").hide(); 
+  $("#search-btn").show();
 });
