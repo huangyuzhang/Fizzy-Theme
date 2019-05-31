@@ -7,6 +7,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
 做一个有味道的 Ghost :ghost:博客主题
+
 要充分使用本主题支持的功能，请仔细阅读本文档的教程。
 
 [English Doc](./README.md)
@@ -165,7 +166,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 查看完整版本更新日志： [CHANGELOD.md](./CHANGELOG.md)
 
-## :sunglasses: 作者
+## :sunglasses: 作者及贡献者
 
 - 黄玉章 (Simon)
 
