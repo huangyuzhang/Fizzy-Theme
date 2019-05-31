@@ -178,6 +178,7 @@ html,body{
 	/* position:relative; */
 }
 #search-btn{
+	cursor: pointer;
 	padding: .75rem;
 	border-radius:4px;
 }
