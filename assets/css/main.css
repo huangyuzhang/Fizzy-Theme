@@ -198,8 +198,9 @@ html,body{
 	border-color:var(--main-color);
     box-shadow: 0 0 0 0.125em var(--shadow);
 }
-#close-btn button{
-	color:#7a7a7a;
+#close-btn:hover button{
+	color:var(--main-color);
+	border-color:var(--link-color-hover);
 }
 #search-results{
 	z-index:3;
