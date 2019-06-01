@@ -59,6 +59,12 @@ The left slider carousel part detects the internal tag `#carousel`. The right pa
 
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
+### Author Page
+You can customize the author page by editing your **profile** in Ghost Admin, such as **name**, **avatar**, **background image**, **social account links**, **location** and **bio**. Author page ([demo](https://fizzy.cc/author/simon/))
+
+### Tag Page
+You can customize the tag page by editing **tags** in Ghost Admin, such as **image**, **description**. Tag Page ([demo](https://fizzy.cc/tag/blogging/))
+
 ### Custom Templates
 Open the gear icon ⚙ while editing a post or page, scroll to the bottom and change `Template` option.
 - **Tag Archive**: used for listing all tags/topics in one page. ([demo](https://fizzy.cc/tag/))

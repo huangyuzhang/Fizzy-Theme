@@ -58,6 +58,12 @@
 
 ![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
 
+### 作者页面
+你可以在Ghost后台 -> **Profile** 编辑作者的详情，如： **姓名**、**头像**、**背景图片**、**社交账号**、**地址**和**签名**。作者页面([demo](https://fizzy.cc/author/simon/))
+
+### 标签页面
+你可以在Ghost后台 -> **tags** 编辑标签的详情，如：**图片**和**描述**。标签页面([demo](https://fizzy.cc/tag/blogging/))
+
 ### 自定义模板
 在编辑文章或页面时，点击右上角齿轮图标⚙，在底部找到 `Template` 来更换模板。
 - **标签目录**: 使用模板 `Tag Archive` 来为标签添加一个目录页。([demo](https://fizzy.cc/tag/))。
