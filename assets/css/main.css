@@ -211,6 +211,11 @@ html,body{
     box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     background-color: #fff;
 }
+@media screen and (max-width:768px){
+	#search-results{
+		margin: 0 1px !important;
+	}
+}
 #search-results a {
     background: #fff;
 	border-radius:3px;
@@ -222,6 +227,7 @@ html,body{
     background: #f7f7f7;
 	color:#333;
 }
+.fizzy-search .field:not(:last-child){margin-bottom:0!important;}
 /* ====================== component: carousel ====================== 2019.04.09 */
 .carousel{
 	overflow: hidden;
