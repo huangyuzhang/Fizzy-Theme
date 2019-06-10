@@ -146,6 +146,8 @@ There are two ways to control the TOC of a post:
 2. Use custom post template `Post With Toc` to enable TOC. 
 > **Prioty**: `template` > `Post Header` > `Site Header`
 
+> **Notice**: h2 and h3 headings on the page will be displayed by default. If you want to add other headings (e.g. h1 or h4), please edit `selectors` of the file `partials/post/post_toc.hbs`. However, you should not use h1 except for the post title.
+
 ### Instant Search
 To enable the Instant Search (added to top menu), first add a custom integration in Ghost Admin. Then copy the **Content API Key** and **API URL**.
 Go to the Code injection, add the following code to the `Site Header`:
