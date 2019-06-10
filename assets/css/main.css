@@ -508,9 +508,9 @@ html,body{
 @media screen and (max-width:1680px){
 	.single-article .post-content .kg-width-wide {
 		max-width: 100vw;
-		width: calc(100vw - 540px);
-		margin-left: calc(-50vw + 270px);
-		margin-right: calc(-50vw + 270px);
+		width: calc(100vw - 560px);
+		margin-left: calc(-50vw + 280px);
+		margin-right: calc(-50vw + 280px);
 	}
 }
 @media screen and (max-width:1500px){
@@ -712,7 +712,10 @@ html,body{
 #toc, #toc-img {
 	font-family:'Montserrat', sans-serif;
 	border-left: 1px solid #ddd;
-	padding-right: 5px;
+	background-color: #fff;
+	border-radius:3px;
+	margin-right:5px;
+	padding:10px 10px 10px 0;
 }
 /* not displaying below 1280px */
 @media screen and (max-width: 1279px){
