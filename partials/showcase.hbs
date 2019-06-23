@@ -11,10 +11,10 @@
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             <div class="columns">
                 {{!-- carousel start--}}
-                <div class="column is-6">
+                <div class="column is-7">
                     <div class="carousel" id="carousel-home">
                         {{!-- get 10 posts with tag #carousel as --}}
-                        {{#get "posts" limit="5" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
+                        {{#get "posts" limit="6" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
                         {{#foreach carousel}}
                             <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});">
                                 <a href="{{url}}" rel="bookmark" class="link-block"></a>
@@ -34,7 +34,7 @@
                 {{!-- carousel end --}}
 
                 {{!-- top-featured start --}}
-                <div class="column is-6">
+                <div class="column is-5">
                     {{#get "posts" limit="2" filter="featured:true" as |top-featured|}}
                     <div class="top-featured">
                         {{#top-featured}}
