@@ -71,7 +71,7 @@ Open the gear icon ⚙ while editing a post or page, scroll to the bottom and ch
 - **Post Archive**: used for listing all posts in one page. ([demo](https://fizzy.cc/archive/))
 - **Full Width**: full width post. ([demo](https://fizzy.cc/fizzy-theme/))
 - **Post With TOC**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
-- **Featured Posts Archive**: post list for featured posts, page tile and content will be shown on the top position. ([demo](https://fizzy.cc/featured/))
+- **Featured Posts Archive**: post list for featured posts, page title and content will be shown on the top section. ([demo](https://fizzy.cc/featured/))
 
 ### Custom CSS
 Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.
