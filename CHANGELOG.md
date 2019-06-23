@@ -7,16 +7,17 @@ I will then focus on bug fixing and improvements to current code. Also I will do
 
 ### NEW
 - [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
-- [x] **post archive**: create a page to list all posts. (testing)
+- [x] **Post Archive**: create a page to list all posts. (testing)
+- [x] **Custom Template**: Featured Posts Archive
 - [ ] **README TOC**: better documentation
-- [ ] **custom dropdown menu**: support custom dropdown menu
-- [ ] **support Fizzy option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
+- [ ] **Custom Dropdown Menu**: support custom dropdown menu
+- [ ] **Support Fizzy Option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
 - [ ] **Report Template**: support academic report template
-- [ ] **collection**: support collections.
+- [ ] **Collection**: support collections.
 
 ### MOD
-- [x] **custom footer text**: set the default value to @site.description.
-- [ ] **custom css variable**: customize CSS variables in `Site Header`
+- [x] **Custom footer text**: set the default value to @site.description.
+- [ ] **Custom css variable**: customize CSS variables in `Site Header`
 - [ ] **js**: concentrate js files and minify them
 - [ ] **css**: concentrate css files and minify them
 
