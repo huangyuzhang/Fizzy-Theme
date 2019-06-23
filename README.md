@@ -126,7 +126,7 @@ Insert the following code into Ghost Admin -> Code injection: `Site Header`, and
     var disqus_link = 'https://YOURLINK.disqus.com/embed.js'; // change it with your DISQUS js link
 </script>
 ```
-If you want to change the comment system, you need to modify the code in `partial/post_comment.hbs`.
+If you want to change the comment system, you need to modify the code in `partial/post/post_comment.hbs`.
 
 ###  Code Highlight
 Prism.js is used for syntax highlighting, the default languages and plugins used by Fizzy theme are:

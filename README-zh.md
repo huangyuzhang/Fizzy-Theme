@@ -128,7 +128,7 @@ gitalk.render('gitalk-container');
 </script>
 ```
 
-如果你想要更换到其他的评论系统，则需要修改 `partial/post_comment.hbs` 中的代码。
+如果你想要更换到其他的评论系统，则需要修改 `partial/post/post_comment.hbs` 中的代码。
 
 
 ### 代码高亮
