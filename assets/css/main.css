@@ -19,9 +19,10 @@
 
 /* inline code */
 p code, blockquote code, li > code, table code, h2 code, h3 code{
+	font-family: Consolas,Courier,monospace;
 	color:inherit!important;
 	margin: 0 1px!important;
-	padding: 0 .4em .15em .4em !important;
+	padding: .15em .4em !important;
     font-size: .85em!important;
     background: #f6f6f6!important;
     border: 1px solid #ddd!important;
