@@ -1,20 +1,22 @@
 # CHANGELOG
 
-## [v1.0.0](#) (TBA)
+## [v1.0.0]([#](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0)) (2019.06.24)
 The v1.0.0 will be the last development version and the first stable version of the Fizzy Theme. 
 
 I will then focus on bug fixing and improvements to current code. Also I will do modifications to cope with the Ghost upgrade. Meaningful new features will still be added by not only me but also other contributors (hope so).
 
 ### NEW
-- [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
-- [x] **Post Archive**: create a page to list all posts. (testing)
-- [x] **Custom Template**: Featured Posts Archive
-- [x] **Fizzy Credit Switch**: add a switch to enable/disable the top right "Get Fizzy Theme" dropdown menu.
+- **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
+- **Post Archive**: create a page to list all posts. (testing)
+- **Custom Template**: Featured Posts Archive
+- **Fizzy Credit Switch**: add a switch to enable/disable the top right "Get Fizzy Theme" dropdown menu.
 
 ### MOD
-- :lipstick: Updated various UI Styles.
-- [x] **Custom Footer Text**: set the default value to @site.description.
-- [x] **Custom CSS Variable**: customize CSS variables in `Site Header`
+- **Custom Footer Text**: set the default value to @site.description.
+- **Custom CSS Variable**: customize CSS variables in `Site Header`
+- Updated various UI Styles.
+- Fixed several bugs.
+- Improved some component layouts for post pages.
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW

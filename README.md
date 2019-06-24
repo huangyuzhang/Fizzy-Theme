@@ -8,7 +8,7 @@
 
 A tasty blogging theme for Ghost :ghost:
 
-If you want to take advantage of all the features of this theme, please read this page.
+Thanks to everyone who uses this theme. If you want to take advantage of all the features of this theme, please read this page.
 
 [中文文档](./README-zh.md)
 
