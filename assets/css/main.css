@@ -20,12 +20,11 @@
 /* inline code */
 p code, blockquote code, li > code, table code, h2 code, h3 code{
 	font-family: Consolas,Courier,monospace;
-	color:inherit!important;
-	margin: 0 1px!important;
-	padding: .15em .4em !important;
+	color:#000;
+	margin: 0 .15em!important;
+	padding: .15em .3em !important;
     font-size: .85em!important;
-    background: #f6f6f6!important;
-    border: 1px solid #ddd!important;
+	box-shadow: 0 0 1px #000;
 	border-radius: 3px!important;
 	font-style:normal;
 	white-space: nowrap;
