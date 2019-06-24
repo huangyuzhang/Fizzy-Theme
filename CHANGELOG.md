@@ -1,10 +1,6 @@
 # CHANGELOG
 
-## [v1.0.0]([#](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0)) (2019.06.24)
-The v1.0.0 will be the last development version and the first stable version of the Fizzy Theme. 
-
-I will then focus on bug fixing and improvements to current code. Also I will do modifications to cope with the Ghost upgrade. Meaningful new features will still be added by not only me but also other contributors (hope so).
-
+## [v1.0.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0) (2019.06.24)
 ### NEW
 - **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
 - **Post Archive**: create a page to list all posts. (testing)

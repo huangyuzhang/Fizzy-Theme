@@ -12,7 +12,7 @@ Thanks to everyone who uses this theme. If you want to take advantage of all the
 
 [中文文档](./README-zh.md)
 
-![](./fizzy-theme-screenshot.png)
+![](https://user-images.githubusercontent.com/40261916/60045241-3e045480-96bc-11e9-9382-03789cd8a637.jpg)
 
 ## :wrench: Installation
 

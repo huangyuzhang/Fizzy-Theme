@@ -12,7 +12,7 @@
 
 [English Doc](./README.md)
 
-![](./fizzy-theme-screenshot.png)
+![](https://user-images.githubusercontent.com/40261916/60045241-3e045480-96bc-11e9-9382-03789cd8a637.jpg)
 
 ## :wrench: 安装
 
