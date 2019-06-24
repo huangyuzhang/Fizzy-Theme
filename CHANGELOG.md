@@ -9,17 +9,12 @@ I will then focus on bug fixing and improvements to current code. Also I will do
 - [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
 - [x] **Post Archive**: create a page to list all posts. (testing)
 - [x] **Custom Template**: Featured Posts Archive
-- [ ] **README TOC**: better documentation
-- [ ] **Custom Dropdown Menu**: support custom dropdown menu
-- [ ] **Support Fizzy Option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
-- [ ] **Report Template**: support academic report template
-- [ ] **Collection**: support collections.
+- [x] **Fizzy Credit Switch**: add a switch to enable/disable the top right "Get Fizzy Theme" dropdown menu.
 
 ### MOD
-- [x] **Custom footer text**: set the default value to @site.description.
-- [ ] **Custom css variable**: customize CSS variables in `Site Header`
-- [ ] **js**: concentrate js files and minify them
-- [ ] **css**: concentrate css files and minify them
+- :lipstick: Updated various UI Styles.
+- [x] **Custom Footer Text**: set the default value to @site.description.
+- [x] **Custom CSS Variable**: customize CSS variables in `Site Header`
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW

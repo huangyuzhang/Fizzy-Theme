@@ -73,8 +73,8 @@ Open the gear icon ⚙ while editing a post or page, scroll to the bottom and ch
 - **Post With TOC**: TOC-enabled post, details in [#TOC](#toc). ([demo](https://fizzy.cc/fizzy-theme/))
 - **Featured Posts Archive**: post list for featured posts, page title and content will be shown on the top section. ([demo](https://fizzy.cc/featured/))
 
-### Custom CSS
-Simply edit the variables in `assets/css/custom.css` to customize your theme coloring.
+### Custom CSS Variables
+Download the theme `.zip` file, unzip it then edit the variables in `assets/css/custom.css` to customize your theme coloring. After that, zip everything back into a `.zip` file and upload it onto your Ghost admin.
 
 ### Custom Footer Text
 By default, your **site description** (Ghost Admin -> General) will be displayed in the footer text. If you need to change it, define a variable `footer_text` in the `Site Header` as below:
@@ -166,6 +166,16 @@ Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([exampl
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **Posts per page**: change the number of `"posts_per_page": 8` in `package.json`
+
+### Credit
+If you want to disable the top right "Get Fizzy Theme" button, insert the following code into your `Site Header` from `Code Injection`:
+
+```javascript
+<script>
+  var fizzy_credit = false; // default:true
+</script>
+```
+> Please do not remove the footer text "Using The Fizzy Theme" and the link. Thank you for your support!
 
 ## :memo: Changelog
 

@@ -18,21 +18,26 @@
                 </div>
             {{/if}}
 
+            {{!-- burger in mobile devices --}}
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarPrimary">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
+
         </div>
 
         <div id="navbarPrimary" class="navbar-menu">
+
+            {{!-- Site Navigation --}}
             <div class="navbar-start">
                 {{#if @site.navigation}}
                 {{navigation}}                    
                 {{/if}}
             </div>
 
-            <div class="navbar-end">
+            {{!-- Credit start --}}
+            <div class="navbar-end" id="fizzy-credit">
                 <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
                     <a href="https://fizzy.cc/fizzy-theme/" target="_blank" class="button is-danger">
                     <strong>Get Fizzy Theme</strong>
@@ -54,6 +59,8 @@
                     </div>
                 </div>
             </div>
+            {{!-- Credit end --}}
+
         </div>
     </nav>
 </header>
