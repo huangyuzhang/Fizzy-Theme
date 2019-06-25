@@ -58,6 +58,35 @@ strong{
 	color: inherit !important;
 }
 
+/* fizzy credit button */
+.btn-fizzy{
+	background: linear-gradient(60deg,#fd5d5c, #7504dc);
+	border-radius:6px;
+}
+.btn-fizzy-inner{
+	background-color:#fff;
+	margin: 1px;
+    padding: 5px 12px;
+	border-radius:5px;
+}
+.btn-fizzy-inner:hover{
+	background-color:transparent;
+	margin: 1px;
+    padding: 5px 12px;
+	border-radius:5px;
+}
+.btn-fizzy-inner .btn-fizzy-text{
+	background: -webkit-linear-gradient(60deg,#fd5d5c, #7504dc);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight:600;
+}
+.btn-fizzy-inner:hover .btn-fizzy-text{
+	background:#fff;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
 .content .tag, .content .number {
 	display: inline;

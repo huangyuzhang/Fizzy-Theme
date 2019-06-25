@@ -85,3 +85,16 @@ $(window).scroll(function(){
   $("#search-results").hide(); 
   $("#search-btn").show();
 });
+
+/*----------------------------------------------------*/
+/*  Hide / Show Credit Button | 2019.06.25
+/*----------------------------------------------------*/
+$(window).scroll(function(){
+  var pxCreditBtn = 400;
+  if($(window).scrollTop() < pxCreditBtn){
+      $("#fizzy-credit").show();
+  }
+  if($(window).scrollTop() >= pxCreditBtn){
+      $("#fizzy-credit").hide();
+  }
+});
