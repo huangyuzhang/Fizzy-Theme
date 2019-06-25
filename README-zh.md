@@ -6,9 +6,9 @@
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)
 
-做一个有味道的 Ghost :ghost:博客主题
+一个有滋味的 Ghost :ghost:博客主题
 
-感谢所有使用本主题的朋友们。要充分使用本主题支持的功能，请仔细阅读本文档。
+感谢所有给小星星和使用本主题的朋友。要充分使用本主题支持的功能，请仔细阅读本文档哦。
 
 [English Doc](./README.md)
 
@@ -16,7 +16,7 @@
 
 ## :wrench: 安装
 
-下载[最新版本](https://github.com/huangyuzhang/fizzy-theme/releases/)后在 Ghost 后台 Setting > Design 处上传 zip 文件。
+下载[最新版本](https://github.com/huangyuzhang/fizzy-theme/releases/)后在 Ghost 后台 Setting > Design 处上传 `.zip` 压缩文件。
 
 ## :movie_camera: 演示站点
 
@@ -34,10 +34,15 @@
 
 > 注意：由于导航栏是浅色背景，因此建议使用深色或彩色的logo。
 
-### 多语言支持
-你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。如果要创建其他语言，请复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。如果在上传或更新Fizzy主题后你修改过了`json`文件，那么需要通过重启Ghost使`json`生效。
+### :earth_africa: 多语言支持
+你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。
 
-请帮助我们翻译Fizzy主题到其他语言，并通过Pull Request来提交。
+|  代码   |   语言   | 翻译状态 |
+| :-----: | :------: | :------: |
+|  `en`   | English  |    ✔️    |
+| `zh_CN` | 简体中文 |    ✔️    |
+
+请帮助我们翻译主题语言。首先请fork本项目，然后复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。测试之后请提交 Pull Request。
 
 ### 内部标签
 内部标签以`#`开头，添加后将自动显示为内部标签。内部标签不会在前台显示，目前本主题支持的内部标签有：
@@ -56,7 +61,7 @@
 
 橱窗左侧的幻灯片自动抓取内部标签 `#carousel`。右侧自动抓取两篇推荐文章（featured post）。
 
-![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
+![showcase](https://user-images.githubusercontent.com/40261916/60126667-65bfef00-9786-11e9-94e8-eaa4c2a4559f.jpg)
 
 ### 作者页面
 你可以在Ghost后台 -> **Profile** 编辑作者的详情，如： **姓名**、**头像**、**背景图片**、**社交账号**、**地址**和**签名**。作者页面([demo](https://fizzy.cc/author/simon/))

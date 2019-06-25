@@ -8,7 +8,7 @@
 
 A tasty blogging theme for Ghost :ghost:
 
-Thanks to everyone who uses this theme. If you want to take advantage of all the features of this theme, please read this page.
+Thanks to everyone who liked and uses this theme. If you want to take advantage of all the features of this theme, please read this page.
 
 [中文文档](./README-zh.md)
 
@@ -35,10 +35,15 @@ If **site logo** is uploaded, then the Logo area will only display the **site lo
 
 > Note: Since the top navbar is colored with white background, it would be better to use a dark/colorful logo.
 
-### i18n
-You can change the theme's language by configure in Ghost Admin -> General -> "Publication Language". Also, you need to copy the `en.json` file within the `locales` folder, and rename it to your language, e.g. `es.json`. Then modify the translations within it. Finally, if you changed the json file after you upload or update the Fizzy theme, you need to restart the ghost to refresh the `json` file.
+### :earth_africa: i18n
+You can change the theme's language in Ghost Admin -> General -> "Publication Language".
 
-Please help us to translate Fizzy into your language by Pull Request.
+|  Code   | Language | Status |
+| :-----: | :------: | :----: |
+|  `en`   | English  |   ✔️   |
+| `zh_CN` | 简体中文 |   ✔️   |
+
+Please help to translate Fizzy into the languages you know. To do so, first fork this repo. Then you need to copy the `en.json` file under `locales` folder and rename it to your language code, e.g. `es.json`, `zh_TW.json`. Then modify the translations within it. After testing, please create a Pull Request.
 
 ### Internal tags
 Internal tags start with `#`, after creating it will displayed as internal tag automatically. Internal tags will not be displayed in front-end. So far the Fizzy Theme support the following internal tags:
@@ -57,7 +62,7 @@ The showcase section is built to highlight posts. It is available only on the ho
 
 The left slider carousel part detects the internal tag `#carousel`. The right part will display 2 featured posts.
 
-![image](https://user-images.githubusercontent.com/40261916/58421728-a396fe00-8088-11e9-9c1b-12c765a7ed94.png)
+![showcase](https://user-images.githubusercontent.com/40261916/60126667-65bfef00-9786-11e9-94e8-eaa4c2a4559f.jpg)
 
 ### Author Page
 You can customize the author page by editing your **profile** in Ghost Admin, such as **name**, **avatar**, **background image**, **social account links**, **location** and **bio**. Author page ([demo](https://fizzy.cc/author/simon/))
