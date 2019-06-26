@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.3
+💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
+💡 README-zh: list card excerpt modification guide for Chinese-like languages.
+
 ## v1.0.2
 🐛 squared rectangle avatar in list_card, post_author, post_aside, author.
 
