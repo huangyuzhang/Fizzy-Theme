@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.2
+🐛 squared rectangle avatar in list_card, post_author, post_aside, author.
+
+## v1.0.1
+💄 updated credit button style and hide with scroll
+
 ## [v1.0.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0) (2019.06.24)
 ### NEW
 - **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
