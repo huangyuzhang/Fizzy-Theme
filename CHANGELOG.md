@@ -4,7 +4,7 @@
 🐛 fix toc display block even when disabled
 
 ## v1.0.4
-🐛 fix #25, fix bugs in year & month break
+🐛 fix bugs in year & month break by [@TaikerLiang](https://github.com/TaikerLiang). (close: [#25](../../issues/25))
 
 ## v1.0.3
 💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
