@@ -8,7 +8,7 @@
 
 A tasty blogging theme for Ghost :ghost:
 
-Thanks to everyone who liked and uses this theme. If you want to take advantage of all the features of this theme, please read this page.
+Thanks to everyone who starred and uses this theme. If you want to take advantage of all the features of this theme, please read this page.
 
 [中文文档](./README-zh.md)
 
@@ -154,7 +154,7 @@ There are two ways to control the TOC of a post:
 > **Notice**: h2 and h3 headings on the page will be displayed by default. If you want to add other headings (e.g. h1 or h4), please edit `selectors` of the file `partials/post/post_toc.hbs`. However, you should not use h1 except for the post title.
 
 ### Instant Search
-To enable the Instant Search (added to top menu), first add a custom integration in Ghost Admin. Then copy the **Content API Key** and **API URL**.
+The search function uses Ghost Content API. To enable it (added to top menu), first add a custom integration in Ghost Admin. Then copy the **Content API Key** and **API URL**.
 Go to the Code injection, add the following code to the `Site Header`:
 ```javascript
 <script>
@@ -189,6 +189,7 @@ See [CHANGELOG.md](./CHANGELOG.md)
 ## :sunglasses: Author & Contributors
 
 - Yuzhang Huang (Simon)
+- [@TaikerLiang](https://github.com/TaikerLiang)
 
 ## :battery: Dependencies
 
@@ -201,9 +202,9 @@ See [CHANGELOG.md](./CHANGELOG.md)
 - [ghost-search][ghost-search] - An instant search library using Ghost Content API (since v1.0.0)
 
 ## :bug: Bug Report & :dart: Features Request
-If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue and label accordingly. 
+If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue. 
 
-Alternatively if you are familiar with them development, you could start to contribute to this project.
+Alternatively you could contribute to this project.
 
 ## :bulb: Contributing
 
