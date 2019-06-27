@@ -28,27 +28,30 @@ document.addEventListener('DOMContentLoaded', () => {
 // =================================================
 // post archive: add year and month break 2019.05.28
 // =================================================
-// Year Break
+// Year & Month Break
 var yearArray = new Array();
+var monthObj = new Object();
 $(".post-archive-item").each(function() {
     var archivesYear = $(this).attr("year");
+    var archivesMonth = $(this).attr("month");
     yearArray.push(archivesYear);
+    if (archivesYear in monthObj) {
+        monthObj[archivesYear].push(archivesMonth);
+    }
+    else {
+        monthObj[archivesYear] = new Array();
+        monthObj[archivesYear].push(archivesMonth);
+    }
 });
 var uniqueYear = $.unique(yearArray);
 for (var i = 0; i < uniqueYear.length; i++) {
     var html = "<hr><h2>" + uniqueYear[i] + "</h2>";
     $("[year='" + uniqueYear[i] + "']:first").before(html);
-}
-// Month Break
-var monthArray = new Array();
-$(".post-archive-item").each(function() {
-    var archivesMonth = $(this).attr("month");
-    monthArray.push(archivesMonth);
-});
-var uniqueMonth = $.unique(monthArray);
-for (var i = 0; i < uniqueMonth.length; i++) {
-    var html = "<h4>" + uniqueMonth[i] + "</h4>";
-    $("[month='" + uniqueMonth[i] + "']:first").before(html);
+    var uniqueMonth = $.unique(monthObj[uniqueYear[i]]);
+    for (var m = 0; m < uniqueMonth.length; m++) {
+        var html = "<h4>" + uniqueMonth[m] + "</h4>";
+        $("[year='" + uniqueYear[i] + "'][month='" + uniqueMonth[m] + "']:first").before(html);
+    }
 }
 // =================================================
 // search 2019.05.30
