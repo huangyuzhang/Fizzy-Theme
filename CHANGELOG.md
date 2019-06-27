@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.5
+🐛 fix toc display block even when disabled
+
+## v1.0.4
+🐛 fix #25, fix bugs in year & month break
+
 ## v1.0.3
 💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
 💡 README-zh: list card excerpt modification guide for Chinese-like languages.

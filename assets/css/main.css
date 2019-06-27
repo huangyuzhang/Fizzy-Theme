@@ -751,11 +751,7 @@ html,body{
 /* ====================== post: TOC ====================== 2019.05.12 */
 #toc, #toc-img {
 	font-family:'Montserrat', sans-serif;
-	border-left: 1px solid #ddd;
-	background-color: #fff;
 	border-radius:3px;
-	margin-right:12px;
-	padding:10px 10px 10px 0;
 }
 /* not displaying below 1280px */
 @media screen and (max-width: 1279px){
@@ -778,9 +774,9 @@ html,body{
 
  #toc:before, #toc-img:before {
     /* content: "Table of Content"; */
-    margin-left: 1em;
+    margin-left: 10px;
     border-bottom: 1px solid #333;
-    margin-bottom: 0.6em;
+    margin-bottom: 10px;
     color: #333;
     display: inline-block;
 }
@@ -802,9 +798,33 @@ html,body{
 }
 
  #toc ul, #toc-img ul {
-    margin-left: 1em;
+	margin-left: 0;
+	border-left: 1px solid #ddd;
+	background-color: #fff;
+	margin-right:10px;
+	padding:0 10px 0 10px;
 }
-
+#toc ul:first-child, #toc-img ul:first-child {
+	padding-top:10px;
+}
+#toc ul:last-child, #toc-img ul:last-child {
+	padding-bottom:10px;
+}
+#toc ul ul, #toc-img ul ul{
+	margin-left: 10px;
+	border-left: 0;
+	margin-right:0;
+	padding:0;
+}
+#toc ul:first-child ul, #toc-img ul:first-child ul{
+	padding-top:10px;
+}
+#toc ul:last-child ul, #toc-img ul:last-child ul{
+	padding-bottom:0;
+}
+#toc ul:not(:last-child) ul, #toc-img ul:not(:last-child) ul{
+	padding-bottom:0;
+}
  #toc li, #toc-img li {
     display: block;
 }
