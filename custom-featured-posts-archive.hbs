@@ -27,45 +27,29 @@ into the {body} of the default.hbs template --}}
 {{/post}}
 
 
+{{#get "posts" include="tags,authors" filter="featured:true" limit="all" order="published_at desc"}}
 <main class="section">
     <div class="columns">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
-
-            {{#get "posts" include="tags,authors" filter="featured:true" order="published_at desc"}}
-                {{#foreach posts}}
-                    {{!-- post_item: for index & home cards --}}
+            {{#foreach posts}}
+                {{!-- exclude #noindex --}}
+                {{#has tag="#noindex"}}
+                    {{!-- nothing --}}
+                {{else}}
                     {{> list_card}}
-                {{/foreach}}
-            {{/get}}
+                {{/has}}
 
+                {{!-- inject something for every 3 items --}}
+                {{#has number="nth:3"}} 
+                    {{!-- {{> "something"}} --}}
+                {{/has}}
+            {{else}}
+                {{t "There is no post yet."}}
+            {{/foreach}}
         </div>
         <div class="column is-hidden-touch"></div>
     </div>
 </main>
-
-{{!-- main --}}
-{{!-- <main class="section">
-    <div class="columns">
-        <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
-        <div class="column is-8-widescreen is-10-desktop is-12-tablet">
-            {{#get "posts" filter="featured:true" order="published_at desc"}}
-                {{#foreach ../posts}}
-                    {{> list_card}}
-                {{else}}
-                    {{t "There is no post yet."}}
-                {{/foreach}}
-            {{/get}}
-        </div>
-        <div class="column is-hidden-touch"></div>
-    </div>
-</main> --}}
-
-
-{{!-- pagination --}}
-{{!-- <section class="section is-padding-top-05">
-    <div class="container">
-        {{pagination}}
-    </div>
-</section> --}}
+{{/get}}
 

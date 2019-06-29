@@ -77,6 +77,22 @@
 - **启用目录**：使用模板 `Post With Toc` 来启用文章的目录抓取功能，详见[#内页目录](#内页目录)。 ([demo](https://fizzy.cc/fizzy-theme/))
 - **推荐文章列表**：使用模板`Featured Posts Archive` 来使用推荐文章列表页面，页面标题和内容会被展示在顶部位置。 ([demo](https://fizzy.cc/featured/))
 
+### 合集 Collection
+若要使用 Ghost 的合集（Collection）功能，编辑 `routes.yaml`。之后修改 `home.hbs` 来自定义首页。[Ghost 文档](https://docs.ghost.org/api/handlebars-themes/routing/collections/)
+
+```yaml
+routes:
+  /: home # 首页模板：`home.hbs`
+
+collections:
+  /collection1/:
+    permalink: /collection1/{slug}/
+    template: index # 默认模板：`index.hbs`
+  /collection2/:
+    permalink: /collection2/{slug}/
+    template: index # 默认模板：`index.hbs`
+```
+
 ### 自定义CSS变量
 下载主题压缩文件并解压，修改 `assets/css/custom.css` 文件中的 CSS 变量来修改主题的颜色。之后将解压的所有文件打包成一个 `.zip` 压缩文件，上传到你的网站后台。
 

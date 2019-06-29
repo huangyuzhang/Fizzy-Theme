@@ -8,27 +8,15 @@ into the {body} of the default.hbs template --}}
 {{> showcase}}
 
 {{!-- main --}}
+{{#get "posts" include="tags,authors" limit=@config.posts_per_page order="published_at desc"}}
 <main class="section">
     <div class="columns">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
-            {{#foreach posts}}
-            
-                {{!-- exclude #noindex --}}
-                {{#has tag="#noindex"}}
-                    {{!-- nothing --}}
-                {{else}}
+                {{#foreach posts}}
+                    {{!-- post_item: for index & home cards --}}
                     {{> list_card}}
-                {{/has}}
-
-                {{!-- inject something for every 3 items --}}
-                {{#has number="nth:3"}} 
-                    {{!-- {{> "ads"}} --}}
-                {{/has}}
-
-            {{else}}
-                {{t "There is no post yet."}}
-            {{/foreach}}
+                {{/foreach}}
         </div>
         <div class="column is-hidden-touch"></div>
     </div>
@@ -40,3 +28,4 @@ into the {body} of the default.hbs template --}}
         {{pagination}}
     </div>
 </section>
+{{/get}}

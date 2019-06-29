@@ -1,8 +1,12 @@
 # CHANGELOG
 
+## v1.0.7
+✨ `home.hbs` modified to support collection.
+🔥 removed feature posts archive pagination due to issue.
+
 ## v1.0.6
-✨ [showcase] add author to carouselcard; add primary_tag to featured item
-🐛 [featured posts archive] add author and primary_tag
+✨ [showcase] add author to carousel card; add primary_tag to featured item
+🐛 [feature posts archive] add author and primary_tag
 
 ## v1.0.5
 🐛 fix toc display block even when disabled
