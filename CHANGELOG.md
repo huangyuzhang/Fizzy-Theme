@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.6
+✨ [showcase] add author to carouselcard; add primary_tag to featured item
+🐛 [featured posts archive] add author and primary_tag
+
 ## v1.0.5
 🐛 fix toc display block even when disabled
 
