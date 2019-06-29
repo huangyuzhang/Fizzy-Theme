@@ -295,12 +295,12 @@ html,body{
 	padding: 20px;
 	z-index:6;
 }
-.carousel-tag {
+.carousel-tag,.tf-tag {
 	margin-bottom: 10px;
     position: relative;
     z-index: 4;
 }
-.carousel-tag a{
+.carousel-tag a, .tf-tag a{
 	background-color: rgba(0,0,0,.7);
     color: #fff;
 	border-radius: 3px;
@@ -311,10 +311,14 @@ html,body{
     text-shadow: none;
     font-weight: 400;
 }
-.carousel-tag a:hover {
+.carousel-tag a:hover,.tf-tag a:hover {
 	color:#000;
 	background-color:#fff;
 	box-shadow:0 0 5px rgba(0,0,0,.7);
+}
+.carousel-author{
+	width:32px;
+	height:32px;
 }
 .top-featured {
 	height:360px;

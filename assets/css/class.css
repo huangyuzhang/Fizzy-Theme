@@ -68,6 +68,9 @@
 .margin-bottom-25:last-child {
     margin-bottom: 0rem !important;
   }
+.is-margin-bottom-05{
+    margin-bottom:0.5rem;
+}
 @media screen and (max-width: 768px){
     .is-margin-bottom-1{
         margin-bottom:1rem !important;
