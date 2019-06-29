@@ -32,64 +32,10 @@ into the {body} of the default.hbs template --}}
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
 
-            {{#get "posts" filter="featured:true" order="published_at desc"}}
+            {{#get "posts" include="tags,authors" filter="featured:true" order="published_at desc"}}
                 {{#foreach posts}}
                     {{!-- post_item: for index & home cards --}}
-                    <article class="box is-paddingless is-clipped has-shadow-lift margin-bottom-25 can-scale">
-                        <div class="columns post-card is-marginless">
-                            {{!-- featured_image --}}
-                            {{#if feature_image}}
-                                <a class="column is-hidden-mobile is-paddingless" href="{{url}}" alt="{{title}}" title="{{title}}">
-                                    <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>    
-                                </a>
-                                <a class="column is-hidden-tablet" href="{{url}}" alt="{{title}}" title="{{title}}">
-                                    <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});"></div>    
-                                </a>
-                            
-                            {{!-- post info --}}
-                            <div class="column is-8 is-paddingless">
-                            {{else}}
-                            <div class="column is-12 is-paddingless">
-                            {{/if}}
-                                <div class="post-info">
-
-                                    {{!-- meta --}}
-                                    <div class="level is-mobile is-montserrat is-uppercase is-margin-bottom-1">
-                                        <div class="level-left">
-                                            {{#primary_tag}}
-                                            <div class="level-item">
-                                                {{!-- display one tag --}}
-                                                <div class="buttons are-small">
-                                                    <a href="{{url}}" class="button is-light has-text-weight-semibold">{{name}}</a>
-                                                </div>
-                                            </div>
-                                            {{/primary_tag}}
-                                            <div class="level-item is-size-7 ">
-                                                {{date format=(t "DD MMMM YYYY")}}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {{!-- heading & content --}}
-                                    <h1 class="title is-3 is-size-5-mobile is-margin-bottom-1">
-                                        <a href="{{url}}" class="is-montserrat has-text-black">{{title}}</a>
-                                    </h1>
-                                    {{#if feature_image}}
-                                    <p class="is-montserrat is-hidden-mobile" style="margin-bottom:1.5rem;">
-                                    {{else}}
-                                    <p class="is-montserrat is-size-7-mobile is-margin-bottom-1" style="margin-bottom:1.5rem;">
-                                    {{/if}}
-                                        {{#if meta_description}}
-                                            {{meta_description}}
-                                        {{else}}
-                                            {{excerpt words="40"}}
-                                        {{/if}}
-                                    </p>
-
-                                </div>  
-                            </div>
-                        </div>
-                    </article>
+                    {{> list_card}}
                 {{/foreach}}
             {{/get}}
 
