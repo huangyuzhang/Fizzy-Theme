@@ -1,4 +1,4 @@
-{{!-- post_card: for single post aside section --}}
+{{!-- post_card: single post aside section --}}
 <article class="box is-paddingless is-clipped has-shadow-mo">
     <div class="post-card">
         {{!-- featured_image --}}
@@ -38,9 +38,9 @@
 
                 {{!-- heading & content --}}
                 <div class="meta">
-                    <h1 class="title is-5 is-size-6-touch" style="margin-top:0;">
-                        <a href="{{url}}" class="is-montserrat has-text-black">{{title}}</a>
-                    </h1>
+                    <a href="{{url}}" class="is-montserrat has-text-black">
+                        <h1 class="title is-5 is-size-6-touch" style="line-height:1.5em;margin-top:0;">{{title}}</h1>
+                    </a>
                     <p class="is-hidden is-hidden-mobile is-margin-bottom-1">
                         {{#if meta_description}}
                             {{excerpt words="20"}}

@@ -883,7 +883,7 @@ html,body{
 	/* border-radius: 6px 6px 0 0; */
 }
 .aside .post-info {
-	padding:15px;
+	padding:20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1087px){
 	.aside .post-info {
