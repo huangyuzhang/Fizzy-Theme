@@ -79,20 +79,26 @@ Open the gear icon ⚙ while editing a post or page, scroll to the bottom and ch
 - **Featured Posts Archive**: post list for featured posts, page title and content will be shown on the top section. ([demo](https://fizzy.cc/featured/))
 
 ### Collection
-To enable collection, edit the `routes.yaml` as below. Then modify the `home.hbs` to customize your homepage. [Ghost Docs](https://docs.ghost.org/api/handlebars-themes/routing/collections/)
+To enable collection, edit the `routes.yaml` as below. Then modify the `home.hbs` to customize your homepage. Full doc: [Ghost Docs - Collections](https://docs.ghost.org/api/handlebars-themes/routing/collections/)
 
 ```yaml
 routes:
   /: home # template for homepage `home.hbs`
 
 collections:
-  /collection1/:
-    permalink: /collection1/{slug}/
-    template: index # template `index.hbs`
-  /collection2/:
-    permalink: /collection2/{slug}/
-    template: index # template `index.hbs`
+  /movie/: # a collection called movie
+    permalink: /movie/{slug}/
+    template: movie # template `movie.hbs`
+    filter: tag:movie # fetch data from a tag:movie
+    data: tag.movie # have access to all data & meta data from tag
+  /music/: # a collection called music
+    permalink: /music/{slug}/
+    template: music # template `music.hbs`
+    filter: primary_tag:music # fetch data from primary tag: music
+    data: tag.music # have access to all data & meta data from tag
 ```
+
+> **Notice**: known issues of Ghost collection, e.g.: [Ghost #10082](https://github.com/TryGhost/Ghost/issues/10082).
 
 ### Custom CSS Variables
 Download the theme `.zip` file, unzip it then edit the variables in `assets/css/custom.css` to customize your theme coloring. After that, zip everything back into a `.zip` file and upload it onto your Ghost admin.

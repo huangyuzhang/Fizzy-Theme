@@ -78,20 +78,26 @@
 - **推荐文章列表**：使用模板`Featured Posts Archive` 来使用推荐文章列表页面，页面标题和内容会被展示在顶部位置。 ([demo](https://fizzy.cc/featured/))
 
 ### 合集 Collection
-若要使用 Ghost 的合集（Collection）功能，编辑 `routes.yaml`。之后修改 `home.hbs` 来自定义首页。[Ghost 文档](https://docs.ghost.org/api/handlebars-themes/routing/collections/)
+若要使用 Ghost 的合集（Collection）功能，编辑 `routes.yaml`。之后修改 `home.hbs` 来自定义首页。完整配置请参阅：[Ghost文档 - Collections](https://docs.ghost.org/api/handlebars-themes/routing/collections/)
 
 ```yaml
 routes:
   /: home # 首页模板：`home.hbs`
 
 collections:
-  /collection1/:
-    permalink: /collection1/{slug}/
-    template: index # 默认模板：`index.hbs`
-  /collection2/:
-    permalink: /collection2/{slug}/
-    template: index # 默认模板：`index.hbs`
+  /movie/: # 电影合集
+    permalink: /movie/{slug}/
+    template: movie # 使用模板 `movie.hbs`
+    filter: tag:movie # 抓取标签为 movie 的文章
+    data: tag.movie # 获取 movie 标签的内容以及meta数据
+  /music/: # 音乐合集
+    permalink: /music/{slug}/
+    template: music # 使用模板 `music.hbs`
+    filter: primary_tag:music # 抓取主标签为 music 的文章
+    data: tag.music # 获取 music 标签的内容以及meta数据
 ```
+
+> **注意**: 合集有一些已知的问题，如：[Ghost #10082](https://github.com/TryGhost/Ghost/issues/10082)。
 
 ### 自定义CSS变量
 下载主题压缩文件并解压，修改 `assets/css/custom.css` 文件中的 CSS 变量来修改主题的颜色。之后将解压的所有文件打包成一个 `.zip` 压缩文件，上传到你的网站后台。
