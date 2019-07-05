@@ -157,10 +157,19 @@ If you want to change the comment system, you need to modify the code in `partia
 
 ###  Code Highlight
 Prism.js is used for syntax highlighting, the default languages and plugins used by Fizzy theme are:
-  - **Languages**: Markup (e.g. HTML), CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
+  - **Languages**: Markup (e.g. HTML), CSS, C-like, JavasScript, Bash, Nginx, Ruby, Git, JSON, Markdown, SQL, Python, R
   - **Plugins**: line-numbers, toolbar, show-language.
 
 To customize this yourself, open [customize Prismjs][custom-prism] and choose the languages you need. Then download the js and css files to overwrite the `prism.js` and `prism.css` files in `assets` folder.
+
+#### Line-numbers
+![image](https://user-images.githubusercontent.com/40261916/60731259-0e1c4300-9f3f-11e9-93c8-a83fe5a878e8.png)
+The line numbers are hidden by default. To enable it, insert the following code into `Post Header` for a single post or `Site Header` for the whole site:
+```js
+<script>
+  var line_numbers = true; //default: false
+</script>
+```
 
 ### TOC
 There are two ways to control the TOC of a post:
@@ -208,10 +217,9 @@ If you want to disable the top right "Get Fizzy Theme" button, insert the follow
 
 See [CHANGELOG.md](./CHANGELOG.md)
 
-## :sunglasses: Author & Contributors
+## 🍻 Contributors
 
-- Yuzhang Huang (Simon)
-- [@TaikerLiang](https://github.com/TaikerLiang)
+See [Contributors][contributors]
 
 ## :battery: Dependencies
 
@@ -250,5 +258,6 @@ This project is licensed under the MIT License.
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
 [vssue]: https://github.com/meteorlxy/vssue
-[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+b
+[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
+[contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors

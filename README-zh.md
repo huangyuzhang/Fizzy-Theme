@@ -160,10 +160,19 @@ gitalk.render('gitalk-container');
 
 ### 代码高亮
 Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默认使用的语言和插件有：
-  - **支持的语言**: 标记语言（如 HTML）, CSS, C-like, JavasSript, Bash, Ruby, Git, JSON, Markdown, SQL, Python, R
+  - **支持的语言**: 标记语言（如 HTML）, CSS, C-like, JavasScript, Bash, Nginx, Ruby, Git, JSON, Markdown, SQL, Python, R
   - **使用的插件**: line-numbers, toolbar, show-language.
 
 访问 [自定义Prismjs][custom-prism] 来勾选你需要的语言。然后下载 js 和 css 文件以替换 `assets` 目录中的对应文件： `prism.js` 和 `prism.css`。
+
+#### 显示行号
+![image](https://user-images.githubusercontent.com/40261916/60731259-0e1c4300-9f3f-11e9-93c8-a83fe5a878e8.png)
+代码块默认不显示行号。在  `Post Header`（单篇文章） 或者 `Site Header`（全站） 中插入如下代码来让代码块显示行号:
+```js
+<script>
+  var line_numbers = true; //默认: false
+</script>
+```
 
 ### 内页目录
 目前 Fizzy 主题支持两种控制文章内章节目录的方法：
@@ -214,10 +223,9 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 查看完整版本更新日志： [CHANGELOD.md](./CHANGELOG.md)
 
-## :sunglasses: 作者及贡献者
+## 🍻 贡献者
 
-- 黄玉章 (Simon)
-- [@TaikerLiang](https://github.com/TaikerLiang)
+查看[贡献者列表][contributors]
 
 ## :battery: 依赖
 
@@ -256,5 +264,6 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 [disqus]: https://disqus.com/
 [gitalk]: https://github.com/gitalk/gitalk
 [valine]: https://github.com/xCss/Valine
-[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+sql+python+r&plugins=line-numbers+toolbar+show-language
+[custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
+[contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors

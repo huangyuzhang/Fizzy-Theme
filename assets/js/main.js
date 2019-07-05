@@ -95,9 +95,18 @@ $(window).scroll(function(){
 $(window).scroll(function(){
   var pxCreditBtn = 400;
   if($(window).scrollTop() < pxCreditBtn){
-      $("#fizzy-credit").show();
+    $("#fizzy-credit").show();
   }
   if($(window).scrollTop() >= pxCreditBtn){
-      $("#fizzy-credit").hide();
+    $("#fizzy-credit").hide();
   }
 });
+/*----------------------------------------------------*/
+/*  Prismjs Line-numbers | 2019.07.05
+/*----------------------------------------------------*/
+if (typeof line_numbers == 'undefined') {
+  var line_numbers = false;
+}
+if (line_number) {
+  $("pre").addClass("line-numbers");
+}

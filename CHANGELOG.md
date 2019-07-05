@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.8
+✨ Allow code blocks to show line-numbers.
+🍱 Support `nginx` highlight in code block.
+📝 Updated README.
+✏️ Fixed typos in README.
+
 ## v1.0.7
 ✨ `home.hbs` modified to support collection.
 🔥 removed feature posts archive pagination due to issue.
