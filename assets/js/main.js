@@ -107,6 +107,6 @@ $(window).scroll(function(){
 if (typeof line_numbers == 'undefined') {
   var line_numbers = false;
 }
-if (line_number) {
+if (line_numbers) {
   $("pre").addClass("line-numbers");
 }
