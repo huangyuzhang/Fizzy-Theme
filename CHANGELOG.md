@@ -1,34 +1,34 @@
 # CHANGELOG
 
 ## v1.0.8
-✨ Allow code blocks to show line-numbers.
-🍱 Support `nginx` highlight in code block.
-📝 Updated README.
-✏️ Fixed typos in README.
+- ✨ Allow code blocks to show line-numbers.
+- 🍱 Support `nginx` highlight in code block.
+- 📝 Updated README.
+- ✏️ Fixed typos in README.
 
 ## v1.0.7
-✨ `home.hbs` modified to support collection.
-🔥 removed feature posts archive pagination due to issue.
+- ✨ `home.hbs` modified to support collection.
+- 🔥 removed feature posts archive pagination due to issue.
 
 ## v1.0.6
-✨ [showcase] add author to carousel card; add primary_tag to featured item
-🐛 [feature posts archive] add author and primary_tag
+- ✨ [showcase] add author to carousel card; add primary_tag to featured item
+- 🐛 [feature posts archive] add author and primary_tag
 
 ## v1.0.5
-🐛 fix toc display block even when disabled
+- 🐛 fix toc display block even when disabled
 
 ## v1.0.4
-🐛 fix bugs in year & month break by [@TaikerLiang](https://github.com/TaikerLiang). (close: [#25](../../issues/25))
+- 🐛 fix bugs in year & month break by [@TaikerLiang](https://github.com/TaikerLiang). (close: [#25](../../issues/25))
 
 ## v1.0.3
-💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
-💡 README-zh: list card excerpt modification guide for Chinese-like languages.
+- 💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
+- 💡 README-zh: list card excerpt modification guide for Chinese-like languages.
 
 ## v1.0.2
-🐛 squared rectangle avatar in list_card, post_author, post_aside, author.
+- 🐛 squared rectangle avatar in list_card, post_author, post_aside, author.
 
 ## v1.0.1
-💄 updated credit button style and hide with scroll
+- 💄 updated credit button style and hide with scroll
 
 ## [v1.0.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0) (2019.06.24)
 ### NEW
