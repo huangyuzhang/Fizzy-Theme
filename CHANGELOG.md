@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.9
+- 💄 Improved table style in desktop & mobile.
+
 ## v1.0.8
 - ✨ Allow code blocks to show line-numbers.
 - 🍱 Support `nginx` highlight in code block.

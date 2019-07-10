@@ -202,6 +202,7 @@ Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([exampl
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **Posts per page**: change the number of `"posts_per_page": 8` in `package.json`
+- **table**: to unwrap cells, uncomment the `/* white-space: nowrap; */` in `assets/css/main.css` around **line 703**.
 
 ### Credit
 If you want to disable the top right "Get Fizzy Theme" button, insert the following code into your `Site Header` from `Code Injection`:

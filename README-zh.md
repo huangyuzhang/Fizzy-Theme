@@ -205,6 +205,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 - **导航**：修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
 - **徽章**：使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **每页文章数**：在 `package.json` 中修改 `"posts_per_page": 8` 的数字来修改每页展示的文章数量。
+- **表格**：若要让一个单元格中的内容不换行，取消 `assets/css/main.css` 中大约703行左右的注释 `/* white-space: nowrap; */`。
 - **文章列表摘要**：由于中英文字数统计方式不同，如果网站语言为类中文语言，文章列表页面的摘要可能过长。有两种方法解决：
   1. 修改 `partials/list_card.hbs`约第56行，将`{{excerpt words="40"}}`改成`{{excerpt characters="30"}}`，数字为显示的字数。
   2. 编辑文章时为每篇文章自定义Excerpt，则会忽略截取的 word 或 character。

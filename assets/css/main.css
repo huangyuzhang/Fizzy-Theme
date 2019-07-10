@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.0.8
+Version: 1.0.9
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -673,84 +673,81 @@ html,body{
     padding: .75em 1.25em;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
-/* table responsive 2019.05.11 */
-/* https://codepen.io/brunodplima/pen/rzpaLO */
-@media screen and (max-width: 768px) {
-	table {
-	  width: 100%;
-	  border-collapse: collapse;
-	  border-spacing: 0;
-	  display: block;
-	  position: relative;
+/* table style 2019.07.10 */
+table tr:first-child {border-top: solid 1px #dbdbdb;}
+table tr:last-child {border-bottom: solid 1px #dbdbdb;}
+table thead tr:first-child {border-left: solid 1px #dbdbdb;border-right: solid 1px #dbdbdb;}
+table tr td:first-child {border-left: solid 1px #dbdbdb;}
+table tr td:last-child {border-right: solid 1px #dbdbdb;}
+/* table horizontal overflow to scroll 2019.07.10 */
+@media screen and (min-width:1280px){
+	table{
+		display: block;
+		overflow-y: auto;
 	}
-	table td:empty:before {
-	  content: " ";
+}
+.post-content table th{
+	vertical-align: center;
+}
+
+.post-content table {
+    display: inline-block;
+    overflow-x: auto;
+    margin: 0.5em 0 2.5em;
+    max-width: 100%;
+    width: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+	/* white-space: nowrap; */
+    vertical-align: top;
+}
+
+.post-content table {
+    -webkit-overflow-scrolling: touch;
+    background-attachment: scroll, scroll;
+    background-size: 10px 100%, 10px 100%;
+    background-repeat: no-repeat;
+}
+
+.post-content table tr:hover{
+	background-color:#f5f5f5;
+}
+.post-content table td:first-child {
+    background-size: 20px 100%;
+    background-repeat: no-repeat;
+}
+
+.post-content table td:last-child {
+    background-position: 100% 0;
+    background-size: 20px 100%;
+    background-repeat: no-repeat;
+}
+
+.post-content table th {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: left;
+	background-color: #eee;
+}
+
+.post-content table th,
+.post-content table td {
+	padding: 6px 12px;
+    border: #dbdbdb 1px solid;
+}
+/* table responsive 2019.07.10 */
+@media screen and (max-width: 1279px) {
+	.post-content table{
+		white-space: nowrap;
 	}
-	table th,
-	table td {
-	  margin: 0;
-	  vertical-align: top;
+	.post-content table th,
+	.post-content table td {
+		border-width: 1px !important;
 	}
-	table th {
-	  text-align: left;
-	}
-	table thead {
-	  border-right: solid 2px #dbdbdb;
-	  display: block;
-	  float: left;
-	}
-	table thead tr {
-	  display: block;
-	  padding: 0 10px 0 0;
-	}
-	table thead tr th::before {
-	  content: " ";
-	}
-	table thead td,
-	table thead th {
-	  border-width: 0 0 1px;
-	}
-	table tbody {
-	  display: block;
-	  width: auto;
-	  position: relative;
-	  overflow-x: auto;
-	  white-space: nowrap;
-	}
-	table tbody tr {
-	  display: inline-block;
-	  vertical-align: top;
-	}
-	table th {
-	  display: block;
-	  text-align: right;
-	}
-	table td {
-	  display: block;
-	  min-height: 1.25em;
-	  text-align: left;
-	}
-	table th:last-child,
-	table td:last-child {
-	  border-bottom-width: 0;
-	}
-	table tr:last-child td:not(:last-child) {
-	  border: 1px solid #dbdbdb;
-	  border-width: 0 0 1px;
-	}
-	table.is-bordered td,
-	table.is-bordered th {
-	  border-width: 1px;
-	}
-	table.is-bordered tr td:last-child,
-	table.is-bordered tr th:last-child {
-	  border-bottom-width: 1px;
-	}
-	table.is-bordered tr:last-child td,
-	table.is-bordered tr:last-child th {
-	  border-width: 1px;
-	}
-  }
+}
 
 /* ====================== post: TOC ====================== 2019.05.12 */
 #toc, #toc-img {
