@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.10
+- 📱 wrap inline code that is too long in mobile.
+
 ## v1.0.9
 - 💄 Improved table style in desktop & mobile.
 
