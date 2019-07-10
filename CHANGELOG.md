@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.11
+- 🐛 fixed table in mobile.
+- 📱 enable horizontal scroll for too long Katex block.
+
 ## v1.0.10
 - 📱 wrap inline code that is too long in mobile.
 
