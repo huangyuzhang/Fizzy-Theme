@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.0.12
+- 🐛 fixed showcase tag's display to inline-block.
+- 🐛 fixed table font size.
+- 💄 Improved table style.
+- 💄 Improved Katex block style.
+- 💩 the table wider than the screen will make the page srollable in mobile devices.
+
 ## v1.0.11
 - 🐛 fixed table in mobile.
 - 📱 enable horizontal scroll for too long Katex block.
