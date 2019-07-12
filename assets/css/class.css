@@ -130,6 +130,9 @@
 }
 
 /* background */
+.has-background-light-line{
+    background-image: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 2px, #eee 2px, #eee 3px);
+}
 .bg-cover-center{
     background-size: cover;
     background-position: center center;

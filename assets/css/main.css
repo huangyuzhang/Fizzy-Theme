@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.0.12
+Version: 1.0.13
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -49,11 +49,18 @@ p code, blockquote code, li > code, table code, h2 code, h3 code{
 pre{border-radius:6px;}
 
 /* navbar */
-.navbar-item,.navbar-item img {
+
+.navbar-start .navbar-item,.navbar-item img {
 	margin-right: 0.25rem;
 }
-.nav-current {
+.navbar-start .navbar-item:hover{
+	background-color: #f5f5f5 !important;
+	box-shadow: 0 0px 1px 0 #ccc;
+}
+.navbar-start .nav-current {
 	background-color: #eee;
+	font-weight:600;
+	box-shadow: 0 0px 1px 0 #ccc;
 }
 /* button */
 .button{
@@ -91,6 +98,9 @@ strong{
 	background:#fff;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.navbar-dropdown .navbar-item{
+	margin: 0 .5rem;
 }
 
 /* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
@@ -1054,6 +1064,10 @@ ul.post-archive{margin-left:0!important;}
 	margin: auto!important;
 }
 /* ====================== footer ====================== 2019.04.12 */
+.footer{
+	box-shadow: 0 0px 1px 0 #bbb;
+	background-color: #fff;
+}
 .declare a {
 	color:#666;
 	word-break: break-word;

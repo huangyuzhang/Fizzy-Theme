@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.13
+- 💄 Improved main canvas style (navbar, body background, footer)
+
 ## v1.0.12
 - 🐛 fixed showcase tag's display to inline-block.
 - 🐛 fixed table font size.
