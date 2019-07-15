@@ -1026,6 +1026,7 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 		border-radius: 8px 8px 0 0;
 		background-size: cover;
 		background-position: center center;
+		box-shadow: 0px 1px 0px #ddd;
 	}
 	.tag-card .tag-info {
 		padding: 16px;
@@ -1066,7 +1067,6 @@ ul.post-archive{margin-left:0!important;}
 /* ====================== footer ====================== 2019.04.12 */
 .footer{
 	box-shadow: 0 0px 1px 0 #bbb;
-	background-color: #fff;
 }
 .declare a {
 	color:#666;
