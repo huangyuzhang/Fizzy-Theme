@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.14
+- 🔒 change file permission
+- 🐛 add bottom line to tag images in tag archive page
+
 ## v1.0.13
 - 💄 Improved main canvas style (navbar, body background, footer)
 
