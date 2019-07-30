@@ -2,7 +2,7 @@
 
 ## v1.0.15
 - 💄 Improved code block padding and font size.
-- 📱 Improved table font size on mobile.
+- 💄 Improved table style.
 
 ## v1.0.14
 - 🔒 change file permission
