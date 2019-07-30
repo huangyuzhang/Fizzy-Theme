@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.15
+- 💄 Improved code block padding and font size.
+- 📱 Improved table font size on mobile.
+
 ## v1.0.14
 - 🔒 change file permission
 - 🐛 add bottom line to tag images in tag archive page
