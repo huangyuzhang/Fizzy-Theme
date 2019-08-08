@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.16
+- 🐛 Fixed the scale effect of post card in post aside section.
+
 ## v1.0.15
 - 💄 Improved code block padding and font size.
 - 💄 Improved table style.
