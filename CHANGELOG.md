@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.17
+- 🐛 Fixed rounded card background in topic archive page
+- 💄 Add mask for tag card in topic archive page, mask removed when hovering.
+
 ## v1.0.16
 - 🐛 Fixed the scale effect of post card in post aside section.
 

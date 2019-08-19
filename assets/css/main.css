@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.0.16
+Version: 1.0.17
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -1013,7 +1013,8 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 	height: 100%;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 20px 40px rgba(12, 12, 94, .1);
+	box-shadow: 0 20px 40px rgba(12, 12, 94, .1);
+	overflow: hidden;
 }
 .tag-card.no-image {
 	display: -ms-flexbox;
@@ -1030,6 +1031,14 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 		background-size: cover;
 		background-position: center center;
 		box-shadow: 0px 1px 0px #ddd;
+	}
+	.tag-card .tag-image .mask{
+		height:100%;
+		widows: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.tag-card:hover .tag-image .mask{
+		background-color: transparent;
 	}
 	.tag-card .tag-info {
 		padding: 16px;
