@@ -8,7 +8,7 @@
 
 一个有滋味的 Ghost :ghost:博客主题
 
-感谢所有给小星星和使用本主题的朋友。要充分使用本主题支持的功能，请仔细阅读本文档哦。
+感谢所有给本项目小星星的朋友。要充分使用本主题支持的功能，请仔细阅读本文档哦。
 
 [English Doc](./README.md)
 
@@ -16,7 +16,10 @@
 
 ## :wrench: 安装
 
-下载[最新版本](https://github.com/huangyuzhang/fizzy-theme/releases/)后在 Ghost 后台 Setting > Design 处上传 `.zip` 压缩文件。
+- [稳定版本](https://github.com/huangyuzhang/Fizzy-Theme/releases/latest/)
+- [开发版本](https://github.com/huangyuzhang/Fizzy-Theme/tags/)
+
+下载对应版本 `.zip` 压缩包后在 Ghost 后台 Setting > Design 处上传。
 
 ## :movie_camera: 演示站点
 
@@ -222,7 +225,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 ## :memo: 版本更新日志
 
-查看完整版本更新日志： [CHANGELOD.md](./CHANGELOG.md)
+查看完整版本更新日志： [CHANGELOG.md](./CHANGELOG.md)
 
 ## 🍻 贡献者
 
@@ -232,7 +235,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 - [Bulma][bulma] - CSS 框架
 - [Prismjs][prismjs] - 一个轻量的代码高亮工具
-- [JQuery][jquery] - 一个知名的 JavaSript 库 (因为使用 tocify 引入)
+- [JQuery][jquery] - 一个知名的 JavaScript 库 (因为使用 tocify 引入)
 - [jQuery.tocify.js][tocify] - 一个根据文章内标题生成目录的工具 (引入 JQuery-UI)
 - [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 - [Gitalk][gitalk] - 一个基于 Github issued 的评论系统 (since v0.3.0)

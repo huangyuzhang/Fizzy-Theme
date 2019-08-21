@@ -15,8 +15,10 @@ Thanks to everyone who starred and uses this theme. If you want to take advantag
 ![](https://user-images.githubusercontent.com/40261916/60045241-3e045480-96bc-11e9-9382-03789cd8a637.jpg)
 
 ## :wrench: Installation
+- [Stable Version](https://github.com/huangyuzhang/Fizzy-Theme/releases/latest/)
+- [Development Version](https://github.com/huangyuzhang/Fizzy-Theme/tags/)
 
-Download the latest [release](https://github.com/huangyuzhang/fizzy-theme/releases/) and upload the zip file at your Ghost admin > Setting > Design.
+Download the `.zip` file and upload it at your Ghost Admin > Setting > Design.
 
 ## :movie_camera: Demo
 
@@ -180,7 +182,7 @@ There are two ways to control the TOC of a post:
     </script>
     ```
 2. Use custom post template `Post With Toc` to enable TOC. 
-> **Prioty**: `template` > `Post Header` > `Site Header`
+> **Priority**: `template` > `Post Header` > `Site Header`
 
 > **Notice**: h2 and h3 headings on the page will be displayed by default. If you want to add other headings (e.g. h1 or h4), please edit `selectors` of the file `partials/post/post_toc.hbs`. However, you should not use h1 except for the post title.
 
@@ -200,7 +202,7 @@ Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([exampl
 
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
-- **Badge**: inclue `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
+- **Badge**: include `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
 - **Posts per page**: change the number of `"posts_per_page": 8` in `package.json`
 - **table**: to unwrap cells, uncomment the `/* white-space: nowrap; */` in `assets/css/main.css` around **line 703**.
 
@@ -226,7 +228,7 @@ See [Contributors][contributors]
 
 - [Bulma][bulma] - CSS Framework
 - [Prismjs][prismjs] - A lightweight syntax highlighter
-- [JQuery][jquery] - A well-known JavaSript library (for tocify only now)
+- [JQuery][jquery] - A well-known JavaScript library (for tocify only now)
 - [jQuery.tocify.js][tocify] - Table of Content generator (also JQuery-UI)
 - [KaTeX][katex] - A faster LaTeX equation rendering library (since v0.3.0)
 - [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
