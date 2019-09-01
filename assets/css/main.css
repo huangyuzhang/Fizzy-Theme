@@ -1,14 +1,15 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.0.17
+Version: 1.1.0
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
 */
 
 /* ====================== import ====================== */
-@import "custom.css"; /* ADD 2019.05.28*/
+/* Customized CSS ADD 2019.05.28*/
+@import "custom.css"; 
 @import "class.css"; 
 
 /* ====================== over-write bulma default ====================== */
