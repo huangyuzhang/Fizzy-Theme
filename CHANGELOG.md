@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## [v1.1.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.1.0) (2019.09.02)
-- ⬆️ localize assets: Google Font (Montserrat), bulma css.
+- ⬆️ localize assets and CDN: Google Font (Montserrat), bulma css.
 - ✏️ fix some typos.
 - 📝 Updated README: localization instructions.
 - and everything since v1.0.0.
