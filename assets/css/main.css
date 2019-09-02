@@ -13,7 +13,7 @@ Author URI: https://yuzhang.me
 @import "class.css"; 
 
 /* ====================== over-write bulma default ====================== */
-/* fix "has-spaced-navbar-fixed-top" cut off the top on modile devices 2019.04.09 */
+/* fix "has-spaced-navbar-fixed-top" cut off the top on mobile devices 2019.04.09 */
 @media screen and (max-width: 1087px){
     body.has-spaced-navbar-fixed-top, html.has-spaced-navbar-fixed-top {
         padding-top: 3.25rem;
@@ -248,12 +248,12 @@ html,body{
 	background-color: #f2f2f2;
 	/* color:var(--main-color); */
 }
-#seach-form{
+#search-form{
 	position: relative;
 	margin-left:2px;
 }
 @media screen and (min-width:1089px){
-	#seach-form{margin-bottom:0!important;}
+	#search-form{margin-bottom:0!important;}
 }
 #search-input:focus{
 	border-color:var(--main-color);
@@ -534,8 +534,8 @@ html,body{
 /* image layout (temporary solution, may have some bugs 2019.04.14) */
 /* fixed wide layout bug, but need a better way in the future */
 .single-article .post-content figure{
-	margin-left: 0rem; /* overwrite deault 2rem */
-	margin-right: 0rem; /* overwrite deault 2rem */
+	margin-left: 0rem; /* overwrite default 2rem */
+	margin-right: 0rem; /* overwrite default 2rem */
 }
 .single-article .post-content .kg-embed-card {
     display: -ms-flexbox;

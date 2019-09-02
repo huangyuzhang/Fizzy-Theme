@@ -47,6 +47,12 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 
 Please help to translate Fizzy into the languages you know. To do so, first fork this repo. Then you need to copy the `en.json` file under `locales` folder and rename it to your language code, e.g. `es.json`, `zh_TW.json`. Then modify the translations within it. After testing, please create a Pull Request.
 
+### Assets Localization
+You could customize the following files to define the CDN of assets to speed up access in specific regions: 
+- `./default.hbs`
+- `./partials/post/post_footer.hbs`
+- `./partials/post/post_toc.hbs`
+
 ### Internal tags
 Internal tags start with `#`, after creating it will displayed as internal tag automatically. Internal tags will not be displayed in front-end. So far the Fizzy Theme support the following internal tags:
 - **Carousel**: Use internal tag `#carousel`(slug:`hash-carousel`) to add posts into carousel in homepage (see [Showcase](#showcase)). 

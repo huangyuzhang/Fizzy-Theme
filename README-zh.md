@@ -47,6 +47,14 @@
 
 请帮助我们翻译主题语言。首先请fork本项目，然后复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。测试之后请提交 Pull Request。
 
+### 资源本地化
+你可以修改CSS以及js文件的CDN来针对特定地区进行优化。可修改的文件有：
+- `./default.hbs`
+- `./partials/post/post_footer.hbs`
+- `./partials/post/post_toc.hbs`
+
+> 使用的 Google Fonts 已经做了本地化支持，在 `./default.hbs` 20行左右进行修改以启用。
+
 ### 内部标签
 内部标签以`#`开头，添加后将自动显示为内部标签。内部标签不会在前台显示，目前本主题支持的内部标签有：
 - **首页幻灯片**: 为文章加入 `#carousel`(slug:`hash-carousel`) 来添加到首页顶部的幻灯片中（见：[展示橱窗](#展示橱窗)）。

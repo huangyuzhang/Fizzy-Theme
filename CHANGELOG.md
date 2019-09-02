@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v1.1.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.1.0) (2019.09.02)
+- ⬆️ localize assets: Google Font (Montserrat), bulma css.
+- ✏️ fix some typos.
+- 📝 Updated README: localization instructions.
+- and everything since v1.0.0.
+
 ## v1.0.17
 - 🐛 Fixed rounded card background in topic archive page
 - 💄 Add mask for tag card in topic archive page, mask removed when hovering.
@@ -23,7 +29,7 @@
 - 🐛 fixed table font size.
 - 💄 Improved table style.
 - 💄 Improved Katex block style.
-- 💩 the table wider than the screen will make the page srollable in mobile devices.
+- 💩 the table wider than the screen will make the page scrollable in mobile devices.
 
 ## v1.0.11
 - 🐛 fixed table in mobile.
@@ -129,7 +135,7 @@ This release fixed some minor bugs caused from v0.2.0
 - **tag list**: smaller featured image size (close: [#11](../../issues/11))
 - **post typography**: inline code style, code block font-size
 - **code highlight**: changed to Prism.js highlighter.
-- **responsive**: fix wide table responsvie display in mobile devices (temorary fix: [#16](../../issues/16))
+- **responsive**: fix wide table responsive display in mobile devices (temporary fix: [#16](../../issues/16))
 - **default**: default.hbs simplified, loading speed increased.
 
 ## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)
