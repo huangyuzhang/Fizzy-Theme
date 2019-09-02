@@ -65,26 +65,26 @@ if (!show_search) {
 }
 $("#search-btn").click(function(event) {
     // $("#search-input").val("");
-    $("#seach-form").fadeIn();
+    $("#search-form").fadeIn();
     $("#search-btn").hide()
     $('#search-input').focus();
     $("#search-results").show();
     event.stopPropagation();
 });
 $("#close-btn").click(function(event) {
-  $("#seach-form").hide();
+  $("#search-form").hide();
   $("#search-results").hide(); 
   $("#search-btn").fadeIn(); 
   // $("#search-input").val(""); //clear search field text  
   event.stopPropagation();
 });
 $(document).click(function(){
-  $("#seach-form").hide(); 
+  $("#search-form").hide(); 
   $("#search-results").hide(); 
   $("#search-btn").fadeIn();
 });
 $(window).scroll(function(){
-  $("#seach-form").hide(); 
+  $("#search-form").hide(); 
   $("#search-results").hide(); 
   $("#search-btn").show();
 });
