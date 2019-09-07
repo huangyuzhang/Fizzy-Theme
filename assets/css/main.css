@@ -842,7 +842,7 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 	padding:0;
 }
 #toc ul:first-child ul, #toc-img ul:first-child ul{
-	padding-top:10px;
+	padding-top:0px; /* fixed, need test */
 }
 #toc ul:last-child ul, #toc-img ul:last-child ul{
 	padding-bottom:0;
