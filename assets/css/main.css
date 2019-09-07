@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.1.1
+Version: 1.1.2
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -766,9 +766,12 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 	width:100%;
 	overflow-x: auto;
 	overflow-y: hidden;
-	font-size:1rem;
 	margin:.5em 0;
 	padding:.5em 0;
+}
+/* katex font-size -> same as normal text */
+.katex{
+	font-size:1em !important;
 }
 /* ====================== post: TOC ====================== 2019.05.12 */
 #toc, #toc-img {
