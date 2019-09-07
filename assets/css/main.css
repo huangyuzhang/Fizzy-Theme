@@ -1182,6 +1182,14 @@ ul.post-archive{margin-left:0!important;}
 	vertical-align: bottom;
 	object-fit: cover;
 	width: 100%;
+	height:100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 3px 3px 0;
 }
 
 .kg-bookmark-icon {
