@@ -1172,6 +1172,9 @@ ul.post-archive{margin-left:0!important;}
 .kg-bookmark-thumbnail {
 	flex-basis: 15rem;
 	flex-grow: 1;
+    position: relative; 
+    min-width: 33%; 
+    max-height: 100%;
 }
 
 
