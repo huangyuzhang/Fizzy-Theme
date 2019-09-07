@@ -1158,7 +1158,9 @@ ul.post-archive{margin-left:0!important;}
 				 "Microsoft YaHei",
 				 sans-serif;
 }
-
+.kg-bookmark-description{ 
+	color: #666;
+}
 .kg-bookmark-description,
 .kg-bookmark-metadata {
 	margin-top: 12px;
