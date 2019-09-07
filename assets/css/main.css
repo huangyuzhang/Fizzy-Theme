@@ -1163,7 +1163,10 @@ ul.post-archive{margin-left:0!important;}
 }
 .kg-bookmark-description,
 .kg-bookmark-metadata {
-	margin-top: 12px;
+	margin-top: .5em;
+	line-height:1.5em;
+	max-height: 3em;
+	overflow-y: hidden;
 }
 
 .kg-bookmark-thumbnail {
