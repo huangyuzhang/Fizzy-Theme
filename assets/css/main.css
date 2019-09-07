@@ -1147,7 +1147,16 @@ ul.post-archive{margin-left:0!important;}
 
 .kg-bookmark-title {
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	line-height:1.5em;
+	font-family: 'Montserrat',
+				 -apple-system,
+				 BlinkMacSystemFont,
+				 "PingFang SC",
+				 "Heiti SC", 
+				 "STXihei", 
+				 "Microsoft YaHei",
+				 sans-serif;
 }
 
 .kg-bookmark-description,
