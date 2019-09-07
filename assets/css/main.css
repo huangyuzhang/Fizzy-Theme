@@ -1127,17 +1127,18 @@ ul.post-archive{margin-left:0!important;}
 	color: black;
 	text-decoration: none;
 	margin: 0;
-	border-radius: 5px;
+	border-radius: 6px;
 	overflow: hidden;
 	border: 1px solid #e5eff5 !important;
 	box-shadow: 0 0 1px rgba(0,0,0,.06),0 2px 6px rgba(0,0,0,.03);
 }
-
+.kg-bookmark-card{
+	overflow:hidden;
+	border-radius: 6px;
+}
 .kg-bookmark-card a:hover {
 	color: black !important;
 }
-
-
 .kg-bookmark-content {    
 	flex-basis: 0;
 	flex-grow: 999;
@@ -1146,12 +1147,6 @@ ul.post-archive{margin-left:0!important;}
 	font-size: 1rem;
 	line-height: 1;
 	text-align: left;
-}
-
-.kg-bookmark-title {
-	font-weight: 600;
-	font-size: 1.2rem;
-	line-height:1.5em;
 	font-family: 'Montserrat',
 				 -apple-system,
 				 BlinkMacSystemFont,
@@ -1160,6 +1155,17 @@ ul.post-archive{margin-left:0!important;}
 				 "STXihei", 
 				 "Microsoft YaHei",
 				 sans-serif;
+}
+.kg-bookmark-title {
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height:1.5em;
+}
+.kg-bookmark-card:hover .kg-bookmark-title{
+	text-decoration: underline;
+}
+.kg-bookmark-card:hover{
+	box-shadow: 0 3px 6px rgba(12,12,94,.1) !important;
 }
 .kg-bookmark-description{ 
 	color: #666;
@@ -1171,16 +1177,17 @@ ul.post-archive{margin-left:0!important;}
 	max-height: 3em;
 	overflow-y: hidden;
 }
-
+.kg-bookmark-metadata {
+	display:flex;
+	align-items: center;
+}
 .kg-bookmark-thumbnail {
-	flex-basis: 15rem;
+	flex-basis: 10rem;
 	flex-grow: 1;
     position: relative; 
-    min-width: 33%; 
+    min-width: 10rem; 
     max-height: 100%;
 }
-
-
 .kg-bookmark-thumbnail img {
 	vertical-align: bottom;
 	object-fit: cover;
@@ -1194,15 +1201,13 @@ ul.post-archive{margin-left:0!important;}
     object-fit: cover;
     border-radius: 0 3px 3px 0;
 }
-
 .kg-bookmark-icon {
 	width: 22px;
 	height: 22px;
 	margin-right: 8px;
 	vertical-align: bottom;
 }
-
 .kg-bookmark-author:after {
-	content: "•";
+	content: "\2022";
 	margin: 0 6px;
 }

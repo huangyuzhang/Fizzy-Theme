@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.1.2
+- ✨ added CSS style support for ghost bookmark cards ([#32](https://github.com/huangyuzhang/Fizzy-Theme/pull/32))
+- 🐛 fixed Katex font size inconsistent in display and inline
+- 🐛 removed post float toc first item's first sub-item has 10px padding-top
+
 ## [v1.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.1.1) (2019.09.02)
 - ⬆️ localize assets and CDN: Google Font (Montserrat), bulma css.
 - ✏️ fix some typos and bug caused by them.
