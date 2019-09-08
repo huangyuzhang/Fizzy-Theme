@@ -110,3 +110,16 @@ if (typeof line_numbers == 'undefined') {
 if (line_numbers) {
   $("pre").addClass("line-numbers");
 }
+/*----------------------------------------------------*/
+/*  External link new tab | 2019.09.09
+/*----------------------------------------------------*/
+$.expr[':'].external = function(obj){
+  return !obj.href.match(/^mailto\:/)
+         && (obj.hostname != location.hostname)
+         && !obj.href.match(/^javascript\:/)
+         && !obj.href.match(/^$/)
+};
+$(document).ready(function(){
+  // open post-content external links with new tabs
+  $('.post-content a:external').attr('target', '_blank').attr('rel','noopener noreferrer nofollow');
+});

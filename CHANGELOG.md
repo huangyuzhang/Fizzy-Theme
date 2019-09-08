@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.3
+- 📱 bookmark card responsive support
+- ✨ open external links in post content with new tabs.
+
 ## v1.1.2
 - ✨ added CSS style support for ghost bookmark cards ([#32](https://github.com/huangyuzhang/Fizzy-Theme/pull/32))
 - 🐛 fixed Katex font size inconsistent in display and inline
