@@ -8,25 +8,25 @@
 
 A tasty blogging theme for Ghost :ghost:
 
-Thanks to everyone who starred and uses this theme. If you want to take advantage of all the features of this theme, please read this page.
+Thanks to everyone who starred this project. Please read the documentation to exploit all the features of this theme.
 
 [中文文档](./README-zh.md)
 
 ![](https://user-images.githubusercontent.com/40261916/60045241-3e045480-96bc-11e9-9382-03789cd8a637.jpg)
 
-## :wrench: Installation
+## 🔧 Installation
 - [Stable Version](https://github.com/huangyuzhang/Fizzy-Theme/releases/latest/)
 - [Development Version](https://github.com/huangyuzhang/Fizzy-Theme/tags/)
 
 Download the `.zip` file and upload it at your Ghost Admin > Setting > Design.
 
-## :movie_camera: Demo
+## 🎥 Demo
 
 My blog [Fizzy.cc](https://fizzy.cc) is currently using this theme.
 
 Use this [issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20) to add your site with Fizzy Theme.
 
-## :tropical_drink: Features and Usage
+## 🍹 Features and Usage
 
 ### Logo
 If only **site icon** is uploaded, the Logo area will display the **icon** and followed by the **Site name** then a dot colored as the **main color**, e.g.:
@@ -209,6 +209,9 @@ Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([exampl
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: include `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))
+  - Supported colors: uncolored, red, yellow, green, blue, purple
+![image](https://user-images.githubusercontent.com/40261916/64512333-bcb27a80-d318-11e9-8b60-1f18468e3a30.png)
+    > Note: to use uncolored badge, set as `class="badge"`.
 - **Posts per page**: change the number of `"posts_per_page": 8` in `package.json`
 - **table**: to unwrap cells, uncomment the `/* white-space: nowrap; */` in `assets/css/main.css` around **line 703**.
 
@@ -222,7 +225,7 @@ If you want to disable the top right "Get Fizzy Theme" button, insert the follow
 ```
 > Please do not remove the footer text "Using The Fizzy Theme" and the link. Thank you for your support!
 
-## :memo: Changelog
+## 📝 Changelog
 
 See [CHANGELOG.md](./CHANGELOG.md)
 
@@ -230,7 +233,7 @@ See [CHANGELOG.md](./CHANGELOG.md)
 
 See [Contributors][contributors]
 
-## :battery: Dependencies
+## 🔋 Dependencies
 
 - [Bulma][bulma] - CSS Framework
 - [Prismjs][prismjs] - A lightweight syntax highlighter
@@ -240,20 +243,24 @@ See [Contributors][contributors]
 - [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
 - [ghost-search][ghost-search] - An instant search library using Ghost Content API (since v1.0.0)
 
-## :bug: Bug Report & :dart: Features Request
+## 📍 Roadmap
+To know the future planning of this project, please visit our [Roadmap][roadmap].
+
+## 🐛 Bug Report & :dart: Features Request
 If you find a bug, thinking about something to be improved or even want new features, please feel free to post an issue. 
 
 Alternatively you could contribute to this project.
 
-## :bulb: Contributing
+## 💡 Contributing
 
 1. Fork it (maybe star this too?)
 2. Create your feature branch (`git checkout -b feature-fooBar`)
-3. Commit your changes (`git commit -am 'Add something'`)
-4. Push to the branch (`git push origin feature-fooBar`)
-5. Create a new Pull Request
+3. Commit your changes (`git commit -m 'Add something'`)
+4. Push to the branch to origin (`git push origin feature-fooBar`)
+5. Create a new Pull Request to `dev` branch here
+6. Wait for code review and modify if necessary
 
-## :lock_with_ink_pen: License 
+## 🔏 License 
 
 This project is licensed under the MIT License.
 
@@ -270,3 +277,4 @@ This project is licensed under the MIT License.
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
 [contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors
+[roadmap]: https://github.com/huangyuzhang/Fizzy-Theme/projects/3

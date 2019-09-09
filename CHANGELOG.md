@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v1.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.2.0) (2019.09.09)
+- 💄 improved bookmark card style
+- ✨ add roadmap link to "Get Fizzy Theme" button
+- 🐛 fixed "Get Fizzy Theme" button flash when `fizzy_credit` set to `false`.
+- ✨ add yellow badge (now supported colors: red, yellow, green, blue, purple)
+- 🐛 improved float TOC's background and spacing
+- ⚡️ make it easier to click the post title in `list_card`
+- ⚡️ improved `hr` divider's color
+- 📝 updated: badge color, roadmap link, contribute instruction, icons
+
 ## v1.1.3
 - 📱 bookmark card responsive support
 - ✨ open external links in post content with new tabs.

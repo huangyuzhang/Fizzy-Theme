@@ -14,20 +14,20 @@
 
 ![](https://user-images.githubusercontent.com/40261916/60045241-3e045480-96bc-11e9-9382-03789cd8a637.jpg)
 
-## :wrench: 安装
+## 🔧 安装
 
 - [稳定版本](https://github.com/huangyuzhang/Fizzy-Theme/releases/latest/)
 - [开发版本](https://github.com/huangyuzhang/Fizzy-Theme/tags/)
 
 下载对应版本 `.zip` 压缩包后在 Ghost 后台 Setting > Design 处上传。
 
-## :movie_camera: 演示站点
+## 🎥 演示站点
 
 我的博客 [fizzy.cc](https://fizzy.cc) 正在使用本主题哦.
 
 如果你也在使用Fizzy主题，欢迎通过此[issue](https://github.com/huangyuzhang/Fizzy-Theme/issues/20)来添加你的站点。
 
-## :tropical_drink: 特性及使用介绍
+## 🍹 特性及使用介绍
 
 ### Logo
 如果你只上传了 **site icon**，网站的导航栏会展示：**site icon** + 网站名称 + 一个**main color** 为颜色的点，比如：
@@ -215,6 +215,9 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 ### 其他设置
 - **导航**：修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
 - **徽章**：使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))
+  - 支持的颜色: 黑白、红色、黄色、绿色、蓝色、紫色
+![image](https://user-images.githubusercontent.com/40261916/64512639-70b40580-d319-11e9-9218-b1937c2e4b4f.png)
+    > 注意: 使用 `class="badge"`来表示无色。
 - **每页文章数**：在 `package.json` 中修改 `"posts_per_page": 8` 的数字来修改每页展示的文章数量。
 - **表格**：若要让一个单元格中的内容不换行，取消 `assets/css/main.css` 中大约703行左右的注释 `/* white-space: nowrap; */`。
 - **文章列表摘要**：由于中英文字数统计方式不同，如果网站语言为类中文语言，文章列表页面的摘要可能过长。有两种方法解决：
@@ -230,8 +233,8 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 </script>
 ```
 > 请勿移除页面底部的 "Using The Fizzy Theme" 及其链接。感谢支持！
-
-## :memo: 版本更新日志
+---
+## 📝 版本更新日志
 
 查看完整版本更新日志： [CHANGELOG.md](./CHANGELOG.md)
 
@@ -239,7 +242,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 查看[贡献者列表][contributors]
 
-## :battery: 依赖
+## 🔋 依赖
 
 - [Bulma][bulma] - CSS 框架
 - [Prismjs][prismjs] - 一个轻量的代码高亮工具
@@ -248,6 +251,9 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 - [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 - [Gitalk][gitalk] - 一个基于 Github issued 的评论系统 (since v0.3.0)
 - [ghost-search][ghost-search] - 一个基于 Ghost Content API 的搜索引擎 (since v1.0.0)
+
+## 📍 开发路线图
+请访问我们的[路线图][roadmap]来了解本项目的未来开发计划。
 
 ## :bug: 报告问题 & :dart: 改进建议
 如果各位在使用过程中发现BUG，有功能或节目的修改建议或者想要主题支持一些新的功能，请前往issue页面提交并正确选择label。
@@ -258,9 +264,10 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 
 1. Fork 本项目（请大佬点个赞支持作者）
 2. 创建新的功能分支，如 `git checkout -b feature-fooBar`
-3. 提交并注释修改，如 `git commit -am 'Add something'`
+3. 提交并注释修改，如 `git commit -m 'Add something'`
 4. 同步到远程仓库，如 `git push origin feature-fooBar`
-5. 创建一个 Pull Request
+5. 创建一个 Pull Request 到本项目的 `dev` 分支
+6. 等待代码检查，在某些情况下可能需要进行修改
 
 
 ## :lock_with_ink_pen: 开源协议
@@ -279,3 +286,4 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
 [contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors
+[roadmap]: https://github.com/huangyuzhang/Fizzy-Theme/projects/3
