@@ -1143,6 +1143,7 @@ ul.post-archive{margin-left:0!important;}
 	flex-grow: 999;
 	min-width: 50%;
 	padding: 20px;
+	background-color: #fafafa;
 	font-size: 1rem;
 	line-height: 1;
 	text-align: left;
