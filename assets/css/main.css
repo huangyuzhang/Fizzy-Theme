@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.1.3
+Version: 1.2.0
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -156,7 +156,18 @@ strong{
     white-space: nowrap;
     user-select: none;
     border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+	margin-left:5px;
+}
+.badge.red {
+    border-color: #ab2929;
+    color: #fff;
+    background: linear-gradient(#e34242,#ab2929);
+}
+.badge.yellow {
+    border-color: #d5b70a;
+    color: #fff;
+    background: linear-gradient(#faf05e,#d5b70a);
 }
 .badge.green {
     border-color: #84a731;
@@ -167,11 +178,6 @@ strong{
     border-color: #3777bc;
     color: #fff;
     background: linear-gradient(#37a2d0,#3773bc);
-}
-.badge.red {
-    border-color: #ab2929;
-    color: #fff;
-    background: linear-gradient(#e34242,#ab2929);
 }
 .badge.purple {
     border-color: #721fae;
@@ -777,6 +783,8 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 #toc, #toc-img {
 	font-family:'Montserrat', sans-serif;
 	border-radius:3px;
+	background-color:white;
+	/* box-shadow: 0 20px 40px rgba(12,12,94,.1) !important; */
 }
 /* not displaying below 1280px */
 @media screen and (max-width: 1279px){
@@ -787,6 +795,8 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 #toc {
 	position: fixed;
 	top: 132px;
+	margin-right:10px;
+	padding-right:10px;
 }
 #toc-img.is-fixed {
 	position: fixed;
@@ -825,8 +835,8 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
  #toc ul, #toc-img ul {
 	margin-left: 0;
 	border-left: 1px solid #ddd;
-	background-color: #fff;
-	margin-right:10px;
+	/* background-color: #fff; */
+	/* margin-right:10px; */
 	padding:0 10px 0 10px;
 }
 #toc ul:first-child, #toc-img ul:first-child {
