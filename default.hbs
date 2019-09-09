@@ -108,8 +108,8 @@
     <script>
         if (typeof show_showcase == 'undefined') {var show_showcase = false;};
         if (show_showcase){$('#showcase').removeClass("is-hidden");};
-        if (typeof fizzy_credit == 'undefined') {var fizzy_credit = true;};
-        if (!fizzy_credit){$('#fizzy-credit').addClass("is-hidden");};
+        if (typeof fizzy_credit == 'undefined') {var fizzy_credit = false;};
+        if (fizzy_credit){$('#fizzy-credit').removeClass("is-hidden");};
     </script>
 
     {{!-- Fontawesome icons --}}
