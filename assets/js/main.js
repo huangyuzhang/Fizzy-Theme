@@ -119,7 +119,12 @@ $.expr[':'].external = function(obj){
          && !obj.href.match(/^javascript\:/)
          && !obj.href.match(/^$/)
 };
-$(document).ready(function(){
-  // open post-content external links with new tabs
-  $('.post-content a:external').attr('target', '_blank').attr('rel','noopener noreferrer nofollow');
-});
+if (typeof external_link_nofollow == 'undefined') {
+  var external_link_nofollow = false;
+}
+if (external_link_nofollow) {
+  $(document).ready(function(){
+    // open post-content external links with new tabs
+    $('.post-content a:external').attr('target', '_blank').attr('rel','noopener noreferrer nofollow');
+  });
+}
