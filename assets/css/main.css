@@ -510,7 +510,7 @@ html,body{
 	line-height: 1.5em;
 }
 /* hr */
-.post-wrap .post-content hr{background: linear-gradient(90deg, var(--main-color) 0%, var(--secondary-color) 100%)}
+.post-wrap .post-content hr{background: linear-gradient(90deg, rgba(254, 22, 97, 0.6) 0%, rgba(22, 93, 254, 0.5) 100%)}
 /* list */
 .post-wrap .post-content ul,.post-content ol{
 	margin-left: 1.5em;
