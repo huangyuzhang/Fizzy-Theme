@@ -1,3 +1,11 @@
+/*
+Theme Name: Fizzy
+GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
+Description: A tasty blogging theme for Ghost 
+Author: Yuzhang Huang
+Author URI: https://yuzhang.me
+*/
+
 // header: navbar Burgers 2019.04.08
 document.addEventListener('DOMContentLoaded', () => {
 
