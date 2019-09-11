@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# v1.2.1
+- ✨ add version number at footer
+
 ## [v1.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.2.0) (2019.09.09)
 - 💄 improved bookmark card style
 - ✨ add roadmap link to "Get Fizzy Theme" button
