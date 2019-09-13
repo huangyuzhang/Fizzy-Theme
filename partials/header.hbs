@@ -18,28 +18,39 @@
                 </div>
             {{/if}}
 
+            {{!-- burger in mobile devices --}}
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarPrimary">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
+
         </div>
 
         <div id="navbarPrimary" class="navbar-menu">
+
+            {{!-- Site Navigation --}}
             <div class="navbar-start">
                 {{#if @site.navigation}}
                 {{navigation}}                    
                 {{/if}}
             </div>
 
+            {{!-- Credit Button start --}}
             <div class="navbar-end">
-                <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
-                    <a href="https://fizzy.cc/fizzy-theme/" target="_blank" class="button is-danger">
-                    <strong>Get Fizzy Theme</strong>
-                    </a>
+                <div id="fizzy-credit" class="navbar-item has-dropdown is-hoverable is-hidden-mobile btn-fizzy is-hidden">
+                    <div class="btn-fizzy-inner">
+                        <a target="_blank" class="btn-fizzy-text" rel="noopener">Get Fizzy Theme</a>
+                    </div>
                     <div class="navbar-dropdown is-right">
-                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/releases" target="_blank">
-                        Download
+                        <a class="navbar-item" href="https://fizzy.cc/Fizzy-Theme/" target="_blank">
+                        Homepage
+                        </a>
+                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/" target="_blank">
+                        GitHub Repo
+                        </a>
+                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/projects/3" target="_blank">
+                        Roadmap  <span class="badge green"> New</span>
                         </a>
                         <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/blob/master/CHANGELOG.md" target="_blank">
                         Changelog
@@ -48,12 +59,20 @@
                         Report an issue
                         </a>
                         <hr class="navbar-divider">
-                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme" target="_blank">
-                        <img src="https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star" alt="GitHub Stars">
+                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/" target="_blank">
+                            <img src="https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star" alt="GitHub Stars">
+                        </a>
+                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/releases/latest/" target="_blank">
+                            <img src="https://img.shields.io/github/release/huangyuzhang/Fizzy-Theme.svg?label=Release&color=green" alt="Download Fizzy Theme">
+                        </a>
+                        <a class="navbar-item" href="https://github.com/huangyuzhang/Fizzy-Theme/tags/" target="_blank">
+                            <img src="https://img.shields.io/github/tag/huangyuzhang/Fizzy-Theme.svg?label=dev-tag&color=orange" alt="Download Fizzy Theme">
                         </a>
                     </div>
                 </div>
             </div>
+            {{!-- Credit Button end --}}
+
         </div>
     </nav>
 </header>

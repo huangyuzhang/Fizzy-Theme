@@ -1,5 +1,5 @@
-{{!-- post_card: for single post aside section --}}
-<article class="box is-paddingless is-clipped has-shadow-mo">
+{{!-- post_card: single post aside section --}}
+<article class="box is-paddingless has-shadow-mo">
     <div class="post-card">
         {{!-- featured_image --}}
         <a class="is-paddingless-top" href="{{url}}" alt="{{title}}" title="{{title}}">
@@ -38,9 +38,9 @@
 
                 {{!-- heading & content --}}
                 <div class="meta">
-                    <h1 class="title is-5 is-size-6-touch" style="margin-top:0;">
-                        <a href="{{url}}" class="is-montserrat has-text-black">{{title}}</a>
-                    </h1>
+                    <a href="{{url}}" class="is-montserrat has-text-black">
+                        <h1 class="title is-5 is-size-6-touch" style="line-height:1.5em;margin-top:0;">{{title}}</h1>
+                    </a>
                     <p class="is-hidden is-hidden-mobile is-margin-bottom-1">
                         {{#if meta_description}}
                             {{excerpt words="20"}}
@@ -59,7 +59,7 @@
                                     {{#if profile_image}} 
                                     <a href="{{url}}">
                                         <figure class="image is-32x32 is-marginless">
-                                        <img class="is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+                                        <img class="image-squared is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
                                         </figure>
                                     </a>
                                     {{/if}}

@@ -68,6 +68,9 @@
 .margin-bottom-25:last-child {
     margin-bottom: 0rem !important;
   }
+.is-margin-bottom-05{
+    margin-bottom:0.5rem;
+}
 @media screen and (max-width: 768px){
     .is-margin-bottom-1{
         margin-bottom:1rem !important;
@@ -127,6 +130,9 @@
 }
 
 /* background */
+.has-background-light-line{
+    background-image: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 2px, #eee 2px, #eee 3px);
+}
 .bg-cover-center{
     background-size: cover;
     background-position: center center;
@@ -160,4 +166,13 @@
 /* text */
 .has-text-shadow-black{
     text-shadow: 0 2px 2px rgba(7,17,27,.4);
+}
+
+/* image crop */
+.image-squared{
+    display: block;
+    width: 100% !important;
+    height: 100%!important;
+    -o-object-fit: cover;
+    object-fit: cover;
 }

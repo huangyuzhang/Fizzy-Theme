@@ -11,20 +11,41 @@
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             <div class="columns">
                 {{!-- carousel start--}}
-                <div class="column is-6">
+                <div class="column is-7">
                     <div class="carousel" id="carousel-home">
                         {{!-- get 10 posts with tag #carousel as --}}
-                        {{#get "posts" limit="5" include="tags" filter="tags:[hash-carousel]" as |carousel|}} 
+                        {{#get "posts" limit="6" include="tags,authors" filter="tags:[hash-carousel]" as |carousel|}} 
                         {{#foreach carousel}}
                             <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});">
                                 <a href="{{url}}" rel="bookmark" class="link-block"></a>
                                 <div class="carousel-meta bg-grad-b">
                                     {{#primary_tag}}
                                         <div class="carousel-tag">
-                                            <a href="{{url}}" class="has-text-weight-semibold is-montserrat">{{name}}</a>
+                                            <a href="{{url}}" class="is-montserrat">{{name}}</a>
                                         </div>
                                     {{/primary_tag}}
-                                    <a href="{{url}}"><h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
+                                    <a href="{{url}}"><h2 class="is-size-4 is-size-5-mobile is-margin-bottom-05 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
+                                    {{#primary_author}}
+                                        <div class="columns is-mobile is-vcentered">
+                                            <div class="column is-narrow" style="padding-right:.5em;">
+                                                <a href="{{url}}">
+                                                    <figure class="image is-24x24">
+                                                    <img class="image-squared is-rounded" src="
+                                                        {{#if profile_image}}
+                                                            {{profile_image}}
+                                                        {{else}}
+                                                            {{asset 'images/user-avatar-default.png'}}
+                                                        {{/if}}
+                                                    " alt="{{name}}" title="{{name}}">
+                                                    </figure>
+                                                </a>
+                                            </div>
+
+                                            <div class="column is-narrow has-text-weight-bold is-hpaddingless">
+                                                <a href="{{url}}" class="has-text-white">{{name}}</a>
+                                            </div>
+                                        </div>
+                                    {{/primary_author}}
                                 </div>
                             </div>
                         {{/foreach}}
@@ -34,21 +55,23 @@
                 {{!-- carousel end --}}
 
                 {{!-- top-featured start --}}
-                <div class="column is-6">
-                    {{#get "posts" limit="2" filter="featured:true" as |top-featured|}}
+                <div class="column is-5">
+                    {{#get "posts" limit="2" include="tags" filter="featured:true" as |top-featured|}}
                     <div class="top-featured">
                         {{#top-featured}}
-                        <a href="{{url}}" class="tf-item img-bg box has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});">
+                        <div class="tf-item img-bg box has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="carousel"}});background-position: center center;background-repeat: no-repeat;background-size: cover;">
                             <span class="featured-label is-montserrat" style="right:5px;top:5px;padding:0 5px;" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i> <span>{{t "Featured"}}</span></span>
+                            <a href="{{url}}" rel="bookmark" class="link-block"></a>
                             <div class="tf-meta bg-grad-b">
-                                {{#foreach tags limit="2"}}
+                                <a href="{{url}}" rel="bookmark" class="link-block"></a>
+                                {{#primary_tag}}
                                     <div class="tf-tag">
-                                        <a href="{{url}}" class="has-text-weight-semibold is-montserrat">{{name}}</a>
+                                        <a href="{{url}}" class="is-montserrat">{{name}}</a>
                                     </div>
-                                {{/foreach}}
-                                <h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2>
-                            </div>
-                        </a>
+                                {{/primary_tag}}
+                                <a href="{{url}}"><h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
+                            </div>    
+                        </div>
                         {{/top-featured}}
                     </div>
                     {{/get}}

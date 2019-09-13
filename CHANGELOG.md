@@ -1,24 +1,108 @@
 # CHANGELOG
 
-## [v1.0.0](#) (TBA)
-The v1.0.0 will be the last development version and the first stable version of the Fizzy Theme. 
+## [v1.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.2.0) (2019.09.09)
+- 💄 improved bookmark card style
+- ✨ add roadmap link to "Get Fizzy Theme" button
+- 🐛 fixed "Get Fizzy Theme" button flash when `fizzy_credit` set to `false`.
+- ✨ add yellow badge (now supported colors: red, yellow, green, blue, purple)
+- 🐛 improved float TOC's background and spacing
+- ⚡️ make it easier to click the post title in `list_card`
+- ⚡️ improved `hr` divider's color
+- 📝 updated: badge color, roadmap link, contribute instruction, icons
 
-I will then focus on bug fixing and improvements to current code. Also I will do modifications to cope with the Ghost upgrade. Meaningful new features will still be added by not only me but also other contributors (hope so).
+## v1.1.3
+- 📱 bookmark card responsive support
+- ✨ open external links in post content with new tabs.
 
+## v1.1.2
+- ✨ added CSS style support for ghost bookmark cards ([#32](https://github.com/huangyuzhang/Fizzy-Theme/pull/32))
+- 🐛 fixed Katex font size inconsistent in display and inline
+- 🐛 removed post float toc first item's first sub-item has 10px padding-top
+
+## [v1.1.1](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.1.1) (2019.09.02)
+- ⬆️ localize assets and CDN: Google Font (Montserrat), bulma css.
+- ✏️ fix some typos and bug caused by them.
+- 📝 Updated README: localization instructions.
+- and everything since v1.0.0.
+
+## v1.0.17
+- 🐛 Fixed rounded card background in topic archive page
+- 💄 Add mask for tag card in topic archive page, mask removed when hovering.
+
+## v1.0.16
+- 🐛 Fixed the scale effect of post card in post aside section.
+
+## v1.0.15
+- 💄 Improved code block padding and font size.
+- 💄 Improved table style.
+
+## v1.0.14
+- 🔒 change file permission
+- 🐛 add bottom line to tag images in tag archive page
+
+## v1.0.13
+- 💄 Improved main canvas style (navbar, body background, footer)
+
+## v1.0.12
+- 🐛 fixed showcase tag's display to inline-block.
+- 🐛 fixed table font size.
+- 💄 Improved table style.
+- 💄 Improved Katex block style.
+- 💩 the table wider than the screen will make the page scrollable in mobile devices.
+
+## v1.0.11
+- 🐛 fixed table in mobile.
+- 📱 enable horizontal scroll for too long Katex block.
+
+## v1.0.10
+- 📱 wrap inline code that is too long in mobile.
+
+## v1.0.9
+- 💄 Improved table style in desktop & mobile.
+
+## v1.0.8
+- ✨ Allow code blocks to show line-numbers.
+- 🍱 Support `nginx` highlight in code block.
+- 📝 Updated README.
+- ✏️ Fixed typos in README.
+
+## v1.0.7
+- ✨ `home.hbs` modified to support collection.
+- 🔥 removed feature posts archive pagination due to issue.
+
+## v1.0.6
+- ✨ [showcase] add author to carousel card; add primary_tag to featured item
+- 🐛 [feature posts archive] add author and primary_tag
+
+## v1.0.5
+- 🐛 fix toc display block even when disabled
+
+## v1.0.4
+- 🐛 fix bugs in year & month break by [@TaikerLiang](https://github.com/TaikerLiang). (close: [#25](../../issues/25))
+
+## v1.0.3
+- 💄 list_card.bhs: set card layout with featured image to 5/12 + 7/12.
+- 💡 README-zh: list card excerpt modification guide for Chinese-like languages.
+
+## v1.0.2
+- 🐛 squared rectangle avatar in list_card, post_author, post_aside, author.
+
+## v1.0.1
+- 💄 updated credit button style and hide with scroll
+
+## [v1.0.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.0.0) (2019.06.24)
 ### NEW
-- [x] **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
-- [x] **post archive**: create a page to list all posts. (testing)
-- [ ] **README TOC**: better documentation
-- [ ] **custom dropdown menu**: support custom dropdown menu
-- [ ] **support Fizzy option**: add a switch to disable the top right "Fizzy Theme" dropdown menu.
-- [ ] **Report Template**: support academic report template
-- [ ] **collection**: support collections.
+- **Instant Search**: support search system (close: [#18](../../issues/18)) (testing)
+- **Post Archive**: create a page to list all posts. (testing)
+- **Custom Template**: Featured Posts Archive
+- **Fizzy Credit Switch**: add a switch to enable/disable the top right "Get Fizzy Theme" dropdown menu.
 
 ### MOD
-- [x] **custom footer text**: set the default value to @site.description.
-- [ ] **custom css variable**: customize CSS variables in `Site Header`
-- [ ] **js**: concentrate js files and minify them
-- [ ] **css**: concentrate css files and minify them
+- **Custom Footer Text**: set the default value to @site.description.
+- **Custom CSS Variable**: customize CSS variables in `Site Header`
+- Updated various UI Styles.
+- Fixed several bugs.
+- Improved some component layouts for post pages.
 
 ## [v0.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.3.0) (2019.05.28)
 ### NEW
@@ -70,7 +154,7 @@ This release fixed some minor bugs caused from v0.2.0
 - **tag list**: smaller featured image size (close: [#11](../../issues/11))
 - **post typography**: inline code style, code block font-size
 - **code highlight**: changed to Prism.js highlighter.
-- **responsive**: fix wide table responsvie display in mobile devices (temorary fix: [#16](../../issues/16))
+- **responsive**: fix wide table responsive display in mobile devices (temporary fix: [#16](../../issues/16))
 - **default**: default.hbs simplified, loading speed increased.
 
 ## [v0.1.2](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v0.1.2) (2019.05.05)

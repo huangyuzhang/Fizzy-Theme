@@ -5,26 +5,38 @@
     {{!-- Document Settings --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     {{!-- Base Meta --}}
     <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
+
     {{!-- This tag outputs SEO meta + structured data and Code injections in Site Header--}}
     {{ghost_head}}
+
     {{!-- main css --}}
     <link rel="stylesheet" type="text/css" href="{{asset 'css/main.css'}}" />
-    {{!-- Bulma --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    {{!-- Google Fonts --}}
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+    {{!-- Google Fonts--}}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    {{!-- Google Fonts Localized --}}
+    {{!-- <link rel="stylesheet" type="text/css" href="{{asset 'css/font.css'}}" /> --}}
+
+    {{!-- Bulma v0.7.5 --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" rel="stylesheet">
+    {{!-- <link href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css" rel="stylesheet"> --}}
+
     {{!-- KaTeX: css --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+    
     {{!-- Prismjs: css--}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+
 </head>
 
-<body class="has-background-light">
+<body class="has-background-light-line">
+
     {{!-- header --}}
     {{> header}}
 
@@ -92,10 +104,12 @@
         });      
     </script>
     
-    {{!-- switch: showcase --}}
+    {{!-- switches: showcase & support_fizzy --}}
     <script>
         if (typeof show_showcase == 'undefined') {var show_showcase = false;};
         if (show_showcase){$('#showcase').removeClass("is-hidden");};
+        if (typeof fizzy_credit == 'undefined') {var fizzy_credit = true;};
+        if (fizzy_credit){$('#fizzy-credit').removeClass("is-hidden");};
     </script>
 
     {{!-- Fontawesome icons --}}

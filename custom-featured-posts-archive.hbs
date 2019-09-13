@@ -1,11 +1,11 @@
-{{!-- single tag page --}}
+{{!-- Custom Template: Featured Posts Archive | 2019.06.23--}}
 
 {{!< default}}
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{!-- tag meta --}}
-{{#tag}}
+{{!-- page meta --}}
+{{#post}}
 {{#if feature_image}}
 <section class="hero tag-list-header is-bold bg-cover-center" style="background-image:url({{feature_image}});">
 {{else}}
@@ -15,33 +15,24 @@ into the {body} of the default.hbs template --}}
     <div class="container has-text-centered">
         <h1 class="title is-vmargin-2 is-capitalized has-text-white is-marginless-bottom">
             <span class="is-padding-05-15 round-border-6">
-                <i class="fas fa-tag"></i> {{name}}
+                <i class="fas fa-fire-alt"></i> {{title}}
             </span>
         </h1>
         <h2 class="subtitle is-vmargin-2 has-text-white is-centered is-margin-auto" style="max-width:760px;">
-            {{#if description}}
-                {{description}}
-            {{/if}}
+            {{content}}
         </h2>
-        <div id="post-count" class="has-text-white">
-            <a class="has-text-white" href="#post-count">
-                <span class="has-dark-modal is-padding-05-15 round-border-2rem">
-                    {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
-                </span>
-            </a>
-        </div>
     </div>
   </div>
 </section>
-{{/tag}}
+{{/post}}
 
-{{!-- main --}}
+
+{{#get "posts" include="tags,authors" filter="featured:true" limit="all" order="published_at desc"}}
 <main class="section">
     <div class="columns">
         <div class="column is-2-widescreen is-1-desktop is-hidden-touch"></div>
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             {{#foreach posts}}
-            
                 {{!-- exclude #noindex --}}
                 {{#has tag="#noindex"}}
                     {{!-- nothing --}}
@@ -53,7 +44,6 @@ into the {body} of the default.hbs template --}}
                 {{#has number="nth:3"}} 
                     {{!-- {{> "something"}} --}}
                 {{/has}}
-
             {{else}}
                 {{t "There is no post yet."}}
             {{/foreach}}
@@ -61,11 +51,5 @@ into the {body} of the default.hbs template --}}
         <div class="column is-hidden-touch"></div>
     </div>
 </main>
-
-{{!-- pagination --}}
-<section class="section is-padding-top-05">
-    <div class="container">
-        {{pagination}}
-    </div>
-</section>
+{{/get}}
 

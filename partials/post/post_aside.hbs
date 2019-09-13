@@ -5,10 +5,14 @@
             <div class="columns is-multiline">
                 {{!-- previous post: start --}}
                 {{#prev_post}}
-                <div class="column card-frame is-6-tablet is-4-desktop">
-                    <span class="nav-label left is-montserrat has-shadow-lift">{{t "Previous Post"}}</span>
-                    {{> "post/post_card"}}
-                </div>
+                    {{#if ../primary_tag}}
+                        <div class="column card-frame is-6-tablet is-4-desktop">
+                    {{else}}
+                        <div class="column card-frame is-6-tablet is-6-desktop">
+                    {{/if}}
+                        <span class="nav-label left is-montserrat has-shadow-lift">{{t "Previous Post"}}</span>
+                        {{> "post/post_card"}}
+                        </div>
                 {{/prev_post}}
                 {{!-- previous post: end --}}
 
@@ -48,7 +52,11 @@
                 {{!-- next post: start --}}
                 {{#next_post}}
                     {{!-- {{#unless tag="#noindex"}} --}} {{!-- exclude #noindex--}}
+                    {{#if ../primary_tag}}
                         <div class="column card-frame is-6-tablet is-4-desktop">
+                    {{else}}
+                        <div class="column card-frame is-6-tablet is-6-desktop">
+                    {{/if}}
                             <span class="nav-label right is-montserrat has-shadow-lift">{{t "Next Post"}}</span>
                             {{> "post/post_card"}}
                         </div>

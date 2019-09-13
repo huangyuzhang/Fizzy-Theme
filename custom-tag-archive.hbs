@@ -22,9 +22,9 @@
                 <a href="{{url}}" alt="{{description}}" title="{{description}}">
                 <div class="tag-card has-text-centered">
                     {{#if feature_image}}
-                    <div class="tag-image" style="background-image:url({{feature_image}});"></div>
+                    <div class="tag-image" style="background-image:url({{feature_image}});"><div class="mask"></div></div>
                     {{else}}
-                    <div class="tag-image" style="background-image: linear-gradient(to bottom right, #acffc5, #078ddb);"></div>
+                    <div class="tag-image" style="background-image: linear-gradient(to bottom right, #acffc5, #078ddb);"><div class="mask"></div></div>
                     {{/if}}
                     <div class="tag-info">
                         <h2 class="tag-name">{{name}}</h2>

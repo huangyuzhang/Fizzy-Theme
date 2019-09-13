@@ -11,7 +11,7 @@
             </a>
         
         {{!-- post info --}}
-        <div class="column is-8 is-paddingless">
+        <div class="column is-7 is-paddingless">
         {{else}}
         <div class="column is-12 is-paddingless">
         {{/if}}
@@ -42,31 +42,31 @@
                 </div>
 
                 {{!-- heading & content --}}
-                <h1 class="title is-3 is-size-5-mobile is-margin-bottom-1">
-                    <a href="{{url}}" class="is-montserrat has-text-black">{{title}}</a>
-                </h1>
+                <a href="{{url}}" class="is-montserrat has-text-black">
+                    <h1 class="title is-3 is-size-5-mobile is-margin-bottom-1">{{title}}</h1>
+                </a>
                 {{#if feature_image}}
-                <p class="is-hidden-mobile" style="margin-bottom:1.5rem;">
+                <p class="is-montserrat is-hidden-mobile" style="margin-bottom:1.5rem;">
                 {{else}}
-                <p class="is-size-7-mobile is-margin-bottom-1" style="margin-bottom:1.5rem;">
+                <p class="is-montserrat is-size-7-mobile is-margin-bottom-1" style="margin-bottom:1.5rem;">
                 {{/if}}
-                    {{#if meta_description}}
+                    {{!-- {{#if meta_description}}
                         {{meta_description}}
-                    {{else}}
-                        {{excerpt words="40"}}
-                    {{/if}}
+                    {{else}} --}}
+                        {{excerpt words="38"}}
+                    {{!-- {{/if}} --}}
                 </p>
 
                 {{!-- author--}}
                 <div class="media is-hidden-mobile">
                     <div class="media-left">
-                        <div class="columns is-vcentered is-1">
+                        <div class="columns is-vcentered">
                             
                             {{#primary_author}}
                             <div class="column is-narrow">
                                 <a href="{{url}}">
                                     <figure class="image is-32x32">
-                                    <img class="round-border-6" src="
+                                    <img class="image-squared round-border-6" src="
                                         {{#if profile_image}}
                                             {{profile_image}}
                                         {{else}}
