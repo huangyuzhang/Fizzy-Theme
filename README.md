@@ -206,6 +206,9 @@ Go to the Code injection, add the following code to the `Site Header`:
 ### LaTeX support
 Use `$`(inline) or `$$` to cover commands to render for LaTeX commands. ([examples](https://fizzy.cc/latex/))
 
+### Link Page
+Create a link page is nothing different than create a normal page. With the **Bookmark Card** feature since Ghost v2.30, you can easily add links to any page by type `/bookmark` in Ghost editor. ([demo](https://fizzy.cc/links/))
+
 ### Components
 - **Navigation**: You can modify `partials/navigation.hbs` to customize your dropdown menu, or delete the section if not needed.
 - **Badge**: include `class="badge <color>"` to use badge (HTML only).([demo](https://fizzy.cc/fizzy-theme/#badge))

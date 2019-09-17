@@ -1,6 +1,9 @@
 # CHANGELOG
 
-# v1.2.1
+## v1.2.2
+- 📝 add instruction for creating a link page with bookmark cards.
+
+## v1.2.1
 - ✨ add version number at footer
 
 ## [v1.2.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.2.0) (2019.09.09)

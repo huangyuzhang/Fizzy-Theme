@@ -212,9 +212,12 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 ### LaTeX公式
 使用 `$`（行内公式）或 `$$` 来包裹LaTeX公式以便主题渲染成公式。 ([示例](https://fizzy.cc/latex/))
 
+### 链接页面
+你可以通过添加页面来展示与网站相关的站外链接，如“我的站点”、“友情链接”。Ghost于v2.30版本后支持了**书签卡**功能，可以在Ghost编辑器中输入 `/bookmark` 来插入书签链接。你可以用此方式为页面添加链接。（[示例](https://fizzy.cc/links/)）
+
 ### 其他设置
 - **导航**：修改 `partials/navigation.hbs` 来自定义下来菜单，如果不需要也可以将相应代码删除。
-- **徽章**：使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([demo](https://fizzy.cc/fizzy-theme/#badge))
+- **徽章**：使用 `class="badge <color>"` 来使用徽章 (仅支持 HTML 块).([示例](https://fizzy.cc/fizzy-theme/#badge))
   - 支持的颜色: 黑白、红色、黄色、绿色、蓝色、紫色
 ![image](https://user-images.githubusercontent.com/40261916/64512639-70b40580-d319-11e9-9218-b1937c2e4b4f.png)
     > 注意: 使用 `class="badge"`来表示无色。
