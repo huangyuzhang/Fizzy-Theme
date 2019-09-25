@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.2.2
+Version: 1.2.3
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -11,6 +11,7 @@ Author URI: https://yuzhang.me
 /* Customized CSS ADD 2019.05.28*/
 @import "custom.css"; 
 @import "class.css"; 
+@import "iconfont.css"; /* ADD 2019.09.25 */
 
 /* ====================== over-write bulma default ====================== */
 /* fix "has-spaced-navbar-fixed-top" cut off the top on mobile devices 2019.04.09 */
@@ -125,12 +126,13 @@ strong{
 /* ====================== components ====================== */
 .featured-label {
     position: absolute;
-	background: linear-gradient(181deg, #fb3b3b,#e12828);
+	/* background: linear-gradient(181deg, #fb3b3b,#e12828); */
+	background: #fb3b3b;
     color: #fff;
     font-size: .875rem;
     font-weight: 600;
     letter-spacing: .5px;
-    padding: 0 10px;
+    padding: 0 7px;
     border-radius: 4px;
     text-transform: uppercase;
 }
