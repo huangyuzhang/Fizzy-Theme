@@ -254,6 +254,7 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 - [KaTeX][katex] - 一个渲染非常快速的 LaTeX 数学公式显示引擎 (since v0.3.0)
 - [Gitalk][gitalk] - 一个基于 Github issued 的评论系统 (since v0.3.0)
 - [ghost-search][ghost-search] - 一个基于 Ghost Content API 的搜索引擎 (since v1.0.0)
+- [iconfont][iconfont] - 一个免费的图标解决方案 (since v1.2.3)
 
 ## 📍 开发路线图
 请访问我们的[路线图][roadmap]来了解本项目的未来开发计划。
@@ -288,5 +289,6 @@ Fizzy 主题使用了 Prism.js 作为代码高亮解决方案，Fizzy主题默�
 [valine]: https://github.com/xCss/Valine
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
+[iconfont]:https://www.iconfont.cn
 [contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors
 [roadmap]: https://github.com/huangyuzhang/Fizzy-Theme/projects/3

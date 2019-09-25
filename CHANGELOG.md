@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.2.3
+- ⚡️ replaced FontAwesome by iconfont
+- 💄 improved featured post icon style
+
 ## v1.2.2
 - 📝 add instruction for creating a link page with bookmark cards.
 

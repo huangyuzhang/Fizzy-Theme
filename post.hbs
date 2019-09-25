@@ -13,7 +13,7 @@
                         <div class="featured-image" style="background-image:url({{img_url feature_image size="s"}});">
                             {{!-- featured post label --}}
                             {{#if featured}}
-                            <span class="featured-label large is-montserrat" title="Featured Post"><i class="fas fa-fire-alt"></i> {{t "Featured"}}</span>
+                            <span class="featured-label large is-montserrat" title="Featured Post"><i class="iconfont icon-star"></i> {{t "Featured"}}</span>
                             {{/if}}
                         </div>
                     </section>
@@ -35,9 +35,9 @@
                         {{!-- tags --}}
                         {{#has tag="count:>0"}}
                         <div class="buttons tags has-text-weight-semibold">
-                            <span class="button is-static is-size-7-mobile" style="min-width:2.5em">
-                                {{#has tag="count:1"}}<i class="fas fa-tag"></i>{{/has}}
-                                {{#has tag="count:>1"}}<i class="fas fa-tags"></i>{{/has}}
+                            <span class="button is-static is-size-7-mobile" style="padding:0 0.5em;min-width:2.5em">
+                                {{#has tag="count:1"}}<i class="iconfont icon-tag"></i>{{/has}}
+                                {{#has tag="count:>1"}}<i class="iconfont icon-tags"></i>{{/has}}
                             </span>
                             {{#foreach tags}}
                             <a href="{{url}}" class="button is-light is-size-7-mobile has-text-weight-semibold">{{name}}</a>

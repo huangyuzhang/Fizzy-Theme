@@ -245,6 +245,7 @@ See [Contributors][contributors]
 - [KaTeX][katex] - A faster LaTeX equation rendering library (since v0.3.0)
 - [Gitalk][gitalk] - A Github issued based comment system (since v0.3.0)
 - [ghost-search][ghost-search] - An instant search library using Ghost Content API (since v1.0.0)
+- [iconfont][iconfont] - A free icon solution (since v1.2.3)
 
 ## 📍 Roadmap
 To know the future planning of this project, please visit our [Roadmap][roadmap].
@@ -279,5 +280,6 @@ This project is licensed under the MIT License.
 [vssue]: https://github.com/meteorlxy/vssue
 [custom-prism]: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json+markdown+nginx+sql+python+r&plugins=line-numbers+toolbar+show-language
 [ghost-search]: https://github.com/HauntedThemes/ghost-search
+[iconfont]:https://www.iconfont.cn
 [contributors]: https://github.com/huangyuzhang/Fizzy-Theme/graphs/contributors
 [roadmap]: https://github.com/huangyuzhang/Fizzy-Theme/projects/3
