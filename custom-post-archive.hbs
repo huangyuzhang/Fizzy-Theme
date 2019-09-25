@@ -24,21 +24,17 @@
                                 {{#get "posts" limit="all" order="published_at desc"}}
                                     {{#foreach posts}}
                                     <li class='post-archive-item' year="{{date format=(t 'YYYY')}}" month="{{date format=(t 'MMMM')}}">
-                                        <div class="columns is-mobile">
-                                            <div class="column is-2-tablet is-3-mobile">
-                                                <time class="is-size-7">[{{date published_at format=(t "DD MMMM YYYY")}}]</time>
+                                            <div class="date">
+                                                <time class="button is-static is-size-7">{{date published_at format=(t "MMM DD")}}</time>
                                             </div>
-                                            <div class="column">
-                                                {{#if featured}}
-                                                    <span style="color:var(--main-color)" title="{{t "Featured"}}"><i class="iconfont icon-star"></i></span>
-                                                {{/if}}
+                                            <div class="subtitle">
                                                 <a href='{{url}}'>
                                                     {{title}}
                                                 </a>
+                                                {{#if featured}}
+                                                    <span style="color:var(--main-color)" title="{{t "Featured"}}"><i class="iconfont icon-star"></i></span>
+                                                {{/if}}
                                             </div>
-                                        </div>
-                                        
-                                        
                                     </li>
                                     {{/foreach}}
                                 {{/get}}

@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.2.4
+- ⚡️ improved post archive template page (featured icon position, better date display, flex layout)
+
 ## v1.2.3
 - ⚡️ replaced FontAwesome by iconfont
 - 💄 improved featured post icon style
