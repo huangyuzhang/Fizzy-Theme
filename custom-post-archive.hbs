@@ -21,7 +21,7 @@
                                 {{t "There are {total} posts in total" total=pagination.total}}
                             {{/get}}
                             <ul class="post-archive">
-                                {{#get "posts" limit="all" order="published_at desc"}}
+                                {{#get "posts" limit="all" include="authors" order="published_at desc"}}
                                     {{#foreach posts}}
                                     <li class='post-archive-item' year="{{date format=(t 'YYYY')}}" month="{{date format=(t 'MMMM')}}">
                                             <div class="date">
@@ -34,6 +34,7 @@
                                                 {{#if featured}}
                                                     <span style="color:var(--main-color)" title="{{t "Featured"}}"><i class="iconfont icon-star"></i></span>
                                                 {{/if}}
+                                                <span class="authors"> - {{#authors}} {{name}} {{/authors}} </span>
                                             </div>
                                     </li>
                                     {{/foreach}}
