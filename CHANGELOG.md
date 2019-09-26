@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.2.5
+- 💄 improved post archive template: post title font, add author(s) to the right side of title (multiple authors enabled).
+
+## v1.2.4
+- ⚡️ improved post archive template page (featured icon position, better date display, flex layout)
+
+## v1.2.3
+- ⚡️ replaced FontAwesome by iconfont
+- 💄 improved featured post icon style
+
 ## v1.2.2
 - 📝 add instruction for creating a link page with bookmark cards.
 
