@@ -1,7 +1,7 @@
 /*
 Theme Name: Fizzy
 GitHub Repo: https://github.com/huangyuzhang/Fizzy-Theme
-Version: 1.2.5
+Version: 1.2.6
 Description: A tasty blogging theme for Ghost 
 Author: Yuzhang Huang
 Author URI: https://yuzhang.me
@@ -248,7 +248,6 @@ html,body{
 }
 #search-btn{
 	cursor: pointer;
-	padding: .75rem;
 	border-radius:4px;
 	color:#7a7a7a;
 }
@@ -289,10 +288,12 @@ html,body{
     background: #fff;
 	border-radius:3px;
 	color:#333;
+	word-spacing: 2.5px;
 	margin:.5rem!important;
 }
 #search-results a:hover {
 	font-weight:600;
+	word-spacing: 1px;
     background: #f7f7f7;
 	color:#333;
 }

@@ -67,7 +67,7 @@
                     if (results.total == 0 && document.getElementById('search-input').value != '') {
                         let resultsElement = document.getElementById('search-results');
                         let e = document.createElement('p');
-                        e.innerHTML = "<a class='navbar-item'>No results</a>";
+                        e.innerHTML = "<a class='navbar-item'>{{t 'No results'}}</a>";
                         resultsElement.appendChild(e.firstChild);
                     };
                 }

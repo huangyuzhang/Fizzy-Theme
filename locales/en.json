@@ -32,5 +32,6 @@
     "There are {total} posts in total": "There are {total} posts in total",
     "YYYY": "YYYY",
     "MMMM": "MMMM",
-    "Search": "Search"
+    "Search": "Search",
+    "No results":"No results"
 }

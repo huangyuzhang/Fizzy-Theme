@@ -32,5 +32,6 @@
     "There are {total} posts in total": "共有 {total} 篇文章",
     "YYYY": "YYYY年",
     "MMMM": "M月",
-    "Search": "搜索"
+    "Search": "搜索",
+    "No results":"没有结果"
 }

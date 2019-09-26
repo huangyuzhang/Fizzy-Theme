@@ -71,14 +71,16 @@ if (typeof show_search == 'undefined') {
 if (!show_search) {
   $("#search-btn").hide();
 }
+// click search button event
 $("#search-btn").click(function(event) {
     // $("#search-input").val("");
     $("#search-form").fadeIn();
-    $("#search-btn").hide()
+    $("#search-btn").hide();
     $('#search-input').focus();
     $("#search-results").show();
     event.stopPropagation();
 });
+// click close button event
 $("#close-btn").click(function(event) {
   $("#search-form").hide();
   $("#search-results").hide(); 
@@ -86,11 +88,20 @@ $("#close-btn").click(function(event) {
   // $("#search-input").val(""); //clear search field text  
   event.stopPropagation();
 });
-$(document).click(function(){
-  $("#search-form").hide(); 
-  $("#search-results").hide(); 
-  $("#search-btn").fadeIn();
+// click outside of search form event
+$(document).mouseup(function(e) 
+{
+    var container = $("#search-form");
+    
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.hide();
+        $("#search-results").hide(); 
+        $("#search-btn").fadeIn();
+    }
 });
+// scroll event
 $(window).scroll(function(){
   $("#search-form").hide(); 
   $("#search-results").hide(); 
@@ -103,10 +114,10 @@ $(window).scroll(function(){
 $(window).scroll(function(){
   var pxCreditBtn = 400;
   if($(window).scrollTop() < pxCreditBtn){
-    $("#fizzy-credit").show();
+    $("#fizzy-credit").fadeIn();
   }
   if($(window).scrollTop() >= pxCreditBtn){
-    $("#fizzy-credit").hide();
+    $("#fizzy-credit").fadeOut();
   }
 });
 /*----------------------------------------------------*/
