@@ -5,7 +5,7 @@
 {{#post}}
 <section class="section">
     <div class="container">
-        <h1 class="title has-text-centered is-montserrat"><i class="fas fa-history"></i> {{title}}</h1>     
+        <h1 class="title has-text-centered is-montserrat"><i class="iconfont icon-archive"></i> {{title}}</h1>     
     </div>
 </section>
 <section class="section is-paddingless-top is-mobile-paddingless">
@@ -24,14 +24,10 @@
                                 {{#get "posts" limit="all" include="authors" order="published_at desc"}}
                                     {{#foreach posts}}
                                     <li class='post-archive-item' year="{{date format=(t 'YYYY')}}" month="{{date format=(t 'MMMM')}}">
-                                        <div class="columns is-mobile">
-                                            <div class="column is-2-tablet is-3-mobile">
-                                                <time class="is-size-7">[{{date published_at format=(t "DD MMMM YYYY")}}]</time>
+                                            <div class="date">
+                                                <time class="button is-static is-size-7">{{date published_at format=(t "MMM DD")}}</time>
                                             </div>
-                                            <div class="column">
-                                                {{#if featured}}
-                                                    <span style="color:var(--main-color)" title="{{t "Featured"}}"><i class="fas fa-fire-alt"></i></span>
-                                                {{/if}}
+                                            <div class="subtitle">
                                                 <a href='{{url}}'>
                                                     {{title}}
                                                 </a>
@@ -40,9 +36,6 @@
                                                 {{/if}}
                                                 <span class="authors"> - {{#authors}} {{name}} {{/authors}} </span>
                                             </div>
-                                        </div>
-                                        
-                                        
                                     </li>
                                     {{/foreach}}
                                 {{/get}}

@@ -19,7 +19,7 @@
     "Read More": "阅读全文",
     "1 min read": "读完约需 1 分钟",
     "% min read": "读完约需 % 分钟",
-    "DD MMMM YYYY": "YYYY年MM月DD日",
+    "MMM DD": "MM月DD日",
     "See all posts by {name}": "查看 {name} 的所有文章",
     "Featured": "推荐",
     "Maybe the URL is not correct, or the page is no longer exist.": "输入的网址有误，或者该页面已被移除。",
@@ -32,5 +32,6 @@
     "There are {total} posts in total": "共有 {total} 篇文章",
     "YYYY": "YYYY年",
     "MMMM": "M月",
-    "Search": "搜索"
+    "Search": "搜索",
+    "No results":"没有结果"
 }

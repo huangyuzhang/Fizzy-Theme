@@ -19,7 +19,7 @@
     "Read More": "Read More",
     "1 min read": "1 min read",
     "% min read": "% min read",
-    "DD MMMM YYYY": "DD MMMM YYYY",
+    "MMM DD": "MMM DD",
     "See all posts by {name}": "See all posts by {name}",
     "Featured": "Featured",
     "Maybe the URL is not correct, or the page is no longer exist.": "Maybe the URL is not correct, or the page is no longer exist.",
@@ -32,5 +32,6 @@
     "There are {total} posts in total": "There are {total} posts in total",
     "YYYY": "YYYY",
     "MMMM": "MMMM",
-    "Search": "Search"
+    "Search": "Search",
+    "No results":"No results"
 }
