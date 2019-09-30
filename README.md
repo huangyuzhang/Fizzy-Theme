@@ -119,6 +119,8 @@ By default, your **site description** (Ghost Admin -> General) will be displayed
   var footer_text = "REPLACE WITH YOUR FOOTER TEXT HERE";
 </script>
 ```
+> You can include HTML in the `footer_text`, but be careful to use single quotation marks inside it. For example:
+> `var footer_text = "REPLACE <span style='color:red;font-weigh'>WITH</span> YOUR FOOTER TEXT HERE <i class='iconfont icon-heart'></i>";`
 
 ### :speech_balloon: Comment System
 Due to Ghost itself doesn't have a comment system, we need to use third party solutions for this. Some options are: [DISQUS][disqus], [Gitalk][gitalk], [Valine][valine] and [Vssue][vssue]. By default, Fizzy has Gitalk and DISQUS integrated. Skip the following if you do not need the comment system.

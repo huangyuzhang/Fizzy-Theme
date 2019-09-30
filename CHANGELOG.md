@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.3.0
+- 📝 `footer_text` includes html instruction
+
 ## v1.2.6
 - 🐛 fixed when clicking inside of the search form will cause the form to disappear, and improved vertical padding of the button.
 - 🌐 added "No results" translation in `./locales`, `zh_CN` provided.

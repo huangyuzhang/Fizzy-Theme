@@ -121,6 +121,8 @@ collections:
   var footer_text = "修改成你的自定义底部文字，可以包含HTML代码，但需要注意引号的使用";
 </script>
 ```
+> 你可以在 `footer_text` 中插入HTML内容，但是所有的引号都应该是单引号。例如：
+> `var footer_text = "这是一个很<span style='color:red;font-weigh'>有趣</span>的网站 <i class='iconfont icon-heart'></i>";`
 
 ### 评论系统
 因为 Ghost 目前不包含评论系统，我们需要通过第三方工具或库来实现评论系统。
