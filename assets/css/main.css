@@ -55,6 +55,20 @@ pre[class*="language-"].line-numbers{
 	padding-left: 3rem !important;
 }
 
+/* overwrite figcaption font size */
+.content figure figcaption{
+	font-size:1rem;
+	margin-top:1rem;
+}
+
+/* overwrite figure spacing (code blocks) */
+.content figure:not(:last-child){
+	margin-bottom: 1em !important;
+}
+.content figure:not(:first-child) {
+    margin-top: 1em !important;
+}
+
 /* navbar */
 .navbar-start .navbar-item,.navbar-item img {
 	margin-right: 0.25rem;
@@ -309,6 +323,7 @@ html,body{
 	position: relative; 
 	height:22.5rem;
 	padding:0!important;
+	background-color:#fff !important; /* added background color as placeholder*/
 }
 @media screen and (max-width:768px){
 	.carousel{
@@ -363,6 +378,7 @@ html,body{
 	height:10.5rem;
 	margin-bottom:1.5rem;
 	padding:0!important;
+	background-color:#fff !important; /* added background color as placeholder*/
 }
 .tf-item:last-child {margin-bottom:0}
 .tf-meta {
@@ -386,6 +402,7 @@ html,body{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color:#e9f0f3; /* added background color as placeholder*/
 }
 @media screen and (max-width: 768px){
 	.featured-image {
@@ -481,11 +498,11 @@ html,body{
 	right:10px;
 } 
 
+/* default style for post content */
 .single-article .post-wrap {
     max-width: 760px;
-    padding: 48px 15px;
-    font-size: 1.25rem;
-	line-height: 2;
+	padding: 48px 15px;
+	font-size:1.15rem;
 	margin: auto!important;
 }
 /* post heading size */
@@ -510,7 +527,7 @@ html,body{
 }
 /* paragraph */
 .post-wrap .post-content p {
-	line-height: 1.5em;
+	line-height: 1.5rem;
 }
 /* hr */
 .post-wrap .post-content hr{background: linear-gradient(90deg, rgba(254, 22, 97, 0.6) 0%, rgba(22, 93, 254, 0.5) 100%)}
@@ -518,9 +535,8 @@ html,body{
 .post-wrap .post-content ul,.post-content ol{
 	margin-left: 1.5em;
 }
-.post-wrap .post-content li {
+.post-wrap .post-content li+li {
 	line-height: 1.4em;
-	margin: 0.5em 0;
 }
 
 /* Nested list */
@@ -535,7 +551,7 @@ html,body{
 .post-wrap .post-content pre code {
 	display: block;
 	line-height: 1.5em;
-	font-size: 0.875rem;
+	font-size: 0.875rem !important;
 	font-weight: 400;
 	/* padding-bottom: 1.2em; */
 }
@@ -633,6 +649,9 @@ html,body{
 	left:0!important;
 	right:0!important;
 }
+.kg-gallery-card figcaption{
+	/* margin-top:1rem; */
+}
 @media screen and (max-width:768px){
 	.kg-gallery-card{width:100%;margin:1rem auto !important;}
 }
@@ -697,8 +716,9 @@ html,body{
 
 /* Blockquotes */
 .single-article .post-wrap .post-content blockquote {
-    color: var(--text-dark);
-	border-left: 4px solid;
+	color: var(--text-dark);
+	line-height:1.5rem;
+	border-left: 6px solid;
 	border-radius: 6px;
     background-color: var(--bg-color-light);
 	border-color: var(--main-color);
@@ -1048,6 +1068,7 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 		background-size: cover;
 		background-position: center center;
 		box-shadow: 0px 1px 0px #ddd;
+		background-color: #e9f0f3;
 	}
 	.tag-card .tag-image .mask{
 		height:100%;
