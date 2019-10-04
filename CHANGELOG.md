@@ -3,6 +3,7 @@
 ## v1.3.0
 - 📝 `footer_text` includes html instruction
 - 🐛 fixed wrong icon for tag pages
+- 💄 improved overall layout for post content
 
 ## v1.2.6
 - 🐛 fixed when clicking inside of the search form will cause the form to disappear, and improved vertical padding of the button.

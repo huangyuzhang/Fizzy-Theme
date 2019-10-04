@@ -481,11 +481,10 @@ html,body{
 	right:10px;
 } 
 
+/* default style for post content */
 .single-article .post-wrap {
     max-width: 760px;
     padding: 48px 15px;
-    font-size: 1.25rem;
-	line-height: 2;
 	margin: auto!important;
 }
 /* post heading size */
@@ -510,7 +509,7 @@ html,body{
 }
 /* paragraph */
 .post-wrap .post-content p {
-	line-height: 1.5em;
+	line-height: 1.5rem;
 }
 /* hr */
 .post-wrap .post-content hr{background: linear-gradient(90deg, rgba(254, 22, 97, 0.6) 0%, rgba(22, 93, 254, 0.5) 100%)}
@@ -697,7 +696,8 @@ html,body{
 
 /* Blockquotes */
 .single-article .post-wrap .post-content blockquote {
-    color: var(--text-dark);
+	color: var(--text-dark);
+	line-height:1.5rem;
 	border-left: 4px solid;
 	border-radius: 6px;
     background-color: var(--bg-color-light);
