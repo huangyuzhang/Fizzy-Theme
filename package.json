@@ -10,37 +10,30 @@
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
     },
-    "config": {
-        "posts_per_page": 8
-    },
     "keywords": [
         "ghost",
         "theme",
         "ghost-theme"
     ],
-    "image_sizes": {
-        "xxs": {
-            "width": 60
-        },
-        "xs": {
-            "width": 150
-        },
-        "s": {
-            "width": 400
-        },
-        "m": {
-            "width": 800
-        },
-        "l": {
-            "width": 1200
-        },
-        "xl": {
-            "width": 2000
-        },
-        "carousel": {
-            "width": 470,
-            "height": 600
+    "dependencies": {},
+    "config": {
+        "posts_per_page": 8,
+        "image_sizes": {
+            "icon": {
+                "width": 30
+            },
+            "small": {
+                "width": 150
+            },
+            "medium": {
+                "width": 600
+            },
+            "large": {
+                "width": 1000
+            },
+            "full": {
+                "width": 1800
+            }
         }
-    },
-    "dependencies": {}
+    }
 }
