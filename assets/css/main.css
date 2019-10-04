@@ -55,6 +55,20 @@ pre[class*="language-"].line-numbers{
 	padding-left: 3rem !important;
 }
 
+/* overwrite figcaption font size */
+.content figure figcaption{
+	font-size:1rem;
+	margin-top:1rem;
+}
+
+/* overwrite figure spacing (code blocks) */
+.content figure:not(:last-child){
+	margin-bottom: 1em !important;
+}
+.content figure:not(:first-child) {
+    margin-top: 1em !important;
+}
+
 /* navbar */
 .navbar-start .navbar-item,.navbar-item img {
 	margin-right: 0.25rem;
@@ -484,7 +498,8 @@ html,body{
 /* default style for post content */
 .single-article .post-wrap {
     max-width: 760px;
-    padding: 48px 15px;
+	padding: 48px 15px;
+	font-size:1.15rem;
 	margin: auto!important;
 }
 /* post heading size */
@@ -517,9 +532,8 @@ html,body{
 .post-wrap .post-content ul,.post-content ol{
 	margin-left: 1.5em;
 }
-.post-wrap .post-content li {
+.post-wrap .post-content li+li {
 	line-height: 1.4em;
-	margin: 0.5em 0;
 }
 
 /* Nested list */
@@ -534,7 +548,7 @@ html,body{
 .post-wrap .post-content pre code {
 	display: block;
 	line-height: 1.5em;
-	font-size: 0.875rem;
+	font-size: 0.875rem !important;
 	font-weight: 400;
 	/* padding-bottom: 1.2em; */
 }
@@ -632,6 +646,9 @@ html,body{
 	left:0!important;
 	right:0!important;
 }
+.kg-gallery-card figcaption{
+	/* margin-top:1rem; */
+}
 @media screen and (max-width:768px){
 	.kg-gallery-card{width:100%;margin:1rem auto !important;}
 }
@@ -698,7 +715,7 @@ html,body{
 .single-article .post-wrap .post-content blockquote {
 	color: var(--text-dark);
 	line-height:1.5rem;
-	border-left: 4px solid;
+	border-left: 6px solid;
 	border-radius: 6px;
     background-color: var(--bg-color-light);
 	border-color: var(--main-color);
