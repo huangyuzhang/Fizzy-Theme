@@ -6,8 +6,8 @@
 - 💄 improved overall layout for post content
 - ⚡️ added default image background as placeholder
 - 🌐 Turkish translated ([#35](https://github.com/huangyuzhang/Fizzy-Theme/pull/35))
-- 🐛 fixed image size configuration, improved page loading performance if featured images are uploaded
-- ⚡️ crop author feature image size to improve performance
+- 🐛 fixed image size configuration
+- ⚡️ crop images to improve page loading performance (feature image, author avatar)
 - 🐛 in post aside section, fixed post card width if no other posts exist in its primary_tag
 
 ## v1.2.6
