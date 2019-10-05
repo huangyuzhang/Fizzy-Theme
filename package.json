@@ -20,19 +20,19 @@
         "posts_per_page": 8,
         "image_sizes": {
             "icon": {
-                "width": 30
+                "width": 64
             },
             "small": {
-                "width": 150
+                "width": 300
             },
             "medium": {
                 "width": 600
             },
             "large": {
-                "width": 1000
+                "width": 900
             },
-            "full": {
-                "width": 1800
+            "wide": {
+                "width": 1200
             }
         }
     }
