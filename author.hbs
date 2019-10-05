@@ -7,7 +7,7 @@ into the {body} of the default.hbs template --}}
 {{!-- author meta --}}
 {{#author}}
 {{#if cover_image}}
-<section class="hero tag-list-header is-bold bg-cover-center" style="background-image:url({{cover_image}});">
+<section class="hero tag-list-header is-bold bg-cover-center" style="background-image:url({{img_url cover_image size="wide"}});">
 {{else}}
 <section class="hero tag-list-header is-bold bg-cover-center" style="background-image: linear-gradient(to bottom right, #3f0fff, #fc3b3b);">
 {{/if}}
@@ -15,7 +15,7 @@ into the {body} of the default.hbs template --}}
     <div class="about-author container has-text-centered">
         {{#if profile_image}}
         <figure class="image is-96x96 is-margin-auto">
-            <img class="image-squared is-rounded" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+            <img class="image-squared is-rounded" src="{{img_url profile_image size="small"}}" alt="{{name}}" title="{{name}}">
         </figure>
         {{/if}}
         <h1 class="title has-padding-05 has-text-white">

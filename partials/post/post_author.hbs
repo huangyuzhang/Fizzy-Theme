@@ -7,7 +7,7 @@
             <a href="{{url}}" class="has-text-grey-darker">
                 <figure class="image is-96x96 is-margin-auto">
                 {{#if profile_image}} 
-                <img class="image-squared box author-avatar" src="{{profile_image}}" alt="{{name}}" title="{{name}}">
+                <img class="image-squared box author-avatar" src="{{img_url profile_image size="small"}}" alt="{{name}}" title="{{name}}">
                 {{else}}
                 <img class="image-squared box author-avatar" src="{{asset 'images/user-avatar-default.png'}}" alt="{{name}}" title="{{name}}">
                 {{/if}}

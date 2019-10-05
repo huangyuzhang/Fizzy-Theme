@@ -16,7 +16,7 @@
                         {{!-- get 10 posts with tag #carousel as --}}
                         {{#get "posts" limit="6" include="tags,authors" filter="tags:[hash-carousel]" as |carousel|}} 
                         {{#foreach carousel}}
-                            <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="medium"}});">
+                            <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="large"}});">
                                 <a href="{{url}}" rel="bookmark" class="link-block"></a>
                                 <div class="carousel-meta bg-grad-b">
                                     {{#primary_tag}}
@@ -32,7 +32,7 @@
                                                     <figure class="image is-24x24">
                                                     <img class="image-squared is-rounded" src="
                                                         {{#if profile_image}}
-                                                            {{profile_image}}
+                                                            {{img_url profile_image size="icon"}}
                                                         {{else}}
                                                             {{asset 'images/user-avatar-default.png'}}
                                                         {{/if}}
