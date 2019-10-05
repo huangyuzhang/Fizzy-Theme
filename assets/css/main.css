@@ -689,9 +689,11 @@ html,body{
 .about-author{
 	margin-top:1rem;
 	padding:2.5rem!important;
+	line-height:2;
 	max-width: 560px;
 	margin: 0 auto;
 }
+.about-author .name{font-size:1.25rem;font-weight:600;}
 .about-author .author-avatar {
 	border-radius:1.2rem!important;
 	padding:5px!important;
@@ -706,6 +708,9 @@ html,body{
     margin: 0 4px 8px 4px;
     line-height: 1.5rem;
     font-size: 1rem;
+}
+.single-article .meta-info li:hover .iconfont,.single-article .meta-info li:hover span{
+	color:#363636 !important;
 }
 .about-author .bio {
 	min-height:3em;
