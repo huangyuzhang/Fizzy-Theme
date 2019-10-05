@@ -6,7 +6,8 @@
 - 💄 improved overall layout for post content
 - ⚡️ added default image background as placeholder
 - 🌐 Turkish translated ([#35](https://github.com/huangyuzhang/Fizzy-Theme/pull/35))
-- 🐛 image size configuration, improved page loading performance if featured images are uploaded
+- 🐛 fixed image size configuration, improved page loading performance if featured images are uploaded
+- 🐛 in post aside section, fixed post card width if no other posts exist in its primary_tag
 
 ## v1.2.6
 - 🐛 fixed when clicking inside of the search form will cause the form to disappear, and improved vertical padding of the button.

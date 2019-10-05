@@ -4,17 +4,24 @@
         <div class="column is-8-widescreen is-10-desktop is-12-tablet">
             <div class="columns is-multiline">
                 {{!-- previous post: start --}}
-                {{#prev_post}}
-                    {{#if ../primary_tag}}
-                        <div class="column card-frame is-6-tablet is-4-desktop">
-                    {{else}}
-                        <div class="column card-frame is-6-tablet is-6-desktop">
-                    {{/if}}
-                        <span class="nav-label left is-montserrat has-shadow-lift">{{t "Previous Post"}}</span>
-                        {{> "post/post_card"}}
-                        </div>
-                {{/prev_post}}
-                {{!-- previous post: end --}}
+
+                {{!-- whether primary_tag exist --}}
+                {{#if primary_tag}}
+                    {{!-- get # of posts under primary tag, enlarge post card if no other posts --}}
+                    {{#get "posts" filter="tags:{{primary_tag.slug}}"}}
+                    {{plural pagination.total empty="<div class='column card-frame is-6-tablet is-6-desktop'>" 
+                                                singular="<div class='column card-frame is-6-tablet is-6-desktop'>" 
+                                                plural="<div class='column card-frame is-6-tablet is-4-desktop'>"}}
+                    {{/get}}
+                {{else}}
+                    <div class="column card-frame is-6-tablet is-6-desktop">
+                {{/if}}
+                        {{#prev_post}}
+                            <span class="nav-label left is-montserrat has-shadow-lift">{{t "Previous Post"}}</span>
+                                {{> "post/post_card"}}
+                        {{/prev_post}}
+                    </div>
+                {{!-- next post: end --}}
 
                 {{!-- related posts: start --}}
                 {{#if primary_tag}}
@@ -48,20 +55,24 @@
                 {{/get}}
                 {{/if}}
                 {{!-- related posts: end --}}
-
+                
                 {{!-- next post: start --}}
-                {{#next_post}}
-                    {{!-- {{#unless tag="#noindex"}} --}} {{!-- exclude #noindex--}}
-                    {{#if ../primary_tag}}
-                        <div class="column card-frame is-6-tablet is-4-desktop">
-                    {{else}}
-                        <div class="column card-frame is-6-tablet is-6-desktop">
-                    {{/if}}
+                {{!-- whether primary_tag exist --}}
+                {{#if primary_tag}}
+                    {{!-- get # of posts under primary tag, enlarge post card if no other posts --}}
+                    {{#get "posts" filter="tags:{{primary_tag.slug}}"}}
+                    {{plural pagination.total empty="<div class='column card-frame is-6-tablet is-6-desktop'>" 
+                                                singular="<div class='column card-frame is-6-tablet is-6-desktop'>" 
+                                                plural="<div class='column card-frame is-6-tablet is-4-desktop'>"}}
+                    {{/get}}
+                {{else}}
+                    <div class="column card-frame is-6-tablet is-6-desktop">
+                {{/if}}
+                        {{#next_post}}
                             <span class="nav-label right is-montserrat has-shadow-lift">{{t "Next Post"}}</span>
-                            {{> "post/post_card"}}
-                        </div>
-                    {{!-- {{/unless}} --}}
-                {{/next_post}}
+                                {{> "post/post_card"}}
+                        {{/next_post}}
+                    </div>
                 {{!-- next post: end --}}
 
 
