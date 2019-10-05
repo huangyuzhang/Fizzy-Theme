@@ -1224,6 +1224,8 @@ ul.post-archive{margin-left:0!important;}
 	font-weight: 600;
 	font-size: 1.2rem;
 	line-height:1.5em;
+	max-height: 3em;
+    overflow-y: hidden;
 }
 @media screen and (max-width: 768px){
 	.kg-bookmark-thumbnail {
@@ -1238,6 +1240,9 @@ ul.post-archive{margin-left:0!important;}
 }
 .kg-bookmark-card:hover .kg-bookmark-container{
 	box-shadow: 0 3px 6px rgba(12,12,94,.1) !important;
+}
+.kg-bookmark-card:hover figcaption{
+	text-shadow: 0 2px 6px rgba(12,12,94,.3) !important;
 }
 .kg-bookmark-description{ 
 	color: #666;
