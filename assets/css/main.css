@@ -732,6 +732,9 @@ html,body{
     padding: .75em 1.25em;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
+blockquote ul{
+	margin-top:0 !important;
+}
 
 /* table  2019.07.10 */
 .post-content table{
