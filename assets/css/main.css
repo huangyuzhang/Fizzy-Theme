@@ -1236,6 +1236,7 @@ ul.post-archive{margin-left:0!important;}
 	}
 	.kg-bookmark-content {width:100%;}
 	.kg-bookmark-title {font-size:1rem;}
+	.kg-bookmark-description{font-size:.8rem;}
 	.kg-bookmark-author,.kg-bookmark-publisher {white-space: nowrap;}
 }
 .kg-bookmark-card:hover .kg-bookmark-title{
