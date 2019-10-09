@@ -11,6 +11,7 @@
 - 🐛 in post aside section, fixed post card width if no other posts exist in its primary_tag
 - ✨ added a new branch for Chinese optimization
 - 💄 improved bookmark card style
+- 📱 improved responsiveness of layout in all pages
 
 ## v1.2.6
 - 🐛 fixed when clicking inside of the search form will cause the form to disappear, and improved vertical padding of the button.
