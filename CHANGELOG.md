@@ -12,6 +12,7 @@
 - ✨ added a new branch for Chinese optimization
 - 💄 improved bookmark card style
 - 📱 improved responsiveness of layout in all pages
+- 🐛 fixed bug in post archive page caused earlier this version
 
 ## v1.2.6
 - 🐛 fixed when clicking inside of the search form will cause the form to disappear, and improved vertical padding of the button.

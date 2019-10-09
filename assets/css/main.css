@@ -1110,12 +1110,13 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 		padding:0.5rem 1.5rem;
 	}
 /* ====================== template: Post Archive ====================== 2019.05.28 */
-ul.post-archive{margin-left:0!important;}
+ul.post-archive{margin-left:0!important;line-height:2 !important;}
 .post-archive-item{
 	display:flex;
 	justify-content: start;
 	align-items: normal;
 	flex-wrap: nowrap;
+	line-height:2 !important;
 	font-family: 'Montserrat',
 				 -apple-system,
 				 BlinkMacSystemFont,
@@ -1123,13 +1124,22 @@ ul.post-archive{margin-left:0!important;}
 				 "Heiti SC", 
 				 "STXihei", 
 				 "Microsoft YaHei",
-				 sans-serif;
+				 sans-serif !important;
 }
 .post-archive-item .date{
 	margin-right:.75rem;
 }
 .post-archive-item a{
 	border-bottom:0 !important;
+}
+.post-archive-item .subtitle{
+	font-family: 'Montserrat',
+				 -apple-system,
+				 BlinkMacSystemFont,
+				 "PingFang SC",
+				 "Heiti SC", 
+				 "STXihei", 
+				 "Microsoft YaHei";
 }
 .post-archive-item .authors,.post-archive-item .authors a{
 	color:#888;
