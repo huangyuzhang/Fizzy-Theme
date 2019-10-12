@@ -985,7 +985,7 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 	justify-content: space-around;
 	background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 .aside .tag-list-header {
 	display: flex;
@@ -1078,6 +1078,9 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 		box-shadow: 0px 1px 0px #ddd;
 		background-color: #e9f0f3;
 	}
+	.tag-card .tag-image.noimg{
+		background-color:#e9f0f3;
+	}
 	.tag-card .tag-image .mask{
 		height:100%;
 		widows: 100%;
@@ -1109,6 +1112,13 @@ table tr td:last-child {border-right: solid 1px #dbdbdb;}
 	.tag-list-header .title span{
 		padding:0.5rem 1.5rem;
 	}
+.tag-archive-title{
+	font-size: 2.5rem !important;
+	font-weight:700;
+}
+.tag-archive-item{
+	padding: 1rem !important;
+}
 /* ====================== template: Post Archive ====================== 2019.05.28 */
 ul.post-archive{margin-left:0!important;line-height:2 !important;}
 .post-archive-item{

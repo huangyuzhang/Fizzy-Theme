@@ -6,7 +6,7 @@
 {{#post}}
 <section class="section is-paddingless-bottom">
     <div class="container">
-        <h1 class="title has-text-centered is-montserrat"><i class="iconfont icon-tags"></i> {{title}}</h1>
+        <h1 class="title tag-archive-title has-text-centered is-montserrat"><i class="iconfont icon-tags"></i> {{title}}</h1>
         <div class="content post-content is-size-6-mobile is-georgia">{{content}}</div>      
     </div>
 </section>
@@ -18,13 +18,13 @@
     <div class="container">
         <div class="columns is-mobile is-multiline">
             {{#foreach tags}}
-            <div class="column tag-list is-3-desktop is-4-tablet is-6-mobile can-scale">
+            <div class="column tag-archive-item is-3-desktop is-4-tablet is-6-mobile can-scale">
                 <a href="{{url}}" alt="{{description}}" title="{{description}}">
                 <div class="tag-card has-text-centered">
                     {{#if feature_image}}
                     <div class="tag-image" style="background-image:url({{img_url feature_image size="medium"}});"><div class="mask"></div></div>
                     {{else}}
-                    <div class="tag-image" style="background-image: linear-gradient(to bottom right, #acffc5, #078ddb);"><div class="mask"></div></div>
+                    <div class="tag-image noimg"><div class="mask"></div></div>
                     {{/if}}
                     <div class="tag-info">
                         <h2 class="tag-name">{{name}}</h2>
