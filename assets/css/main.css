@@ -525,10 +525,6 @@ html,body{
 	color:var(--link-color-hover);
 	border-bottom:1px solid;
 }
-/* paragraph */
-.post-wrap .post-content p {
-	line-height: 1.5rem;
-}
 /* hr */
 .post-wrap .post-content hr{background: linear-gradient(90deg, rgba(254, 22, 97, 0.6) 0%, rgba(22, 93, 254, 0.5) 100%)}
 /* list */
