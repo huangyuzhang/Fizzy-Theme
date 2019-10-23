@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## v1.3.0
+- ⬆️ Support Ghost V3
 - 📝 `footer_text` includes html instruction
 - 🐛 fixed wrong icon for tag pages
 - 💄 improved overall layout for post content
