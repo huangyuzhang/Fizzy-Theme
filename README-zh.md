@@ -1,7 +1,7 @@
 # The Fizzy Theme 汽水主题
 
 [![demo](https://img.shields.io/badge/Demo-online-yellow.svg)](https://fizzy.cc/)
-[![Ghost version](https://img.shields.io/badge/Ghost->=2.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
+[![Ghost version](https://img.shields.io/badge/Ghost->=3.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
 [![Release](https://img.shields.io/github/release/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/)
 [![GitHub forks](https://img.shields.io/github/forks/huangyuzhang/Fizzy-Theme.svg)](https://github.com/huangyuzhang/Fizzy-Theme/network)
 [![GitHub stars](https://img.shields.io/github/stars/huangyuzhang/Fizzy-Theme.svg?style=social&label=Star)](https://github.com/huangyuzhang/Fizzy-Theme/stargazers)

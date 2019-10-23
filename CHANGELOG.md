@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.3.0
+## [v1.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.3.0) (2019.10.24)
 - ⬆️ Support Ghost V3
 - 📝 `footer_text` includes html instruction
 - 🐛 fixed wrong icon for tag pages
