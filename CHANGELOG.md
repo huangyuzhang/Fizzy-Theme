@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [v1.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.3.0) (2019.10.24)
+## v1.3.1
+- 🌐 French translated ([#39](https://github.com/huangyuzhang/Fizzy-Theme/pull/39))
+- 🐛 fixed search button display logic when set `show_search = false`. ([#37](https://github.com/huangyuzhang/Fizzy-Theme/issues/37))
+
+## [v1.3.0](https://github.com/huangyuzhang/Fizzy-Theme/releases/tag/v1.3.0) (2019.10.23)
 - ⬆️ Support Ghost V3
 - 📝 `footer_text` includes html instruction
 - 🐛 fixed wrong icon for tag pages

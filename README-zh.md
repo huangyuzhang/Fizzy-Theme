@@ -42,9 +42,10 @@
 
 |  代码   |   语言   | 翻译状态 | 译者 |
 | :-----: | :------: | :------: | :--: |
-|  `en`   | English  |    ✔️    ||
-| `zh_CN` | 简体中文 |    ✔️    ||
+|  `en`   | 英语  |    ✔️    ||
+| `fr` | 法语 |   ✔️   |[Lourys](https://github.com/Lourys)|
 | `tr` | 土耳其语 |   ✔️   |[talut](https://github.com/talut)|
+| `zh_CN` | 简体中文 |    ✔️    ||
 
 请帮助我们翻译主题语言。首先请fork本项目，然后复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。测试之后请提交 Pull Request 到 `dev` 分支。
 

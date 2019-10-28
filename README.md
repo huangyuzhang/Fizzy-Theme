@@ -43,8 +43,9 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 |  Code   | Language | Status | Translator |
 | :-----: | :------: | :----: | :--: |
 |  `en`   | English  |   ✔️   ||
-| `zh_CN` | Chinese (Simplified) |   ✔️   ||
+| `fr` | French |   ✔️   |[Lourys](https://github.com/Lourys)|
 | `tr` | Turkish |   ✔️   |[talut](https://github.com/talut)|
+| `zh_CN` | Chinese (Simplified) |   ✔️   ||
 
 Please help to translate Fizzy into the languages you know. To do so, first fork this repo. Then you need to copy the `en.json` file under `locales` folder and rename it to your language code, e.g. `es.json`, `zh_TW.json`. Then modify the translations within it. After testing, please create a "Pull Request" to `dev` branch of this repo (not `master`).
 
