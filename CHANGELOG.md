@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.3.2
+- 🌐 Tamil translated ([#43](https://github.com/huangyuzhang/Fizzy-Theme/pull/43))
+
 ## v1.3.1
 - 🌐 French translated ([#39](https://github.com/huangyuzhang/Fizzy-Theme/pull/39))
 - 🐛 fixed search button display logic when set `show_search = false`. ([#37](https://github.com/huangyuzhang/Fizzy-Theme/issues/37))

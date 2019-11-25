@@ -44,6 +44,7 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 | :-----: | :------: | :----: | :--: |
 |  `en`   | English  |   ✔️   ||
 | `fr` | French |   ✔️   |[Lourys](https://github.com/Lourys)|
+| `ta` | Tamil |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
 | `tr` | Turkish |   ✔️   |[talut](https://github.com/talut)|
 | `zh_CN` | Chinese (Simplified) |   ✔️   ||
 

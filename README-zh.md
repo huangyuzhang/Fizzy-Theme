@@ -44,6 +44,7 @@
 | :-----: | :------: | :------: | :--: |
 |  `en`   | 英语  |    ✔️    ||
 | `fr` | 法语 |   ✔️   |[Lourys](https://github.com/Lourys)|
+| `ta` | 泰米尔语 |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
 | `tr` | 土耳其语 |   ✔️   |[talut](https://github.com/talut)|
 | `zh_CN` | 简体中文 |    ✔️    ||
 
