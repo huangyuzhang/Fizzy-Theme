@@ -1,0 +1,76 @@
+{{!< default}}
+
+{{#post}}
+<section class="section is-mobile-paddingless">
+    <div class="columns">
+        <div class="column is-hidden-touch is-1-desktop is-1-widescreen is-2-fullhd"></div>
+        <div class="column is-12-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+            <article class="single-article">
+                <div class="box is-paddingless is-shadowless is-full-mobile is-centered is-clipped">             
+                    <section class="post-wrap is-vpadding-15">
+                        <div class="spacing-15 is-hidden-mobile"></div>
+                        {{!-- title --}}
+                        <h1 class="title is-2 is-size-4-mobile is-montserrat">{{title}}</h1>
+
+                        {{!-- tags --}}
+                        {{#tag}}
+                        <div class="buttons tags has-text-weight-semibold">
+                            <span class="button is-static is-size-7-mobile">
+                                {{#has tag="count:1"}}<i class="iconfont icon-tag"></i>{{/has}}
+                                {{#has tag="count:>1"}}<i class="iconfont icon-tags"></i>{{/has}}</span>
+                            {{#foreach tags}}
+                            <a href="{{url}}" class="button is-light is-size-7-mobile has-text-weight-semibold">{{name}}</a>
+                            {{/foreach}}
+                        </div>
+                        {{/tag}}
+
+                        {{!-- content --}}
+                        <div class="content post-content is-size-6-mobile is-georgia">
+			      <div class="l-content">
+        <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
+          {{#get 'authors' limit='all' include='count.posts' order='count.posts desc'}}
+<div class="authors">
+    <div class="columns is-multiline">
+    {{#foreach authors}}
+    <div class="column">
+        <div class="box about-author is-montserrat has-text-centered">
+            <a href="{{url}}" class="has-text-grey-darker">
+                <figure class="image is-96x96 is-margin-auto" style="float:left;">
+                {{#if profile_image}} 
+                <img class="image-squared box author-avatar" src="{{img_url profile_image size="small"}}" alt="{{name}}" title="{{name}}">
+                {{else}}
+                <img class="image-squared box author-avatar" src="{{asset 'images/user-avatar-default.png'}}" alt="{{name}}" title="{{name}}">
+                {{/if}}
+                </figure>                                
+                <div class="name">{{name}}</div>
+            </a>
+            {{!-- author: meta --}}
+            <ul class="meta-info is-size-6 has-text-grey-light">
+                {{#if twitter}}<li><a href="{{twitter_url}}" class=" has-text-grey"><i class="iconfont icon-twitter"></i></a></li>{{/if}}
+                {{#if facebook}}<li><a href="{{facebook_url}}" class=" has-text-grey"><i class="iconfont icon-facebook"></i></a></li>{{/if}}
+                {{#if website}}<li><a href="{{website}}" class=" has-text-grey"><i class="iconfont icon-link"></i></a></li>{{/if}}
+                {{#if location}}<li><span class=" has-text-grey"><i class="iconfont icon-location"></i> {{location}}</span></li>{{/if}}
+            </ul>
+            {{!-- author: bio --}}
+            <div class="bio is-vcentered">{{bio}}</div>
+            {{!-- author: cta --}}
+            <div class="is-size-6">
+                <a href="{{url}}" rel="nofollow"><strong class="has-text-grey-darker">{{t "See all posts by {name}" name=name}}</strong></a>
+            </div>
+        </div>
+    </div>
+    {{/foreach}}
+    </div>
+</div>
+          {{/get}}
+        </div>
+      </div>
+			</div>
+                        <div class="spacing-1 is-hidden-mobile"></div>
+                    </section>
+                </div>
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+</section>
+{{/post}}
