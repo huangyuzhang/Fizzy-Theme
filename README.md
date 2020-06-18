@@ -47,6 +47,7 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 | `ta` | Tamil |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
 | `tr` | Turkish |   ✔️   |[talut](https://github.com/talut)|
 | `zh_CN` | Chinese (Simplified) |   ✔️   ||
+| `pt_BR` | Brazilian Portuguese |   ✔️   |[matheusvanzan](https://github.com/matheusvanzan)|
 
 Please help to translate Fizzy into the languages you know. To do so, first fork this repo. Then you need to copy the `en.json` file under `locales` folder and rename it to your language code, e.g. `es.json`, `zh_TW.json`. Then modify the translations within it. After testing, please create a "Pull Request" to `dev` branch of this repo (not `master`).
 
