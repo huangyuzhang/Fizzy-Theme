@@ -4,12 +4,12 @@
         {{!-- featured_image --}}
         {{#if feature_image}}
             <a class="column is-hidden-mobile is-paddingless" href="{{url}}" alt="{{title}}" title="{{title}}">
-                <div class="featured-image" style="background-image:url({{img_url feature_image size="medium"}});"></div>
+                <div class="featured-image" style="background-image:url({{img_url feature_image size="medium"}});"></div>    
             </a>
             <a class="column is-hidden-tablet" href="{{url}}" alt="{{title}}" title="{{title}}">
-                <div class="featured-image" style="background-image:url({{img_url feature_image size="medium"}});"></div>
+                <div class="featured-image" style="background-image:url({{img_url feature_image size="medium"}});"></div>    
             </a>
-
+        
         {{!-- post info --}}
         <div class="column is-7 is-paddingless">
         {{else}}
@@ -61,7 +61,7 @@
                 <div class="media is-hidden-mobile">
                     <div class="media-left">
                         <div class="columns is-vcentered">
-
+                            
                             {{#primary_author}}
                             <div class="column is-narrow">
                                 <a href="{{url}}">
@@ -86,11 +86,10 @@
                                 and others
                             </div>
                             {{/has}}
-                        </div>
+                        </div> 
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>  
         </div>
     </div>
 </article>
