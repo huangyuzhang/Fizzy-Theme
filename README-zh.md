@@ -44,6 +44,8 @@
 | :-----: | :------: | :------: | :--: |
 |  `en`   | 英语  |    ✔️    ||
 | `fr` | 法语 |   ✔️   |[Lourys](https://github.com/Lourys)|
+| `it` | 意大利语|   ✔️   |[Pyrox](https://github.com/Pyr0x1)|
+| `pt_BR` | 葡萄牙语（巴西） |   ✔️   |[matheusvanzan](https://github.com/matheusvanzan)|
 | `ta` | 泰米尔语 |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
 | `tr` | 土耳其语 |   ✔️   |[talut](https://github.com/talut)|
 | `zh_CN` | 简体中文 |    ✔️    ||
