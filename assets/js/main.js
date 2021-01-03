@@ -105,7 +105,9 @@ $(document).mouseup(function(e)
 $(window).scroll(function(){
   $("#search-form").hide(); 
   $("#search-results").hide(); 
-  $("#search-btn").show();
+  if (show_search) {
+    $("#search-btn").show();
+  }
 });
 
 /*----------------------------------------------------*/
