@@ -47,6 +47,7 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 | `it` | Italian|   ✔️   |[Pyrox](https://github.com/Pyr0x1)|
 | `pt_BR` | Brazilian Portuguese |   ✔️   |[matheusvanzan](https://github.com/matheusvanzan)|
 | `ta` | Tamil |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
+| `th` | Thai |   ✔️   | [atbee](https://github.com/atbee) |
 | `tr` | Turkish |   ✔️   |[talut](https://github.com/talut)|
 | `zh_CN` | Chinese (Simplified) |   ✔️   ||
 
