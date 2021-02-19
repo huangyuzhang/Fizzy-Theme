@@ -42,6 +42,7 @@
 
 |  代码   |   语言   | 翻译状态 | 译者 |
 | :-----: | :------: | :------: | :--: |
+|  `de`   | 德语  |   ✔️   |[Marek Schmidt](https://github.com/MSDev201)|
 |  `en`   | 英语  |    ✔️    ||
 | `fr` | 法语 |   ✔️   |[Lourys](https://github.com/Lourys)|
 | `it` | 意大利语|   ✔️   |[Pyrox](https://github.com/Pyr0x1)|

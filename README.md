@@ -42,6 +42,7 @@ You can change the theme's language in Ghost Admin -> General -> "Publication La
 
 |  Code   | Language | Status | Translator |
 | :-----: | :------: | :----: | :--: |
+|  `de`   | German  |   ✔️   |[Marek Schmidt](https://github.com/MSDev201)|
 |  `en`   | English  |   ✔️   ||
 | `fr` | French |   ✔️   |[Lourys](https://github.com/Lourys)|
 | `it` | Italian|   ✔️   |[Pyrox](https://github.com/Pyr0x1)|
