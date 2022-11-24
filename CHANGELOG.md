@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.3.3
+- 🐛 fixed header not centered, as mentioned in ([#70](https://github.com/huangyuzhang/Fizzy-Theme/issues/70))
+
 ## v1.3.2
 - 🌐 Tamil translated ([#43](https://github.com/huangyuzhang/Fizzy-Theme/pull/43))
 
