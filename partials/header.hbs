@@ -1,5 +1,92 @@
 <header>
     <nav id="navbar" class="navbar is-white is-spaced has-shadow-thin is-montserrat is-fixed-top" style="z-index:999;" role="navigation" aria-label="main navigation">
+    <div class="nav-container column is-paddingless is-12-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+      <div class="navbar-brand">
+        <!-- if wide logo is uploaded -->
+        
+          <div class="navbar-item text-logo">
+              <a class="align-vcentered" href="https://fizzy.cc" alt="Fizzy" title="Fizzy - Exploring exciting things.">
+                
+                <!-- if icon is uploaded -->
+                
+                  <img src="/media/images/custom-icon.png">
+                
+
+                <!-- Site Name & Colored Dot -->
+                Fizzy<span>.</span>
+
+              </a>
+          </div>
+        
+
+          <!--  burger in mobile devices -->
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarPrimary">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+
+      </div>
+
+      <div id="navbarPrimary" class="navbar-menu">
+          <!-- Site Navigation -->
+          <div class="navbar-start">
+            <!--% for (let i=0; i < menus.length; i++) { %-->
+<!--% let menu = menus[i]; %-->
+
+<!-- navigation -->
+
+    
+        <a class="navbar-item nav-current" href="https://fizzy.cc/">
+            Home
+        </a>
+    
+  
+    
+        <a class="navbar-item " href="https://fizzy.cc/archives">
+            Archives
+        </a>
+    
+  
+    
+        <a class="navbar-item " href="https://fizzy.cc/tags">
+            Topics
+        </a>
+    
+  
+    
+        <a class="navbar-item " href="https://fizzy.cc/about">
+            About
+        </a>
+    
+  
+
+
+    <div class="navbar-item" id="search-btn">
+        <i class="iconfont icon-search"></i>
+    </div>
+
+    <div class="fizzy-search">
+        <div class="field has-addons" style="display:none" id="search-container">
+            <form class="control has-icons-left" id="search-form" action="https://fizzy.cc/search/">
+                <input id="search-input" class="input" placeholder="Search" name="q">
+                <span class="icon is-left">
+                    <i class="iconfont icon-search"></i>
+                </span>
+            </form>
+            <div class="control" id="close-btn">
+                <button type="submit" class="button" style="padding-left:calc(0.75em - 1px);padding-right:calc(0.75em - 1px);"><i class="iconfont icon-cross"></i></button>
+            </div>
+        </div>
+        <!-- <div id="search-results"></div> -->
+    </div>
+ 
+          </div>
+
+          <!--%= link %-->
+
+      </div>
+    </div>
         <div class="navbar-brand">
             {{#if @site.logo}}
             <div class="navbar-item logo">
@@ -74,5 +161,7 @@
             {{!-- Credit Button end --}}
 
         </div>
+       
+    </div>
     </nav>
 </header>
