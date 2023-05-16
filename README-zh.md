@@ -40,16 +40,17 @@
 ### :earth_africa: 多语言支持
 你可以在 Ghost 后台 -> General -> "Publication Language" 更换主题展示的语言。简体中文已经翻译，直接配置里写`zh_CN`即可。
 
-|  代码   |   语言   | 翻译状态 | 译者 |
-| :-----: | :------: | :------: | :--: |
-|  `de`   | 德语  |   ✔️   |[Marek Schmidt](https://github.com/MSDev201)|
-|  `en`   | 英语  |    ✔️    ||
-| `fr` | 法语 |   ✔️   |[Lourys](https://github.com/Lourys)|
-| `it` | 意大利语|   ✔️   |[Pyrox](https://github.com/Pyr0x1)|
-| `pt_BR` | 葡萄牙语（巴西） |   ✔️   |[matheusvanzan](https://github.com/matheusvanzan)|
-| `ta` | 泰米尔语 |   ✔️   | [MC Naveen](https://github.com/the-mcnaveen) |
-| `tr` | 土耳其语 |   ✔️   |[talut](https://github.com/talut)|
-| `zh_CN` | 简体中文 |    ✔️    ||
+|  代码   |       语言       | 翻译状态 |                       译者                        |
+| :-----: | :--------------: | :------: | :-----------------------------------------------: |
+|  `de`   |       德语       |    ✅    |   [Marek Schmidt](https://github.com/MSDev201)    |
+|  `en`   |       英语       |    ✅    |                                                   |
+|  `fr`   |       法语       |    ✅    |        [Lourys](https://github.com/Lourys)        |
+|  `it`   |     意大利语     |    ✅    |        [Pyrox](https://github.com/Pyr0x1)         |
+| `pt_BR` | 葡萄牙语（巴西） |    ✅    | [matheusvanzan](https://github.com/matheusvanzan) |
+|  `ta`   |     泰米尔语     |    ✅    |   [MC Naveen](https://github.com/the-mcnaveen)    |
+|  `th`   |       泰语       |    ✅    |         [atbee](https://github.com/atbee)         |
+|  `tr`   |     土耳其语     |    ✅    |         [talut](https://github.com/talut)         |
+| `zh_CN` |     简体中文     |    ✅    |                                                   |
 
 请帮助我们翻译主题语言。首先请fork本项目，然后复制`locales`文件夹中的`en.json`并重命名为目标语言, 如西班牙语：`es.json`，并打开文件翻译内容。测试之后请提交 Pull Request 到 `dev` 分支。
 

@@ -1,6 +1,8 @@
 # CHANGELOG
 
-## v.1.3.4
+## v1.3.5
+- ⬆️ Support Ghost V5
+## v1.3.4
 - 🐛 fixed header
 
 ## v1.3.3
