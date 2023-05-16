@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v.1.3.4
+- 🐛 fixed header
+
 ## v1.3.3
 - 🐛 fixed header not centered, as mentioned in ([#70](https://github.com/huangyuzhang/Fizzy-Theme/issues/70))
 

@@ -245,6 +245,13 @@ html,body{
 }
 /* ====================== header ====================== 2019.04.12 */
 
+@media screen and (min-width:1024px){
+	.nav-container {
+		margin: 0 auto;
+		display: flex !important;
+	}
+}
+
 .navbar-brand .text-logo {
 	font-weight:700;
 	font-size:1.5rem;
