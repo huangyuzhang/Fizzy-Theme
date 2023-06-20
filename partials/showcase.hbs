@@ -1,84 +1,85 @@
 {{!-- Homepage Showcase 2019.05.27--}}
 
 {{!-- slick: css --}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
-
-<section class="section showcase is-hidden" id="showcase">
+<section class="section showcase" id="showcase">
     <div class="columns">
         <div class="column is-hidden-touch is-1-desktop is-1-widescreen is-2-fullhd"></div>
         <div class="column is-12-tablet is-10-desktop is-10-widescreen is-8-fullhd">
             <div class="columns">
                 {{!-- carousel start--}}
-                <div class="column is-7">
-                    <div class="carousel" id="carousel-home">
-                        {{!-- get 10 posts with tag #carousel as --}}
-                        {{#get "posts" limit="6" include="tags,authors" filter="tags:[hash-carousel]" as |carousel|}} 
-                        {{#foreach carousel}}
-                            <div class="carousel-item box img-bg has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="large"}});">
-                                <a href="{{url}}" rel="bookmark" class="link-block"></a>
-                                <div class="carousel-meta bg-grad-b">
-                                    {{#primary_tag}}
-                                        <div class="carousel-tag">
-                                            <a href="{{url}}" class="is-montserrat">{{name}}</a>
-                                        </div>
-                                    {{/primary_tag}}
-                                    <a href="{{url}}"><h2 class="is-size-4 is-size-5-mobile is-margin-bottom-05 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
-                                    {{#primary_author}}
-                                        <div class="columns is-mobile is-vcentered">
-                                            <div class="column is-narrow" style="padding-right:.5em;">
-                                                <a href="{{url}}">
-                                                    <figure class="image is-24x24">
-                                                    <img class="image-squared is-rounded" src="
-                                                        {{#if profile_image}}
-                                                            {{img_url profile_image size="icon"}}
-                                                        {{else}}
-                                                            {{asset 'images/user-avatar-default.png'}}
-                                                        {{/if}}
-                                                    " alt="{{name}}" title="{{name}}">
-                                                    </figure>
-                                                </a>
-                                            </div>
 
-                                            <div class="column is-narrow has-text-weight-bold is-hpaddingless">
-                                                <a href="{{url}}" class="has-text-white">{{name}}</a>
-                                            </div>
-                                        </div>
-                                    {{/primary_author}}
+                <div class="column is-7">
+                    <div class="glider">
+
+                        <div class="glide__track" data-glide-el="track">
+
+                            <ul class="glide__slides">
+                                {{!-- get 10 posts with tag #carousel as --}}
+                                {{#get "posts" limit="6" include="tags,authors" filter="tags:[hash-carousel]" as
+                                |carousel|}}
+                                {{#foreach carousel}}
+
+                                <li class="glide__slide">
+                                <div class="roll">
+                                    <a href="{{url}}">
+                                        <img src="{{img_url feature_image size=" large"}}" alt="{{feature_image_alt}}">
+                                        <h2 class="slide-txt is-size-4 is-size-5-mobile has-text-white has-text-weight-semibold has-text-shadow-black">
+                                            {{title}}
+                                        </h2>
+                                    </a>
                                 </div>
-                            </div>
-                        {{/foreach}}
-                        {{/get}}
+                                </li>
+                                
+
+                                {{/foreach}}
+                                {{/get}}
+                            </ul>
+
+                        </div>
+
                     </div>
+
                 </div>
+
                 {{!-- carousel end --}}
 
-                {{!-- top-featured start --}}
-                <div class="column is-5">
-                    {{#get "posts" limit="2" include="tags" filter="featured:true" as |top-featured|}}
-                    <div class="top-featured">
-                        {{#top-featured}}
-                        <div class="tf-item img-bg box has-shadow-lift can-scale" style="background-image: url({{img_url feature_image size="medium"}});background-position: center center;background-repeat: no-repeat;background-size: cover;">
-                            <span class="featured-label is-montserrat" style="right:5px;top:5px;padding:0 3px;" title="{{t "Featured"}}"><i class="iconfont icon-star"></i> <span>{{t "Featured"}}</span></span>
+            
+            {{!-- top-featured start --}}
+            <div class="column is-5">
+                {{#get "posts" limit="2" include="tags" filter="featured:true" as |top-featured|}}
+                <div class="top-featured">
+                    {{#top-featured}}
+                    <div class="tf-item img-bg box has-shadow-lift can-scale"
+                        style="background-image: url({{img_url feature_image size=" medium"}});background-position:
+                        center center;background-repeat: no-repeat;background-size: cover;">
+
+                        <a href="{{url}}" rel="bookmark" class="link-block"></a>
+                        <div class="tf-meta bg-grad-b">
                             <a href="{{url}}" rel="bookmark" class="link-block"></a>
-                            <div class="tf-meta bg-grad-b">
-                                <a href="{{url}}" rel="bookmark" class="link-block"></a>
-                                {{#primary_tag}}
-                                    <div class="tf-tag">
-                                        <a href="{{url}}" class="is-montserrat">{{name}}</a>
-                                    </div>
-                                {{/primary_tag}}
-                                <a href="{{url}}"><h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">{{title}}</h2></a>
-                            </div>    
+
+                            {{#primary_tag}}
+                            <div class="tf-tag">
+                                <a href="{{url}}" class="is-montserrat">{{name}}</a>
+                            </div>
+                            {{/primary_tag}}
+
+
+                            <a href="{{url}}">
+                                <h2 class="is-size-5 has-text-white has-text-weight-semibold has-text-shadow-black">
+                                    {{title}}</h2>
+                            </a>
                         </div>
-                        {{/top-featured}}
                     </div>
-                    {{/get}}
+                    {{/top-featured}}
                 </div>
-                {{!-- top-featured end --}}
+                {{/get}}
             </div>
+            <div class="column is-hidden-touch"></div>
+            {{!-- top-featured end --}}
         </div>
-        <div class="column is-hidden-touch"></div>
+    </div>
+
+    <div class="column is-hidden-touch"></div>
     </div>
 </section>
