@@ -33,6 +33,48 @@
     {{!-- Prismjs: css--}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
+    {{!-- glide.js slider on on homepage --}}
+
+    {{#is "home"}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+
+    {{!-- Add and override styles from glide.js  --}}
+
+    <style type="text/css">
+
+    .slide-txt {
+        position: relative;
+        bottom: 5rem;
+        left: 20px;
+    }
+
+    .glide__slide img {
+        object-fit: cover;
+        position: relative;
+        height: 360px;
+        border-radius: 10px;
+    }
+
+
+    a.tf-tag-glider {
+        background-color: rgba(0,0,0,.7);
+        color: #fff;
+        border-radius: 6px;
+        padding: 5px 7px;
+        font-size: 1.1rem;
+        line-height: 1;
+        text-shadow: none;
+        font-weight: 400;
+        position: relative;
+        bottom: 11rem;
+        left: 20px;
+    }
+
+    </style>
+    {{/is}}
+
+
 </head>
 
 <body class="has-background-light-line">
@@ -87,22 +129,28 @@
     {{!-- import js --}}
     <script src="{{asset 'js/main.js'}}"></script>
     
-    {{!-- carousel: js --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#carousel-home').slick({
-                autoplay: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:false,
-                dots: false,
-                centerMode: false,
-                focusOnSelect: false
-            });
-        });      
+    {{!-- carousel: using glide.js  --}}
+
+    
+
+    {{#is "home"}}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+
+    <script>    
+        window.addEventListener('load', function(){
+        new Glide('.glider', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        autoplay: 2000,
+        hoverpause: true,
+        }).mount();
+        })
     </script>
+
+    {{/is}}
+
     
     {{!-- switches: showcase & support_fizzy --}}
     <script>
