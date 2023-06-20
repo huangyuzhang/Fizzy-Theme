@@ -1,7 +1,5 @@
 {{!-- Homepage Showcase 2019.05.27--}}
 
-{{!-- slick: css --}}
-
 <section class="section showcase" id="showcase">
     <div class="columns">
         <div class="column is-hidden-touch is-1-desktop is-1-widescreen is-2-fullhd"></div>
@@ -20,15 +18,20 @@
                                 |carousel|}}
                                 {{#foreach carousel}}
 
-                                <li class="glide__slide">
-                                <div class="roll">
+                                <li class="glide__slide">                                
                                     <a href="{{url}}">
                                         <img src="{{img_url feature_image size=" large"}}" alt="{{feature_image_alt}}">
                                         <h2 class="slide-txt is-size-4 is-size-5-mobile has-text-white has-text-weight-semibold has-text-shadow-black">
                                             {{title}}
                                         </h2>
-                                    </a>
-                                </div>
+                                        
+                                        {{#primary_tag}}
+                                        
+                                            <a class="tf-tag-glider .is-montserrat" href="{{url}}" class="is-montserrat">{{name}}</a>
+                                        
+                                        {{/primary_tag}}
+                                        
+                                    </a>                                
                                 </li>
                                 
 
